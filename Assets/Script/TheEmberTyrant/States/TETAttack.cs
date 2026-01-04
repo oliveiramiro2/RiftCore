@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class TETAttack : State<BossController>
 {
-
+  private readonly float timeToExit = 1f;
+  private float timer = 0f;
   public override void EnterState(BossController entity)
   {
+    timer = timeToExit;
     entity.AttackModule.ConsumeAttackRequest();
     entity.AttackModule.finishAttack = false;
     entity.LocomotionModule.FlipTowardsTarget(entity);
@@ -13,7 +15,8 @@ public class TETAttack : State<BossController>
 
   public override void UpdateState(BossController entity)
   {
-    if (entity.AnimatorBridge.TETIsCurrentAnimationFinished())
+    timer -= Time.unscaledDeltaTime;
+    if (entity.AnimatorBridge.TETIsCurrentAnimationFinished() && timer <= 0f)
     {
       entity.AttackModule.finishAttack = true;
     }
