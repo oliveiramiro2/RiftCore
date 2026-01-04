@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fed6089349be794b9ea9aa3a56daa43, type: 3}
+  m_Name: TetEvents
+  m_EditorClassIdentifier: 
+  OnFireBall: {fileID: 11400000, guid: 0ceea25671c870f4c96e5be788d5cb1d, type: 2}
+  OnFirePillar: {fileID: 11400000, guid: 42e508e6e6031ef4d98273e65289071c, type: 2}
+  OnExplosion: {fileID: 11400000, guid: 4eded14a081be0b4f9549e9a9e826f79, type: 2}
+  OnPunch: {fileID: 11400000, guid: a0cd13bcc8a00ef4abdd5bfe0168986c, type: 2}
+  OnDash: {fileID: 11400000, guid: b9c9ff166f1c05c4f8fd1dd67267e891, type: 2}
+  OnPhase2: {fileID: 11400000, guid: 272e47877b7c06348b3f6b012944b246, type: 2}

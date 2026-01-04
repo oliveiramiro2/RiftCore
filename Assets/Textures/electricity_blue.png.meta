@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: aa01dd7876e113a46a7a458a59987882
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -661534580335050695
+    second: electricity_blue_0
+  - first:
+      213: -1218576559326485439
+    second: electricity_blue_1
+  - first:
+      213: -5893718861990382420
+    second: electricity_blue_2
+  - first:
+      213: -6367857984832250474
+    second: electricity_blue_3
+  - first:
+      213: 8694366230867547024
+    second: electricity_blue_4
+  - first:
+      213: -2179788344026616033
+    second: electricity_blue_5
+  - first:
+      213: 5433582033666897881
+    second: electricity_blue_6
+  - first:
+      213: 7474091511956334016
+    second: electricity_blue_7
+  - first:
+      213: -7123587214710513644
+    second: electricity_blue_8
+  - first:
+      213: -837591496959719988
+    second: electricity_blue_9
+  - first:
+      213: -7089336271811543265
+    second: electricity_blue_10
+  - first:
+      213: 31041946488195762
+    second: electricity_blue_11
+  - first:
+      213: -1202279818300177042
+    second: electricity_blue_12
+  - first:
+      213: -4022683953447218300
+    second: electricity_blue_13
+  - first:
+      213: 1199516793425189188
+    second: electricity_blue_14
+  - first:
+      213: 8655688483677194911
+    second: electricity_blue_15
+  - first:
+      213: -7790916935267837119
+    second: electricity_blue_16
+  - first:
+      213: 7156039223234076763
+    second: electricity_blue_17
+  - first:
+      213: -243384081394710890
+    second: electricity_blue_18
+  - first:
+      213: 2780866352544289607
+    second: electricity_blue_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: electricity_blue_0
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9300e7cddc1c1d6f0800000000000000
+      internalID: -661534580335050695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 44
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1442ab9531fb61fe0800000000000000
+      internalID: -1218576559326485439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_2
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 40
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca43b09dbed453ea0800000000000000
+      internalID: -5893718861990382420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_3
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 36
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d50f1b6e2d0a7a0800000000000000
+      internalID: -6367857984832250474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_4
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 32
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0931302b50898a870800000000000000
+      internalID: 8694366230867547024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_5
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 28
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fa1c4dc06dfb1e0800000000000000
+      internalID: -2179788344026616033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_6
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 28
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7f8ae3216f76b40800000000000000
+      internalID: 5433582033666897881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_7
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 28
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c56be471ae49b760800000000000000
+      internalID: 7474091511956334016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_8
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 28
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4106aacab2fe32d90800000000000000
+      internalID: -7123587214710513644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_9
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 24
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc504d4a8f64064f0800000000000000
+      internalID: -837591496959719988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_10
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 20
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f7161c83e9d9d90800000000000000
+      internalID: -7089336271811543265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_11
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 16
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bac0916c784e6000800000000000000
+      internalID: 31041946488195762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_12
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 21
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65c89d00e4a05fe0800000000000000
+      internalID: -1202279818300177042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_13
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 19
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4835d17e14e8c28c0800000000000000
+      internalID: -4022683953447218300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_14
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 12
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44959361b2a85a010800000000000000
+      internalID: 1199516793425189188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_15
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 19
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ac40ce0de2f1870800000000000000
+      internalID: 8655688483677194911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_16
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 8
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b19ce435a11e390800000000000000
+      internalID: -7790916935267837119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_17
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 8
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5021ab52cb5f4360800000000000000
+      internalID: 7156039223234076763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_18
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 8
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696cb7ca7735f9cf0800000000000000
+      internalID: -243384081394710890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricity_blue_19
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 8
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7431d37c63f979620800000000000000
+      internalID: 2780866352544289607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      electricity_blue_0: -661534580335050695
+      electricity_blue_1: -1218576559326485439
+      electricity_blue_10: -7089336271811543265
+      electricity_blue_11: 31041946488195762
+      electricity_blue_12: -1202279818300177042
+      electricity_blue_13: -4022683953447218300
+      electricity_blue_14: 1199516793425189188
+      electricity_blue_15: 8655688483677194911
+      electricity_blue_16: -7790916935267837119
+      electricity_blue_17: 7156039223234076763
+      electricity_blue_18: -243384081394710890
+      electricity_blue_19: 2780866352544289607
+      electricity_blue_2: -5893718861990382420
+      electricity_blue_3: -6367857984832250474
+      electricity_blue_4: 8694366230867547024
+      electricity_blue_5: -2179788344026616033
+      electricity_blue_6: 5433582033666897881
+      electricity_blue_7: 7474091511956334016
+      electricity_blue_8: -7123587214710513644
+      electricity_blue_9: -837591496959719988
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

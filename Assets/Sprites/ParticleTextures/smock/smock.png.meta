@@ -1,0 +1,1071 @@
+fileFormatVersion: 2
+guid: e0b866ec40af34343a706114ed65d3b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1292981021249212557
+    second: smock_0
+  - first:
+      213: -2494245058015231077
+    second: smock_1
+  - first:
+      213: -8541396553382424677
+    second: smock_2
+  - first:
+      213: 4962729289205972846
+    second: smock_3
+  - first:
+      213: -6990772990531009815
+    second: smock_4
+  - first:
+      213: -6508283178620177638
+    second: smock_5
+  - first:
+      213: -7036975210999190896
+    second: smock_6
+  - first:
+      213: -7924189569891264915
+    second: smock_7
+  - first:
+      213: -2057177485801359124
+    second: smock_8
+  - first:
+      213: -6322348966670172115
+    second: smock_9
+  - first:
+      213: 1128768868614482911
+    second: smock_10
+  - first:
+      213: 23935608473326847
+    second: smock_11
+  - first:
+      213: -8300439782318543524
+    second: smock_12
+  - first:
+      213: 3143373578790413265
+    second: smock_13
+  - first:
+      213: -2172028991909152561
+    second: smock_14
+  - first:
+      213: -5129076738435919244
+    second: smock_15
+  - first:
+      213: 7381931149897439585
+    second: smock_16
+  - first:
+      213: 9152187335576474758
+    second: smock_17
+  - first:
+      213: 5592927648216397154
+    second: smock_18
+  - first:
+      213: -7268580659029743647
+    second: smock_19
+  - first:
+      213: -3939140723518606947
+    second: smock_20
+  - first:
+      213: 1449217844402748643
+    second: smock_21
+  - first:
+      213: -6345157538644650162
+    second: smock_22
+  - first:
+      213: 6893257089548562332
+    second: smock_23
+  - first:
+      213: -3986733965040223793
+    second: smock_24
+  - first:
+      213: -248595934766061732
+    second: smock_25
+  - first:
+      213: -166846703272088711
+    second: smock_26
+  - first:
+      213: 1878204124895228542
+    second: smock_27
+  - first:
+      213: 1913346049987220849
+    second: smock_28
+  - first:
+      213: -5285471244248953007
+    second: smock_29
+  - first:
+      213: -7854241942798445414
+    second: smock_30
+  - first:
+      213: 7448863320646652296
+    second: smock_31
+  - first:
+      213: 5943265266558870940
+    second: smock_32
+  - first:
+      213: -5986936537983162247
+    second: smock_33
+  - first:
+      213: -1146704836641501377
+    second: smock_34
+  - first:
+      213: -7638076052177947043
+    second: smock_35
+  - first:
+      213: 1019102971110674246
+    second: smock_36
+  - first:
+      213: 4292935708665643391
+    second: smock_37
+  - first:
+      213: 1991151365568746229
+    second: smock_38
+  - first:
+      213: -7845651048819579877
+    second: smock_39
+  - first:
+      213: 7750764668805710572
+    second: smock_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: smock_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1965
+        width: 459
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8091e8636791f110800000000000000
+      internalID: 1292981021249212557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1965
+        width: 459
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b938a36b559a26dd0800000000000000
+      internalID: -2494245058015231077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_2
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1965
+        width: 459
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f05e5c61dd67980800000000000000
+      internalID: -8541396553382424677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_3
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 1965
+        width: 459
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f7c8faef72fd440800000000000000
+      internalID: 4962729289205972846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_4
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 1970
+        width: 456
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2010af009cbfe90800000000000000
+      internalID: -6990772990531009815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_5
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 1970
+        width: 456
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13b1b07eeeeda5a0800000000000000
+      internalID: -6508283178620177638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_6
+      rect:
+        serializedVersion: 2
+        x: 2763
+        y: 1970
+        width: 456
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ae92f3454a75e90800000000000000
+      internalID: -7036975210999190896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_7
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1567
+        width: 246
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6696c1029f970290800000000000000
+      internalID: -7924189569891264915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_9
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1567
+        width: 246
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20019fac118248a0800000000000000
+      internalID: -6322348966670172115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_11
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1567
+        width: 246
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff419802f49055000800000000000000
+      internalID: 23935608473326847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_13
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1469
+        width: 461
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d3a6289d918f9b20800000000000000
+      internalID: 3143373578790413265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_14
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 1469
+        width: 461
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc8b767c3276bd1e0800000000000000
+      internalID: -2172028991909152561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_15
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 1469
+        width: 461
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472dec3a1ebd1d8b0800000000000000
+      internalID: -5129076738435919244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_16
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 1490
+        width: 411
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169170a0543e17660800000000000000
+      internalID: 7381931149897439585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_20
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1000
+        width: 411
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91f566e16c5559c0800000000000000
+      internalID: -3939140723518606947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_21
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1000
+        width: 411
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec78c183f7ac1410800000000000000
+      internalID: 1449217844402748643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_22
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 978
+        width: 411
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47913136d871f7a0800000000000000
+      internalID: -6345157538644650162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_23
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1030
+        width: 361
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f2cf70dc4c9af50800000000000000
+      internalID: 6893257089548562332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_24
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 1030
+        width: 361
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9fac7d4964ca8c0800000000000000
+      internalID: -3986733965040223793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_25
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 978
+        width: 361
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57a9af705fcc8cf0800000000000000
+      internalID: -248595934766061732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_26
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 1048
+        width: 433
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ba58faecd3fadf0800000000000000
+      internalID: -166846703272088711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_27
+      rect:
+        serializedVersion: 2
+        x: 2971
+        y: 1408
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72bd0053b8b01a10800000000000000
+      internalID: 1878204124895228542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 558
+        width: 433
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17592e958129d8a10800000000000000
+      internalID: 1913346049987220849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_29
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 918
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fcfff28eb36a6b0800000000000000
+      internalID: -5285471244248953007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_30
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 558
+        width: 433
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94568b0190200390800000000000000
+      internalID: -7854241942798445414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_31
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 918
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881949f69bdaf5760800000000000000
+      internalID: 7448863320646652296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_32
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 546
+        width: 423
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95a82b6548ba7250800000000000000
+      internalID: 5943265266558870940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_33
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 546
+        width: 423
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978e4b850f02aeca0800000000000000
+      internalID: -5986936537983162247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_34
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 546
+        width: 423
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3fc2cdc6061610f0800000000000000
+      internalID: -1146704836641501377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_35
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 536
+        width: 391
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56f38e7c4a100690800000000000000
+      internalID: -7638076052177947043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_36
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 536
+        width: 391
+        height: 445
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fc896b0c4942e00800000000000000
+      internalID: 1019102971110674246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_37
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 46
+        width: 391
+        height: 398
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f710b963842939b30800000000000000
+      internalID: 4292935708665643391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_38
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 43
+        width: 402
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f252ce0e9df1ab10800000000000000
+      internalID: 1991151365568746229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_39
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 43
+        width: 402
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14207b60f5ae1390800000000000000
+      internalID: -7845651048819579877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smock_40
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 43
+        width: 402
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce200d5a66f309b60800000000000000
+      internalID: 7750764668805710572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cecc514cef899514a92a11301bf5711f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      smock_0: 1292981021249212557
+      smock_1: -2494245058015231077
+      smock_11: 23935608473326847
+      smock_13: 3143373578790413265
+      smock_14: -2172028991909152561
+      smock_15: -5129076738435919244
+      smock_16: 7381931149897439585
+      smock_2: -8541396553382424677
+      smock_20: -3939140723518606947
+      smock_21: 1449217844402748643
+      smock_22: -6345157538644650162
+      smock_23: 6893257089548562332
+      smock_24: -3986733965040223793
+      smock_25: -248595934766061732
+      smock_26: -166846703272088711
+      smock_27: 1878204124895228542
+      smock_28: 1913346049987220849
+      smock_29: -5285471244248953007
+      smock_3: 4962729289205972846
+      smock_30: -7854241942798445414
+      smock_31: 7448863320646652296
+      smock_32: 5943265266558870940
+      smock_33: -5986936537983162247
+      smock_34: -1146704836641501377
+      smock_35: -7638076052177947043
+      smock_36: 1019102971110674246
+      smock_37: 4292935708665643391
+      smock_38: 1991151365568746229
+      smock_39: -7845651048819579877
+      smock_4: -6990772990531009815
+      smock_40: 7750764668805710572
+      smock_5: -6508283178620177638
+      smock_6: -7036975210999190896
+      smock_7: -7924189569891264915
+      smock_9: -6322348966670172115
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
