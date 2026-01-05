@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dcbcb175d1840884ea7aa2f371e3f9f0
+guid: eab6a07afa2f9544d88577f359b406ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2131351527377150325
-    second: fire-noise-texture_0
+      213: 6673312695985084743
+    second: lava_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fire-noise-texture_0
+      name: lava_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 626
-        height: 626
+        width: 540
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5712dc8fbe4149d10800000000000000
-      internalID: 2131351527377150325
+      spriteID: 7499b4f4a8e5c9c50800000000000000
+      internalID: 6673312695985084743
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fire-noise-texture_0: 2131351527377150325
+      lava_0: 6673312695985084743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

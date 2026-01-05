@@ -20,7 +20,7 @@ TagManager:
   - PlayerHitbox
   - PlayerHurtbox
   - Wall
-  - 
+  - DistortionEffect
   - 
   - 
   - 
@@ -40,9 +40,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: backGround
     uniqueID: 2800310795
     locked: 0
@@ -51,6 +48,15 @@ TagManager:
     locked: 0
   - name: foreGround
     uniqueID: 3684063113
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: front
+    uniqueID: 1691249341
+    locked: 0
+  - name: awayFront
+    uniqueID: 3933922125
     locked: 0
   m_RenderingLayers:
   - Default

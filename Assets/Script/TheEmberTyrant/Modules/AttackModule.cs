@@ -82,7 +82,7 @@ public class AttackModule : MonoBehaviour
     System.Collections.Generic.List<System.Action> validAttacks = new();
 
     if (dist <= meleeRange)
-      validAttacks.Add(entity.AnimatorBridge.TETPunch);
+      validAttacks.Add(() => MeleeAttack(entity));
 
     validAttacks.Add(() => FireDashAttack(entity));
 
@@ -100,9 +100,17 @@ public class AttackModule : MonoBehaviour
     int index = Random.Range(0, validAttacks.Count);
     validAttacks[index].Invoke();
   }
+
+  public void MeleeAttack(BossController entity)
+  {
+    entity.AnimatorBridge.TETPunch();
+    entity.tetEvents.OnPunch.Raise();
+  }
+
   public void FireBallAttack(BossController entity)
   {
     entity.AnimatorBridge.TETFireball();
+    entity.tetEvents.OnFireBall.Raise();
   }
 
   public void FireBallSpawn()
@@ -119,6 +127,8 @@ public class AttackModule : MonoBehaviour
     entity.AnimatorBridge.TETFirepillar();
     foreach (var spawnPoint in firePillarSpawnPoint)
       Instantiate(firePillarPrefab, spawnPoint.position, Quaternion.identity);
+
+    entity.tetEvents.OnFirePillar.Raise();
   }
 
   public void FireExplosionAttack(BossController entity)
@@ -129,5 +139,6 @@ public class AttackModule : MonoBehaviour
   public void FireDashAttack(BossController entity)
   {
     entity.AnimatorBridge.TETFiredash();
+    entity.tetEvents.OnDash.Raise();
   }
 }

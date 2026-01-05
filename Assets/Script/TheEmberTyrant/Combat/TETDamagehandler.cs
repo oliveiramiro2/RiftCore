@@ -35,8 +35,8 @@ public class TETDamageHandler : DamageHandlerBase<BossController>
     {
         base.Die();
         isDead = true;
+        controller.tetEvents.OnDeath.Raise();
         StartCoroutine(DeathSequence());
-        //onPlayerDeath.Raise();
     }
 
     IEnumerator DeathSequence()
@@ -48,10 +48,6 @@ public class TETDamageHandler : DamageHandlerBase<BossController>
         Time.timeScale = 1f;
 
         PlayDeath();
-        // ativa shader dissolve
-
-        // vitória / fim
-        //OnBossDefeated();
     }
 
     public void PlayDeath()

@@ -18,3 +18,4 @@ MonoBehaviour:
   OnPunch: {fileID: 11400000, guid: a0cd13bcc8a00ef4abdd5bfe0168986c, type: 2}
   OnDash: {fileID: 11400000, guid: b9c9ff166f1c05c4f8fd1dd67267e891, type: 2}
   OnPhase2: {fileID: 11400000, guid: 272e47877b7c06348b3f6b012944b246, type: 2}
+  OnDeath: {fileID: 11400000, guid: 986bf12606a4ee84f85aef98d40029e8, type: 2}

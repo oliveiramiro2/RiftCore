@@ -10,4 +10,5 @@ public class TetEvents : ScriptableObject
   public GameEvent OnPunch;
   public GameEvent OnDash;
   public GameEvent OnPhase2;
+  public GameEvent OnDeath;
 }
