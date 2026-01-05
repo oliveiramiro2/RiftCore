@@ -10,6 +10,8 @@ public class GameFlowManager : MonoBehaviour
     public Image fader;
     public TextMeshProUGUI deathText;
     public AudioSource musicSource;
+    public GameObject tetDeathEffect;
+    public Image tetFader;
 
     void Awake()
     {
@@ -19,6 +21,23 @@ public class GameFlowManager : MonoBehaviour
     public void PlayerDied()
     {
         StartCoroutine(DeathFlow());
+    }
+
+    public void TetDied()
+    {
+        StartCoroutine(DeathFlowTET());
+    }
+
+    IEnumerator DeathFlowTET()
+    {
+        yield return new WaitForSecondsRealtime(7f);
+        tetDeathEffect.SetActive(true);
+        StartCoroutine(FadeOutMusic(4f));
+        for (float i = 0; i <= 100; i += Time.unscaledDeltaTime * 0.1f)
+        {
+            tetFader.color = new Color(0, 0, 0, i);
+        }
+        Time.timeScale = 0f;
     }
 
     IEnumerator DeathFlow()
