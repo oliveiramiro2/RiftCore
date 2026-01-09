@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TETAttack : State<BossController>
 {
-  private readonly float timeToExit = 1f;
+  private readonly float timeToExit = 1.5f;
   private float timer = 0f;
   public override void EnterState(BossController entity)
   {

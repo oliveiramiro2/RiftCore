@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -12,14 +13,21 @@ public class GameFlowManager : MonoBehaviour
     public AudioSource musicSource;
     public GameObject tetDeathEffect;
     public Image tetFader;
+    private BossController bossController;
 
     void Awake()
     {
         Instance = this;
     }
 
+    void Start()
+    {
+        bossController = FindAnyObjectByType<BossController>();
+    }
+
     public void PlayerDied()
     {
+        bossController.CanMove = false;
         StartCoroutine(DeathFlow());
     }
 
@@ -31,6 +39,9 @@ public class GameFlowManager : MonoBehaviour
     IEnumerator DeathFlowTET()
     {
         yield return new WaitForSecondsRealtime(7f);
+
+        // InputSystem.actions.FindActionMap("Player").Disable();
+        // InputSystem.actions.FindActionMap("UI").Enable();
         tetDeathEffect.SetActive(true);
         StartCoroutine(FadeOutMusic(4f));
         for (float i = 0; i <= 100; i += Time.unscaledDeltaTime * 0.1f)
@@ -53,6 +64,7 @@ public class GameFlowManager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
     IEnumerator FadeOutMusic(float duration)
     {
         float startVolume = musicSource.volume;

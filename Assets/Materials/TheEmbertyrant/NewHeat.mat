@@ -42,13 +42,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AngleOffset: 20
-    - _AngleSpeed: 10
-    - _CellDensity: 50
+    - _AngleOffset: 200
+    - _AngleSpeed: 5
+    - _CellDensity: 25
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SpeedH: 0.2
-    - _Strength: 0.008
+    - _SpeedH: 0.15
+    - _Strength: 0.005
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1

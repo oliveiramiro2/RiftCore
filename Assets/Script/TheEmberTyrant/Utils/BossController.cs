@@ -13,6 +13,8 @@ public class BossController : BaseEntity
   public bool IsFacingRight() => transform.localScale.x > 0;
   public bool Phase2() => currentHealth <= (maxHealth * 0.5f);
 
+  public bool CanMove = true;
+
 
 
   [Header("Scriptable's")]
@@ -47,7 +49,7 @@ public class BossController : BaseEntity
 
   void Update()
   {
-    if (BossSM == null)
+    if (BossSM == null || !CanMove)
     {
       return;
     }

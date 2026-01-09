@@ -8,7 +8,7 @@ public class TETDamageHandler : DamageHandlerBase<BossController>
     public GameEvent onTetDamaged;
     public GameEvent onTetDeath;
     public Material mat;
-    public float dissolveSpeed = 1f;
+    public float dissolveSpeed = 2f;
 
     private bool phase1 = true;
 

@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(PlayerInputReader))]
 [RequireComponent(typeof(PlayerPhysics))]
@@ -23,6 +24,8 @@ public class PlayerController : BaseEntity
     public PlayerDashModule DashModule { get; private set; }
     public IFrames IFrames { get; private set; }
     public PlayerDamageHandler DamageHandler { get; private set; }
+
+    private PlayerInput playerInput;
 
     [Header("Stats")]
     public float baseMoveSpeed = 8f;
@@ -60,6 +63,9 @@ public class PlayerController : BaseEntity
     protected override void Awake()
     {
         base.Awake();
+        playerInput = GetComponent<PlayerInput>();
+        playerInput.actions.FindActionMap("UI").Disable();
+        playerInput.actions.FindActionMap("Player").Enable();
     }
 
     void Update()

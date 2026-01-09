@@ -7,7 +7,6 @@ public class PlayerDamageHandler : DamageHandlerBase<PlayerController>
 
     [Header("Player Events")]
     public GameEvent onPlayerDamaged;
-    public GameEvent onPlayerDeath;
 
     public static event Action<int, int> OnHealthChanged;
 
@@ -41,8 +40,8 @@ public class PlayerDamageHandler : DamageHandlerBase<PlayerController>
         isDead = true;
         controller.canMove = false;
         controller.AnimatorBridge.TriggerDeath();
+        controller.events.OnDeath.Raise();
         StartCoroutine(DeathCoroutine());
-        //onPlayerDeath.Raise();
     }
 
     private IEnumerator DeathCoroutine()

@@ -41,14 +41,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Dissolve: 1.0002577
-    - _DissolveScale: 500
-    - _OutlineTickness: 0.114
+    - _Dissolve: 1.001054
+    - _DissolveScale: 100
+    - _OutlineTickness: 0.1
     - _Spiral: 0.2
     - _SpiralStrength: 0.1
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 2.8284268, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 2.9960785, g: 0, b: 0.05635848, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &2449356044012929655

@@ -11,4 +11,5 @@ public class PlayerEvents : ScriptableObject
 
   public GameEvent OnDash;
   public GameEvent OnTakeDamage;
+  public GameEvent OnDeath;
 }

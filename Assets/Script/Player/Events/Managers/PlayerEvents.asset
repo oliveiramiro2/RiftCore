@@ -18,5 +18,4 @@ MonoBehaviour:
   OnLand: {fileID: 11400000, guid: 9d6d161c02fbaf2409686e22cbf007f7, type: 2}
   OnDash: {fileID: 11400000, guid: e100065dc8556d64d87fa2ea2f062d70, type: 2}
   OnTakeDamage: {fileID: 11400000, guid: f47af0e691b3d8349ae4f5089fa99cbe, type: 2}
-  onPause: {fileID: 11400000, guid: d0e2f395aff39e4449b66011377d5e86, type: 2}
-  onUnpause: {fileID: 11400000, guid: 12880fd7cd689084ca24b4e668a72de2, type: 2}
+  OnDeath: {fileID: 11400000, guid: 0ae214abbb74f514798f8bd4755926c2, type: 2}

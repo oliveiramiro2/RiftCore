@@ -42,14 +42,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Magnification: 3.02
+    - _Alpha: 0
+    - _Magnification: 10
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SIzeRatio: 1.777
     - _Size: 0.1
     - _TimeScale: 0
     m_Colors:
-    - _FocalPoint: {r: 0.60960686, g: 0.39476812, b: 0, a: 0}
+    - _FocalPoint: {r: 0.5599775, g: 0.39480394, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &2978755974147988279
