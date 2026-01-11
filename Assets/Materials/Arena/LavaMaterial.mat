@@ -55,15 +55,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AngleOffset: 30
-    - _AngleSpeed: 0.02
-    - _CellDensity: 100
-    - _IntensityBloom: 1
+    - _AngleOffset: 0
+    - _AngleSpeed: 0.18
+    - _CellDensity: 50
+    - _IntensityBloom: 1.98
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SpeedH: 0.1
-    - _Strength: 0.003
-    - _TimeIntensity: 0.6
+    - _SpeedH: 0.21
+    - _Strength: 0.02
+    - _TimeIntensity: 1
     m_Colors:
     - _Color: {r: 1.0592737, g: 0.5530943, b: 0, a: 1}
   m_BuildTextureStacks: []
