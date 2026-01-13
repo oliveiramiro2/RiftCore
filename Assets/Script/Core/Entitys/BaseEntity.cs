@@ -10,6 +10,7 @@ public abstract class BaseEntity : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
+    public bool canMove = true;
 
 
     [Header("Combat")]

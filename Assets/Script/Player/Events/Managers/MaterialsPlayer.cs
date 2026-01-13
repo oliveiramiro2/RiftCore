@@ -43,16 +43,36 @@ public class MaterialsPlayer : MonoBehaviour
         playerRenderer.material = dashMaterial;
         float timer = 0f;
 
+        float intensity = 1f;
+
+        // while (timer < duration)
+        // {
+        //     float t = timer / duration;
+        //     float intensity = intensityCurve.Evaluate(t);
+
+        //     dashMaterial.SetFloat("_Intensity", intensity);
+
+        //     timer += Time.deltaTime;
+        //     yield return null;
+        // }
+
         while (timer < duration)
         {
-            float t = timer / duration;
-            float intensity = intensityCurve.Evaluate(t);
+            intensity = TemporalMath.LerpWithPulse(
+                intensity,
+                0f,      // alvo
+                6f,      // velocidade
+                0.25f,   // amplitude do pulso
+                20f      // frequência
+            );
 
             dashMaterial.SetFloat("_Intensity", intensity);
 
             timer += Time.deltaTime;
             yield return null;
         }
+
+
 
         dashMaterial.SetFloat("_Intensity", 0f);
 

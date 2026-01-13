@@ -31,9 +31,6 @@ public class PlayerController : BaseEntity
     public float baseMoveSpeed = 8f;
     public float baseJumpForce = 12f;
 
-    [Header("Flags")]
-    public bool canMove = true;
-
     [Header("Scriptable's")]
     public PlayerStats stats;
     public PlayerEvents events;

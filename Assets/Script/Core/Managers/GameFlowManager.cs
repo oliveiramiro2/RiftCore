@@ -27,7 +27,7 @@ public class GameFlowManager : MonoBehaviour
 
     public void PlayerDied()
     {
-        bossController.CanMove = false;
+        bossController.canMove = false;
         StartCoroutine(DeathFlow());
     }
 
