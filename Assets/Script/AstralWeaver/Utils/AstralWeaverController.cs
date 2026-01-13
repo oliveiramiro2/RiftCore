@@ -19,6 +19,7 @@ public class AstralWeaverController : BaseEntity
     protected override void Awake()
     {
         base.Awake();
+        
     }
 
     void Update()

@@ -8,6 +8,7 @@ public class AstralWeaverAttacks : State<AstralWeaverController>
   {
     entity.AttackModule.canAttackTimer = false;
     attackTimer = 0f;
+    entity.AttackModule.DecideNextAttack(entity);
   }
 
   public override void UpdateState(AstralWeaverController entity)

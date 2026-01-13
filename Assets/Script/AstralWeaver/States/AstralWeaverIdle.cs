@@ -7,14 +7,4 @@ public class AstralWeaverIdle : State<AstralWeaverController>
   {
     entity.AnimatorBridge.AstralWeaverIdle();
   }
-
-
-  public override void UpdateState(AstralWeaverController entity)
-  {
-    Debug.Log("AstralWeaver is Idling");
-  }
-
-  public override void ExitState(AstralWeaverController entity)
-  {
-  }
 }

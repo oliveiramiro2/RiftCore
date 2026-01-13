@@ -19,12 +19,12 @@ public class AstralWeaverAnimationBridge : MonoBehaviour
     animator.Play(idleParam);
   }
 
-  public void AstralWeaverRun()
+  public void AstralWeaverEnergyBall()
   {
     animator.Play(energyBallParam);
   }
 
-  public void TETPunch()
+  public void AstralWeaverLaser()
   {
     animator.Play(laserParam);
   }
