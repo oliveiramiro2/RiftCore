@@ -1,23 +1,25 @@
 using UnityEngine;
 
-
+[RequireComponent(typeof(AstralWeaverController))]
+[RequireComponent(typeof(AstralWeaverStateMachine))]
+[RequireComponent(typeof(AstralWeaverStateFactory))]
 public class AstralWeaverInitializer : MonoBehaviour
 {
   void Awake()
   {
     var controller = GetComponent<AstralWeaverController>();
     var sm = GetComponent<AstralWeaverStateMachine>();
-    // var factory = GetComponent<BossStateFactory>();
+    var factory = GetComponent<AstralWeaverStateFactory>();
     // var animator = GetComponent<BossAnimationBridge>();
     // var targetPlayer = GetComponent<TargetingModule>();
     // var bossPhysics = GetComponent<TETBossPhysics>();
     // var locomotion = GetComponent<LocomotionModule>();
     // var attack = GetComponent<AttackModule>();
 
-    //controller.SetupModules(sm, factory, animator, targetPlayer, bossPhysics, locomotion, attack);
+    controller.SetupModules(sm, factory);
 
 
-    //sm.Setup(controller);
+    sm.Setup(controller);
 
     // factory.bossSM = sm;
     // factory.owner = controller;

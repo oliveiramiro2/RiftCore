@@ -3,19 +3,19 @@ using UnityEngine;
 
 public class AstralWeaverStateMachine : MonoBehaviour
 {
-  private StateMachine<BossController> sm;
-  private BossController owner;
+  private StateMachine<AstralWeaverController> sm;
+  private AstralWeaverController owner;
   private bool initialized = false;
 
-  public State<BossController> CurrentState => sm == null ? null : sm.CurrentState;
+  public State<AstralWeaverController> CurrentState => sm == null ? null : sm.CurrentState;
 
-  public void Setup(BossController controller)
+  public void Setup(AstralWeaverController controller)
   {
     this.owner = controller;
-    this.sm = new StateMachine<BossController>(owner);
+    this.sm = new StateMachine<AstralWeaverController>(owner);
   }
 
-  public void Initialize(State<BossController> startingState)
+  public void Initialize(State<AstralWeaverController> startingState)
   {
     if (sm == null)
     {
@@ -38,18 +38,18 @@ public class AstralWeaverStateMachine : MonoBehaviour
     sm.FixedUpdate();
   }
 
-  public void ChangeState(State<BossController> newState)
+  public void ChangeState(State<AstralWeaverController> newState)
   {
     sm.ChangeState(newState);
   }
 
-  public void AddTransition(State<BossController> from, State<BossController> to, Func<bool> condition)
+  public void AddTransition(State<AstralWeaverController> from, State<AstralWeaverController> to, Func<bool> condition)
   {
     if (sm != null)
       sm.AddTransition(from, to, condition);
   }
 
-  public void AddAnyTransition(State<BossController> to, Func<bool> condition)
+  public void AddAnyTransition(State<AstralWeaverController> to, Func<bool> condition)
   {
     if (sm != null)
       sm.AddAnyTransition(to, condition);

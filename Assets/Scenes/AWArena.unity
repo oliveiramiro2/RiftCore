@@ -214,7 +214,13 @@ GameObject:
   - component: {fileID: 287140713}
   - component: {fileID: 287140715}
   - component: {fileID: 287140714}
-  m_Layer: 0
+  - component: {fileID: 287140720}
+  - component: {fileID: 287140719}
+  - component: {fileID: 287140718}
+  - component: {fileID: 287140717}
+  - component: {fileID: 287140716}
+  - component: {fileID: 287140721}
+  m_Layer: 7
   m_Name: AstralWeaver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,6 +323,130 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &287140716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287140712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4974dbebbba01f4495907778a1a1030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AstralWeaverStateFactory
+  bossSM: {fileID: 0}
+  owner: {fileID: 0}
+  isIdle: 1
+--- !u!114 &287140717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287140712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e931d492313f94409c423b892868bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AstralWeaverStateMachine
+--- !u!114 &287140718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287140712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6324b0164564bc64e91a77f87dd95dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AstralWeaverInitializer
+--- !u!114 &287140719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287140712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b65ddf1f56c3b4da16f98dd415d6bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AstralWeaverController
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  maxHealth: 100
+  currentHealth: 100
+  knockbackDuration: 0.15
+  knockbackTimer: 0
+  MoveSpeed: 2
+  CanMove: 1
+--- !u!50 &287140720
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287140712}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!70 &287140721
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287140712}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.0045988113, y: -0.060555577}
+  m_Size: {x: 0.31681326, y: 1.523258}
+  m_Direction: 0
 --- !u!1 &370589657
 GameObject:
   m_ObjectHideFlags: 0
