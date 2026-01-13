@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public static class TemporalMath
 {
   public static float Lerp(float current, float target, float speed)
