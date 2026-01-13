@@ -11,7 +11,7 @@ public class AstralWeaverIdle : State<AstralWeaverController>
 
   public override void UpdateState(AstralWeaverController entity)
   {
-    Debug.Log("AstralWeaver is Idling");
+    //Debug.Log("AstralWeaver is Idling");
     //
   }
 
