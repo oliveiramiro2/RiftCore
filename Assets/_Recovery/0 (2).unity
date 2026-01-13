@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &78540869 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4507484854885368452, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+  m_PrefabInstance: {fileID: 1883565858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!82 &180110224 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8453467191503997575, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
@@ -592,18 +603,7 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 1979881018217751690, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
   m_PrefabInstance: {fileID: 946086019}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &658331613 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 509385971159516728, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-  m_PrefabInstance: {fileID: 1883565858}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
---- !u!114 &713468505 stripped
+--- !u!114 &777146158 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1076955747902477782, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
   m_PrefabInstance: {fileID: 1883565858}
@@ -724,17 +724,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
---- !u!114 &946086020 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4103293485641533845, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
-  m_PrefabInstance: {fileID: 946086019}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90aae646fdb10864880fb2abee9df20c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &994719647
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,11 +2370,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1460752464 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1873627901173798842, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-  m_PrefabInstance: {fileID: 1883565858}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1526853180 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1647046593447214051, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
@@ -3681,39 +3665,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1635595490 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4507484854885368452, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-  m_PrefabInstance: {fileID: 1883565858}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!1 &1758534533 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2716629217700966755, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
-  m_PrefabInstance: {fileID: 7397209688120795018}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1758534535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758534533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a75997192f7f1c8408daf984c967f203, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameFlowManager
-  fader: {fileID: 713468505}
-  deathText: {fileID: 1635595490}
-  musicSource: {fileID: 481583719}
-  tetDeathEffect: {fileID: 1460752464}
-  tetFader: {fileID: 658331613}
 --- !u!1001 &1883565858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3725,26 +3676,6 @@ PrefabInstance:
     - target: {fileID: 270224024433410297, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_Name
       value: GameHud
-      objectReference: {fileID: 0}
-    - target: {fileID: 448445967081729230, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 946086020}
-    - target: {fileID: 448445967081729230, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1634954942760273949, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 946086020}
-    - target: {fileID: 1634954942760273949, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitPauseMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1634954942760273949, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerInputReader, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2322414044806529118, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3790,14 +3721,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1261098694}
-    - target: {fileID: 7613298851216508485, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 946086020}
-    - target: {fileID: 7613298851216508485, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToMainMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 7833601473309044650, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: bossController
       value: 
@@ -4092,6 +4015,28 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &3111938600446186853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2716629217700966755, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+  m_PrefabInstance: {fileID: 7397209688120795018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7087765839723135565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111938600446186853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75997192f7f1c8408daf984c967f203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameFlowManager
+  fader: {fileID: 777146158}
+  deathText: {fileID: 78540869}
+  musicSource: {fileID: 481583719}
+  tetDeathEffect: {fileID: 0}
+  tetFader: {fileID: 0}
 --- !u!1001 &7397209688120795018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4178,7 +4123,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2716629217700966755, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1758534535}
+      addedObject: {fileID: 7087765839723135565}
   m_SourcePrefab: {fileID: 100100000, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

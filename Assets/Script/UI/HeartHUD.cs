@@ -39,7 +39,6 @@ public class HeartHUD : MonoBehaviour
 
     private void CreateHearts(int maxHealth)
     {
-        // limpa se já existir
         foreach (Transform child in heartContainer)
             Destroy(child.gameObject);
 
