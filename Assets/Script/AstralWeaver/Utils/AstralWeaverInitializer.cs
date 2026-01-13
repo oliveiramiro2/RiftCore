@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(AstralWeaverStateMachine))]
 [RequireComponent(typeof(AstralWeaverStateFactory))]
 [RequireComponent(typeof(AstralWeaverAnimationBridge))]
+[RequireComponent(typeof(AstralWeaverAttackModule))]
 public class AstralWeaverInitializer : MonoBehaviour
 {
   void Awake()
@@ -12,8 +13,9 @@ public class AstralWeaverInitializer : MonoBehaviour
     var sm = GetComponent<AstralWeaverStateMachine>();
     var factory = GetComponent<AstralWeaverStateFactory>();
     var animator = GetComponent<AstralWeaverAnimationBridge>();
+    var attackModule = GetComponent<AstralWeaverAttackModule>();
 
-    controller.SetupModules(sm, factory, animator);
+    controller.SetupModules(sm, factory, animator, attackModule);
 
 
     sm.Setup(controller);
