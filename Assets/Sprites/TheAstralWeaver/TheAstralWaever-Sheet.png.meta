@@ -65,9 +65,6 @@ TextureImporter:
   - first:
       213: -1881561230795871125
     second: TheAstralWaever-Sheet_20
-  - first:
-      213: -4545240882516613057
-    second: TheAstralWaever-Sheet_21
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -114,7 +111,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -159,32 +156,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -197,7 +168,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,7 +190,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,7 +212,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +234,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -285,7 +256,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -307,7 +278,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -324,12 +295,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 128
+        x: 0
+        y: 64
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,12 +317,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_7
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 64
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -368,12 +339,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_8
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 64
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -390,12 +361,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_9
       rect:
         serializedVersion: 2
-        x: 128
+        x: 192
         y: 64
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -412,12 +383,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_10
       rect:
         serializedVersion: 2
-        x: 192
+        x: 256
         y: 64
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -434,12 +405,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_11
       rect:
         serializedVersion: 2
-        x: 256
+        x: 320
         y: 64
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -456,12 +427,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_12
       rect:
         serializedVersion: 2
-        x: 320
+        x: 384
         y: 64
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -478,12 +449,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_13
       rect:
         serializedVersion: 2
-        x: 384
+        x: 448
         y: 64
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -500,12 +471,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_14
       rect:
         serializedVersion: 2
-        x: 448
+        x: 512
         y: 64
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -522,12 +493,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_15
       rect:
         serializedVersion: 2
-        x: 512
-        y: 64
+        x: 0
+        y: 0
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -544,12 +515,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_16
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 0
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -566,12 +537,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_17
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -588,12 +559,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_18
       rect:
         serializedVersion: 2
-        x: 128
+        x: 192
         y: 0
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -610,12 +581,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_19
       rect:
         serializedVersion: 2
-        x: 192
+        x: 256
         y: 0
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -632,12 +603,12 @@ TextureImporter:
       name: TheAstralWaever-Sheet_20
       rect:
         serializedVersion: 2
-        x: 256
+        x: 320
         y: 0
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -650,33 +621,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: TheAstralWaever-Sheet_21
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f38a303cf7f0ce0c0800000000000000
-      internalID: -4545240882516613057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8737c7442472f4b4a9d0f567966e24c9
+    spriteID: 28eccc5a7669489459c1706086007e8c
     internalID: 0
     vertices: []
     indices: 
@@ -684,7 +633,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       TheAstralWaever-Sheet_0: -5420931137991148530
       TheAstralWaever-Sheet_1: 8027855722618490287
@@ -700,7 +651,6 @@ TextureImporter:
       TheAstralWaever-Sheet_19: -7294682973061277558
       TheAstralWaever-Sheet_2: 1331162622197744965
       TheAstralWaever-Sheet_20: -1881561230795871125
-      TheAstralWaever-Sheet_21: -4545240882516613057
       TheAstralWaever-Sheet_3: -8492131473088977525
       TheAstralWaever-Sheet_4: -394840464501848661
       TheAstralWaever-Sheet_5: 132898307630456581

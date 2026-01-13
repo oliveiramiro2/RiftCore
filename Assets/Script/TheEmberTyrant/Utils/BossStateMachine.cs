@@ -17,7 +17,6 @@ public class BossStateMachine : MonoBehaviour
 
   public void Initialize(State<BossController> startingState)
   {
-    // Proteção extra
     if (sm == null)
     {
       return;

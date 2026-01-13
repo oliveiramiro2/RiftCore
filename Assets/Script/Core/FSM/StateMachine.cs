@@ -66,6 +66,8 @@ public class StateMachine<T>
 
   public void AddTransition(State<T> from, State<T> to, Func<bool> condition)
   {
+    if (from == null)
+      throw new ArgumentNullException(nameof(from), "From state cannot be null.");
     if (!transitions.ContainsKey(from))
       transitions[from] = new List<Transition>();
 
