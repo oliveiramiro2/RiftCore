@@ -1,8 +1,6 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(BossController))]
-[RequireComponent(typeof(AttackModule))]
 public class AstralWeaverAnimationBridge : MonoBehaviour
 {
   private Animator animator;

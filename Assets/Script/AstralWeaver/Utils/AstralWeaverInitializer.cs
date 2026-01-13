@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(AstralWeaverController))]
 [RequireComponent(typeof(AstralWeaverStateMachine))]
 [RequireComponent(typeof(AstralWeaverStateFactory))]
+[RequireComponent(typeof(AstralWeaverAnimationBridge))]
 public class AstralWeaverInitializer : MonoBehaviour
 {
   void Awake()
@@ -10,28 +11,19 @@ public class AstralWeaverInitializer : MonoBehaviour
     var controller = GetComponent<AstralWeaverController>();
     var sm = GetComponent<AstralWeaverStateMachine>();
     var factory = GetComponent<AstralWeaverStateFactory>();
-    // var animator = GetComponent<BossAnimationBridge>();
-    // var targetPlayer = GetComponent<TargetingModule>();
-    // var bossPhysics = GetComponent<TETBossPhysics>();
-    // var locomotion = GetComponent<LocomotionModule>();
-    // var attack = GetComponent<AttackModule>();
+    var animator = GetComponent<AstralWeaverAnimationBridge>();
 
-    controller.SetupModules(sm, factory);
+    controller.SetupModules(sm, factory, animator);
 
 
     sm.Setup(controller);
 
-    // factory.bossSM = sm;
-    // factory.owner = controller;
-    // factory.animatorBridge = animator;
-    // factory.targetingModule = targetPlayer;
-    // factory.bossPhysics = bossPhysics;
-    // factory.locomotionModule = locomotion;
-    // factory.attackModule = attack;
+    factory.bossSM = sm;
+    factory.owner = controller;
+    factory.animatorBridge = animator;
 
-    // factory.InitializeTransitions();
+    factory.InitializeTransitions();
 
-    // sm.Initialize(factory.TETIdle);
-    // attack.initialize(controller);
+    sm.Initialize(factory.AstralWeaverIdle);
   }
 }

@@ -9,14 +9,30 @@ public class AstralWeaverController : BaseEntity
 
     public AstralWeaverStateMachine AstralWeaverSM { get; private set; }
     public AstralWeaverStateFactory AstralWeaverStateFactory { get; private set; }
+    public AstralWeaverAnimationBridge AnimatorBridge { get; private set; }
 
 
     public bool CanMove = true;
 
-    public void SetupModules(AstralWeaverStateMachine sm, AstralWeaverStateFactory factory)
+    protected override void Awake()
+    {
+        base.Awake();
+    }
+
+    void Update()
+    {
+        if (AstralWeaverSM == null || !CanMove)
+        {
+            return;
+        }
+        AstralWeaverSM.UpdateStateMachine();
+    }
+
+    public void SetupModules(AstralWeaverStateMachine sm, AstralWeaverStateFactory factory, AstralWeaverAnimationBridge animator)
     {
         AstralWeaverSM = sm;
         AstralWeaverStateFactory = factory;
+        AnimatorBridge = animator;
     }
 
     public void FlipX(bool faceRight)

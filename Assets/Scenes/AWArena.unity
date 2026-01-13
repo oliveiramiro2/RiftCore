@@ -214,12 +214,14 @@ GameObject:
   - component: {fileID: 287140713}
   - component: {fileID: 287140715}
   - component: {fileID: 287140714}
+  - component: {fileID: 287140721}
   - component: {fileID: 287140720}
+  - component: {fileID: 287140723}
   - component: {fileID: 287140719}
   - component: {fileID: 287140718}
   - component: {fileID: 287140717}
   - component: {fileID: 287140716}
-  - component: {fileID: 287140721}
+  - component: {fileID: 287140722}
   m_Layer: 7
   m_Name: AstralWeaver
   m_TagString: Untagged
@@ -447,6 +449,36 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0045988113, y: -0.060555577}
   m_Size: {x: 0.31681326, y: 1.523258}
   m_Direction: 0
+--- !u!114 &287140722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287140712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa92fe79606347643946c97e6138501f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AstralWeaverAnimationBridge
+--- !u!114 &287140723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287140712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ac05aa623127d49ae9282eeee9bb69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AstralWeaverDamageHandler
+  maxHealth: 800
+  currentHealth: 0
+  upgradeLifeBonus: 1
+  invincibilityDuration: 0.5
+  isHurt: 0
+  isDead: 0
 --- !u!1 &370589657
 GameObject:
   m_ObjectHideFlags: 0
