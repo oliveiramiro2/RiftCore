@@ -32528,6 +32528,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2056454043}
     - target: {fileID: 119064085133464161, guid: 73abbcae00e0dcd4dae6d880fd63d6db, type: 3}
+      propertyPath: bossController
+      value: 
+      objectReference: {fileID: 1365209888}
+    - target: {fileID: 119064085133464161, guid: 73abbcae00e0dcd4dae6d880fd63d6db, type: 3}
       propertyPath: tetDeathEffect
       value: 
       objectReference: {fileID: 2128508172}

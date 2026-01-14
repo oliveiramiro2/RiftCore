@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -13,21 +14,16 @@ public class GameFlowManager : MonoBehaviour
     public AudioSource musicSource;
     public GameObject tetDeathEffect;
     public Image tetFader;
-    private BossController bossController;
+    [SerializeField] private GameObject bossController;
 
     void Awake()
     {
         Instance = this;
     }
 
-    void Start()
-    {
-        bossController = FindAnyObjectByType<BossController>();
-    }
-
     public void PlayerDied()
     {
-        bossController.canMove = false;
+        bossController.GetComponent<BaseEntity>().canMove = false;
         StartCoroutine(DeathFlow());
     }
 

@@ -13,7 +13,7 @@ public class MenuMain : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("TETArena");
     }
 
     public void QuitGame()

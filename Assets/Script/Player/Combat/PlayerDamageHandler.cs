@@ -18,6 +18,7 @@ public class PlayerDamageHandler : DamageHandlerBase<PlayerController>
 
     public override void TakeDamage(int damage, Vector2 hitDirection, float knockbackForce)
     {
+        if (base.invincibilityTimer > 0f) return;
         base.TakeDamage(damage, hitDirection, knockbackForce);
 
         StartCoroutine(HeartFeedbackCoroutine());

@@ -13,12 +13,12 @@ public class AstralWeaverAttacks : State<AstralWeaverController>
 
   public override void UpdateState(AstralWeaverController entity)
   {
-    Debug.Log("AstralWeaver is Attacking");
-    attackTimer += Time.unscaledDeltaTime;
-    if (attackTimer >= attackDuration)
-    {
-      entity.AttackModule.canAttackTimer = true;
-    }
+    // Debug.Log("AstralWeaver is Attacking");
+    // attackTimer += Time.unscaledDeltaTime;
+    // if (attackTimer >= attackDuration)
+    // {
+    //   entity.AttackModule.canAttackTimer = true;
+    // }
   }
 
   public override void ExitState(AstralWeaverController entity)

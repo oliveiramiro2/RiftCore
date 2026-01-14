@@ -46,6 +46,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3777222858764315323}
+  - component: {fileID: 5502721481712746567}
   m_Layer: 0
   m_Name: GameFlowManager
   m_TagString: Untagged
@@ -68,6 +69,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1932137234025275532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5502721481712746567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2716629217700966755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75997192f7f1c8408daf984c967f203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameFlowManager
+  fader: {fileID: 0}
+  deathText: {fileID: 0}
+  musicSource: {fileID: 0}
+  tetDeathEffect: {fileID: 0}
+  tetFader: {fileID: 0}
+  bossController: {fileID: 0}
 --- !u!1 &3074818186345689006
 GameObject:
   m_ObjectHideFlags: 0
