@@ -47,19 +47,21 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
   public void EnergyBall(AstralWeaverController entity)
   {
+    entity.LocomotionModule.FlipTowardsTarget(entity);
     entity.AnimatorBridge.AstralWeaverEnergyBall();
     Debug.Log("Energy Ball Attack");
   }
 
   public void Laser(AstralWeaverController entity)
   {
+    entity.LocomotionModule.FlipTowardsTarget(entity);
     entity.AnimatorBridge.AstralWeaverLaser();
     Debug.Log("Laser Attack");
   }
 
   public void MultiLasers(AstralWeaverController entity)
   {
-    //entity.AnimatorBridge.AWMeatballSwipe();
+    entity.LocomotionModule.FlipTowardsTarget(entity);
     Debug.Log("Multi Laser Attack");
   }
 }

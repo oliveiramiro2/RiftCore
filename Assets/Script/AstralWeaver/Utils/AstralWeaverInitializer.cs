@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(AstralWeaverStateFactory))]
 [RequireComponent(typeof(AstralWeaverAnimationBridge))]
 [RequireComponent(typeof(AstralWeaverAttackModule))]
+[RequireComponent(typeof(AstralWeaverLocomotionModule))]
 public class AstralWeaverInitializer : MonoBehaviour
 {
   void Awake()
@@ -14,15 +15,15 @@ public class AstralWeaverInitializer : MonoBehaviour
     var factory = GetComponent<AstralWeaverStateFactory>();
     var animator = GetComponent<AstralWeaverAnimationBridge>();
     var attackModule = GetComponent<AstralWeaverAttackModule>();
+    var locomotionModule = GetComponent<AstralWeaverLocomotionModule>();
 
-    controller.SetupModules(sm, factory, animator, attackModule);
+    controller.SetupModules(sm, factory, animator, attackModule, locomotionModule);
 
 
     sm.Setup(controller);
 
     factory.bossSM = sm;
     factory.owner = controller;
-    factory.animatorBridge = animator;
 
     factory.InitializeTransitions();
 

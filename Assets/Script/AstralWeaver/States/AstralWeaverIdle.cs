@@ -7,4 +7,14 @@ public class AstralWeaverIdle : State<AstralWeaverController>
   {
     entity.AnimatorBridge.AstralWeaverIdle();
   }
+
+  public override void UpdateState(AstralWeaverController entity)
+  {
+    entity.LocomotionModule.FlipTowardsTarget(entity);
+  }
+
+  public override void ExitState(AstralWeaverController entity)
+  {
+    entity.LocomotionModule.TeleportToRandomPoint(entity);
+  }
 }

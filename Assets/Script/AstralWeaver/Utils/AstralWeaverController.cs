@@ -6,12 +6,13 @@ public class AstralWeaverController : BaseEntity
     public float MoveSpeed = 2f;
     public bool IsFacingRight() => transform.localScale.x > 0;
     public bool Phase2() => currentHealth <= (maxHealth * 0.5f);
+    public Transform PlayerTransform { get; private set; }
 
     public AstralWeaverStateMachine AstralWeaverSM { get; private set; }
     public AstralWeaverStateFactory AstralWeaverStateFactory { get; private set; }
     public AstralWeaverAnimationBridge AnimatorBridge { get; private set; }
-
     public AstralWeaverAttackModule AttackModule { get; private set; }
+    public AstralWeaverLocomotionModule LocomotionModule { get; private set; }
 
 
     public bool CanMove = true;
@@ -19,7 +20,7 @@ public class AstralWeaverController : BaseEntity
     protected override void Awake()
     {
         base.Awake();
-        
+        PlayerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
@@ -31,12 +32,14 @@ public class AstralWeaverController : BaseEntity
         AstralWeaverSM.UpdateStateMachine();
     }
 
-    public void SetupModules(AstralWeaverStateMachine sm, AstralWeaverStateFactory factory, AstralWeaverAnimationBridge animator, AstralWeaverAttackModule attackModule)
+    public void SetupModules(AstralWeaverStateMachine sm, AstralWeaverStateFactory factory, AstralWeaverAnimationBridge animator,
+    AstralWeaverAttackModule attackModule, AstralWeaverLocomotionModule locomotionModule)
     {
         AstralWeaverSM = sm;
         AstralWeaverStateFactory = factory;
         AnimatorBridge = animator;
         AttackModule = attackModule;
+        LocomotionModule = locomotionModule;
     }
 
     public void FlipX(bool faceRight)
