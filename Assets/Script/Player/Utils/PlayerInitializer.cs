@@ -11,12 +11,13 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerAttackModule))]
 [RequireComponent(typeof(PlayerDashModule))]
 [RequireComponent(typeof(IFrames))]
+[RequireComponent(typeof(AbilityManager))]
 public class PlayerInitializer : MonoBehaviour
 {
   void Awake()
   {
     var controller = GetComponent<PlayerController>();
-    var sm = GetComponent<PlayerStateMachine>(); 
+    var sm = GetComponent<PlayerStateMachine>();
     var factory = GetComponent<PlayerStateFactory>();
     var input = GetComponent<PlayerInputReader>();
     var physics = GetComponent<PlayerPhysics>();
@@ -27,8 +28,9 @@ public class PlayerInitializer : MonoBehaviour
     var dash = GetComponent<PlayerDashModule>();
     var iframes = GetComponent<IFrames>();
     var damageHandler = GetComponent<PlayerDamageHandler>();
+    var abilities = GetComponent<AbilityManager>();
 
-    controller.SetupModules(input, sm, physics, locomotion, jump, attack, factory, animator, dash, iframes, damageHandler);
+    controller.SetupModules(input, sm, physics, locomotion, jump, attack, factory, animator, dash, iframes, damageHandler, abilities);
 
     sm.Setup(controller);
 
@@ -43,6 +45,7 @@ public class PlayerInitializer : MonoBehaviour
     factory.dashModule = dash;
     factory.iFrames = iframes;
     factory.damageHandler = damageHandler;
+    factory.abilities = abilities;
 
     factory.InitializeTransitions();
 
@@ -51,6 +54,7 @@ public class PlayerInitializer : MonoBehaviour
     locomotion.Initialize(controller, physics, input);
     attack.Initialize(controller);
     input.Initialize(controller);
+    abilities.Initialize(controller);
 
     sm.Initialize(factory.Idle);
   }

@@ -13,6 +13,7 @@ public class PlayerStateFactory : MonoBehaviour
     [HideInInspector] public PlayerDashModule dashModule;
     [HideInInspector] public IFrames iFrames;
     [HideInInspector] public PlayerDamageHandler damageHandler;
+    [HideInInspector] public AbilityManager abilities;
 
     public State<PlayerController> Idle { get; private set; }
     public State<PlayerController> Run { get; private set; }

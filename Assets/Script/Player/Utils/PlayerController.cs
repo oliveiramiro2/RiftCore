@@ -24,6 +24,7 @@ public class PlayerController : BaseEntity
     public PlayerDashModule DashModule { get; private set; }
     public IFrames IFrames { get; private set; }
     public PlayerDamageHandler DamageHandler { get; private set; }
+    public AbilityManager PlayerAbilities { get; private set; }
 
     private PlayerInput playerInput;
 
@@ -42,7 +43,7 @@ public class PlayerController : BaseEntity
     public void SetupModules(PlayerInputReader input, PlayerStateMachine sm, PlayerPhysics physics,
                              PlayerLocomotion locomotion, PlayerJumpModule jump, PlayerAttackModule attack,
                              PlayerStateFactory factory, PlayerAnimatorBridge animator, PlayerDashModule dash,
-                             IFrames frames, PlayerDamageHandler damageHandler)
+                             IFrames frames, PlayerDamageHandler damageHandler, AbilityManager abilities)
     {
         InputReader = input;
         PlayerSM = sm;
@@ -55,6 +56,7 @@ public class PlayerController : BaseEntity
         DashModule = dash;
         IFrames = frames;
         DamageHandler = damageHandler;
+        PlayerAbilities = abilities;
     }
 
     protected override void Awake()

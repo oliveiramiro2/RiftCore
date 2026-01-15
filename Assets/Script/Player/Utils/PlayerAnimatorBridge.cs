@@ -20,7 +20,8 @@ public class PlayerAnimatorBridge : MonoBehaviour
   private static readonly int AttackIndexHash = Animator.StringToHash("AttackIndex");
   private static readonly int LandtriggerHash = Animator.StringToHash("Land");
   private static readonly int DeathTriggerHash = Animator.StringToHash("Death");
-
+  private static readonly int SwordBuffTriggerHash = Animator.StringToHash("SwordBuff");
+  private static readonly int SpellTriggerHash = Animator.StringToHash("CastSpell");
 
   void Awake()
   {
@@ -106,6 +107,26 @@ public class PlayerAnimatorBridge : MonoBehaviour
   public void ResetTriggerLand()
   {
     animator.ResetTrigger(LandtriggerHash);
+  }
+
+  public void TiggerSwordBuff()
+  {
+    animator.SetTrigger(SwordBuffTriggerHash);
+  }
+
+  public void ResetTiggerSwordBuff()
+  {
+    animator.ResetTrigger(SwordBuffTriggerHash);
+  }
+
+  public void TiggerSpell()
+  {
+    animator.SetTrigger(SpellTriggerHash);
+  }
+
+  public void ResetTiggerSpell()
+  {
+    animator.ResetTrigger(SpellTriggerHash);
   }
 
   public void TriggerDeath()
