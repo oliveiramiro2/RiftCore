@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using Unity.VisualScripting;
 
 public class AstralWeaverAttackModule : MonoBehaviour
 {
@@ -8,16 +7,28 @@ public class AstralWeaverAttackModule : MonoBehaviour
   public bool isAttacking = false;
   [SerializeField] private float attackCooldown = 3f;
   [SerializeField] private GameObject laserPrefab;
+  private Material laserMaterial;
   public bool canAttackTimer = true;
   private float attackTimer = 0f;
+
+  private bool lookingTarget = false;
+
+  //
+  private float distance, auxAngleCorretion, angle;
+  private Vector2 dir;
 
   private void Awake()
   {
     player = GameObject.FindGameObjectWithTag("Player").transform;
+    laserMaterial = laserPrefab.GetComponent<SpriteRenderer>().material;
   }
 
   void Update()
   {
+    if (lookingTarget)
+    {
+      AimTarget();
+    }
     if (!canAttackTimer) return;
     isAttacking = false;
     attackTimer += Time.deltaTime;
@@ -26,6 +37,18 @@ public class AstralWeaverAttackModule : MonoBehaviour
       isAttacking = true;
       attackTimer = 0f;
     }
+  }
+
+  void AimTarget()
+  {
+    distance = Vector2.Distance(laserPrefab.transform.position, player.position);
+    dir = (player.position - laserPrefab.transform.position).normalized;
+    auxAngleCorretion = transform.localScale.x >= 1 ? 0f : -180f;
+    angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + auxAngleCorretion;
+
+    laserPrefab.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+    laserPrefab.transform.localScale = new Vector3(distance * 5, 0.2f, 1f);
   }
 
   public void DecideNextAttack(AstralWeaverController entity)
@@ -56,12 +79,6 @@ public class AstralWeaverAttackModule : MonoBehaviour
     Debug.Log("Energy Ball Attack");
   }
 
-  private IEnumerator EnergyBallRoutine()
-  {
-    yield return new WaitForSeconds(2f);
-    canAttackTimer = true;
-  }
-
   public void Laser(AstralWeaverController entity)
   {
     entity.LocomotionModule.FlipTowardsTarget(entity);
@@ -72,30 +89,48 @@ public class AstralWeaverAttackModule : MonoBehaviour
     Debug.Log("Laser Attack");
   }
 
-  private IEnumerator LaserRoutine(AstralWeaverController entity)
-  {
-    float distance = Vector2.Distance(laserPrefab.transform.position, player.position);
-    Vector2 dir = (player.position - laserPrefab.transform.position).normalized;
-    float auxAngleCorretion = entity.transform.localScale.x >= 1 ? 0f : -180f;
-    float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + auxAngleCorretion;
-    laserPrefab.transform.rotation = Quaternion.Euler(0, 0, angle);
-    laserPrefab.transform.localScale = new Vector3(distance * 5, 0.2f, 1f);
-
-    yield return new WaitForSeconds(0.8f);
-
-    laserPrefab.SetActive(true);
-
-    yield return new WaitForSeconds(1f);
-
-    laserPrefab.SetActive(false);
-    canAttackTimer = true;
-  }
-
   public void MultiLasers(AstralWeaverController entity)
   {
     entity.LocomotionModule.FlipTowardsTarget(entity);
     StartCoroutine(MultiLaserRoutine());
     Debug.Log("Multi Laser Attack");
+  }
+
+  private IEnumerator EnergyBallRoutine()
+  {
+    yield return new WaitForSeconds(2f);
+    canAttackTimer = true;
+  }
+
+  private IEnumerator LaserRoutine(AstralWeaverController entity)
+  {
+
+    Hitbox laserCollider = laserPrefab.GetComponent<Hitbox>();
+
+    laserCollider.Deactivate();
+
+    lookingTarget = true;
+
+    laserMaterial.SetFloat("_DistortionAmount", 0f);
+    laserMaterial.SetFloat("_Alpha", 0.05f);
+    laserPrefab.SetActive(true);
+
+
+    yield return new WaitForSeconds(2f);
+
+    lookingTarget = false;
+
+    yield return new WaitForSeconds(0.2f);
+
+    laserMaterial.SetFloat("_Alpha", 1f);
+    laserMaterial.SetFloat("_DistortionAmount", 0.25f);
+    laserCollider.Activate();
+
+    yield return new WaitForSeconds(1f);
+    laserMaterial.SetFloat("_DistortionAmount", 0f);
+    laserCollider.Deactivate();
+    laserPrefab.SetActive(false);
+    canAttackTimer = true;
   }
 
   private IEnumerator MultiLaserRoutine()
