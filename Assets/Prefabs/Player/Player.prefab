@@ -5526,13 +5526,13 @@ MonoBehaviour:
   rb: {fileID: 0}
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
+  canMove: 1
   maxHealth: 0
   currentHealth: 0
   knockbackDuration: 0.4
   knockbackTimer: 0
   baseMoveSpeed: 8
   baseJumpForce: 12
-  canMove: 1
   stats: {fileID: 11400000, guid: 00116baa969ad1147b7524a1a7f3b60b, type: 2}
   events: {fileID: 11400000, guid: 8ef3b170703832145b8febfaf2827fcb, type: 2}
   hurtboxCollider: {fileID: 7718908040625709429}
@@ -5875,6 +5875,38 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: f173424d-5799-4b01-b822-7e4dc22be7e4
     m_ActionName: UI/Tracked Device Orientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4103293485641533845}
+        m_TargetAssemblyTypeName: PlayerInputReader, Assembly-CSharp
+        m_MethodName: OnBuff
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 30b734cb-5e2c-41cd-b648-5afc0ecaf113
+    m_ActionName: 'Player/Buff[/Keyboard/u,/XInputControllerWindows/leftTrigger]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4103293485641533845}
+        m_TargetAssemblyTypeName: PlayerInputReader, Assembly-CSharp
+        m_MethodName: OnSpell
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2f84a9e4-abdc-4380-a643-0122db2a3e97
+    m_ActionName: 'Player/Spell[/Keyboard/l,/XInputControllerWindows/rightTrigger]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

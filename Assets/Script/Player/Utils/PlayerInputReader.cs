@@ -15,6 +15,8 @@ public class PlayerInputReader : MonoBehaviour
   public bool DashPressed { get; private set; }
   public bool ConfirmPressed { get; private set; }
   public bool AttackBuffered { get; private set; }
+  public bool BuffSword { get; private set; }
+  public bool CastSpell { get; private set; }
   private float bufferTimer;
 
   public GameObject firstButton;
@@ -73,6 +75,22 @@ public class PlayerInputReader : MonoBehaviour
       playerInput.actions.FindActionMap("UI").Enable();
       Time.timeScale = 0f;
       isPaused = true;
+    }
+
+  }
+  public void OnBuff(InputAction.CallbackContext context)
+  {
+    if (context.performed)
+    {
+      BuffSword = true;
+    }
+  }
+
+  public void OnSpell(InputAction.CallbackContext context)
+  {
+    if (context.performed)
+    {
+      CastSpell = true;
     }
   }
 
