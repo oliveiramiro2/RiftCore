@@ -153,5 +153,7 @@ public class PlayerInputReader : MonoBehaviour
     AttackPressed = false;
     DashPressed = false;
     ConfirmPressed = false;
+    CastSpell = false;
+    BuffSword = false;
   }
 }
