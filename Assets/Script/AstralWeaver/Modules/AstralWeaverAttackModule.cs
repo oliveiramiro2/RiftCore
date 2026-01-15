@@ -63,7 +63,7 @@ public class AstralWeaverAttackModule : MonoBehaviour
   {
     targetPos = player.position;
     dir = (targetPos - (Vector2)energyBallPrefab.transform.position).normalized;
-
+    energyBallPrefab.transform.localScale = new Vector3(dir.x > 0 ? 1 : -1, 1, 1);
     energyBallPrefab.GetComponent<Rigidbody2D>().linearVelocity = dir * energyBallSpeed;
   }
 
@@ -75,7 +75,7 @@ public class AstralWeaverAttackModule : MonoBehaviour
     {
       () => EnergyBall(entity),
       () => Laser(entity),
-      () => MultiLasers(entity)
+      //() => MultiLasers(entity)
     };
 
     if (entity.Phase2())
@@ -114,6 +114,7 @@ public class AstralWeaverAttackModule : MonoBehaviour
   {
     Hitbox auxControl = energyBallPrefab.GetComponent<Hitbox>();
 
+    energyBallPrefab.transform.position = energyBallPosition.position;
     energyBallFollow = true;
     energyBallPrefab.SetActive(true);
     auxControl.Activate();
@@ -121,7 +122,6 @@ public class AstralWeaverAttackModule : MonoBehaviour
     energyBallFollow = false;
     auxControl.Deactivate();
     energyBallPrefab.SetActive(false);
-    energyBallPrefab.transform.position = energyBallPosition.position;
     canAttackTimer = true;
   }
 
