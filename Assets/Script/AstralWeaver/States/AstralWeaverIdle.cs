@@ -10,7 +10,7 @@ public class AstralWeaverIdle : State<AstralWeaverController>
 
   public override void UpdateState(AstralWeaverController entity)
   {
-    entity.LocomotionModule.FlipTowardsTarget(entity);
+    //entity.LocomotionModule.FlipTowardsTarget(entity);
   }
 
   public override void ExitState(AstralWeaverController entity)

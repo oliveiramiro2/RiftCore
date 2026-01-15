@@ -4,6 +4,18 @@ public class AstralWeaverLocomotionModule : MonoBehaviour
 {
   [SerializeField] private Transform[] teleportPoints;
 
+  private float timerFlip = 0f, durationFlip = 0.5f;
+
+  void Update()
+  {
+    timerFlip += Time.deltaTime;
+    if (timerFlip > durationFlip)
+    {
+      timerFlip = 0f;
+      FlipTowardsTarget(gameObject.GetComponent<AstralWeaverController>());
+    }
+  }
+
   public void TeleportToRandomPoint(AstralWeaverController entity)
   {
     if (teleportPoints.Length == 0) return;

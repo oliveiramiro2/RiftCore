@@ -7,15 +7,19 @@ public class AstralWeaverAttackModule : MonoBehaviour
   public bool isAttacking = false;
   [SerializeField] private float attackCooldown = 3f;
   [SerializeField] private GameObject laserPrefab;
+  [SerializeField] private GameObject energyBallPrefab;
+  [SerializeField] private Transform energyBallPosition;
+  [SerializeField] private float energyBallSpeed;
   private Material laserMaterial;
   public bool canAttackTimer = true;
   private float attackTimer = 0f;
 
   private bool lookingTarget = false;
+  private bool energyBallFollow = false;
 
   //
   private float distance, auxAngleCorretion, angle;
-  private Vector2 dir;
+  private Vector2 dir, targetPos;
 
   private void Awake()
   {
@@ -25,6 +29,10 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
   void Update()
   {
+    if (energyBallFollow)
+    {
+      LockTargetEnergyBall();
+    }
     if (lookingTarget)
     {
       AimTarget();
@@ -48,7 +56,15 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
     laserPrefab.transform.rotation = Quaternion.Euler(0, 0, angle);
 
-    laserPrefab.transform.localScale = new Vector3(distance * 5, 0.2f, 1f);
+    laserPrefab.transform.localScale = new Vector3(distance * 6, 0.1f, 1f);
+  }
+
+  void LockTargetEnergyBall()
+  {
+    targetPos = player.position;
+    dir = (targetPos - (Vector2)energyBallPrefab.transform.position).normalized;
+
+    energyBallPrefab.GetComponent<Rigidbody2D>().linearVelocity = dir * energyBallSpeed;
   }
 
   public void DecideNextAttack(AstralWeaverController entity)
@@ -76,7 +92,6 @@ public class AstralWeaverAttackModule : MonoBehaviour
     entity.LocomotionModule.FlipTowardsTarget(entity);
     entity.AnimatorBridge.AstralWeaverEnergyBall();
     StartCoroutine(EnergyBallRoutine());
-    Debug.Log("Energy Ball Attack");
   }
 
   public void Laser(AstralWeaverController entity)
@@ -86,7 +101,6 @@ public class AstralWeaverAttackModule : MonoBehaviour
     entity.AnimatorBridge.AstralWeaverLaser();
 
     StartCoroutine(LaserRoutine(entity));
-    Debug.Log("Laser Attack");
   }
 
   public void MultiLasers(AstralWeaverController entity)
@@ -98,7 +112,16 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
   private IEnumerator EnergyBallRoutine()
   {
+    Hitbox auxControl = energyBallPrefab.GetComponent<Hitbox>();
+
+    energyBallFollow = true;
+    energyBallPrefab.SetActive(true);
+    auxControl.Activate();
     yield return new WaitForSeconds(2f);
+    energyBallFollow = false;
+    auxControl.Deactivate();
+    energyBallPrefab.SetActive(false);
+    energyBallPrefab.transform.position = energyBallPosition.position;
     canAttackTimer = true;
   }
 

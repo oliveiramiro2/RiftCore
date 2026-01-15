@@ -286,6 +286,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 382419017}
+  - {fileID: 2067372323}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &287140714
@@ -539,6 +540,9 @@ MonoBehaviour:
   isAttacking: 0
   attackCooldown: 3
   laserPrefab: {fileID: 578880292}
+  energyBallPrefab: {fileID: 377845105}
+  energyBallPosition: {fileID: 2067372323}
+  energyBallSpeed: 6
   canAttackTimer: 1
 --- !u!114 &287140725
 MonoBehaviour:
@@ -691,6 +695,81 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &377845103
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2067372323}
+    m_Modifications:
+    - target: {fileID: 1213893345013044435, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213893345013044435, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213893345013044435, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213893345013044435, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213893345013044435, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213893345013044435, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213893345013044435, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213893345013044435, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213893345013044435, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213893345013044435, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949577357111827717, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: owner
+      value: 
+      objectReference: {fileID: 287140712}
+    - target: {fileID: 6385303300838408653, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_Name
+      value: EnergyBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6385303300838408653, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+--- !u!4 &377845104 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1213893345013044435, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+  m_PrefabInstance: {fileID: 377845103}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &377845105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6385303300838408653, guid: ee5f7357de9a54a41a0f8c4474a8f532, type: 3}
+  m_PrefabInstance: {fileID: 377845103}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &382419016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4672,6 +4751,38 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &2067372322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067372323}
+  m_Layer: 7
+  m_Name: EnergyBallSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2067372323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067372322}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.39, y: 0.335, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 377845104}
+  m_Father: {fileID: 287140713}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7397209688120795018
 PrefabInstance:
   m_ObjectHideFlags: 0
