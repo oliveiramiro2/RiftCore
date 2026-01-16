@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1555019772279334857}
   m_Layer: 11
   m_Name: HurtBox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4949,7 +4949,7 @@ GameObject:
   - component: {fileID: 813062077346032181}
   m_Layer: 10
   m_Name: Hitbox
-  m_TagString: Untagged
+  m_TagString: SwordHitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5238,6 +5238,9 @@ GameObject:
   - component: {fileID: 3382889863665886735}
   - component: {fileID: 7290846988275049626}
   - component: {fileID: 3607423130734448426}
+  - component: {fileID: 8931744484699927508}
+  - component: {fileID: 7505320706148956907}
+  - component: {fileID: 5317949826519925948}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -5537,6 +5540,7 @@ MonoBehaviour:
   events: {fileID: 11400000, guid: 8ef3b170703832145b8febfaf2827fcb, type: 2}
   hurtboxCollider: {fileID: 7718908040625709429}
   dashHitbox: {fileID: 1529944729422752131}
+  buffSwordDamage: 1
 --- !u!114 &805878876151157556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5587,6 +5591,7 @@ MonoBehaviour:
   dashModule: {fileID: 0}
   iFrames: {fileID: 0}
   damageHandler: {fileID: 0}
+  abilities: {fileID: 0}
 --- !u!114 &671411575323751968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5912,6 +5917,45 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &8931744484699927508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4537574936787505961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31bbc7e716ba9d0409b527e6badeb8f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSpell
+  cooldown: 4
+--- !u!114 &7505320706148956907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4537574936787505961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02c3b3d1d44300140bef5ce66a05d216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SwordBuff
+  duration: 5
+  cooldown: 12
+--- !u!114 &5317949826519925948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4537574936787505961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a38ed6e47b28a4f9e5305760bd6400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AbilityManager
 --- !u!1 &5633513194649385588
 GameObject:
   m_ObjectHideFlags: 0

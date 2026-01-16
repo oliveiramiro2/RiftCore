@@ -3,6 +3,7 @@ using UnityEngine;
 public class AstralWeaverDamageHandler : DamageHandlerBase<AstralWeaverController>
 {
   private bool phase1 = true;
+  public bool shieldIsActive = false;
 
   protected override void Awake()
   {
@@ -11,6 +12,7 @@ public class AstralWeaverDamageHandler : DamageHandlerBase<AstralWeaverControlle
 
   public override void TakeDamage(int damage, Vector2 hitDirection, float knockbackForce)
   {
+    if (shieldIsActive) damage = Mathf.FloorToInt(damage / 2);
     base.TakeDamage(damage, hitDirection, knockbackForce);
 
     if (isDead) return;

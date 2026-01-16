@@ -3,7 +3,8 @@ using System.Collections;
 
 public class SwordBuff : MonoBehaviour, IAbility
 {
-  public float duration = 5f;
+  public float duration = 5f, cooldown = 12f;
+
   bool active;
 
   public bool CanUse()
@@ -22,12 +23,17 @@ public class SwordBuff : MonoBehaviour, IAbility
   {
     active = true;
     yield return new WaitForSeconds(1.5f);
+
     player.AnimatorBridge.ResetTiggerSwordBuff();
     player.canMove = true;
-    // ativa VFX / shader
-    yield return new WaitForSeconds(duration);
-    // desativa VFX / shader
 
+
+    player.buffSwordDamage += 1;
+    yield return new WaitForSeconds(duration);
+    
+    player.buffSwordDamage -= 1;
+
+    yield return new WaitForSeconds(cooldown);
     active = false;
   }
 }

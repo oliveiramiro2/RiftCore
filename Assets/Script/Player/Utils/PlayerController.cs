@@ -39,6 +39,7 @@ public class PlayerController : BaseEntity
     [Header("hurtbox reference")]
     public Collider2D hurtboxCollider;
     public Hitbox dashHitbox;
+    public int buffSwordDamage = 1;
 
     public void SetupModules(PlayerInputReader input, PlayerStateMachine sm, PlayerPhysics physics,
                              PlayerLocomotion locomotion, PlayerJumpModule jump, PlayerAttackModule attack,

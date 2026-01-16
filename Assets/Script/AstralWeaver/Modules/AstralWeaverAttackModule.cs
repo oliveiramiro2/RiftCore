@@ -112,6 +112,8 @@ public class AstralWeaverAttackModule : MonoBehaviour
   public void Shield(AstralWeaverController entity)
   {
     entity.LocomotionModule.FlipTowardsTarget(entity);
+    AstralWeaverDamageHandler damageControl = entity.GetComponent<AstralWeaverDamageHandler>();
+    damageControl.shieldIsActive = true;
     StartCoroutine(ShieldRoutine(entity));
   }
 
