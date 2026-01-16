@@ -14,8 +14,6 @@ public class Hitbox : MonoBehaviour
 
     private Collider2D col;
 
-    private bool wasBuffed = false;
-
     private void Awake()
     {
         col = GetComponent<Collider2D>();
@@ -32,16 +30,15 @@ public class Hitbox : MonoBehaviour
 
         if (other.TryGetComponent(out Hurtbox hurtbox))
         {
+            int finalDamage = damage;
             if (gameObject.CompareTag("SwordHitbox"))
             {
                 int player = owner.GetComponent<PlayerController>().buffSwordDamage;
-                if (player == 1) wasBuffed = false;
-                if (!wasBuffed)
-                    damage *= player;
-                wasBuffed = true;
+                finalDamage *= player;
             }
+            Debug.Log($"dono: {owner.name} -- dano: {finalDamage}");
             Vector2 hitDir = (other.transform.position - owner.transform.position).normalized;
-            hurtbox.ApplyDamage(damage, hitDir, knockbackForce);
+            hurtbox.ApplyDamage(finalDamage, hitDir, knockbackForce);
         }
     }
 
