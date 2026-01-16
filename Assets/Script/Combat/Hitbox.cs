@@ -36,7 +36,7 @@ public class Hitbox : MonoBehaviour
                 int player = owner.GetComponent<PlayerController>().buffSwordDamage;
                 finalDamage *= player;
             }
-            Debug.Log($"dono: {owner.name} -- dano: {finalDamage}");
+            
             Vector2 hitDir = (other.transform.position - owner.transform.position).normalized;
             hurtbox.ApplyDamage(finalDamage, hitDir, knockbackForce);
         }

@@ -8,7 +8,9 @@ public class AstralWeaverAttackModule : MonoBehaviour
   [SerializeField] private float attackCooldown = 3f;
   [SerializeField] private GameObject laserPrefab;
   [SerializeField] private GameObject energyBallPrefab;
+  [SerializeField] private GameObject[] crystalsPrefabs;
   [SerializeField] private Transform energyBallPosition;
+  [SerializeField] private Transform[] crystalsPositions;
   [SerializeField] private float energyBallSpeed;
   private Material laserMaterial;
   public bool canAttackTimer = true;
@@ -19,6 +21,9 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
   private float distance, auxAngleCorretion, angle;
   private Vector2 dir, targetPos;
+  private Vector3 shootDir;
+  private readonly float crystalSpeed = 15f;
+  private readonly float[] angles = { 20f, 0f, -20f };
 
   private void Awake()
   {
@@ -191,9 +196,38 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
   private IEnumerator CrystalsRoutine(AstralWeaverController entity)
   {
-
     entity.AnimatorBridge.AstralWeaverCrystals();
-    yield return new WaitForSeconds(2f);
+
+    yield return new WaitForSeconds(1.5f);
+
+    Vector2 baseDir =
+        (player.position - transform.position).normalized;
+
+    entity.LocomotionModule.FlipTowardsTarget(entity);
+
+    angle = 30;
+    Vector2 dirLeft = Quaternion.Euler(0, 0, angle) * baseDir;
+    Vector2 dirRight = Quaternion.Euler(0, 0, -angle) * baseDir;
+
+    for (int i = 0; i < crystalsPrefabs.Length; i++)
+    {
+      crystalsPrefabs[i].transform.position = crystalsPositions[i].transform.position;
+      crystalsPrefabs[i].SetActive(true);
+
+      shootDir = Quaternion.Euler(0, 0, angles[i]) * baseDir;
+
+
+      Rigidbody2D rb = crystalsPrefabs[i].GetComponent<Rigidbody2D>();
+      rb.linearVelocity = shootDir * crystalSpeed;
+    }
+
+
+    yield return new WaitForSeconds(1f);
+    for (int i = 0; i < crystalsPrefabs.Length; i++)
+    {
+      crystalsPrefabs[i].GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+      crystalsPrefabs[i].SetActive(false);
+    }
     canAttackTimer = true;
   }
 }
