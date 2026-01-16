@@ -17,7 +17,6 @@ public class AstralWeaverAttackModule : MonoBehaviour
   private bool lookingTarget = false;
   private bool energyBallFollow = false;
 
-  //
   private float distance, auxAngleCorretion, angle;
   private Vector2 dir, targetPos;
 
@@ -47,6 +46,27 @@ public class AstralWeaverAttackModule : MonoBehaviour
     }
   }
 
+  public void DecideNextAttack(AstralWeaverController entity)
+  {
+    float dist = Vector2.Distance(transform.position, player.position);
+
+    System.Collections.Generic.List<System.Action> validAttacks = new()
+    {
+      () => EnergyBall(entity),
+      () => Laser(entity),
+      () => Shield(entity)
+    };
+
+    if (entity.Phase2())
+    {
+      validAttacks.Add(() => MultiLasers(entity));
+      validAttacks.Add(() => Crystals(entity));
+    }
+
+    int index = Random.Range(0, validAttacks.Count);
+    validAttacks[index].Invoke();
+  }
+
   void AimTarget()
   {
     distance = Vector2.Distance(laserPrefab.transform.position, player.position);
@@ -67,31 +87,11 @@ public class AstralWeaverAttackModule : MonoBehaviour
     energyBallPrefab.GetComponent<Rigidbody2D>().linearVelocity = dir * energyBallSpeed;
   }
 
-  public void DecideNextAttack(AstralWeaverController entity)
-  {
-    float dist = Vector2.Distance(transform.position, player.position);
-
-    System.Collections.Generic.List<System.Action> validAttacks = new()
-    {
-      () => EnergyBall(entity),
-      () => Laser(entity),
-      //() => MultiLasers(entity)
-    };
-
-    if (entity.Phase2())
-    {
-      validAttacks.Add(() => MultiLasers(entity));
-    }
-
-    int index = Random.Range(0, validAttacks.Count);
-    validAttacks[index].Invoke();
-  }
-
   public void EnergyBall(AstralWeaverController entity)
   {
     entity.LocomotionModule.FlipTowardsTarget(entity);
     entity.AnimatorBridge.AstralWeaverEnergyBall();
-    StartCoroutine(EnergyBallRoutine());
+    StartCoroutine(EnergyBallRoutine(entity));
   }
 
   public void Laser(AstralWeaverController entity)
@@ -106,14 +106,26 @@ public class AstralWeaverAttackModule : MonoBehaviour
   public void MultiLasers(AstralWeaverController entity)
   {
     entity.LocomotionModule.FlipTowardsTarget(entity);
-    StartCoroutine(MultiLaserRoutine());
-    Debug.Log("Multi Laser Attack");
+    StartCoroutine(MultiLaserRoutine(entity));
   }
 
-  private IEnumerator EnergyBallRoutine()
+  public void Shield(AstralWeaverController entity)
+  {
+    entity.LocomotionModule.FlipTowardsTarget(entity);
+    StartCoroutine(ShieldRoutine(entity));
+  }
+
+  public void Crystals(AstralWeaverController entity)
+  {
+    entity.LocomotionModule.FlipTowardsTarget(entity);
+    StartCoroutine(CrystalsRoutine(entity));
+  }
+
+  private IEnumerator EnergyBallRoutine(AstralWeaverController entity)
   {
     Hitbox auxControl = energyBallPrefab.GetComponent<Hitbox>();
 
+    entity.LocomotionModule.canFlip = false;
     energyBallPrefab.transform.position = energyBallPosition.position;
     energyBallFollow = true;
     energyBallPrefab.SetActive(true);
@@ -123,6 +135,7 @@ public class AstralWeaverAttackModule : MonoBehaviour
     auxControl.Deactivate();
     energyBallPrefab.SetActive(false);
     canAttackTimer = true;
+    entity.LocomotionModule.canFlip = true;
   }
 
   private IEnumerator LaserRoutine(AstralWeaverController entity)
@@ -142,8 +155,9 @@ public class AstralWeaverAttackModule : MonoBehaviour
     yield return new WaitForSeconds(2f);
 
     lookingTarget = false;
+    entity.LocomotionModule.canFlip = false;
 
-    yield return new WaitForSeconds(0.2f);
+    yield return new WaitForSeconds(0.5f);
 
     laserMaterial.SetFloat("_Alpha", 1f);
     laserMaterial.SetFloat("_DistortionAmount", 0.25f);
@@ -154,10 +168,29 @@ public class AstralWeaverAttackModule : MonoBehaviour
     laserCollider.Deactivate();
     laserPrefab.SetActive(false);
     canAttackTimer = true;
+    entity.LocomotionModule.canFlip = true;
   }
 
-  private IEnumerator MultiLaserRoutine()
+  private IEnumerator MultiLaserRoutine(AstralWeaverController entity)
   {
+    entity.LocomotionModule.canFlip = false;
+    entity.AnimatorBridge.AstralWeaverMultiLasers();
+    yield return new WaitForSeconds(2f);
+    canAttackTimer = true;
+    entity.LocomotionModule.canFlip = true;
+  }
+
+  private IEnumerator ShieldRoutine(AstralWeaverController entity)
+  {
+    entity.AnimatorBridge.AstralWeaverShield();
+    yield return new WaitForSeconds(2f);
+    canAttackTimer = true;
+  }
+
+  private IEnumerator CrystalsRoutine(AstralWeaverController entity)
+  {
+
+    entity.AnimatorBridge.AstralWeaverCrystals();
     yield return new WaitForSeconds(2f);
     canAttackTimer = true;
   }

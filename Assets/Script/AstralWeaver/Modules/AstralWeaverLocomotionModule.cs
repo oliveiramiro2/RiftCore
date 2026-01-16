@@ -5,9 +5,11 @@ public class AstralWeaverLocomotionModule : MonoBehaviour
   [SerializeField] private Transform[] teleportPoints;
 
   private float timerFlip = 0f, durationFlip = 0.5f;
+  public bool canFlip = true;
 
   void Update()
   {
+    if (!canFlip) return;
     timerFlip += Time.deltaTime;
     if (timerFlip > durationFlip)
     {
