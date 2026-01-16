@@ -11,6 +11,7 @@ public class AstralWeaverAttackModule : MonoBehaviour
   [SerializeField] private GameObject[] crystalsPrefabs;
   [SerializeField] private Transform energyBallPosition;
   [SerializeField] private Transform[] crystalsPositions;
+  [SerializeField] private LaserManager laserManager;
   [SerializeField] private float energyBallSpeed;
   private Material laserMaterial;
   public bool canAttackTimer = true;
@@ -182,6 +183,14 @@ public class AstralWeaverAttackModule : MonoBehaviour
   {
     entity.LocomotionModule.canFlip = false;
     entity.AnimatorBridge.AstralWeaverMultiLasers();
+
+    yield return new WaitForSeconds(1f);
+    laserManager.LasersStart();
+
+
+    yield return new WaitForSeconds(4f);
+    laserManager.LasersStart();
+
     yield return new WaitForSeconds(2f);
     canAttackTimer = true;
     entity.LocomotionModule.canFlip = true;
@@ -204,10 +213,6 @@ public class AstralWeaverAttackModule : MonoBehaviour
         (player.position - transform.position).normalized;
 
     entity.LocomotionModule.FlipTowardsTarget(entity);
-
-    angle = 30;
-    Vector2 dirLeft = Quaternion.Euler(0, 0, angle) * baseDir;
-    Vector2 dirRight = Quaternion.Euler(0, 0, -angle) * baseDir;
 
     for (int i = 0; i < crystalsPrefabs.Length; i++)
     {
