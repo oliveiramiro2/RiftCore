@@ -3,6 +3,7 @@ using System.Collections;
 
 public class LaserManager : MonoBehaviour
 {
+    public float easeValue = 0.6f;
     [SerializeField] private GameObject[] lasers;
 
     public void LasersStart()
@@ -16,7 +17,7 @@ public class LaserManager : MonoBehaviour
         foreach (var laser in lasers)
         {
             laser.SetActive(true);
-            StartCoroutine(GrowLaser(laser, 0.3f));
+            StartCoroutine(GrowLaser(laser, easeValue));
             yield return new WaitForSeconds(0.3f);
         }
     }
@@ -42,7 +43,7 @@ public class LaserManager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         foreach (var laser in lasers)
         {
-            StartCoroutine(ShrinkLaser(laser, 0.35f));
+            StartCoroutine(ShrinkLaser(laser, 0.8f));
             yield return new WaitForSeconds(0.35f);
         }
     }
