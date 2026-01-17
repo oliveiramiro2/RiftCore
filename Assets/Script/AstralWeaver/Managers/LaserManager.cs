@@ -43,7 +43,7 @@ public class LaserManager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         foreach (var laser in lasers)
         {
-            StartCoroutine(ShrinkLaser(laser, 0.8f));
+            StartCoroutine(ShrinkLaser(laser, 0.05f));
             yield return new WaitForSeconds(0.35f);
         }
     }
