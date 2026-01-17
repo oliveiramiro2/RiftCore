@@ -35,7 +35,7 @@ public class LaserManager : MonoBehaviour
             yield return null;
         }
 
-        laser.transform.localScale = new Vector3(30f, 1, 1);
+        laser.transform.localScale = new Vector3(30f, 0.2f, 1);
     }
 
     private IEnumerator HideLasersRoutine()
