@@ -928,8 +928,8 @@
     "m_ObjectId": "1340fa17eef143488adb7a6da7565d41",
     "m_Title": "Time to 0 from 1 and reverse",
     "m_Position": {
-        "x": -2054.0,
-        "y": 16.0
+        "x": -2053.999755859375,
+        "y": 15.99996566772461
     }
 }
 
@@ -3470,8 +3470,8 @@
     "m_ObjectId": "aeef01e422974ad18c82ac86b914ab62",
     "m_Title": "UV, Direction and Distance",
     "m_Position": {
-        "x": -1852.0,
-        "y": 665.0
+        "x": -1851.999755859375,
+        "y": 664.9998779296875
     }
 }
 
