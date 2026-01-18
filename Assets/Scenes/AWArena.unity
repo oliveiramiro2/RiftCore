@@ -1235,82 +1235,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &203550821
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 203550822}
-  - component: {fileID: 203550823}
-  m_Layer: 0
-  m_Name: LasersManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &203550822
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203550821}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1892311223}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &203550823
+--- !u!114 &203550823 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+  m_PrefabInstance: {fileID: 7397209688120795018}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203550821}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35d277f734cb3bd4ab1902135894cf51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LaserManager
-  easeValue: 0.2
-  lasers:
-  - {fileID: 1196830861}
-  - {fileID: 59502112}
-  - {fileID: 283446851}
-  - {fileID: 1808450954}
-  - {fileID: 2128534926}
-  - {fileID: 1048254144}
-  - {fileID: 288297654}
-  - {fileID: 1359907928}
-  - {fileID: 1951498743}
-  - {fileID: 1947409183}
-  - {fileID: 1959575280}
-  - {fileID: 507184242}
-  - {fileID: 1934617096}
-  - {fileID: 138604383}
-  - {fileID: 150945860}
-  - {fileID: 1917137433}
-  - {fileID: 1569525838}
-  - {fileID: 108565116}
-  - {fileID: 1911701131}
-  - {fileID: 1176427182}
-  - {fileID: 117422436}
-  - {fileID: 113050328}
-  - {fileID: 1539921866}
-  - {fileID: 1535667502}
-  - {fileID: 443486244}
-  - {fileID: 815504612}
-  - {fileID: 451767292}
-  - {fileID: 1523384058}
-  - {fileID: 449856039}
-  - {fileID: 1145405617}
 --- !u!1 &228907414
 GameObject:
   m_ObjectHideFlags: 0
@@ -8981,11 +8916,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
---- !u!4 &1892311223 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1932137234025275532, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
-  m_PrefabInstance: {fileID: 7397209688120795018}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1898249465
 GameObject:
   m_ObjectHideFlags: 0
@@ -10664,6 +10594,126 @@ PrefabInstance:
       propertyPath: ambientSource
       value: 
       objectReference: {fileID: 180110224}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1196830861}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[1]'
+      value: 
+      objectReference: {fileID: 59502112}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[2]'
+      value: 
+      objectReference: {fileID: 283446851}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1808450954}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[4]'
+      value: 
+      objectReference: {fileID: 2128534926}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1048254144}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[6]'
+      value: 
+      objectReference: {fileID: 288297654}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[7]'
+      value: 
+      objectReference: {fileID: 1359907928}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[8]'
+      value: 
+      objectReference: {fileID: 1951498743}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[9]'
+      value: 
+      objectReference: {fileID: 1947409183}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[10]'
+      value: 
+      objectReference: {fileID: 1959575280}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[11]'
+      value: 
+      objectReference: {fileID: 507184242}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[12]'
+      value: 
+      objectReference: {fileID: 1934617096}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[13]'
+      value: 
+      objectReference: {fileID: 138604383}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[14]'
+      value: 
+      objectReference: {fileID: 150945860}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[15]'
+      value: 
+      objectReference: {fileID: 1917137433}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[16]'
+      value: 
+      objectReference: {fileID: 1569525838}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[17]'
+      value: 
+      objectReference: {fileID: 108565116}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[18]'
+      value: 
+      objectReference: {fileID: 1911701131}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[19]'
+      value: 
+      objectReference: {fileID: 1176427182}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[20]'
+      value: 
+      objectReference: {fileID: 117422436}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[21]'
+      value: 
+      objectReference: {fileID: 113050328}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[22]'
+      value: 
+      objectReference: {fileID: 1539921866}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[23]'
+      value: 
+      objectReference: {fileID: 1535667502}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[24]'
+      value: 
+      objectReference: {fileID: 443486244}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[25]'
+      value: 
+      objectReference: {fileID: 815504612}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[26]'
+      value: 
+      objectReference: {fileID: 451767292}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[27]'
+      value: 
+      objectReference: {fileID: 1523384058}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[28]'
+      value: 
+      objectReference: {fileID: 449856039}
+    - target: {fileID: 1287382642690332653, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: 'lasers.Array.data[29]'
+      value: 
+      objectReference: {fileID: 1145405617}
     - target: {fileID: 1932137234025275532, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.51951
@@ -10741,10 +10791,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1526853184}
     - target: {fileID: 8827611713766419490, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
-      propertyPath: hitEnemyFX
-      value: 
-      objectReference: {fileID: 1794973441}
-    - target: {fileID: 8827611713766419490, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
       propertyPath: landSmockFX
       value: 
       objectReference: {fileID: 302097062}
@@ -10766,59 +10812,9 @@ PrefabInstance:
       objectReference: {fileID: 946086021}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1932137234025275532, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 203550822}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6223954811604431668, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7397209688120795021}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
---- !u!1 &7397209688120795019 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6223954811604431668, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
-  m_PrefabInstance: {fileID: 7397209688120795018}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7397209688120795020 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8827611713766419490, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
-  m_PrefabInstance: {fileID: 7397209688120795018}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7397209688120795019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5ff3d4866d5f124da66548d608f5d67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7397209688120795021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7397209688120795019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 4285a5b891e671645b6612477bb0e744, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7397209688120795020}
-        m_TargetAssemblyTypeName: FXPlayer, Assembly-CSharp
-        m_MethodName: PlayHitEnemyFX
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

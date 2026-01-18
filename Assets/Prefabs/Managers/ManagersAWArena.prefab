@@ -35,6 +35,7 @@ Transform:
   - {fileID: 4284509467565077905}
   - {fileID: 1358157053664773360}
   - {fileID: 3777222858764315323}
+  - {fileID: 4319722959381400510}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2716629217700966755
@@ -341,6 +342,82 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &4126494317460500161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4319722959381400510}
+  - component: {fileID: 1287382642690332653}
+  m_Layer: 0
+  m_Name: LasersManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4319722959381400510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4126494317460500161}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1932137234025275532}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1287382642690332653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4126494317460500161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d277f734cb3bd4ab1902135894cf51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LaserManager
+  easeValue: 0.2
+  lasers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &4882443912718870026
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +477,7 @@ GameObject:
   - component: {fileID: 8827611713766419490}
   - component: {fileID: 4736162626656777989}
   - component: {fileID: 2738098730849806376}
+  - component: {fileID: 6751526195901031680}
   m_Layer: 0
   m_Name: FXManager
   m_TagString: Untagged
@@ -436,6 +514,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sparkDashFX: {fileID: 0}
   landSmockFX: {fileID: 0}
+  hitEnemyRightFX: {fileID: 0}
+  hitEnemyLeftFX: {fileID: 0}
+  playerTransform: {fileID: 0}
 --- !u!114 &4736162626656777989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,6 +564,34 @@ MonoBehaviour:
       - m_Target: {fileID: 8827611713766419490}
         m_TargetAssemblyTypeName: FXPlayer, Assembly-CSharp
         m_MethodName: PlayLandSmockFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6751526195901031680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223954811604431668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 4285a5b891e671645b6612477bb0e744, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8827611713766419490}
+        m_TargetAssemblyTypeName: FXPlayer, Assembly-CSharp
+        m_MethodName: PlayHitEnemyFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

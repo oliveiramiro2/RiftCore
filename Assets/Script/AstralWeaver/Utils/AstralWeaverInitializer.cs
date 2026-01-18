@@ -27,6 +27,9 @@ public class AstralWeaverInitializer : MonoBehaviour
 
     factory.InitializeTransitions();
 
+    
+    attackModule.Initialize(controller);
+
     sm.Initialize(factory.AstralWeaverIdle);
   }
 }

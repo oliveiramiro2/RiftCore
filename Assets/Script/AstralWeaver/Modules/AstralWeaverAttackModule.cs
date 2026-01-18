@@ -3,6 +3,7 @@ using System.Collections;
 
 public class AstralWeaverAttackModule : MonoBehaviour
 {
+  private AstralWeaverController owner;
   private Transform player;
   public bool isAttacking = false;
   [SerializeField] private float attackCooldown = 3f;
@@ -52,6 +53,11 @@ public class AstralWeaverAttackModule : MonoBehaviour
     }
   }
 
+  public void Initialize(AstralWeaverController controller)
+  {
+    owner = controller;
+  }
+
   public void DecideNextAttack(AstralWeaverController entity)
   {
     float dist = Vector2.Distance(transform.position, player.position);
@@ -59,8 +65,8 @@ public class AstralWeaverAttackModule : MonoBehaviour
     System.Collections.Generic.List<System.Action> validAttacks = new()
     {
       () => EnergyBall(entity),
-      () => Laser(entity),
-      () => Shield(entity)
+      //() => Laser(entity),
+      //() => Shield(entity)
     };
 
     if (entity.Phase2())
@@ -135,10 +141,20 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
     entity.LocomotionModule.canFlip = false;
     energyBallPrefab.transform.position = energyBallPosition.position;
-    energyBallFollow = true;
+    Debug.Log("Scale before " + player.localScale);
+    energyBallPrefab.transform.localScale = owner.transform.localScale;
+
+    yield return new WaitForSeconds(0.5f);
+
     energyBallPrefab.SetActive(true);
     auxControl.Activate();
+
+    yield return new WaitForSeconds(0.5f);
+
+    energyBallFollow = true;
+
     yield return new WaitForSeconds(2f);
+
     energyBallFollow = false;
     auxControl.Deactivate();
     energyBallPrefab.SetActive(false);
