@@ -1791,6 +1791,10 @@ MonoBehaviour:
   - {fileID: 1410071863}
   laserManager: {fileID: 203550823}
   energyBallSpeed: 6
+  minDecisionTime: 2
+  maxDecisionTime: 4
+  minDecisionTimePhase2: 1
+  maxDecisionTimePhase2: 3
   canAttackTimer: 1
 --- !u!114 &287140725
 MonoBehaviour:
@@ -6780,6 +6784,110 @@ Transform:
   m_Children: []
   m_Father: {fileID: 417116839}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1459167599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1459167600}
+  - component: {fileID: 1459167603}
+  - component: {fileID: 1459167602}
+  - component: {fileID: 1459167601}
+  m_Layer: 0
+  m_Name: AWSFXManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1459167600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459167599}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7397209688120795019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1459167601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459167599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 351e6322f597fd2409d048979963cde7, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1459167603}
+        m_TargetAssemblyTypeName: AWSFXManager, Assembly-CSharp
+        m_MethodName: PlayLaserSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1459167602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459167599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: cabcad7de666de142b861715795ee5d0, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1459167603}
+        m_TargetAssemblyTypeName: AWSFXManager, Assembly-CSharp
+        m_MethodName: PlayEnergyBallSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1459167603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459167599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6dd46e76d41a048984294056a724a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AWSFXManager
+  energyBallSound: {fileID: 11400000, guid: 960322ee81e00634cbc0c543ec0a5377, type: 2}
+  laserSound: {fileID: 11400000, guid: 325639714db00fd419b3bb836c1d83a5, type: 2}
 --- !u!1 &1460752464 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1873627901173798842, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
@@ -11009,7 +11117,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3074818186345689006, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7900788712015709633, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1459167600}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2716629217700966755, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
       insertIndex: -1
@@ -11021,6 +11132,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 998510177}
   m_SourcePrefab: {fileID: 100100000, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+--- !u!4 &7397209688120795019 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7900788712015709633, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+  m_PrefabInstance: {fileID: 7397209688120795018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

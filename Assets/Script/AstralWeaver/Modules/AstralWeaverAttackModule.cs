@@ -168,6 +168,7 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
     energyBallPrefab.SetActive(true);
     auxControl.Activate();
+    entity.awEvents.OnEnergyBall.Raise();
 
     yield return new WaitForSeconds(0.5f);
 
@@ -201,14 +202,14 @@ public class AstralWeaverAttackModule : MonoBehaviour
     lookingTarget = false;
     entity.LocomotionModule.canFlip = false;
 
-    yield return new WaitForSeconds(0.5f);
+    yield return new WaitForSeconds(0.3f);
 
     laserMaterial.SetFloat("_Alpha", 1f);
-    laserMaterial.SetFloat("_DistortionAmount", 0.25f);
+    laserMaterial.SetFloat("_DistortionAmount", 1f);
     laserCollider.Activate();
+    entity.awEvents.OnLaser.Raise();
 
     yield return new WaitForSeconds(1f);
-    laserMaterial.SetFloat("_DistortionAmount", 0f);
     laserCollider.Deactivate();
     laserPrefab.SetActive(false);
     canAttackTimer = true;
@@ -223,9 +224,12 @@ public class AstralWeaverAttackModule : MonoBehaviour
     yield return new WaitForSeconds(1f);
     laserManager.LasersStart();
 
+    entity.awEvents.OnMultiLasers.Raise();
 
-    yield return new WaitForSeconds(4f);
+    yield return new WaitForSeconds(3f);
     laserManager.LasersStart();
+
+    entity.awEvents.OnMultiLasers.Raise();
 
     yield return new WaitForSeconds(2f);
     canAttackTimer = true;
@@ -249,6 +253,8 @@ public class AstralWeaverAttackModule : MonoBehaviour
         (player.position - transform.position).normalized;
 
     entity.LocomotionModule.FlipTowardsTarget(entity);
+
+    entity.awEvents.OnCrystals.Raise();
 
     for (int i = 0; i < crystalsPrefabs.Length; i++)
     {

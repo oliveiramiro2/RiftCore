@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: AstralWeaverEvents
   m_EditorClassIdentifier: Assembly-CSharp::AstralWeaverEvents
   OnEnergyBall: {fileID: 11400000, guid: cabcad7de666de142b861715795ee5d0, type: 2}
+  OnFinishEnergyBall: {fileID: 11400000, guid: a1ad619a59254cb409b317e2f5d7eae1, type: 2}
   OnLaser: {fileID: 11400000, guid: 351e6322f597fd2409d048979963cde7, type: 2}
   OnMultiLasers: {fileID: 11400000, guid: 6afd27fd0b409b948bc8ec2caf8ddf1d, type: 2}
   OnCrystals: {fileID: 11400000, guid: b109b3619fa2b2b46b9a8b46d263d71e, type: 2}
