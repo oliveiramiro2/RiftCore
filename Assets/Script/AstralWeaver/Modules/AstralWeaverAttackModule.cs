@@ -14,6 +14,13 @@ public class AstralWeaverAttackModule : MonoBehaviour
   [SerializeField] private Transform[] crystalsPositions;
   [SerializeField] private LaserManager laserManager;
   [SerializeField] private float energyBallSpeed;
+
+  [Header("Decision Timers")]
+  [SerializeField] private float minDecisionTime = 2f;
+  [SerializeField] private float maxDecisionTime = 4f;
+  [SerializeField] private float minDecisionTimePhase2 = 1f;
+  [SerializeField] private float maxDecisionTimePhase2 = 3f;
+
   private Material laserMaterial;
   public bool canAttackTimer = true;
   private float attackTimer = 0f;
@@ -50,6 +57,19 @@ public class AstralWeaverAttackModule : MonoBehaviour
     {
       isAttacking = true;
       attackTimer = 0f;
+      ResetTimer();
+    }
+  }
+
+  public void ResetTimer()
+  {
+    if (owner.Phase2())
+    {
+      attackCooldown = Random.Range(minDecisionTimePhase2, maxDecisionTimePhase2);
+    }
+    else
+    {
+      attackCooldown = Random.Range(minDecisionTime, maxDecisionTime);
     }
   }
 
