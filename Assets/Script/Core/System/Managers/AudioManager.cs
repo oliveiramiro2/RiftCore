@@ -28,27 +28,24 @@ public class AudioManager : MonoBehaviour
     PlayAmbient(ambientClip);
   }
 
-  // 🎵 Música de fundo
   public void PlayMusic(AudioClip clip)
   {
     if (clip == null) return;
     musicSource.clip = clip;
     musicSource.loop = true;
-    ambientSource.volume = 0.5f;
+    ambientSource.volume = 0.6f;
     musicSource.Play();
   }
 
-  // 🌲 Sons ambiente
   public void PlayAmbient(AudioClip clip)
   {
     if (clip == null) return;
     ambientSource.clip = clip;
     ambientSource.loop = true;
-    ambientSource.volume = 0.4f;
+    ambientSource.volume = 0.1f;
     ambientSource.Play();
   }
 
-  // 💥 Efeitos sonoros globais
   public void PlaySFX(AudioClip clip, float volume = 1f, float pitch = 1f)
   {
     if (clip == null) return;

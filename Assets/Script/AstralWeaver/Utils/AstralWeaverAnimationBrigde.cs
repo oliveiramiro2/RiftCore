@@ -11,6 +11,7 @@ public class AstralWeaverAnimationBridge : MonoBehaviour
   private readonly string multiLasersParam = "multiLasers";
   private readonly string crystalsParam = "crystals";
   private readonly string shieldParam = "shield";
+  private readonly string shieldEndParam = "shieldEnd";
 
   void Awake()
   {
@@ -43,6 +44,11 @@ public class AstralWeaverAnimationBridge : MonoBehaviour
   public void AstralWeaverCrystals()
   {
     animator.Play(crystalsParam);
+  }
+
+  public void AstralWeaverShieldEnd()
+  {
+    animator.Play(shieldEndParam);
   }
 }
 

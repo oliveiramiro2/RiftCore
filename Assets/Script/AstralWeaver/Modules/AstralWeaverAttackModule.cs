@@ -65,8 +65,8 @@ public class AstralWeaverAttackModule : MonoBehaviour
     System.Collections.Generic.List<System.Action> validAttacks = new()
     {
       () => EnergyBall(entity),
-      //() => Laser(entity),
-      //() => Shield(entity)
+      () => Laser(entity),
+      () => Shield(entity)
     };
 
     if (entity.Phase2())
@@ -141,7 +141,6 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
     entity.LocomotionModule.canFlip = false;
     energyBallPrefab.transform.position = energyBallPosition.position;
-    Debug.Log("Scale before " + player.localScale);
     energyBallPrefab.transform.localScale = owner.transform.localScale;
 
     yield return new WaitForSeconds(0.5f);

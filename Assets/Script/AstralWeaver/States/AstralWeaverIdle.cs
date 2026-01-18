@@ -5,12 +5,13 @@ public class AstralWeaverIdle : State<AstralWeaverController>
 
   public override void EnterState(AstralWeaverController entity)
   {
-    entity.AnimatorBridge.AstralWeaverIdle();
+    AstralWeaverDamageHandler damageControl = entity.GetComponent<AstralWeaverDamageHandler>();
+    if (!damageControl.shieldIsActive)
+      entity.AnimatorBridge.AstralWeaverIdle();
   }
 
   public override void UpdateState(AstralWeaverController entity)
   {
-    //entity.LocomotionModule.FlipTowardsTarget(entity);
   }
 
   public override void ExitState(AstralWeaverController entity)
