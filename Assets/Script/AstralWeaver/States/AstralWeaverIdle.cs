@@ -28,13 +28,16 @@ public class AstralWeaverIdle : State<AstralWeaverController>
         animationIn = false;
         hasTeleported = true;
         toIdle = true;
+        teleportTimer = 0.3f;
       }
       else if (animationOut)
       {
         entity.AnimatorBridge.AstralWeaverTeleport();
         animationOut = false;
       }
+
       teleportTimer -= Time.deltaTime;
+
       if (teleportTimer <= 0f)
       {
         entity.LocomotionModule.TeleportToRandomPoint(entity);
@@ -43,7 +46,8 @@ public class AstralWeaverIdle : State<AstralWeaverController>
     }
     if (toIdle)
     {
-      if (entity.AnimatorBridge.AWIsCurrentAnimationFinished())
+      teleportTimer -= Time.deltaTime;
+      if (teleportTimer <= 0f)
       {
         entity.AnimatorBridge.AstralWeaverIdle();
         toIdle = false;

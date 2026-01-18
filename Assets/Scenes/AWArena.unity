@@ -3790,6 +3790,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1892585107840762496, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: TrailModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892585107840762496, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 0.05
       objectReference: {fileID: 0}
@@ -3833,6 +3837,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.549
       objectReference: {fileID: 0}
+    - target: {fileID: 3040760322789184222, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3158236156324407806, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4103293485641533845, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: pauseMenu
       value: 
@@ -3843,6 +3855,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7225398186284049477, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: ColorModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225398186284049477, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: TrailModule.enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7225398186284049477, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
