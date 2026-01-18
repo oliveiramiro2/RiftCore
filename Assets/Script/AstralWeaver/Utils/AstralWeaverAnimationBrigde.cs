@@ -12,6 +12,8 @@ public class AstralWeaverAnimationBridge : MonoBehaviour
   private readonly string crystalsParam = "crystals";
   private readonly string shieldParam = "shield";
   private readonly string shieldEndParam = "shieldEnd";
+  private readonly string teleportParam = "teleport";
+  private readonly string teleportInParam = "teleportIn";
 
   void Awake()
   {
@@ -49,6 +51,21 @@ public class AstralWeaverAnimationBridge : MonoBehaviour
   public void AstralWeaverShieldEnd()
   {
     animator.Play(shieldEndParam);
+  }
+
+  public void AstralWeaverTeleport()
+  {
+    animator.Play(teleportParam);
+  }
+
+  public void AstralWeaverTeleportIn()
+  {
+    animator.Play(teleportInParam);
+  }
+
+  public bool AWIsCurrentAnimationFinished()
+  {
+    return animator.AWIsCurrentAnimationFinished();
   }
 }
 
