@@ -3443,6 +3443,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!198 &747085780 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1892585107840762496, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+  m_PrefabInstance: {fileID: 946086019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &815504610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3909,6 +3914,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90aae646fdb10864880fb2abee9df20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &946086021 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8772061299861539594, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+  m_PrefabInstance: {fileID: 946086019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &985719460
 GameObject:
   m_ObjectHideFlags: 0
@@ -8637,6 +8647,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 678698789}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1794973441 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7225398186284049477, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+  m_PrefabInstance: {fileID: 946086019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1808450952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10726,6 +10741,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1526853184}
     - target: {fileID: 8827611713766419490, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: hitEnemyFX
+      value: 
+      objectReference: {fileID: 1794973441}
+    - target: {fileID: 8827611713766419490, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
       propertyPath: landSmockFX
       value: 
       objectReference: {fileID: 302097062}
@@ -10733,14 +10752,73 @@ PrefabInstance:
       propertyPath: sparkDashFX
       value: 
       objectReference: {fileID: 1139457685}
+    - target: {fileID: 8827611713766419490, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: hitEnemyLeftFX
+      value: 
+      objectReference: {fileID: 747085780}
+    - target: {fileID: 8827611713766419490, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: hitEnemyRightFX
+      value: 
+      objectReference: {fileID: 1794973441}
+    - target: {fileID: 8827611713766419490, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 946086021}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1932137234025275532, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
       insertIndex: -1
       addedObject: {fileID: 203550822}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6223954811604431668, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7397209688120795021}
   m_SourcePrefab: {fileID: 100100000, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+--- !u!1 &7397209688120795019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6223954811604431668, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+  m_PrefabInstance: {fileID: 7397209688120795018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7397209688120795020 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8827611713766419490, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+  m_PrefabInstance: {fileID: 7397209688120795018}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397209688120795019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5ff3d4866d5f124da66548d608f5d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7397209688120795021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397209688120795019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 4285a5b891e671645b6612477bb0e744, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7397209688120795020}
+        m_TargetAssemblyTypeName: FXPlayer, Assembly-CSharp
+        m_MethodName: PlayHitEnemyFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

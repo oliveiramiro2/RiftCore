@@ -42,10 +42,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha: 0.447
-    - _DistortionAmount: 0.439
-    - _GlowIntensity: 2.01
+    - _DistortionAmount: 1
+    - _GlowIntensity: 2
     - _PulseAmount: 0.5
-    - _PulseSpeed: 1.14
+    - _PulseSpeed: 10
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.20007348, g: 0, b: 11.181763, a: 1}

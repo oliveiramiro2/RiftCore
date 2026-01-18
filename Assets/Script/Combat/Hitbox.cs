@@ -35,8 +35,10 @@ public class Hitbox : MonoBehaviour
             {
                 int player = owner.GetComponent<PlayerController>().buffSwordDamage;
                 finalDamage *= player;
+                owner.GetComponent<PlayerController>().events.OnPlayerHitEnemy.Raise();
+
             }
-            
+
             Vector2 hitDir = (other.transform.position - owner.transform.position).normalized;
             hurtbox.ApplyDamage(finalDamage, hitDir, knockbackForce);
         }

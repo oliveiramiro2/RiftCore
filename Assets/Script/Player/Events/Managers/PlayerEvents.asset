@@ -19,3 +19,4 @@ MonoBehaviour:
   OnDash: {fileID: 11400000, guid: e100065dc8556d64d87fa2ea2f062d70, type: 2}
   OnTakeDamage: {fileID: 11400000, guid: f47af0e691b3d8349ae4f5089fa99cbe, type: 2}
   OnDeath: {fileID: 11400000, guid: 0ae214abbb74f514798f8bd4755926c2, type: 2}
+  OnPlayerHitEnemy: {fileID: 11400000, guid: 4285a5b891e671645b6612477bb0e744, type: 2}
