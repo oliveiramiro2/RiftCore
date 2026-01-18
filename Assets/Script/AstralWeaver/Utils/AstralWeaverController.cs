@@ -8,6 +8,9 @@ public class AstralWeaverController : BaseEntity
     public bool Phase2() => currentHealth <= (maxHealth * 0.5f);
     public Transform PlayerTransform { get; private set; }
 
+    
+    public AstralWeaverEvents awEvents;
+
     public AstralWeaverStateMachine AstralWeaverSM { get; private set; }
     public AstralWeaverStateFactory AstralWeaverStateFactory { get; private set; }
     public AstralWeaverAnimationBridge AnimatorBridge { get; private set; }

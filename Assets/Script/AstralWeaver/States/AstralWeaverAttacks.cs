@@ -13,6 +13,7 @@ public class AstralWeaverAttacks : State<AstralWeaverController>
     if (damageControl.shieldIsActive)
     {
       entity.AnimatorBridge.AstralWeaverShieldEnd();
+      entity.awEvents.OnShieldEnd.Raise();
       canDecideNextAttack = false;
     }
     damageControl.shieldIsActive = false;

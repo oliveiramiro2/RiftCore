@@ -1667,6 +1667,7 @@ MonoBehaviour:
   knockbackDuration: 0.15
   knockbackTimer: 0
   MoveSpeed: 2
+  awEvents: {fileID: 11400000, guid: a488aa938b653394b9c778b564265940, type: 2}
   CanMove: 1
 --- !u!50 &287140720
 Rigidbody2D:
@@ -3838,8 +3839,16 @@ PrefabInstance:
       value: 0.549
       objectReference: {fileID: 0}
     - target: {fileID: 3040760322789184222, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040760322789184222, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3158236156324407806, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3158236156324407806, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_Materials.Array.size
@@ -5122,6 +5131,81 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &998510174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2716629217700966755, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+  m_PrefabInstance: {fileID: 7397209688120795018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &998510177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998510174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 366b1d186c1d4854c81b6f58165a8a4f, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 998510179}
+        m_TargetAssemblyTypeName: AWGameFlowManager, Assembly-CSharp
+        m_MethodName: ShieldIsDeactiveEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &998510178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998510174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: d18df5b1268f50641b25e6f3df208e24, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 998510179}
+        m_TargetAssemblyTypeName: AWGameFlowManager, Assembly-CSharp
+        m_MethodName: ShieldIsActiveEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &998510179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998510174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098edf47de433d7499bf8aa1c9d6ddb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AWGameFlowManager
+  playerHitSparksLeft: {fileID: 747085780}
+  playerHitSparksRight: {fileID: 1794973441}
 --- !u!1 &1019445412
 GameObject:
   m_ObjectHideFlags: 0
@@ -10899,6 +10983,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1526853184}
     - target: {fileID: 8827611713766419490, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: EnemyStatus
+      value: 
+      objectReference: {fileID: 287140712}
+    - target: {fileID: 8827611713766419490, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
       propertyPath: landSmockFX
       value: 
       objectReference: {fileID: 302097062}
@@ -10922,7 +11010,16 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 3074818186345689006, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2716629217700966755, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 998510179}
+    - targetCorrespondingSourceObject: {fileID: 2716629217700966755, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 998510178}
+    - targetCorrespondingSourceObject: {fileID: 2716629217700966755, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 998510177}
   m_SourcePrefab: {fileID: 100100000, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

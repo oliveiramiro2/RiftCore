@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89677b349ce703d46a8fd61b53eaf435, type: 3}
+  m_Name: AstralWeaverEvents
+  m_EditorClassIdentifier: Assembly-CSharp::AstralWeaverEvents
+  OnEnergyBall: {fileID: 11400000, guid: cabcad7de666de142b861715795ee5d0, type: 2}
+  OnLaser: {fileID: 11400000, guid: 351e6322f597fd2409d048979963cde7, type: 2}
+  OnMultiLasers: {fileID: 11400000, guid: 6afd27fd0b409b948bc8ec2caf8ddf1d, type: 2}
+  OnCrystals: {fileID: 11400000, guid: b109b3619fa2b2b46b9a8b46d263d71e, type: 2}
+  OnShield: {fileID: 11400000, guid: d18df5b1268f50641b25e6f3df208e24, type: 2}
+  OnShieldEnd: {fileID: 11400000, guid: 366b1d186c1d4854c81b6f58165a8a4f, type: 2}
+  OnTeleportOut: {fileID: 11400000, guid: 8e3c1fce5be6d374ca518c461901313e, type: 2}
+  OnTeleportIn: {fileID: 11400000, guid: 17521b3867df59447a19d8d9cdeeb908, type: 2}
