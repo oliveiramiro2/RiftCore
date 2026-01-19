@@ -6,7 +6,7 @@ Shader "Custom/GhostTrailBloomDistort"
         _TintColor("Tint Color (HDR)", Color) = (1,1,1,1)
         _BrightnessBoost("Brightness Boost", Float) = 2.0
         _NoiseTex("Noise Texture", 2D) = "white" {}
-        _DistortionAmount("Distortion Amount", Range(0,0.2)) = 0.05
+        _DistortionAmount("Distortion Amount", Range(0,1)) = 0.05
         _DissolveAmount("Dissolve Amount", Range(0,1)) = 0.0
     }
 
