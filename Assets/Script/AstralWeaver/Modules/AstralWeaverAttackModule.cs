@@ -223,19 +223,17 @@ public class AstralWeaverAttackModule : MonoBehaviour
     entity.LocomotionModule.canFlip = false;
     entity.AnimatorBridge.AstralWeaverMultiLasers();
 
-    entity.awEvents.OnMultiLasers.Raise();
     yield return new WaitForSeconds(1f);
+    entity.awEvents.OnMultiLasers.Raise();
     laserManager.LasersStart();
 
 
-    yield return new WaitForSeconds(2f);
+    yield return new WaitForSeconds(4f);
     entity.awEvents.OnMultiLasers.Raise();
-
-    yield return new WaitForSeconds(1f);
     laserManager.LasersStart();
 
 
-    yield return new WaitForSeconds(3f);
+    yield return new WaitForSeconds(4f);
     canAttackTimer = true;
     entity.LocomotionModule.canFlip = true;
   }
