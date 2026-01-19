@@ -46,7 +46,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BrightnessBoost: 1.66
-    - _DissolveAmount: 0.001
+    - _DissolveAmount: 0.0001
     - _DistortionAmount: 0.802
     - _EnableExternalAlpha: 0
     - _ZWrite: 0
