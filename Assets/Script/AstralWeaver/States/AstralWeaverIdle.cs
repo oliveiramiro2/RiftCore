@@ -24,6 +24,7 @@ public class AstralWeaverIdle : State<AstralWeaverController>
     {
       if (animationIn)
       {
+        entity.awEvents.OnTeleportIn.Raise();
         entity.AnimatorBridge.AstralWeaverTeleportIn();
         animationIn = false;
         hasTeleported = true;
@@ -32,6 +33,7 @@ public class AstralWeaverIdle : State<AstralWeaverController>
       }
       else if (animationOut)
       {
+        entity.awEvents.OnTeleportOut.Raise();
         entity.AnimatorBridge.AstralWeaverTeleport();
         animationOut = false;
       }
