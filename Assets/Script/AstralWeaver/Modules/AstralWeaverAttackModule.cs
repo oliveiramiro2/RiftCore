@@ -86,8 +86,6 @@ public class AstralWeaverAttackModule : MonoBehaviour
     {
       () => EnergyBall(entity),
       () => Laser(entity),
-      () => Crystals(entity),
-      () => MultiLasers(entity),
       () => Shield(entity)
     };
 
