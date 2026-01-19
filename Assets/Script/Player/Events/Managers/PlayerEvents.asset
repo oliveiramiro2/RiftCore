@@ -22,3 +22,4 @@ MonoBehaviour:
   OnPlayerHitEnemy: {fileID: 11400000, guid: 4285a5b891e671645b6612477bb0e744, type: 2}
   OnFocusBuff: {fileID: 11400000, guid: 1893c862a2cc6f3468aa96817704b820, type: 2}
   OnBuff: {fileID: 11400000, guid: 5b350a8878e35c943b8e155c63ff5521, type: 2}
+  OnEndBuff: {fileID: 11400000, guid: 564a374805d095042bca10a018adfe20, type: 2}

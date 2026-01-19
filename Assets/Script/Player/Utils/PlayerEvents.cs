@@ -15,4 +15,5 @@ public class PlayerEvents : ScriptableObject
   public GameEvent OnPlayerHitEnemy;
   public GameEvent OnFocusBuff;
   public GameEvent OnBuff;
+  public GameEvent OnEndBuff;
 }

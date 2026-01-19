@@ -14,7 +14,15 @@ public class AWGameFlowManager : MonoBehaviour
     mainRight.startColor = Color.cyan;
   }
 
-  public void ShieldIsDeactiveEffect()
+  public void SwordBuffEffect()
+  {
+    var mainLeft = playerHitSparksLeft.main;
+    mainLeft.startColor = Color.red;
+    var mainRight = playerHitSparksRight.main;
+    mainRight.startColor = Color.red;
+  }
+
+  public void ResetPlayerHitSparksEffect()
   {
     var mainLeft = playerHitSparksLeft.main;
     mainLeft.startColor = Color.white;

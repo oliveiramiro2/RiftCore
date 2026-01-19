@@ -32,7 +32,7 @@ public class SwordBuff : MonoBehaviour, IAbility
     player.buffSwordDamage += 1;
     yield return new WaitForSeconds(duration);
 
-    Debug.Log("Sword Buff ended");
+    player.events.OnEndBuff.Raise();
     player.buffSwordDamage -= 1;
 
     yield return new WaitForSeconds(cooldown);

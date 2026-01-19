@@ -3674,6 +3674,78 @@ Transform:
   m_Children: []
   m_Father: {fileID: 678698789}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &654119983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2716629217700966755, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+  m_PrefabInstance: {fileID: 7397209688120795018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &654119987 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9082342545592153334, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+  m_PrefabInstance: {fileID: 7397209688120795018}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654119983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098edf47de433d7499bf8aa1c9d6ddb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AWGameFlowManager
+--- !u!114 &654119989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654119983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 564a374805d095042bca10a018adfe20, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 654119987}
+        m_TargetAssemblyTypeName: AWGameFlowManager, Assembly-CSharp
+        m_MethodName: ResetPlayerHitSparksEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &654119990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654119983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 5b350a8878e35c943b8e155c63ff5521, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 654119987}
+        m_TargetAssemblyTypeName: AWGameFlowManager, Assembly-CSharp
+        m_MethodName: SwordBuffEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &658331613 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 509385971159516728, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
@@ -10674,6 +10746,10 @@ PrefabInstance:
       propertyPath: tetDeathEffect
       value: 
       objectReference: {fileID: 1460752464}
+    - target: {fileID: 6590351400067413618, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetPlayerHitSparksEffect
+      objectReference: {fileID: 0}
     - target: {fileID: 6784254336641116258, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
       propertyPath: playerRenderer
       value: 
@@ -10728,6 +10804,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6223954811604431668, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
       insertIndex: -1
       addedObject: {fileID: 12319816}
+    - targetCorrespondingSourceObject: {fileID: 2716629217700966755, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 654119990}
+    - targetCorrespondingSourceObject: {fileID: 2716629217700966755, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 654119989}
   m_SourcePrefab: {fileID: 100100000, guid: 0fb6d1da35a5bd947b74739aed559836, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
