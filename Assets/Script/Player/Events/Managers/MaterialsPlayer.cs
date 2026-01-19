@@ -45,17 +45,6 @@ public class MaterialsPlayer : MonoBehaviour
 
         float intensity = 1f;
 
-        // while (timer < duration)
-        // {
-        //     float t = timer / duration;
-        //     float intensity = intensityCurve.Evaluate(t);
-
-        //     dashMaterial.SetFloat("_Intensity", intensity);
-
-        //     timer += Time.deltaTime;
-        //     yield return null;
-        // }
-
         while (timer < duration)
         {
             intensity = TemporalMath.LerpWithPulse(

@@ -7,6 +7,9 @@ public class FXPlayer : MonoBehaviour
     public ParticleSystem landSmockFX;
     public ParticleSystem hitEnemyRightFX;
     public ParticleSystem hitEnemyLeftFX;
+    public ParticleSystem focusBuffFX;
+    public ParticleSystem backgroundFocusBuffFX;
+    public ParticleSystem buffFX;
 
     [SerializeField] private Transform playerTransform;
 
@@ -31,5 +34,16 @@ public class FXPlayer : MonoBehaviour
         {
             hitEnemyRightFX.Play();
         }
+    }
+
+    public void PlayFocusBuffFX()
+    {
+        backgroundFocusBuffFX.Play();
+        focusBuffFX.Play();
+    }
+
+    public void PlayBuffFX()
+    {
+        buffFX.Play();
     }
 }
