@@ -24,9 +24,9 @@ public class SwordBuff : MonoBehaviour, IAbility
     active = true;
     player.events.OnFocusBuff.Raise();
     yield return new WaitForSeconds(1.5f);
-
-    player.AnimatorBridge.ResetTiggerSwordBuff();
+    player.PlayerSM.ChangeState(player.StateFactory.Idle);
     player.canMove = true;
+    player.AnimatorBridge.ResetTiggerSwordBuff();
 
     player.events.OnBuff.Raise();
     player.buffSwordDamage += 1;

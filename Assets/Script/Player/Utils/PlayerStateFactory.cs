@@ -55,7 +55,7 @@ public class PlayerStateFactory : MonoBehaviour
 
 
         // Attack
-        playerSM.AddAnyTransition(Attack, () => !owner.IsDead && inputReader.AttackPressed && !attackModule.IsOnCooldown() && owner.canMove);
+        playerSM.AddAnyTransition(Attack, () => !owner.IsDead && owner.canMove && inputReader.AttackPressed && !attackModule.IsOnCooldown());
 
         playerSM.AddTransition(Attack, Fall,
             () => !owner.IsDead && !physicsModule.isGrounded

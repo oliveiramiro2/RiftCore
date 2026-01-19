@@ -70,7 +70,7 @@ public class PlayerController : BaseEntity
 
     void Update()
     {
-        if (IsDead) return;
+        if (IsDead || !canMove) return;
         if (PlayerSM == null || InputReader == null)
         {
             Debug.LogWarning("PlayerController: Aguardando Inicialização...");

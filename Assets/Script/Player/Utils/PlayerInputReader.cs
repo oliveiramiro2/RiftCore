@@ -53,7 +53,7 @@ public class PlayerInputReader : MonoBehaviour
 
   public void OnAttack(InputAction.CallbackContext context)
   {
-    if (!context.performed) return;
+    if (!context.performed || !player.canMove) return;
 
     AttackPressed = true;
     AttackBuffered = true;
@@ -109,7 +109,7 @@ public class PlayerInputReader : MonoBehaviour
 
   private void UpdateAttackBuffer()
   {
-    if (!AttackBuffered) return;
+    if (!AttackBuffered || !player.canMove) return;
 
     bufferTimer -= Time.deltaTime;
     if (bufferTimer <= 0f)
