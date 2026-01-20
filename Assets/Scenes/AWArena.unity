@@ -4268,13 +4268,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3607423130734448426, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1261098694}
+    - target: {fileID: 4103293485641533845, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1883565860}
     - target: {fileID: 4537574936787505961, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8465333144962509520, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
-      propertyPath: damage
-      value: 201
       objectReference: {fileID: 0}
     - target: {fileID: 8772061299861539594, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5477,42 +5481,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1055711941 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1626355111601214313, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-  m_PrefabInstance: {fileID: 1883565858}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1055711942 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6179229441627296601, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
   m_PrefabInstance: {fileID: 1883565858}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1055711945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055711941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 3
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!198 &1139457685 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 7307496598227596810, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
@@ -15213,10 +15186,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1626355111601214313, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1055711945}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
 --- !u!114 &1883565859 stripped
 MonoBehaviour:
@@ -15229,6 +15199,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4034b6d10c87ec4892aa733b7a92497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CircleWaveDistortion
+--- !u!1 &1883565860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6767371128271720153, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+  m_PrefabInstance: {fileID: 1883565858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1898249465
 GameObject:
   m_ObjectHideFlags: 0
