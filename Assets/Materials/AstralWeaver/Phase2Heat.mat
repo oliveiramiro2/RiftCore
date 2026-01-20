@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7058383322081546229
+--- !u!114 &-2801677444025425265
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Editor::UnityEditor.Rendering.Universal.AssetVersion
   version: 10
 --- !u!21 &2100000
 Material:
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DashTest
-  m_Shader: {fileID: -6465566751694194690, guid: b37f445ae1b66f543826821e37288c4a, type: 3}
+  m_Name: Phase2Heat
+  m_Shader: {fileID: -6465566751694194690, guid: 776882ad1e0f464459b49728507506e2, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -32,23 +32,23 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: _FlashColor
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 58763a00e3528fc49ac88ece09548578, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4041257e74ba7a241bad71e224ab733b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_13aba5bd193a4098a8871c766849d146_Texture_1_Texture2D:
+    - _MaskTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_368510fc0d284df2ba8090bc8867f151_Texture_1_Texture2D:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_91e68419215d413c907c9f52c5eac03b_Texture_1_Texture2D:
+    - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -66,17 +66,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AmountMultiply: 5.02
-    - _AmountMultiply2: 0.11
-    - _DashAmount: 0.09
-    - _LightIntensity: 2
-    - _TimerController: 200
-    - _addVector2: 0.15
-    - _addVector2Segundo: 0.07
-    - _radial: 200
+    - _EnableExternalAlpha: 0
+    - _HeatIntensity: 0.4
+    - _PulseSpeed: 4
+    - _PulseStrength: 1
+    - _ZWrite: 0
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.13327658, g: 2.8284268, b: 1.2641398, a: 1}
-    - _FlashColor: {r: 0.011026256, g: 0, b: 2.9960785, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _HeatColor: {r: 0.05972846, g: 0.15249996, b: 4.220819, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
