@@ -53,6 +53,8 @@ GameObject:
   - component: {fileID: 6590351400067413618}
   - component: {fileID: 75357202584648504}
   - component: {fileID: 8972309599432259298}
+  - component: {fileID: 6834261323500383135}
+  - component: {fileID: 5671258329635096736}
   m_Layer: 0
   m_Name: GameFlowManager
   m_TagString: Untagged
@@ -210,6 +212,86 @@ MonoBehaviour:
       - m_Target: {fileID: 9082342545592153334}
         m_TargetAssemblyTypeName: AWGameFlowManager, Assembly-CSharp
         m_MethodName: ResetPlayerHitSparksEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6834261323500383135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2716629217700966755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 6aa2082ecc425294abddac3ef11bc6db, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
+        m_MethodName: StartDistortionAtBoss
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9082342545592153334}
+        m_TargetAssemblyTypeName: AWGameFlowManager, Assembly-CSharp
+        m_MethodName: OnBossPhase2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5671258329635096736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2716629217700966755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 7d4f109173818e1468c2b67aa142963f, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
+        m_MethodName: StartDistortionAtBoss
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9082342545592153334}
+        m_TargetAssemblyTypeName: AWGameFlowManager, Assembly-CSharp
+        m_MethodName: OnBossDeath
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -390,7 +472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AWMaterialManager
   regularMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   growMaterial: {fileID: 2100000, guid: 73d88dd12182fb34db035017ff123d59, type: 2}
-  hitMaterial: {fileID: 2100000, guid: 708e15dc08c7b6b438d60121fa1faf74, type: 2}
+  hitMaterial: {fileID: 2100000, guid: 3a0fd4df9657d364f8b8a479bb41a115, type: 2}
 --- !u!114 &2895489525175337793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,7 +926,9 @@ GameObject:
   - component: {fileID: 909639479734572590}
   - component: {fileID: 6038732780623357135}
   - component: {fileID: 6621140480641832987}
-  - component: {fileID: 7527617053474905998}
+  - component: {fileID: 6704386858994009700}
+  - component: {fileID: 2265827245578720735}
+  - component: {fileID: 8375708165845997430}
   m_Layer: 0
   m_Name: AWSFXManager
   m_TagString: Untagged
@@ -885,6 +969,10 @@ MonoBehaviour:
   crystalsSound: {fileID: 11400000, guid: a0e3a9b55d0984740b722be7335e9109, type: 2}
   shieldSound: {fileID: 11400000, guid: 58dea56189405924b9d829e413ac9df0, type: 2}
   teleportSound: {fileID: 11400000, guid: fdcb04d215ba3fc4ea28a84d17216c8a, type: 2}
+  enemyDeathSound: {fileID: 11400000, guid: 48d156e45167c1e4eb2eb36ba562ba8a, type: 2}
+  laughSound: {fileID: 11400000, guid: fde07c2c8275d0d4a9cbed8ea91bcc53, type: 2}
+  sighSound: {fileID: 11400000, guid: 08394b84a4fe0794fbbeb3a49abed3ec, type: 2}
+  screamSound: {fileID: 11400000, guid: 7aa227d1f81e2094f9ce39c16f847a5e, type: 2}
 --- !u!114 &3865465773338170271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1025,7 +1113,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7527617053474905998
+--- !u!114 &6704386858994009700
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1037,13 +1125,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 8e3c1fce5be6d374ca518c461901313e, type: 2}
+  gameEvent: {fileID: 11400000, guid: 17521b3867df59447a19d8d9cdeeb908, type: 2}
   response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2825563942954273077}
         m_TargetAssemblyTypeName: AWSFXManager, Assembly-CSharp
-        m_MethodName: PlayTeleportSound
+        m_MethodName: PlayLaughSighSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2265827245578720735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7864681865049598767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 6aa2082ecc425294abddac3ef11bc6db, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2825563942954273077}
+        m_TargetAssemblyTypeName: AWSFXManager, Assembly-CSharp
+        m_MethodName: PlayScreamSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8375708165845997430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7864681865049598767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 7d4f109173818e1468c2b67aa142963f, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2825563942954273077}
+        m_TargetAssemblyTypeName: AWSFXManager, Assembly-CSharp
+        m_MethodName: PlayEnemyDeathSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
