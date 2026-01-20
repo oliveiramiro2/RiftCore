@@ -3733,6 +3733,18 @@ MonoBehaviour:
   response:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1883565859}
+        m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
+        m_MethodName: StartDistortionAtBoss
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 654119987}
         m_TargetAssemblyTypeName: AWGameFlowManager, Assembly-CSharp
         m_MethodName: OnBossDeath
@@ -3761,6 +3773,18 @@ MonoBehaviour:
   response:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1883565859}
+        m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
+        m_MethodName: StartDistortionAtBoss
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 654119987}
         m_TargetAssemblyTypeName: AWGameFlowManager, Assembly-CSharp
         m_MethodName: OnBossPhase2
@@ -15194,6 +15218,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1055711945}
   m_SourcePrefab: {fileID: 100100000, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+--- !u!114 &1883565859 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7833601473309044650, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+  m_PrefabInstance: {fileID: 1883565858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4034b6d10c87ec4892aa733b7a92497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CircleWaveDistortion
 --- !u!1 &1898249465
 GameObject:
   m_ObjectHideFlags: 0

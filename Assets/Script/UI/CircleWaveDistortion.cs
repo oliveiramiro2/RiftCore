@@ -53,6 +53,7 @@ public class CircleWaveDistortion : MonoBehaviour
         material.SetFloat(shaderTimeProperty, 0f);
         material.SetFloat(shaderAlphaProperty, 0f);
         playerController.canMove = true;
+        if (bossController == null) yield break;
         bossController.GetComponent<BaseEntity>().canMove = true;
     }
 }

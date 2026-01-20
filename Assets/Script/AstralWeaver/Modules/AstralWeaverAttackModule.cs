@@ -42,6 +42,7 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
   void Update()
   {
+    if (owner.IsDead) return;
     if (energyBallFollow)
     {
       LockTargetEnergyBall();
@@ -96,6 +97,9 @@ public class AstralWeaverAttackModule : MonoBehaviour
     }
 
     int index = Random.Range(0, validAttacks.Count);
+
+    if (owner.IsDead) return;
+
     validAttacks[index].Invoke();
   }
 
@@ -176,6 +180,8 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
     yield return new WaitForSeconds(2f);
 
+    if (owner.IsDead) yield break;
+
     energyBallFollow = false;
     auxControl.Deactivate();
     energyBallPrefab.SetActive(false);
@@ -197,13 +203,14 @@ public class AstralWeaverAttackModule : MonoBehaviour
     laserPrefab.SetActive(true);
 
 
-    yield return new WaitForSeconds(2f);
+    yield return new WaitForSeconds(1f);
 
     lookingTarget = false;
     entity.LocomotionModule.canFlip = false;
     entity.awEvents.OnLaser.Raise();
 
     yield return new WaitForSeconds(0.3f);
+    if (owner.IsDead) yield break;
 
     laserMaterial.SetFloat("_Alpha", 1f);
     laserMaterial.SetFloat("_DistortionAmount", 1f);
@@ -222,11 +229,15 @@ public class AstralWeaverAttackModule : MonoBehaviour
     entity.AnimatorBridge.AstralWeaverMultiLasers();
 
     yield return new WaitForSeconds(1f);
+
+    if (owner.IsDead) yield break;
     entity.awEvents.OnMultiLasers.Raise();
     laserManager.LasersStart();
 
 
     yield return new WaitForSeconds(4f);
+
+    if (owner.IsDead) yield break;
     entity.awEvents.OnMultiLasers.Raise();
     laserManager.LasersStart();
 
@@ -238,6 +249,8 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
   private IEnumerator ShieldRoutine(AstralWeaverController entity)
   {
+
+    if (owner.IsDead) yield break;
     entity.AnimatorBridge.AstralWeaverShield();
     yield return new WaitForSeconds(2f);
     canAttackTimer = true;
@@ -270,6 +283,8 @@ public class AstralWeaverAttackModule : MonoBehaviour
 
 
     yield return new WaitForSeconds(1f);
+
+    if (owner.IsDead) yield break;
     for (int i = 0; i < crystalsPrefabs.Length; i++)
     {
       crystalsPrefabs[i].GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;

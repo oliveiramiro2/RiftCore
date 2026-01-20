@@ -29,6 +29,9 @@ public class AstralWeaverDamageHandler : DamageHandlerBase<AstralWeaverControlle
   {
     base.Die();
     isDead = true;
+    controller.MarkAsDead();
     controller.awEvents.OnDeath.Raise();
+
+    Destroy(gameObject, 3f);
   }
 }
