@@ -16,10 +16,12 @@ public class AstralWeaverDamageHandler : DamageHandlerBase<AstralWeaverControlle
     base.TakeDamage(damage, hitDirection, knockbackForce);
 
     if (isDead) return;
+    controller.awEvents.OnHurt.Raise();
 
     if (controller.Phase2() && phase1)
     {
       phase1 = false;
+      controller.awEvents.OnPhase2.Raise();
     }
   }
 
@@ -27,5 +29,6 @@ public class AstralWeaverDamageHandler : DamageHandlerBase<AstralWeaverControlle
   {
     base.Die();
     isDead = true;
+    controller.awEvents.OnDeath.Raise();
   }
 }

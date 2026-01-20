@@ -12,4 +12,7 @@ public class AstralWeaverEvents : ScriptableObject
   public GameEvent OnShieldEnd;
   public GameEvent OnTeleportOut;
   public GameEvent OnTeleportIn;
+  public GameEvent OnPhase2;
+  public GameEvent OnHurt;
+  public GameEvent OnDeath;
 }

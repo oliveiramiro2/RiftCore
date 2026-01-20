@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: AstralWeaverEvents
   m_EditorClassIdentifier: Assembly-CSharp::AstralWeaverEvents
   OnEnergyBall: {fileID: 11400000, guid: cabcad7de666de142b861715795ee5d0, type: 2}
-  OnFinishEnergyBall: {fileID: 11400000, guid: a1ad619a59254cb409b317e2f5d7eae1, type: 2}
   OnLaser: {fileID: 11400000, guid: 351e6322f597fd2409d048979963cde7, type: 2}
   OnMultiLasers: {fileID: 11400000, guid: 6afd27fd0b409b948bc8ec2caf8ddf1d, type: 2}
   OnCrystals: {fileID: 11400000, guid: b109b3619fa2b2b46b9a8b46d263d71e, type: 2}
@@ -21,3 +20,6 @@ MonoBehaviour:
   OnShieldEnd: {fileID: 11400000, guid: 366b1d186c1d4854c81b6f58165a8a4f, type: 2}
   OnTeleportOut: {fileID: 11400000, guid: 8e3c1fce5be6d374ca518c461901313e, type: 2}
   OnTeleportIn: {fileID: 11400000, guid: 17521b3867df59447a19d8d9cdeeb908, type: 2}
+  OnPhase2: {fileID: 11400000, guid: 6aa2082ecc425294abddac3ef11bc6db, type: 2}
+  OnHurt: {fileID: 11400000, guid: 31670c536e362d5469d94ff7519b1355, type: 2}
+  OnDeath: {fileID: 11400000, guid: 7d4f109173818e1468c2b67aa142963f, type: 2}
