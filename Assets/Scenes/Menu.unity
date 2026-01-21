@@ -253,6 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51032d42b61908d4ca11e0acbe129747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chooseEnemyImage: {fileID: 0}
 --- !u!4 &337742502
 Transform:
   m_ObjectHideFlags: 0
@@ -561,7 +562,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 337742501}
         m_TargetAssemblyTypeName: MenuMain, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: StartGameAW
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
