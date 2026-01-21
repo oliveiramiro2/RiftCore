@@ -15432,7 +15432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxCombo: 2
-  finishCooldown: 1
+  finishCooldown: 0.2
   resetComboOnFinish: 0
 --- !u!114 &5642633308573088304
 MonoBehaviour:

@@ -35,7 +35,7 @@ public class SwordBuff : MonoBehaviour, IAbility
     player.events.OnEndBuff.Raise();
     player.buffSwordDamage -= 1;
 
-    yield return new WaitForSeconds(cooldown);
+    yield return new WaitForSeconds(cooldown - duration);
     active = false;
   }
 }
