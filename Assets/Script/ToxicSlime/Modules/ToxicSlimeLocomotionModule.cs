@@ -23,7 +23,7 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
     owner = entity;
   }
 
-  public void Patroling(ToxicSlimeController entity)
+  public void Rolling(ToxicSlimeController entity)
   {
     float targetSpeed = entity.IsFacingRight() ? entity.MoveSpeed : -entity.MoveSpeed;
     entity.Physics.ToxicSlimeMoveHorizontal(targetSpeed);
@@ -38,11 +38,11 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
     }
   }
 
-  public void Roll(float duration, float rotations)
+  public void Roll(float duration, float rotations, bool disableCollider = true)
   {
     rollCollider.enabled = true;
     normalCollider.enabled = false;
-    StartCoroutine(RollRoutine(duration, rotations));
+    StartCoroutine(RollRoutine(duration, rotations, disableCollider));
   }
 
   public void JumpAtTarget(Vector2 target, float height, float duration)
@@ -50,7 +50,7 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
     StartCoroutine(JumpToTarget(target, height, duration));
   }
 
-  private IEnumerator RollRoutine(float duration, float rotations)
+  private IEnumerator RollRoutine(float duration, float rotations, bool disableCollider = true)
   {
     float elapsed = 0f;
 
@@ -72,31 +72,37 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
 
     transform.rotation = Quaternion.Euler(0f, 0f, targetZ % 360f);
 
+    if (disableCollider)
+      EnableNormalCollider();
+  }
+
+  private void EnableNormalCollider()
+  {
     normalCollider.enabled = true;
     rollCollider.enabled = false;
   }
 
   private IEnumerator JumpToTarget(Vector2 target, float height, float duration)
-{
+  {
     Vector2 start = transform.position;
     float time = 0f;
 
     while (time < duration)
     {
-        time += Time.deltaTime;
-        float t = time / duration;
+      time += Time.deltaTime;
+      float t = time / duration;
 
-        Vector2 pos = Vector2.Lerp(start, target, t);
+      Vector2 pos = Vector2.Lerp(start, target, t);
 
-        float yOffset = height * 4 * (t - 0.5f) * (t - 0.5f) * -1 + height;
-        pos.y += yOffset;
+      float yOffset = height * 4 * (t - 0.5f) * (t - 0.5f) * -1 + height;
+      pos.y += yOffset;
 
-        transform.position = pos;
-        yield return null;
+      transform.position = pos;
+      yield return null;
     }
 
     transform.position = target;
-}
+  }
 
   public void BossCanRoll()
   {

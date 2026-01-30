@@ -63,8 +63,8 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     System.Collections.Generic.List<System.Action> validAttacks = new()
     {
-      () => Attack1(entity),
-      // () => Attack2(entity),
+      () => JumpRoll(entity),
+      () => RollAttack(entity),
       // () => Attack3(entity)
     };
 
@@ -81,7 +81,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     validAttacks[index].Invoke();
   }
 
-  private void Attack1(ToxicSlimeController entity)
+  private void JumpRoll(ToxicSlimeController entity)
   {
     Debug.Log("ToxicSlime Attack 1");
     Vector2 targetPosition = player.position;
@@ -102,11 +102,24 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     entity.Locomotion.JumpAtTarget(targetPosition, jumpHeight, jumpDuration);
     yield return new WaitForSeconds(rollDuration);
     entity.AnimatorBridge.ToxicSlimeBallEnd();
+    entity.isAttacking = false;
   }
 
-  private void Attack2(ToxicSlimeController entity)
+  private void RollAttack(ToxicSlimeController entity)
   {
-    Debug.Log("ToxicSlime Attack 2");
+    StartCoroutine(RollAttackRoutine(entity, 1f, 3f));
+  }
+
+  private IEnumerator RollAttackRoutine(ToxicSlimeController entity, float rollDuration, float rotations)
+  {
+    entity.Locomotion.FlipTowardsTarget(entity);
+    entity.AnimatorBridge.ToxicSlimeBallStart();
+    yield return new WaitForSeconds(0.5f);
+    entity.Locomotion.Rolling(entity);
+    entity.Locomotion.Roll(rollDuration, rotations, false);
+    yield return new WaitForSeconds(rollDuration);
+    StartCoroutine(RollJumpRoutine(entity, player.position, 1f, 3f, 5f, 1f));
+    //entity.isAttacking = false;
   }
 
   private void Attack3(ToxicSlimeController entity)
