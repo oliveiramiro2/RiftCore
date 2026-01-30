@@ -9,11 +9,11 @@ using UnityEngine.UI;
 public class GameFlowManager : MonoBehaviour
 {
     public static GameFlowManager Instance;
-    public Image fader;
+    public Image faderDeath;
     public TextMeshProUGUI deathText;
     public AudioSource musicSource;
-    public GameObject tetDeathEffect;
-    public Image tetFader;
+    public GameObject BossDeathEffect;
+    public Image BossFader;
     [SerializeField] private GameObject bossController;
 
     void Awake()
@@ -27,22 +27,22 @@ public class GameFlowManager : MonoBehaviour
         StartCoroutine(DeathFlow());
     }
 
-    public void TetDied()
+    public void BossDied()
     {
-        StartCoroutine(DeathFlowTET());
+        StartCoroutine(DeathFlowBoss());
     }
 
-    IEnumerator DeathFlowTET()
+    IEnumerator DeathFlowBoss()
     {
         yield return new WaitForSecondsRealtime(7f);
 
         // InputSystem.actions.FindActionMap("Player").Disable();
         // InputSystem.actions.FindActionMap("UI").Enable();
-        tetDeathEffect.SetActive(true);
+        BossDeathEffect.SetActive(true);
         StartCoroutine(FadeOutMusic(4f));
         for (float i = 0; i <= 100; i += Time.unscaledDeltaTime * 0.1f)
         {
-            tetFader.color = new Color(0, 0, 0, i);
+            BossFader.color = new Color(0, 0, 0, i);
         }
         Time.timeScale = 0f;
     }
@@ -53,7 +53,7 @@ public class GameFlowManager : MonoBehaviour
         StartCoroutine(FadeOutMusic(4f));
         for (float i = 0; i <= 100; i += Time.unscaledDeltaTime * 0.001f)
         {
-            fader.color = new Color(0, 0, 0, i);
+            faderDeath.color = new Color(0, 0, 0, i);
         }
         deathText.gameObject.SetActive(true);
         yield return new WaitForSecondsRealtime(4f);

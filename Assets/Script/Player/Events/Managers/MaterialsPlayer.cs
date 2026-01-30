@@ -5,7 +5,7 @@ public class MaterialsPlayer : MonoBehaviour
 {
     [Header("Material Dash")]
     public Material dashMaterial;
-    public SpriteRenderer playerRenderer;
+    private SpriteRenderer playerRenderer;
 
     [Header("Material Hit")]
     public Material hitMaterial;
@@ -19,7 +19,13 @@ public class MaterialsPlayer : MonoBehaviour
     public float hitDuration = 0.5f;
 
     [Header("Original Material")]
-    public Material originalMaterial;
+    private Material originalMaterial;
+
+    private void Awake()
+    {
+        playerRenderer = GameObject.FindAnyObjectByType<PlayerController>().GetComponent<SpriteRenderer>();
+        originalMaterial = playerRenderer.material;
+    }
 
     public void DashEffect()
     {
