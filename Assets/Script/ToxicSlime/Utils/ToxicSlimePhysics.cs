@@ -18,8 +18,8 @@ public class ToxicSlimePhysics : MonoBehaviour
       facingDirection = (int)Mathf.Sign(targetSpeed);
   }
 
-  public void ToxicSlimeStopHorizontal()
+  public void ToxicSlimeStop()
   {
-    rb.linearVelocity = new Vector2(0f, rb.linearVelocityY);
+    rb.linearVelocity = new Vector2(0f, 0f);
   }
 }
