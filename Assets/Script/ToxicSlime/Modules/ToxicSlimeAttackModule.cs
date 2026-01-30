@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ToxicSlimeAttackModule : MonoBehaviour
@@ -62,15 +63,15 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     System.Collections.Generic.List<System.Action> validAttacks = new()
     {
-      () => attack1(entity),
-      () => attack2(entity),
-      () => attack3(entity)
+      () => Attack1(entity),
+      // () => Attack2(entity),
+      // () => Attack3(entity)
     };
 
     if (entity.Phase2())
     {
-      validAttacks.Add(() => attack4(entity));
-      validAttacks.Add(() => attack5(entity));
+      validAttacks.Add(() => Attack4(entity));
+      validAttacks.Add(() => Attack5(entity));
     }
 
     int index = Random.Range(0, validAttacks.Count);
@@ -80,27 +81,45 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     validAttacks[index].Invoke();
   }
 
-  private void attack1(ToxicSlimeController entity)
+  private void Attack1(ToxicSlimeController entity)
   {
     Debug.Log("ToxicSlime Attack 1");
+    Vector2 targetPosition = player.position;
+    float jumpHeight = 5f;
+    float jumpDuration = 1f;
+    float rollDuration = 1f;
+    float rotations = 3f;
+
+
+    StartCoroutine(RollJumpRoutine(entity, targetPosition, rollDuration, rotations, jumpHeight, jumpDuration));
   }
 
-  private void attack2(ToxicSlimeController entity)
+  private IEnumerator RollJumpRoutine(ToxicSlimeController entity, Vector2 targetPosition, float rollDuration, float rotations, float jumpHeight, float jumpDuration)
+  {
+    entity.AnimatorBridge.ToxicSlimeBallStart();
+    yield return new WaitForSeconds(0.5f);
+    entity.Locomotion.Roll(rollDuration, rotations);
+    entity.Locomotion.JumpAtTarget(targetPosition, jumpHeight, jumpDuration);
+    yield return new WaitForSeconds(rollDuration);
+    entity.AnimatorBridge.ToxicSlimeBallEnd();
+  }
+
+  private void Attack2(ToxicSlimeController entity)
   {
     Debug.Log("ToxicSlime Attack 2");
   }
 
-  private void attack3(ToxicSlimeController entity)
+  private void Attack3(ToxicSlimeController entity)
   {
     Debug.Log("ToxicSlime Attack 3");
   }
 
-  private void attack4(ToxicSlimeController entity)
+  private void Attack4(ToxicSlimeController entity)
   {
     Debug.Log("ToxicSlime Attack 4");
   }
 
-  private void attack5(ToxicSlimeController entity)
+  private void Attack5(ToxicSlimeController entity)
   {
     Debug.Log("ToxicSlime Attack 5");
   }

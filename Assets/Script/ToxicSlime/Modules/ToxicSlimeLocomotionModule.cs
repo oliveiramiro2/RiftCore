@@ -45,6 +45,11 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
     StartCoroutine(RollRoutine(duration, rotations));
   }
 
+  public void JumpAtTarget(Vector2 target, float height, float duration)
+  {
+    StartCoroutine(JumpToTarget(target, height, duration));
+  }
+
   private IEnumerator RollRoutine(float duration, float rotations)
   {
     float elapsed = 0f;
@@ -65,12 +70,33 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
       yield return null;
     }
 
-    // força alinhamento final
     transform.rotation = Quaternion.Euler(0f, 0f, targetZ % 360f);
 
     normalCollider.enabled = true;
     rollCollider.enabled = false;
   }
+
+  private IEnumerator JumpToTarget(Vector2 target, float height, float duration)
+{
+    Vector2 start = transform.position;
+    float time = 0f;
+
+    while (time < duration)
+    {
+        time += Time.deltaTime;
+        float t = time / duration;
+
+        Vector2 pos = Vector2.Lerp(start, target, t);
+
+        float yOffset = height * 4 * (t - 0.5f) * (t - 0.5f) * -1 + height;
+        pos.y += yOffset;
+
+        transform.position = pos;
+        yield return null;
+    }
+
+    transform.position = target;
+}
 
   public void BossCanRoll()
   {
