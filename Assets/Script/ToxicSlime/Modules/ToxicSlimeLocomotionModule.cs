@@ -26,7 +26,7 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
   public void Patroling(ToxicSlimeController entity)
   {
     float targetSpeed = entity.IsFacingRight() ? entity.MoveSpeed : -entity.MoveSpeed;
-    entity.ToxicSlimePhysics.ToxicSlimeMoveHorizontal(targetSpeed);
+    entity.Physics.ToxicSlimeMoveHorizontal(targetSpeed);
   }
 
   public void FlipTowardsTarget(ToxicSlimeController entity)
