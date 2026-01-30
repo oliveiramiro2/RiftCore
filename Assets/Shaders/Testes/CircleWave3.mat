@@ -50,7 +50,7 @@ Material:
     - _Size: 0.01
     - _TimeScale: 0
     m_Colors:
-    - _FocalPoint: {r: 0.13831252, g: 0.49399996, b: 0, a: 0}
+    - _FocalPoint: {r: 0.5382575, g: 0.494, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &2978755974147988279
