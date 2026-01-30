@@ -7,6 +7,7 @@ public class ToxicSlimeIdle : State<ToxicSlimeController>
 
   public override void EnterState(ToxicSlimeController entity)
   {
+    entity.AnimatorBridge.ToxicSlimeIdle();
     Debug.Log("Enter ToxicSlime Idle State");
     timer = 0f;
   }

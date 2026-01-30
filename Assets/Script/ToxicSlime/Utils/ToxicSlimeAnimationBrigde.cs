@@ -53,6 +53,7 @@ public class ToxicSlimeAnimationBridge : MonoBehaviour
     animator.Play(ballEndParam);
   }
 
+
   public bool TSIsCurrentAnimationFinished()
   {
     return animator.TSIsCurrentAnimationFinished();

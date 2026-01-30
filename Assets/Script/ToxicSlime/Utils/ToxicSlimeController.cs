@@ -12,8 +12,12 @@ public class ToxicSlimeController : BaseEntity
   public ToxicSlimeStateMachine ToxicSlimeSM { get; private set; }
   public ToxicSlimeStateFactory ToxicSlimeStateFactory { get; private set; }
   public ToxicSlimeAnimationBridge AnimatorBridge { get; private set; }
+  public ToxicSlimePhysics ToxicSlimePhysics { get; private set; }
+  public ToxicSlimeLocomotionModule ToxicSlimeLocomotionModule { get; private set; }
 
   public bool CanMove = true;
+
+  public bool canRoll = false;
 
   public bool isAttacking = false;
 
@@ -25,18 +29,21 @@ public class ToxicSlimeController : BaseEntity
 
   void Update()
   {
-      if (ToxicSlimeSM == null || !CanMove || IsDead)
-      {
-          return;
-      }
-      ToxicSlimeSM.UpdateStateMachine();
+    if (ToxicSlimeSM == null || !CanMove || IsDead)
+    {
+      return;
+    }
+    ToxicSlimeSM.UpdateStateMachine();
   }
 
-  public void SetupModules(ToxicSlimeStateMachine sm, ToxicSlimeStateFactory factory, ToxicSlimeAnimationBridge animator)
+  public void SetupModules(ToxicSlimeStateMachine sm, ToxicSlimeStateFactory factory, ToxicSlimeAnimationBridge animator,
+  ToxicSlimeLocomotionModule locomotion, ToxicSlimePhysics physics)
   {
-      ToxicSlimeSM = sm;
-      ToxicSlimeStateFactory = factory;
-      AnimatorBridge = animator;
+    ToxicSlimeSM = sm;
+    ToxicSlimeStateFactory = factory;
+    AnimatorBridge = animator;
+    ToxicSlimeLocomotionModule = locomotion;
+    ToxicSlimePhysics = physics;
   }
 
   public void FlipX(bool faceRight)

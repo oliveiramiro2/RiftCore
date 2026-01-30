@@ -21,7 +21,7 @@ public class ToxicSlimeStateFactory : MonoBehaviour
   {
 
     bossSM.AddTransition(ToxicSlimeIdle, ToxicSlimeAttack, () => owner.isAttacking);
-    bossSM.AddTransition(ToxicSlimeAttack, ToxicSlimeIdle, () => !owner.isAttacking);
+    bossSM.AddTransition(ToxicSlimeAttack, ToxicSlimeIdle, () => !owner.isAttacking && !owner.canRoll);
 
   }
 }

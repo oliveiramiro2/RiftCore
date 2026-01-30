@@ -9,6 +9,7 @@ public class ToxicSlimeAttack : State<ToxicSlimeController>
   {
     Debug.Log("Enter ToxicSlime Attack State");
     timer = 0f;
+    entity.AnimatorBridge.ToxicSlimeBallStart();
   }
 
   public override void UpdateState(ToxicSlimeController entity)
@@ -17,10 +18,16 @@ public class ToxicSlimeAttack : State<ToxicSlimeController>
     if (timer >= idleDuration)
     {
       entity.isAttacking = false;
+      entity.AnimatorBridge.ToxicSlimeBallEnd();
     }
+    Debug.Log($"can roll: {entity.canRoll}");
+    entity.ToxicSlimeLocomotionModule.FlipTowardsTarget(entity);
+    if (entity.canRoll)
+      entity.ToxicSlimeLocomotionModule.Patroling(entity);
   }
 
   public override void ExitState(ToxicSlimeController entity)
   {
+    entity.ToxicSlimePhysics.ToxicSlimeStopHorizontal();
   }
 }

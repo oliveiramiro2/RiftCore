@@ -361,6 +361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4679469754702024250, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: maxHealth
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8772061299861539594, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.67
@@ -479,6 +483,8 @@ GameObject:
   - component: {fileID: 914854945}
   - component: {fileID: 914854944}
   - component: {fileID: 914854943}
+  - component: {fileID: 914854949}
+  - component: {fileID: 914854948}
   m_Layer: 7
   m_Name: ToxicSlime
   m_TagString: Enemy
@@ -574,7 +580,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5254911560240711867, guid: 6a20a3c17b5cb7447ba24af0278c9cbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 4, y: 4}
@@ -717,9 +723,34 @@ MonoBehaviour:
   currentHealth: 100
   knockbackDuration: 0.15
   knockbackTimer: 0
-  MoveSpeed: 5
+  MoveSpeed: 7
   CanMove: 1
+  canRoll: 0
   isAttacking: 0
+--- !u!114 &914854948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914854937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64072209afff3554f8b3c9d124ed785f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimePhysics
+--- !u!114 &914854949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914854937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96cc5276d8d99b499cd3b6dd07424da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeLocomotionModule
 --- !u!1 &1287418782
 GameObject:
   m_ObjectHideFlags: 0
