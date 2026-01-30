@@ -474,6 +474,11 @@ GameObject:
   - component: {fileID: 914854939}
   - component: {fileID: 914854942}
   - component: {fileID: 914854941}
+  - component: {fileID: 914854947}
+  - component: {fileID: 914854946}
+  - component: {fileID: 914854945}
+  - component: {fileID: 914854944}
+  - component: {fileID: 914854943}
   m_Layer: 7
   m_Name: ToxicSlime
   m_TagString: Enemy
@@ -641,6 +646,80 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &914854943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914854937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12884119acb556347b72223be3373f6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeInitializer
+--- !u!114 &914854944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914854937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d153ec83ceb8c4fab1c18a38593176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeStateMachine
+--- !u!114 &914854945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914854937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99c1d13bdec4f147809a870cbcd02f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeStateFactory
+  bossSM: {fileID: 0}
+  owner: {fileID: 0}
+  isIdle: 1
+--- !u!114 &914854946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914854937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5770837ee6b0264e9cbd17aca93339a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeAnimationBridge
+--- !u!114 &914854947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914854937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7d8909b0a1f9054aa60d1f7e12e0a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeController
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  canMove: 1
+  maxHealth: 100
+  currentHealth: 100
+  knockbackDuration: 0.15
+  knockbackTimer: 0
+  MoveSpeed: 5
+  CanMove: 1
+  isAttacking: 0
 --- !u!1 &1287418782
 GameObject:
   m_ObjectHideFlags: 0
