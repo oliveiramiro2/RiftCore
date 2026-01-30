@@ -482,6 +482,7 @@ GameObject:
   - component: {fileID: 914854949}
   - component: {fileID: 914854948}
   - component: {fileID: 914854950}
+  - component: {fileID: 914854951}
   m_Layer: 7
   m_Name: ToxicSlime
   m_TagString: Enemy
@@ -784,6 +785,25 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.6763214
+--- !u!114 &914854951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914854937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c723cfd4969474191753675503388c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeAttackModule
+  isAttacking: 0
+  attackCooldown: 3
+  minDecisionTime: 2
+  maxDecisionTime: 4
+  minDecisionTimePhase2: 1
+  maxDecisionTimePhase2: 3
+  canAttackTimer: 1
 --- !u!1 &1287418782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,14 +1454,6 @@ PrefabInstance:
     - target: {fileID: 6450159259563791599, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
       propertyPath: m_Name
       value: ManagersTSArena
-      objectReference: {fileID: 0}
-    - target: {fileID: 7498423450056059889, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9059360065409117937, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
