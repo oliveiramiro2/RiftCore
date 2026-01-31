@@ -11,7 +11,7 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
   private CapsuleCollider2D normalCollider;
   private Transform posPlayer;
 
-  float auxX, auxY;
+  float auxX, auxY, timer = 0f, flipDelay = 0.2f;
 
   void Awake()
   {
@@ -24,6 +24,15 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
   void Update()
   {
     posPlayer = owner.PlayerTransform;
+
+    if (owner.isAttacking) return;
+    timer += Time.deltaTime;
+    if (timer >= flipDelay)
+    {
+      FlipTowardsTarget(owner);
+      timer = 0f;
+    }
+
   }
 
   public void Setup(ToxicSlimeController entity)
@@ -101,7 +110,7 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
       time += Time.deltaTime;
       float t = time / duration;
 
-      if (duration * 0.7 > time)
+      if (duration * 0.6 > time)
       {
         auxX = posPlayer.position.x;
         auxY = posPlayer.position.y;

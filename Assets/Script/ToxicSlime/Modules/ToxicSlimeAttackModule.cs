@@ -62,10 +62,14 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     System.Collections.Generic.List<System.Action> validAttacks = new()
     {
-      () => JumpRoll(entity),
-      () => RollAttack(entity),
-      // () => Attack3(entity)
+      () => JumpRoll(entity), // rolling jump towards player
+      () => RollAttack(entity) // rolling attack and jump at the end
     };
+
+    if (dist < 3f)
+    {
+      validAttacks.Add(() => SlapAttack(entity)); // slap attack
+    }
 
     if (entity.Phase2())
     {
@@ -82,7 +86,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
   private void JumpRoll(ToxicSlimeController entity)
   {
-    float jumpHeight = 7f;
+    float jumpHeight = 5f;
     float jumpDuration = 0.7f;
     float rollDuration = 0.7f;
     float rotations = 4f;
@@ -94,19 +98,24 @@ public class ToxicSlimeAttackModule : MonoBehaviour
   private IEnumerator RollJumpRoutine(ToxicSlimeController entity, float rollDuration, float rotations, float jumpHeight, float jumpDuration)
   {
     entity.AnimatorBridge.ToxicSlimeBallStart();
+
     yield return new WaitForSeconds(0.5f);
+
     entity.Locomotion.Roll(rollDuration, rotations);
     entity.Locomotion.JumpAtTarget(jumpHeight, jumpDuration);
+
     yield return new WaitForSeconds(rollDuration);
+
     RumbleManager.Instance.Play(RumbleType.HeavyHit);
     entity.AnimatorBridge.ToxicSlimeBallEnd();
+
     entity.isAttacking = false;
   }
 
   private void RollAttack(ToxicSlimeController entity)
   {
     float rollDuration = 1.5f;
-    float rotations = 12f;
+    float rotations = 16f;
     StartCoroutine(RollAttackRoutine(entity, rollDuration, rotations));
   }
 
@@ -117,18 +126,29 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     entity.Locomotion.FlipTowardsTarget(entity);
     entity.AnimatorBridge.ToxicSlimeBallStart();
+
     yield return new WaitForSeconds(0.5f);
+
     entity.Locomotion.Rolling(entity);
     entity.Locomotion.Roll(rollDuration, rotations, false);
+
     yield return new WaitForSeconds(rollDuration);
+
     RumbleManager.Instance.Play(RumbleType.Danger);
     StartCoroutine(RollJumpRoutine(entity, jumpRollDuration, jumpRotation, jumpHeight, jumpDuration));
-    //entity.isAttacking = false;
   }
 
-  private void Attack3(ToxicSlimeController entity)
+  private void SlapAttack(ToxicSlimeController entity)
   {
-    Debug.Log("ToxicSlime Attack 3");
+    entity.AnimatorBridge.ToxicSlimeSlap();
+
+    StartCoroutine(SlapAttackRoutine(entity));
+  }
+
+  private IEnumerator SlapAttackRoutine(ToxicSlimeController entity)
+  {
+    yield return new WaitForSeconds(1.2f);
+    entity.isAttacking = false;
   }
 
   private void Attack4(ToxicSlimeController entity)

@@ -15,6 +15,7 @@ public class ToxicSlimeController : BaseEntity
   public ToxicSlimePhysics Physics { get; private set; }
   public ToxicSlimeLocomotionModule Locomotion { get; private set; }
   public ToxicSlimeAttackModule Attack { get; private set; }
+  public ToxicSlimeCollidersContact CollidersContact { get; private set; }
 
   public bool CanMove = true;
 
@@ -38,7 +39,7 @@ public class ToxicSlimeController : BaseEntity
   }
 
   public void SetupModules(ToxicSlimeStateMachine sm, ToxicSlimeStateFactory factory, ToxicSlimeAnimationBridge animator,
-  ToxicSlimeLocomotionModule locomotion, ToxicSlimePhysics physics, ToxicSlimeAttackModule attack)
+  ToxicSlimeLocomotionModule locomotion, ToxicSlimePhysics physics, ToxicSlimeAttackModule attack, ToxicSlimeCollidersContact colliders)
   {
     ToxicSlimeSM = sm;
     ToxicSlimeStateFactory = factory;
@@ -46,6 +47,7 @@ public class ToxicSlimeController : BaseEntity
     Locomotion = locomotion;
     Physics = physics;
     Attack = attack;
+    CollidersContact = colliders;
   }
 
   public void FlipX(bool faceRight)

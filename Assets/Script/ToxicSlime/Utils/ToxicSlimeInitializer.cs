@@ -7,6 +7,7 @@ using UnityEngine;
 [RequireComponent(typeof(ToxicSlimeLocomotionModule))]
 [RequireComponent(typeof(ToxicSlimePhysics))]
 [RequireComponent(typeof(ToxicSlimeAttackModule))]
+[RequireComponent(typeof(ToxicSlimeCollidersContact))]
 public class ToxicSlimeInitializer : MonoBehaviour
 {
   void Awake()
@@ -18,8 +19,9 @@ public class ToxicSlimeInitializer : MonoBehaviour
     var physics = GetComponent<ToxicSlimePhysics>();
     var locomotion = GetComponent<ToxicSlimeLocomotionModule>();
     var attack = GetComponent<ToxicSlimeAttackModule>();
+    var colliders = GetComponent<ToxicSlimeCollidersContact>();
 
-    controller.SetupModules(sm, factory, animator, locomotion, physics, attack);
+    controller.SetupModules(sm, factory, animator, locomotion, physics, attack, colliders);
 
 
     sm.Setup(controller);
