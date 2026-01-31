@@ -721,7 +721,7 @@ MonoBehaviour:
   currentHealth: 100
   knockbackDuration: 0.15
   knockbackTimer: 0
-  MoveSpeed: 10
+  MoveSpeed: 12
   CanMove: 1
   canRoll: 0
   isAttacking: 0
@@ -1245,7 +1245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3298564035204342661, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.000122
+      value: -2.000183
       objectReference: {fileID: 0}
     - target: {fileID: 6179229441627296601, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y

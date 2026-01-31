@@ -52,7 +52,7 @@ public class RumbleManager : MonoBehaviour
                 break;
 
             case RumbleType.HeavyHit:
-                yield return SimpleRumble(0.6f, 0.8f, 0.15f);
+                yield return SimpleRumble(0.8f, 1f, 0.4f);
                 break;
 
             case RumbleType.Slam:
@@ -64,7 +64,7 @@ public class RumbleManager : MonoBehaviour
                 break;
 
             case RumbleType.Danger:
-                yield return PulseRumble(0.3f, 3);
+                yield return PulseRumble(2f, 7);
                 break;
         }
 

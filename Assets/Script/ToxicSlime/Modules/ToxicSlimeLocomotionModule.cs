@@ -9,6 +9,9 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
   private ToxicSlimeController owner;
   private CircleCollider2D rollCollider;
   private CapsuleCollider2D normalCollider;
+  private Transform posPlayer;
+
+  float auxX, auxY;
 
   void Awake()
   {
@@ -16,6 +19,11 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
     normalCollider = GetComponent<CapsuleCollider2D>();
     rollCollider.enabled = false;
     normalCollider.enabled = true;
+  }
+
+  void Update()
+  {
+    posPlayer = owner.PlayerTransform;
   }
 
   public void Setup(ToxicSlimeController entity)
@@ -45,9 +53,9 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
     StartCoroutine(RollRoutine(duration, rotations, disableCollider));
   }
 
-  public void JumpAtTarget(Vector2 target, float height, float duration)
+  public void JumpAtTarget(float height, float duration)
   {
-    StartCoroutine(JumpToTarget(target, height, duration));
+    StartCoroutine(JumpToTarget(height, duration));
   }
 
   private IEnumerator RollRoutine(float duration, float rotations, bool disableCollider = true)
@@ -62,7 +70,7 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
       elapsed += Time.deltaTime;
       float t = elapsed / duration;
 
-      float easedT = TemporalMath.EaseInOut(t);
+      float easedT = TemporalMath.EaseOut(t);
 
       float z = Mathf.Lerp(startZ, targetZ, easedT);
       transform.rotation = Quaternion.Euler(0f, 0f, z);
@@ -82,17 +90,24 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
     rollCollider.enabled = false;
   }
 
-  private IEnumerator JumpToTarget(Vector2 target, float height, float duration)
+  private IEnumerator JumpToTarget(float height, float duration)
   {
     Vector2 start = transform.position;
     float time = 0f;
 
     while (time < duration)
     {
+
       time += Time.deltaTime;
       float t = time / duration;
 
-      Vector2 pos = Vector2.Lerp(start, target, t);
+      if (duration * 0.7 > time)
+      {
+        auxX = posPlayer.position.x;
+        auxY = posPlayer.position.y;
+      }
+
+      Vector2 pos = Vector2.Lerp(start, new Vector2(auxX, auxY), t);
 
       float yOffset = height * 4 * (t - 0.5f) * (t - 0.5f) * -1 + height;
       pos.y += yOffset;
@@ -101,7 +116,7 @@ public class ToxicSlimeLocomotionModule : MonoBehaviour
       yield return null;
     }
 
-    transform.position = target;
+    transform.position = new Vector2(auxX, auxY);
   }
 
   public void BossCanRoll()
