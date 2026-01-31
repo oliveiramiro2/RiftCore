@@ -45,7 +45,7 @@ public class Hitbox : MonoBehaviour
     }
 
     // Chamado por Animation Event
-    public void Activate() => gameObject.GetComponent<BoxCollider2D>().enabled = true;
-    public void Deactivate() => gameObject.GetComponent<BoxCollider2D>().enabled = false;
+    public void Activate() => gameObject.GetComponent<Collider2D>().enabled = true;
+    public void Deactivate() => gameObject.GetComponent<Collider2D>().enabled = false;
 
 }

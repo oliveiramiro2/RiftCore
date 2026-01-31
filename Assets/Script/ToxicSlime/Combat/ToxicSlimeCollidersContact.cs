@@ -3,6 +3,7 @@ using UnityEngine;
 public class ToxicSlimeCollidersContact : MonoBehaviour
 {
   [SerializeField] private Hitbox slapHitbox;
+  [SerializeField] private Hitbox rollHitbox;
 
   public void EnableSlapHitbox()
   {
@@ -12,5 +13,15 @@ public class ToxicSlimeCollidersContact : MonoBehaviour
   public void DisableSlapHitbox()
   {
     slapHitbox.Deactivate();
+  }
+
+  public void EnableRollHitbox()
+  {
+    rollHitbox.Activate();
+  }
+
+  public void DisableRollHitbox()
+  {
+    rollHitbox.Deactivate();
   }
 }
