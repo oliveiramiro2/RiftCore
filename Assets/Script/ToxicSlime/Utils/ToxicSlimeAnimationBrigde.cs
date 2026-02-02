@@ -11,7 +11,7 @@ public class ToxicSlimeAnimationBridge : MonoBehaviour
   private readonly string slapParam = "slap";
   private readonly string toxicRainParam = "toxicRain";
   private readonly string toxicRainEndParam = "finishToxicRain";
-  private readonly string SplashParam = "splash";
+  private readonly string SplashParam = "Splash";
 
   void Awake()
   {

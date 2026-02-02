@@ -66,8 +66,9 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     List<System.Action> validAttacks = new()
     {
-      () => JumpRoll(entity), // rolling jump towards player
-      () => RollAttack(entity), // rolling attack and jump at the end
+      //() => JumpRoll(entity), // rolling jump towards player
+      //() => RollAttack(entity), // rolling attack and jump at the end
+      () => Attack5(entity)
     };
 
     if (dist < 3f)
@@ -181,6 +182,17 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
   private void Attack5(ToxicSlimeController entity)
   {
-    Debug.Log("ToxicSlime Attack 5");
+    entity.AnimatorBridge.ToxicSlimeSplash();
+
+    StartCoroutine(SplashAttackRoutine(entity));
+  }
+
+  private IEnumerator SplashAttackRoutine(ToxicSlimeController entity)
+  {
+    yield return new WaitForSeconds(0.5f);
+
+    yield return new WaitForSeconds(2f);
+
+    entity.isAttacking = false;
   }
 }
