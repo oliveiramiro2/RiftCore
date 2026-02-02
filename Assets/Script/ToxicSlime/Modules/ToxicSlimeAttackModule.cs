@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ToxicSlimeAttackModule : MonoBehaviour
@@ -14,6 +15,9 @@ public class ToxicSlimeAttackModule : MonoBehaviour
   [SerializeField] private float maxDecisionTime = 4f;
   [SerializeField] private float minDecisionTimePhase2 = 1f;
   [SerializeField] private float maxDecisionTimePhase2 = 3f;
+
+  [Header("Prefabs")]
+  public GameObject rainDropPrefab;
 
   public bool canAttackTimer = true;
   private float attackTimer = 0f;
@@ -62,9 +66,8 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     System.Collections.Generic.List<System.Action> validAttacks = new()
     {
-      //() => JumpRoll(entity), // rolling jump towards player
-      //() => RollAttack(entity), // rolling attack and jump at the end
-      () => ToxicRainAttack(entity)
+      () => JumpRoll(entity), // rolling jump towards player
+      () => RollAttack(entity), // rolling attack and jump at the end
     };
 
     if (dist < 3f)
@@ -166,7 +169,13 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     yield return new WaitForSeconds(1.5f);
     entity.AnimatorBridge.ToxicSlimeToxicRainEnd();
     entity.tsEvents.OnToxicRainCloundAppear.Raise();
-    yield return new WaitForSeconds(1f);
+    List<Vector2> points = owner.Physics.GetRandomPoints();
+
+    foreach (Vector2 pos in points)
+    {
+      Instantiate(rainDropPrefab, pos + Vector2.up * 6f, Quaternion.identity);
+      yield return new WaitForSeconds(0.2f);
+    }
     entity.isAttacking = false;
   }
 

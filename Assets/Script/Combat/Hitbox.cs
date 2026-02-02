@@ -27,6 +27,10 @@ public class Hitbox : MonoBehaviour
     {
         if (owner == null) return;
         if (other.gameObject == owner) return;
+        if (other.CompareTag("DestroyBullets"))
+        {
+            Destroy(gameObject, 0.05f);
+        }
 
         if (other.TryGetComponent(out Hurtbox hurtbox))
         {
