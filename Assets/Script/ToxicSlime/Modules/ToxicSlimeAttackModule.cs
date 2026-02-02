@@ -18,6 +18,12 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
   [Header("Prefabs")]
   public GameObject rainDropPrefab;
+  public GameObject projectilePrefab;
+
+  [Header("Projectile Settings")]
+  public float spawnHeight = 3f;
+  public float travelTime = 2f;
+  public float arcHeight = 2.5f;
 
   public bool canAttackTimer = true;
   private float attackTimer = 0f;
@@ -66,9 +72,9 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     List<System.Action> validAttacks = new()
     {
-      //() => JumpRoll(entity), // rolling jump towards player
-      //() => RollAttack(entity), // rolling attack and jump at the end
-      () => Attack5(entity)
+      () => JumpRoll(entity), // rolling jump towards player
+      () => RollAttack(entity), // rolling attack and jump at the end
+      () => SpalshAttack(entity)
     };
 
     if (dist < 3f)
@@ -79,7 +85,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     if (entity.Phase2())
     {
       validAttacks.Add(() => ToxicRainAttack(entity));
-      validAttacks.Add(() => Attack5(entity));
+      validAttacks.Add(() => SpalshAttack(entity));
     }
 
     int index = Random.Range(0, validAttacks.Count);
@@ -180,7 +186,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     entity.isAttacking = false;
   }
 
-  private void Attack5(ToxicSlimeController entity)
+  private void SpalshAttack(ToxicSlimeController entity)
   {
     entity.AnimatorBridge.ToxicSlimeSplash();
 
@@ -189,10 +195,28 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
   private IEnumerator SplashAttackRoutine(ToxicSlimeController entity)
   {
-    yield return new WaitForSeconds(0.5f);
+    yield return new WaitForSeconds(0.55f);
 
-    yield return new WaitForSeconds(2f);
+    List<Vector2> points = entity.Physics.GetRandomPoints();
+
+    foreach (Vector2 target in points)
+    {
+      SpawnProjectile(entity, target);
+      yield return new WaitForSeconds(0.05f);
+    }
+
+    yield return new WaitForSeconds(1f);
 
     entity.isAttacking = false;
+  }
+
+  void SpawnProjectile(ToxicSlimeController entity, Vector2 target)
+  {
+    Vector2 spawnPos = (Vector2)entity.transform.position;
+
+    var gameObjectAux = Instantiate(projectilePrefab, spawnPos, Quaternion.identity);
+
+    var proj = gameObjectAux.GetComponent<ToxicSplashProjectile>();
+    proj.Launch(target, travelTime, arcHeight);
   }
 }
