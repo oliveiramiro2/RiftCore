@@ -6,6 +6,8 @@ public class ToxicSlimeController : BaseEntity
   public float MoveSpeed = 5f;
   public bool IsFacingRight() => transform.localScale.x > 0;
   public bool Phase2() => currentHealth <= (maxHealth * 0.5f);
+
+  public ToxicSlimeEventsManager tsEvents;
   public Transform PlayerTransform { get; private set; }
 
 

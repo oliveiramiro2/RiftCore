@@ -34,7 +34,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1310162006038783716}
   m_Father: {fileID: 3640582893526892538}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5191975838795285276
@@ -551,6 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3209495289251032766}
+  - component: {fileID: 6975029866059233418}
   - component: {fileID: 3809021570023405961}
   - component: {fileID: 7498423450056059889}
   - component: {fileID: 9059360065409117937}
@@ -576,6 +578,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3640582893526892538}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6975029866059233418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3666143473054877482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1654abc3254b9344abb50a85b65185e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerGameFlowManager
+  playerHitSparksLeft: {fileID: 0}
+  playerHitSparksRight: {fileID: 0}
 --- !u!114 &3809021570023405961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,9 +626,21 @@ MonoBehaviour:
   response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AWGameFlowManager, Assembly-CSharp
+      - m_Target: {fileID: 6975029866059233418}
+        m_TargetAssemblyTypeName: PlayerGameFlowManager, Assembly-CSharp
         m_MethodName: SwordBuffEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SwordBuffCooldown, Assembly-CSharp
+        m_MethodName: ActivateCooldown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -638,8 +666,8 @@ MonoBehaviour:
   response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AWGameFlowManager, Assembly-CSharp
+      - m_Target: {fileID: 6975029866059233418}
+        m_TargetAssemblyTypeName: PlayerGameFlowManager, Assembly-CSharp
         m_MethodName: ResetPlayerHitSparksEffect
         m_Mode: 1
         m_Arguments:
@@ -838,6 +866,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &6170951963178070973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1310162006038783716}
+  m_Layer: 0
+  m_Name: TSFXManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1310162006038783716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6170951963178070973}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8823717928609086108}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6450159259563791599
 GameObject:
   m_ObjectHideFlags: 0

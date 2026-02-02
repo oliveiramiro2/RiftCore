@@ -62,8 +62,9 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     System.Collections.Generic.List<System.Action> validAttacks = new()
     {
-      () => JumpRoll(entity), // rolling jump towards player
-      () => RollAttack(entity) // rolling attack and jump at the end
+      //() => JumpRoll(entity), // rolling jump towards player
+      //() => RollAttack(entity), // rolling attack and jump at the end
+      () => ToxicRainAttack(entity)
     };
 
     if (dist < 3f)
@@ -73,7 +74,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     if (entity.Phase2())
     {
-      validAttacks.Add(() => Attack4(entity));
+      validAttacks.Add(() => ToxicRainAttack(entity));
       validAttacks.Add(() => Attack5(entity));
     }
 
@@ -151,9 +152,22 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     entity.isAttacking = false;
   }
 
-  private void Attack4(ToxicSlimeController entity)
+  private void ToxicRainAttack(ToxicSlimeController entity)
   {
-    Debug.Log("ToxicSlime Attack 4");
+    entity.AnimatorBridge.ToxicSlimeToxicRain();
+
+    StartCoroutine(ToxicRainAttackRoutine(entity));
+  }
+
+  private IEnumerator ToxicRainAttackRoutine(ToxicSlimeController entity)
+  {
+    yield return new WaitForSeconds(0.5f);
+    entity.tsEvents.OnToxicRainStart.Raise();
+    yield return new WaitForSeconds(1.5f);
+    entity.AnimatorBridge.ToxicSlimeToxicRainEnd();
+    entity.tsEvents.OnToxicRainCloundAppear.Raise();
+    yield return new WaitForSeconds(1f);
+    entity.isAttacking = false;
   }
 
   private void Attack5(ToxicSlimeController entity)

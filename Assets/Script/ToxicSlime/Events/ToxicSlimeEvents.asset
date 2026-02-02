@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e786da98b445f1d4c9368671915b619f, type: 3}
+  m_Name: ToxicSlimeEvents
+  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeEventsManager
+  OnToxicRainStart: {fileID: 11400000, guid: 09990bb5398f1ef46a0cce4190584944, type: 2}
+  OnToxicRainCloundAppear: {fileID: 11400000, guid: 7b7d6ed1cdb6d264eae3fc0719609437, type: 2}
