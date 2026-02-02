@@ -64,7 +64,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
   {
     float dist = Vector2.Distance(transform.position, player.position);
 
-    System.Collections.Generic.List<System.Action> validAttacks = new()
+    List<System.Action> validAttacks = new()
     {
       () => JumpRoll(entity), // rolling jump towards player
       () => RollAttack(entity), // rolling attack and jump at the end
