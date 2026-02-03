@@ -48,7 +48,6 @@ public class PlayerPhysics : MonoBehaviour
 
   public void MoveHorizontal(float targetSpeed)
   {
-    Debug.Log("slow: " + player.slowVelocity);
     rb.linearVelocity = new Vector2(targetSpeed / player.slowVelocity, rb.linearVelocityY);
   }
 

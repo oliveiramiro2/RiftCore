@@ -48,11 +48,9 @@ public abstract class BaseEntity : MonoBehaviour
             durationSlow = duration;
             slowVelocity += intensity;
             isSlowed = true;
-            Debug.Log($"duration: {durationSlow} / slow: {slowVelocity} / bool: {isSlowed}");
             return;
         }
         durationSlow += duration;
         slowVelocity += intensity;
-        Debug.Log($"ja tem duration: {durationSlow} / slow: {slowVelocity} / bool: {isSlowed}");
     }
 }

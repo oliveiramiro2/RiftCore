@@ -28,12 +28,13 @@ public class Hitbox : MonoBehaviour
     {
         if (owner == null) return;
         if (other.gameObject == owner) return;
-        if (gameObject.name == "ToxicPuddle" && other.CompareTag("DestroyBullets") && gameObject.CompareTag("Bullet"))
+        if (other.CompareTag("DestroyBullets") && gameObject.CompareTag("Bullet"))
         {
             Destroy(gameObject, 0.05f);
         }
 
-        if (other.CompareTag("Player") && gameObject.CompareTag("Bullet"))
+        if ((gameObject.GetComponent<PuddleToxic>() != null || gameObject.GetComponentInParent<ToxicSlimeController>() != null)
+            && other.CompareTag("Player") && gameObject.CompareTag("Bullet"))
         {
             other.GetComponentInParent<BaseEntity>().ApplySlow(1f);
         }
