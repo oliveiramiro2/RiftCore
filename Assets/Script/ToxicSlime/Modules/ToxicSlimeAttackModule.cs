@@ -74,7 +74,6 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     {
       () => JumpRoll(entity), // rolling jump towards player
       () => RollAttack(entity), // rolling attack and jump at the end
-      () => SpalshAttack(entity)
     };
 
     if (dist < 3f)
@@ -119,6 +118,8 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     RumbleManager.Instance.Play(RumbleType.HeavyHit);
     entity.AnimatorBridge.ToxicSlimeBallEnd();
+
+    yield return new WaitForSeconds(0.6f);
 
     entity.isAttacking = false;
   }

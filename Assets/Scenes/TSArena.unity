@@ -262,7 +262,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 6f45d2459ac1b4440a963c0251c7ff94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -285,7 +285,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6521884999696339631, guid: 812cbaa3464e2b54891b86e52efc1970, type: 3}
+  m_Sprite: {fileID: -1708719666388525724, guid: 13b3643f40b07844aa3464f0fd475b8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -361,8 +361,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.33333334
+  m_Offset: {x: 0.0036182404, y: 0}
+  m_Radius: 0.23581982
 --- !u!114 &44639781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5513,7 +5513,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 6f45d2459ac1b4440a963c0251c7ff94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5536,7 +5536,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6521884999696339631, guid: 812cbaa3464e2b54891b86e52efc1970, type: 3}
+  m_Sprite: {fileID: -1708719666388525724, guid: 13b3643f40b07844aa3464f0fd475b8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5554,13 +5554,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258629381}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: -4.2946095, y: -0.42189002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 599341858}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!114 &258629384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5612,8 +5612,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.046439648, y: 0.017691314}
-  m_Radius: 0.19401437
+  m_Offset: {x: -0.005311966, y: 0.017691314}
+  m_Radius: 0.21046543
 --- !u!50 &258629386
 Rigidbody2D:
   serializedVersion: 5
@@ -10960,7 +10960,7 @@ GameObject:
   - component: {fileID: 902148897}
   m_Layer: 8
   m_Name: RollHitbox
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26567,7 +26567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3298564035204342661, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.0007324
+      value: -2.0007935
       objectReference: {fileID: 0}
     - target: {fileID: 6179229441627296601, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y

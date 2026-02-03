@@ -9,6 +9,11 @@ public class RainHide : MonoBehaviour
     rain = this.gameObject;
   }
 
+  private void Start()
+  {
+    gameObject.transform.localScale = new Vector3(1, -1, 1);
+  }
+
   void OnTriggerEnter2D(Collider2D collision)
   {
     if (collision.gameObject.CompareTag("Player"))

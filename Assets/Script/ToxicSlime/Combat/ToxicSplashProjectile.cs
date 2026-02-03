@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class ToxicSplashProjectile : MonoBehaviour
 {
-  Vector2 startPos;
-  Vector2 targetPos;
+  private Vector2 startPos;
+  private Vector2 targetPos;
 
-  float travelTime;
-  float arcHeight;
-  float timer;
+  private float travelTime;
+  private float arcHeight;
+  private float timer;
+
+  private bool wasRotated = false;
 
   public void Launch(Vector2 target, float time, float height)
   {
@@ -20,6 +22,7 @@ public class ToxicSplashProjectile : MonoBehaviour
 
   void Update()
   {
+    if (timer >= 0) gameObject.GetComponent<Rigidbody2D>().IsSleeping();
 
     timer += Time.deltaTime;
     float t = timer / travelTime;
@@ -30,5 +33,10 @@ public class ToxicSplashProjectile : MonoBehaviour
     float arc = arcHeight * 4f * (t - t * t);
 
     transform.position = pos + Vector2.up * arc;
+    if (!wasRotated && gameObject.GetComponent<Rigidbody2D>().linearVelocityY < 0)
+    {
+      transform.localScale = new Vector3(1, -1, 1);
+      wasRotated = true;
+    }
   }
 }
