@@ -65,7 +65,9 @@ public class PlayerLocomotion : MonoBehaviour
 
   public void MoveGrounded(float inputX)
   {
-    float targetSpeed = inputX * stats.moveSpeed;
+    float targetSpeed = inputX * (stats.moveSpeed / player.slowVelocity);
+
+    Debug.Log("velocidade: " + targetSpeed);
 
     float newSpeed = Mathf.Lerp(
         rb.linearVelocityX,

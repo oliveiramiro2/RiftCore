@@ -21,8 +21,12 @@ public abstract class BaseEntity : MonoBehaviour
 
 
     [Header("Knockback Settings")]
-    public float knockbackDuration = 0.15f;
+    public float knockbackDuration = 0.05f;
     public float knockbackTimer;
+
+    [Header("Debuff's")]
+    public float slowVelocity = 1, durationSlow;
+    protected bool isSlowed = false;
 
 
     protected virtual void Awake()
@@ -35,5 +39,20 @@ public abstract class BaseEntity : MonoBehaviour
     public virtual void MarkAsDead()
     {
         IsDead = true;
+    }
+
+    public void ApplySlow(float duration, float intensity = 1f)
+    {
+        if (!isSlowed)
+        {
+            durationSlow = duration;
+            slowVelocity += intensity;
+            isSlowed = true;
+            Debug.Log($"duration: {durationSlow} / slow: {slowVelocity} / bool: {isSlowed}");
+            return;
+        }
+        durationSlow += duration;
+        slowVelocity += intensity;
+        Debug.Log($"ja tem duration: {durationSlow} / slow: {slowVelocity} / bool: {isSlowed}");
     }
 }

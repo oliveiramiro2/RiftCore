@@ -55,6 +55,7 @@ public class PlayerInitializer : MonoBehaviour
     attack.Initialize(controller);
     input.Initialize(controller);
     abilities.Initialize(controller);
+    physics.Initialize(controller);
 
     sm.Initialize(factory.Idle);
   }

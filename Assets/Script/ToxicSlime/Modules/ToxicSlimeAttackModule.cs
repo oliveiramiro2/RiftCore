@@ -73,8 +73,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     List<System.Action> validAttacks = new()
     {
-      () => JumpRoll(entity), // rolling jump towards player
-      () => ToxicRainAttack(entity), // rolling jump towards player
+      () => JumpAttack(entity), // rolling jump towards player
       () => SpalshAttack(entity), // rolling attack and jump at the end
     };
 
@@ -87,6 +86,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     {
       validAttacks.Add(() => RollAttack(entity));
       validAttacks.Add(() => RollAttack(entity));
+      validAttacks.Add(() => ToxicRainAttack(entity));
     }
 
     int index = Random.Range(0, validAttacks.Count);
@@ -96,7 +96,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     validAttacks[index].Invoke();
   }
 
-  private void JumpRoll(ToxicSlimeController entity)
+  private void JumpAttack(ToxicSlimeController entity)
   {
     float jumpHeight = 5f;
     float jumpDuration = 0.7f;
@@ -184,7 +184,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     foreach (Vector2 pos in points)
     {
       Instantiate(rainDropPrefab, pos + Vector2.up * 6f, Quaternion.identity);
-      StartCoroutine(PutPuddleInGroundRountine(pos, 0.5f));
+      StartCoroutine(PutPuddleInGroundRountine(pos, 1.1f));
       yield return new WaitForSeconds(0.2f);
     }
     entity.isAttacking = false;

@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class Hitbox : MonoBehaviour
 {
+    private static WaitForSeconds _waitForSeconds1 = new WaitForSeconds(1f);
     [Header("Damage Info")]
     public int damage = 1;
     public float knockbackForce = 0.1f;
@@ -27,9 +28,14 @@ public class Hitbox : MonoBehaviour
     {
         if (owner == null) return;
         if (other.gameObject == owner) return;
-        if (other.CompareTag("DestroyBullets") && gameObject.CompareTag("Bullet"))
+        if (gameObject.name == "ToxicPuddle" && other.CompareTag("DestroyBullets") && gameObject.CompareTag("Bullet"))
         {
             Destroy(gameObject, 0.05f);
+        }
+
+        if (other.CompareTag("Player") && gameObject.CompareTag("Bullet"))
+        {
+            other.GetComponentInParent<BaseEntity>().ApplySlow(1f);
         }
 
         if (other.TryGetComponent(out Hurtbox hurtbox))

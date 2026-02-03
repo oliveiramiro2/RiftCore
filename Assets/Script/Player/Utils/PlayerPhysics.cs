@@ -8,6 +8,8 @@ public class PlayerPhysics : MonoBehaviour
   public LayerMask groundLayer;
   public float groundCheckRadius = 0.1f;
 
+  private PlayerController player;
+
 
   [Header("Runtime")]
   public bool isGrounded;
@@ -20,6 +22,11 @@ public class PlayerPhysics : MonoBehaviour
   void Awake()
   {
     rb = GetComponent<Rigidbody2D>();
+  }
+
+  public void Initialize(PlayerController player)
+  {
+    this.player = player;
   }
 
 
@@ -41,7 +48,8 @@ public class PlayerPhysics : MonoBehaviour
 
   public void MoveHorizontal(float targetSpeed)
   {
-    rb.linearVelocity = new Vector2(targetSpeed, rb.linearVelocityY);
+    Debug.Log("slow: " + player.slowVelocity);
+    rb.linearVelocity = new Vector2(targetSpeed / player.slowVelocity, rb.linearVelocityY);
   }
 
 

@@ -84,6 +84,21 @@ public class PlayerController : BaseEntity
 
         PlayerSM.UpdateStateMachine();
 
+         Debug.Log($"duração: {durationSlow} boll: {isSlowed}");
+        if (isSlowed)
+        {
+            durationSlow -= Time.deltaTime;
+            Debug.Log($"duração: {durationSlow}");
+            if (durationSlow <= 0)
+            {
+                isSlowed = false;
+                durationSlow = 0f;
+                slowVelocity = 1f;
+
+                Debug.Log($"reset duration: {durationSlow} / slow: {slowVelocity}");
+            }
+        }
+
         InputReader.ResetOneFrameInputs();
     }
 
