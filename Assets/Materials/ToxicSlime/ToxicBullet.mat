@@ -65,7 +65,7 @@ Material:
     - _SinePulse: 4
     m_Colors:
     - _CenterPoint: {r: 0.5, g: 0.5, b: 0, a: 0}
-    - _Color: {r: 290.63727, g: 290.63727, b: 290.63727, a: 1}
+    - _Color: {r: 383.49802, g: 383.49802, b: 383.49802, a: 1}
     - _FakeLightDir: {r: 0.6, g: 0.8, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

@@ -19,6 +19,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
   [Header("Prefabs")]
   public GameObject rainDropPrefab;
   public GameObject projectilePrefab;
+  public GameObject PuddlePrefab;
 
   [Header("Projectile Settings")]
   public float spawnHeight = 3f;
@@ -73,7 +74,8 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     List<System.Action> validAttacks = new()
     {
       () => JumpRoll(entity), // rolling jump towards player
-      () => RollAttack(entity), // rolling attack and jump at the end
+      () => ToxicRainAttack(entity), // rolling jump towards player
+      () => SpalshAttack(entity), // rolling attack and jump at the end
     };
 
     if (dist < 3f)
@@ -83,8 +85,8 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     if (entity.Phase2())
     {
-      validAttacks.Add(() => ToxicRainAttack(entity));
-      validAttacks.Add(() => SpalshAttack(entity));
+      validAttacks.Add(() => RollAttack(entity));
+      validAttacks.Add(() => RollAttack(entity));
     }
 
     int index = Random.Range(0, validAttacks.Count);
@@ -182,6 +184,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     foreach (Vector2 pos in points)
     {
       Instantiate(rainDropPrefab, pos + Vector2.up * 6f, Quaternion.identity);
+      StartCoroutine(PutPuddleInGroundRountine(pos, 0.5f));
       yield return new WaitForSeconds(0.2f);
     }
     entity.isAttacking = false;
@@ -203,12 +206,19 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     foreach (Vector2 target in points)
     {
       SpawnProjectile(entity, target);
+      StartCoroutine(PutPuddleInGroundRountine(target, 1f));
       yield return new WaitForSeconds(0.05f);
     }
 
     yield return new WaitForSeconds(1f);
 
     entity.isAttacking = false;
+  }
+
+  private IEnumerator PutPuddleInGroundRountine(Vector2 target, float delay)
+  {
+    yield return new WaitForSeconds(delay);
+    Instantiate(PuddlePrefab, target, Quaternion.identity);
   }
 
   void SpawnProjectile(ToxicSlimeController entity, Vector2 target)

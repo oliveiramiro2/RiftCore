@@ -22,7 +22,7 @@ public class ToxicSplashProjectile : MonoBehaviour
 
   void Update()
   {
-    if (timer >= 0) gameObject.GetComponent<Rigidbody2D>().IsSleeping();
+    if (timer >= 10) gameObject.GetComponent<Rigidbody2D>().IsSleeping();
 
     timer += Time.deltaTime;
     float t = timer / travelTime;

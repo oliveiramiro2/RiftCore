@@ -10,7 +10,7 @@ public class ToxicSlimePhysics : MonoBehaviour
   public Camera mainCamera;
 
   [Header("Ground")]
-  public float groundY = 0f;
+  public float groundY = -4f;
 
   [Header("Grid Settings")]
   public float spacing = 1.2f;
