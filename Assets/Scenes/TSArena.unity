@@ -5811,10 +5811,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8044278510268215328, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
-      propertyPath: knockbackDuration
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 8772061299861539594, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.67
@@ -26640,81 +26636,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 914854938}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!1 &1493209528 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6170951963178070973, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-  m_PrefabInstance: {fileID: 7217192487406576756}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1493209530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493209528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 09990bb5398f1ef46a0cce4190584944, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1493209531}
-        m_TargetAssemblyTypeName: ToxicSlimeFXManager, Assembly-CSharp
-        m_MethodName: PlayToxicRainPrepairEffect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1493209531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493209528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49b12f6934df00e4cb9b14f5879ad68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeFXManager
-  ToxicRainPrepairEffect: {fileID: 1470295508}
-  ToxicRainCloudEffect: {fileID: 176245394}
---- !u!114 &1493209532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493209528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 7b7d6ed1cdb6d264eae3fc0719609437, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1493209531}
-        m_TargetAssemblyTypeName: ToxicSlimeFXManager, Assembly-CSharp
-        m_MethodName: PlayToxicRainCloudEffect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1563814535 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1532812740172449827, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
@@ -26742,18 +26663,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153315574}
-    - target: {fileID: 448445967081729230, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001281376175279845, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.15991211
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001281376175279845, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2.3474731
-      objectReference: {fileID: 0}
     - target: {fileID: 1411546517212298428, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -26774,18 +26683,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153315574}
-    - target: {fileID: 1634954942760273949, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitPauseMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1634954942760273949, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerInputReader, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1742361992450981435, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.022521973
-      objectReference: {fileID: 0}
     - target: {fileID: 2322414044806529118, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -26826,14 +26723,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2646125690889257513, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.7199707
-      objectReference: {fileID: 0}
-    - target: {fileID: 3298564035204342661, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -2.0009155
-      objectReference: {fileID: 0}
     - target: {fileID: 6179229441627296601, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -26850,10 +26739,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6264942001868244520, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6883358430272879504, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_Camera
       value: 
@@ -26862,10 +26747,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153315574}
-    - target: {fileID: 7613298851216508485, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToMainMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 8467794127327636146, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -31832,6 +31713,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1127589872568081229, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
+      propertyPath: ToxicRainCloudEffect
+      value: 
+      objectReference: {fileID: 176245394}
+    - target: {fileID: 1127589872568081229, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
+      propertyPath: ToxicRainPrepairEffect
+      value: 
+      objectReference: {fileID: 1470295508}
     - target: {fileID: 3640582893526892538, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.48874
@@ -31963,16 +31852,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6170951963178070973, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1493209531}
-    - targetCorrespondingSourceObject: {fileID: 6170951963178070973, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1493209530}
-    - targetCorrespondingSourceObject: {fileID: 6170951963178070973, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1493209532}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -15267,8 +15267,10 @@ MonoBehaviour:
   canMove: 1
   maxHealth: 0
   currentHealth: 0
-  knockbackDuration: 0.4
+  knockbackDuration: 0.1
   knockbackTimer: 0
+  slowVelocity: 1
+  durationSlow: 0
   baseMoveSpeed: 8
   baseJumpForce: 12
   stats: {fileID: 11400000, guid: 00116baa969ad1147b7524a1a7f3b60b, type: 2}
