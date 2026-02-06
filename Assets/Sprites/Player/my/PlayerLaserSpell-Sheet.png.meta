@@ -148,12 +148,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_0
       rect:
         serializedVersion: 2
-        x: 27
+        x: 0
         y: 0
-        width: 12
-        height: 30
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_1
       rect:
         serializedVersion: 2
-        x: 91
+        x: 64
         y: 0
-        width: 13
-        height: 30
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_2
       rect:
         serializedVersion: 2
-        x: 155
+        x: 128
         y: 0
-        width: 15
-        height: 30
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_3
       rect:
         serializedVersion: 2
-        x: 219
+        x: 192
         y: 0
-        width: 15
-        height: 30
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -236,12 +236,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_4
       rect:
         serializedVersion: 2
-        x: 283
+        x: 256
         y: 0
-        width: 15
-        height: 30
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -258,12 +258,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_5
       rect:
         serializedVersion: 2
-        x: 296
-        y: 20
-        width: 6
-        height: 6
+        x: 320
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -280,12 +280,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_6
       rect:
         serializedVersion: 2
-        x: 297
-        y: 18
-        width: 7
-        height: 7
+        x: 384
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -302,12 +302,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_7
       rect:
         serializedVersion: 2
-        x: 347
+        x: 448
         y: 0
-        width: 18
-        height: 30
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -324,12 +324,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_8
       rect:
         serializedVersion: 2
-        x: 411
+        x: 512
         y: 0
-        width: 15
-        height: 30
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,12 +346,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_9
       rect:
         serializedVersion: 2
-        x: 475
+        x: 576
         y: 0
-        width: 19
-        height: 30
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -368,12 +368,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_10
       rect:
         serializedVersion: 2
-        x: 534
+        x: 640
         y: 0
-        width: 24
-        height: 30
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -390,12 +390,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_11
       rect:
         serializedVersion: 2
-        x: 598
+        x: 704
         y: 0
-        width: 24
-        height: 30
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -412,12 +412,12 @@ TextureImporter:
       name: PlayerLaserSpell-Sheet_12
       rect:
         serializedVersion: 2
-        x: 653
+        x: 768
         y: 0
-        width: 21
-        height: 30
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -430,77 +430,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: PlayerLaserSpell-Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 728
-        y: 0
-        width: 23
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 255a9d95ec7d233f0800000000000000
-      internalID: -922437692386859694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerLaserSpell-Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 795
-        y: 0
-        width: 11
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 895ec6af9c0f22540800000000000000
-      internalID: 4981808888105723288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerLaserSpell-Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 296
-        y: 10
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c0e6fe1bd5cfb0b0800000000000000
-      internalID: -5710628257574494012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ea20f368a1c56004f98d17a388672be4
     internalID: 0
     vertices: []
     indices: 
@@ -508,16 +442,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       PlayerLaserSpell-Sheet_0: -5521387110606394876
       PlayerLaserSpell-Sheet_1: -854818740150037227
       PlayerLaserSpell-Sheet_10: -8708565000021658461
       PlayerLaserSpell-Sheet_11: -3232308315023167708
       PlayerLaserSpell-Sheet_12: -4865735514861143887
-      PlayerLaserSpell-Sheet_13: -922437692386859694
-      PlayerLaserSpell-Sheet_14: 4981808888105723288
-      PlayerLaserSpell-Sheet_15: -5710628257574494012
       PlayerLaserSpell-Sheet_2: 5167227566049489735
       PlayerLaserSpell-Sheet_3: 5820418816063495715
       PlayerLaserSpell-Sheet_4: 176896151931089319
