@@ -4,10 +4,12 @@ public class PuddleToxic : MonoBehaviour
 {
   private float fallSpeed = 1f, timer = 0, duration = 3f;
   private ParticleSystem explosion;
+  private ToxicSlimeController owner;
 
   private void Start()
   {
     explosion = gameObject.GetComponentInChildren<ParticleSystem>();
+    owner = FindAnyObjectByType<ToxicSlimeController>();
   }
 
   void Update()
@@ -23,7 +25,7 @@ public class PuddleToxic : MonoBehaviour
     if (collision.CompareTag("Player"))
     {
       explosion.Play();
-
+      owner.tsEvents.OnToxicProjectilExplosion.Raise();
       Destroy(gameObject, 0.1f);
     }
   }

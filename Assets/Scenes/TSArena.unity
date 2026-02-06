@@ -24623,60 +24623,6 @@ Transform:
   - {fileID: 387196824}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1374260595
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1374260596}
-  - component: {fileID: 1374260597}
-  m_Layer: 0
-  m_Name: TSSFXManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1374260596
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374260595}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7217192487406576757}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1374260597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374260595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b9effb7b64d8df43b0e74ca8073b24c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeSFXManager
-  death: {fileID: 11400000, guid: ad911efc679ce6542a621915a1f38fdf, type: 2}
-  projectilExplosion: {fileID: 11400000, guid: af5315e582e427c4384003c370ba064b, type: 2}
-  hurt: {fileID: 11400000, guid: ca79115b5391d6f4c9d3db990970fd59, type: 2}
-  jumpImpact: {fileID: 11400000, guid: 66668f1fcf1749d4c80d182828bacc3b, type: 2}
-  phase2: {fileID: 11400000, guid: a214959f773464a4a856b9e77dd7d2a6, type: 2}
-  projectilLand: {fileID: 11400000, guid: d85de8f9702ee8246bacb523e28c89c4, type: 2}
-  rainFall: {fileID: 11400000, guid: 4b3429820e6f93f4e8fc65cd2aab89d1, type: 2}
-  regular: {fileID: 11400000, guid: 7677be24d59411947a891e6bb6e8ac23, type: 2}
-  vomit: {fileID: 11400000, guid: d49a83424fb09f9408f7d83d55599054, type: 2}
-  rolling: {fileID: 11400000, guid: f543b3e8b091870429c0ceead6eedbdb, type: 2}
 --- !u!1 &1389046450
 GameObject:
   m_ObjectHideFlags: 0
@@ -36948,50 +36894,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1823666270 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2685074082179939469, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-  m_PrefabInstance: {fileID: 7217192487406576756}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1823666279 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5238973336618638065, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-  m_PrefabInstance: {fileID: 7217192487406576756}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1823666270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d00ec2b6284db4a909064ae1a88149, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1823666280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1823666270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: af52792ffa764f740bd01d475c66d023, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1823666279}
-        m_TargetAssemblyTypeName: SFXPlayer, Assembly-CSharp
-        m_MethodName: PlayLaserSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1832083535
 GameObject:
   m_ObjectHideFlags: 0
@@ -42823,6 +42725,14 @@ PrefabInstance:
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 524884737}
+    - target: {fileID: 5050159433080297904, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
+      propertyPath: vomit
+      value: 
+      objectReference: {fileID: 11400000, guid: f543b3e8b091870429c0ceead6eedbdb, type: 2}
+    - target: {fileID: 5050159433080297904, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
+      propertyPath: rolling
+      value: 
+      objectReference: {fileID: 11400000, guid: d49a83424fb09f9408f7d83d55599054, type: 2}
     - target: {fileID: 5191975838795285276, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
       propertyPath: buffFX
       value: 
@@ -42855,10 +42765,6 @@ PrefabInstance:
       propertyPath: backgroundFocusBuffFX
       value: 
       objectReference: {fileID: 404140502}
-    - target: {fileID: 5238973336618638065, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      propertyPath: LaserAttack
-      value: 
-      objectReference: {fileID: 11400000, guid: fb31df9cbf912434f9576e25955d1116, type: 2}
     - target: {fileID: 6450159259563791599, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
       propertyPath: m_Name
       value: ManagersTSArena
@@ -42873,20 +42779,9 @@ PrefabInstance:
       objectReference: {fileID: 404140505}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5944562991137408593, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1374260596}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2685074082179939469, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1823666280}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
---- !u!4 &7217192487406576757 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5944562991137408593, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-  m_PrefabInstance: {fileID: 7217192487406576756}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

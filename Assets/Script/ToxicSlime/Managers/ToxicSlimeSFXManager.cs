@@ -12,6 +12,7 @@ public class ToxicSlimeSFXManager : MonoBehaviour
   public SoundData regular;
   public SoundData vomit;
   public SoundData rolling;
+  public SoundData slap;
 
   public void PlayDeath()
   {
@@ -62,5 +63,8 @@ public class ToxicSlimeSFXManager : MonoBehaviour
     rolling.Play();
   }
 
-
+  public void PlaySlap()
+  {
+    slap.Play();
+  }
 }

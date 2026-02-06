@@ -24,3 +24,4 @@ MonoBehaviour:
   OnToxicVomit: {fileID: 11400000, guid: c4efab90c8e25f249a0568318a92df1e, type: 2}
   OnToxicRegular: {fileID: 11400000, guid: d3c4c62cc5f370f42bf753d121e13f4c, type: 2}
   OnToxicRainFall: {fileID: 11400000, guid: 0593ccf0d8097c74eb4fcd93d8592bcb, type: 2}
+  OnToxicSlap: {fileID: 11400000, guid: ec1361d9cb1b42444b5b18d38f5819aa, type: 2}

@@ -15,4 +15,5 @@ public class ToxicSlimeEventsManager : ScriptableObject
   public GameEvent OnToxicVomit;
   public GameEvent OnToxicRegular;
   public GameEvent OnToxicRainFall;
+  public GameEvent OnToxicSlap;
 }

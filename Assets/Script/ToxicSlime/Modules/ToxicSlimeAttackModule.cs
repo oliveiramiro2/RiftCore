@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ToxicSlimeAttackModule : MonoBehaviour
 {
@@ -118,6 +119,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     yield return new WaitForSeconds(rollDuration);
 
+    entity.tsEvents.OnToxicJumpImpact.Raise();
     RumbleManager.Instance.Play(RumbleType.HeavyHit);
     entity.AnimatorBridge.ToxicSlimeBallEnd();
 
@@ -145,6 +147,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     entity.Locomotion.Rolling(entity);
     entity.Locomotion.Roll(rollDuration, rotations, false);
+    entity.tsEvents.OnToxicRoll.Raise();
 
     yield return new WaitForSeconds(rollDuration);
 
@@ -161,7 +164,9 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
   private IEnumerator SlapAttackRoutine(ToxicSlimeController entity)
   {
-    yield return new WaitForSeconds(1.2f);
+    yield return new WaitForSeconds(0.5f);
+    entity.tsEvents.OnToxicSlap.Raise();
+    yield return new WaitForSeconds(0.7f);
     entity.isAttacking = false;
   }
 
@@ -176,6 +181,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
   {
     yield return new WaitForSeconds(0.5f);
     entity.tsEvents.OnToxicRainStart.Raise();
+    entity.tsEvents.OnToxicVomit.Raise();
     yield return new WaitForSeconds(1.5f);
     entity.AnimatorBridge.ToxicSlimeToxicRainEnd();
     entity.tsEvents.OnToxicRainCloundAppear.Raise();
@@ -185,6 +191,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     {
       Instantiate(rainDropPrefab, pos + Vector2.up * 6f, Quaternion.identity);
       StartCoroutine(PutPuddleInGroundRountine(pos, 1.1f));
+      entity.tsEvents.OnToxicRainFall.Raise();
       yield return new WaitForSeconds(0.2f);
     }
     entity.isAttacking = false;
@@ -207,6 +214,7 @@ public class ToxicSlimeAttackModule : MonoBehaviour
     {
       SpawnProjectile(entity, target);
       StartCoroutine(PutPuddleInGroundRountine(target, 1f));
+      entity.tsEvents.OnToxicProjectilLand.Raise();
       yield return new WaitForSeconds(0.05f);
     }
 
