@@ -41,6 +41,9 @@ public class PlayerController : BaseEntity
     public Hitbox dashHitbox;
     public int buffSwordDamage = 1;
 
+
+    public bool isCastingSpell = false;
+
     public void SetupModules(PlayerInputReader input, PlayerStateMachine sm, PlayerPhysics physics,
                              PlayerLocomotion locomotion, PlayerJumpModule jump, PlayerAttackModule attack,
                              PlayerStateFactory factory, PlayerAnimatorBridge animator, PlayerDashModule dash,

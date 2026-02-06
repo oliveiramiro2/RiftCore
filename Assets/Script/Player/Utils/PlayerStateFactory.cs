@@ -21,6 +21,7 @@ public class PlayerStateFactory : MonoBehaviour
     public State<PlayerController> Fall { get; private set; }
     public State<PlayerController> Attack { get; private set; }
     public State<PlayerController> Dash { get; private set; }
+    public State<PlayerController> Spell { get; private set; }
 
     void Awake()
     {
@@ -30,6 +31,7 @@ public class PlayerStateFactory : MonoBehaviour
         Fall = new PlayerFallState();
         Attack = new PlayerAttackState();
         Dash = new PlayerDashState();
+        Spell = new PlayerCastSpellState();
     }
 
     public void InitializeTransitions()
@@ -47,7 +49,7 @@ public class PlayerStateFactory : MonoBehaviour
         playerSM.AddTransition(Fall, Idle, () => !owner.IsDead && physicsModule.isGrounded && physicsModule.rb.linearVelocityY <= 0);
 
         // Dash
-        playerSM.AddAnyTransition(Dash, () => !owner.IsDead && inputReader.DashPressed && dashModule.CanDash() && owner.canMove);
+        playerSM.AddAnyTransition(Dash, () => !owner.IsDead && inputReader.DashPressed && dashModule.CanDash() && owner.canMove && !owner.isCastingSpell);
         playerSM.AddTransition(Dash, Fall, () => !owner.IsDead && !dashModule.IsDashing() && physicsModule.rb.linearVelocityY <= 0);
         playerSM.AddTransition(Dash, Idle, () => !owner.IsDead && !dashModule.IsDashing() && physicsModule.isGrounded && Mathf.Abs(inputReader.MoveInput.x) < 0.1f);
         playerSM.AddTransition(Dash, Run, () => !owner.IsDead && !dashModule.IsDashing() && physicsModule.isGrounded && Mathf.Abs(inputReader.MoveInput.x) > 0.1f);
@@ -55,7 +57,7 @@ public class PlayerStateFactory : MonoBehaviour
 
 
         // Attack
-        playerSM.AddAnyTransition(Attack, () => !owner.IsDead && owner.canMove && inputReader.AttackPressed && !attackModule.IsOnCooldown());
+        playerSM.AddAnyTransition(Attack, () => !owner.IsDead && owner.canMove && inputReader.AttackPressed && !attackModule.IsOnCooldown() && !owner.isCastingSpell);
 
         playerSM.AddTransition(Attack, Fall,
             () => !owner.IsDead && !physicsModule.isGrounded
@@ -71,5 +73,12 @@ public class PlayerStateFactory : MonoBehaviour
             () => !owner.IsDead && physicsModule.isGrounded && Mathf.Abs(inputReader.MoveInput.x) < 0.1f
                && !attackModule.IsInComboWindow()
         && animatorBridge.IsCurrentAnimationFinished());
+
+        // Spell
+        playerSM.AddAnyTransition(Spell, () => !owner.IsDead && owner.canMove && inputReader.CastSpell && !owner.isCastingSpell);
+        playerSM.AddTransition(Spell, Idle, () => !owner.IsDead && owner.canMove
+        && !owner.isCastingSpell && Mathf.Abs(inputReader.MoveInput.x) < 0.1f);
+        playerSM.AddTransition(Spell, Run, () => !owner.IsDead && owner.canMove
+        && !owner.isCastingSpell && Mathf.Abs(inputReader.MoveInput.x) > 0.1f);
     }
 }
