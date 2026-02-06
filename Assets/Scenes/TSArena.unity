@@ -304,7 +304,7 @@ Transform:
   m_GameObject: {fileID: 44639775}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.14, y: -2.33, z: 0}
+  m_LocalPosition: {x: -7.14, y: 10.701889, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5566,7 +5566,7 @@ Transform:
   m_GameObject: {fileID: 258629381}
   serializedVersion: 2
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: -4.2946095, y: -0.42189002, z: 0}
+  m_LocalPosition: {x: -4.2946095, y: 12.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5821,6 +5821,10 @@ PrefabInstance:
     - target: {fileID: 4537574936787505961, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465333144962509520, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: damage
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8772061299861539594, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6096,7 +6100,7 @@ Transform:
   m_GameObject: {fileID: 518386263}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.6746097, y: -4.7318897, z: 0}
+  m_LocalPosition: {x: -2.6746097, y: 8.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11060,126 +11064,6 @@ Transform:
   - {fileID: 518386265}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &612226569 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3666143473054877482, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-  m_PrefabInstance: {fileID: 7217192487406576756}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &612226573 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3809021570023405961, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-  m_PrefabInstance: {fileID: 7217192487406576756}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612226569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a75997192f7f1c8408daf984c967f203, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameFlowManager
---- !u!114 &612226575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612226569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: af2111606b9734447a1cd008e0e244f8, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 612226576}
-        m_TargetAssemblyTypeName: ToxicSlimeGameFlow, Assembly-CSharp
-        m_MethodName: OnBossPhase2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 82281296}
-        m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
-        m_MethodName: StartDistortionAtBoss
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 612226573}
-        m_TargetAssemblyTypeName: GameFlowManager, Assembly-CSharp
-        m_MethodName: BossDied
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &612226576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612226569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3390ba056976385409f468b8795a6243, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeGameFlow
---- !u!114 &612226577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612226569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 61021e7761de6ef4abe7bc1646a14e06, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 612226576}
-        m_TargetAssemblyTypeName: ToxicSlimeGameFlow, Assembly-CSharp
-        m_MethodName: OnBossPhase2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 82281296}
-        m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
-        m_MethodName: StartDistortionAtBoss
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &686841214
 GameObject:
   m_ObjectHideFlags: 0
@@ -12863,7 +12747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ee2ce0e1c01844a86e5ba1714603c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeDamageHandler
-  maxHealth: 1200
+  maxHealth: 1800
   currentHealth: 0
   upgradeLifeBonus: 1
   invincibilityDuration: 0
@@ -37750,10 +37634,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3298564035204342661, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -2.0012207
-      objectReference: {fileID: 0}
     - target: {fileID: 6179229441627296601, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -42860,14 +42740,10 @@ PrefabInstance:
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 524884737}
-    - target: {fileID: 5050159433080297904, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      propertyPath: vomit
+    - target: {fileID: 4721736432389725593, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: f543b3e8b091870429c0ceead6eedbdb, type: 2}
-    - target: {fileID: 5050159433080297904, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      propertyPath: rolling
-      value: 
-      objectReference: {fileID: 11400000, guid: d49a83424fb09f9408f7d83d55599054, type: 2}
+      objectReference: {fileID: 82281296}
     - target: {fileID: 5191975838795285276, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
       propertyPath: buffFX
       value: 
@@ -42904,6 +42780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ManagersTSArena
       objectReference: {fileID: 0}
+    - target: {fileID: 6707845419046476951, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 82281296}
     - target: {fileID: 6975029866059233418, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
       propertyPath: playerHitSparksLeft
       value: 
@@ -42915,16 +42795,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3666143473054877482, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 612226576}
-    - targetCorrespondingSourceObject: {fileID: 3666143473054877482, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 612226575}
-    - targetCorrespondingSourceObject: {fileID: 3666143473054877482, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 612226577}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc4ce9c3ff5c2b840850b188a2614151, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

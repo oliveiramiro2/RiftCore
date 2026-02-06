@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TSDefault
+  m_Name: TSPhase2
   m_Shader: {fileID: -6465566751694194690, guid: 0c1b9ec44c81f9846a1c35a10ef0e2fc, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -55,14 +55,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _NoiseAmount: 0.0015
-    - _NoiseScale: 402
+    - _NoiseAmount: 0.003
+    - _NoiseScale: 200
     - _NoiseSpeed: 0.025
-    - _PulseAmplitude: 0.55
-    - _PulseBase: 0.6
+    - _PulseAmplitude: 0.9
+    - _PulseBase: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SinePulse: 1
+    - _SinePulse: 4
     - _SpinSpeed: 1
     m_Colors:
     - _CenterPoint: {r: 0.5, g: 0.5, b: 0, a: 0}
