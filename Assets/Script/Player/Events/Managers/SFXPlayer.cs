@@ -2,16 +2,15 @@ using UnityEngine;
 
 public class SFXPlayer : MonoBehaviour
 {
-    [Header("Attack")]
+    [Header("SFX")]
     public SoundData attackSound;
-
-    [Header("Movement")]
     public SoundData moveSound;
     public SoundData landSound;
     public SoundData jumpSound;
     public SoundData dashSound;
     public SoundData hitSound;
     public SoundData deathSound;
+    public SoundData LaserAttack;
 
 
     public void PlaySlashSound()
@@ -44,5 +43,10 @@ public class SFXPlayer : MonoBehaviour
     public void PlayDeathSound()
     {
         deathSound.Play();
+    }
+
+    public void PlayLaserSound()
+    {
+        LaserAttack.Play();
     }
 }

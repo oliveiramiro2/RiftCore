@@ -16,4 +16,6 @@ public class PlayerEvents : ScriptableObject
   public GameEvent OnFocusBuff;
   public GameEvent OnBuff;
   public GameEvent OnEndBuff;
+
+  public GameEvent OnLaserSpell;
 }
