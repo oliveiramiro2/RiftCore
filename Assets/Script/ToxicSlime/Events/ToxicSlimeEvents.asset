@@ -14,3 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeEventsManager
   OnToxicRainStart: {fileID: 11400000, guid: 09990bb5398f1ef46a0cce4190584944, type: 2}
   OnToxicRainCloundAppear: {fileID: 11400000, guid: 7b7d6ed1cdb6d264eae3fc0719609437, type: 2}
+  OnToxicDeath: {fileID: 11400000, guid: af2111606b9734447a1cd008e0e244f8, type: 2}
+  OnToxicHurt: {fileID: 11400000, guid: 3a36de93a61d03c41b10d04423ec5b5f, type: 2}
+  OnToxicPhase2: {fileID: 11400000, guid: 61021e7761de6ef4abe7bc1646a14e06, type: 2}
+  OnToxicJumpImpact: {fileID: 11400000, guid: 41691b1b3bcb9ae41b10aa4727463890, type: 2}
+  OnToxicProjectilLand: {fileID: 11400000, guid: 9ebca34f62f698c47a1d8b1db75f7926, type: 2}
+  OnToxicProjectilExplosion: {fileID: 11400000, guid: 41ab467c97169b743813e3fc2073df1e, type: 2}
+  OnToxicRoll: {fileID: 11400000, guid: 521a53ea40bf3224c934196a4c427165, type: 2}
+  OnToxicVomit: {fileID: 11400000, guid: c4efab90c8e25f249a0568318a92df1e, type: 2}
+  OnToxicRegular: {fileID: 11400000, guid: d3c4c62cc5f370f42bf753d121e13f4c, type: 2}
+  OnToxicRainFall: {fileID: 11400000, guid: 0593ccf0d8097c74eb4fcd93d8592bcb, type: 2}
