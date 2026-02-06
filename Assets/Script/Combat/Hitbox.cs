@@ -34,7 +34,7 @@ public class Hitbox : MonoBehaviour
         }
 
         if ((gameObject.GetComponent<PuddleToxic>() != null || gameObject.GetComponentInParent<ToxicSlimeController>() != null)
-            && other.CompareTag("Player") && gameObject.CompareTag("Bullet"))
+            && other.CompareTag("Player") && (gameObject.CompareTag("Bullet") || gameObject.CompareTag("SlowContact")))
         {
             other.GetComponentInParent<BaseEntity>().ApplySlow(1f);
         }
@@ -52,6 +52,21 @@ public class Hitbox : MonoBehaviour
 
             Vector2 hitDir = (other.transform.position - owner.transform.position).normalized;
             hurtbox.ApplyDamage(finalDamage, hitDir, knockbackForce);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (owner == null) return;
+        if (other.gameObject == owner) return;
+
+        if (!gameObject.CompareTag("ContinuousAttack")) return;
+
+        if (other.TryGetComponent(out Hurtbox hurtbox))
+        {
+
+            Vector2 hitDir = (other.transform.position - owner.transform.position).normalized;
+            hurtbox.ApplyDamage(damage, hitDir, knockbackForce);
         }
     }
 

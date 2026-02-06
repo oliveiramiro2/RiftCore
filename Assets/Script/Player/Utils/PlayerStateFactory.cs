@@ -75,7 +75,7 @@ public class PlayerStateFactory : MonoBehaviour
         && animatorBridge.IsCurrentAnimationFinished());
 
         // Spell
-        playerSM.AddAnyTransition(Spell, () => !owner.IsDead && owner.canMove && inputReader.CastSpell && !owner.isCastingSpell);
+        playerSM.AddAnyTransition(Spell, () => !owner.IsDead && owner.canMove && inputReader.CastSpell && !owner.isCastingSpell && owner.PlayerAbilities.CheckSpellCooldown());
         playerSM.AddTransition(Spell, Idle, () => !owner.IsDead && owner.canMove
         && !owner.isCastingSpell && Mathf.Abs(inputReader.MoveInput.x) < 0.1f);
         playerSM.AddTransition(Spell, Run, () => !owner.IsDead && owner.canMove

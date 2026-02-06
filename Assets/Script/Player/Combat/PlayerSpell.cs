@@ -1,9 +1,12 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerSpell : MonoBehaviour, IAbility
 {
-  public float cooldown = 4f;
+  private readonly float cooldown = 8f;
   float timer;
+
+  public GameObject laser;
 
   void Update()
   {
@@ -18,8 +21,19 @@ public class PlayerSpell : MonoBehaviour, IAbility
 
   public void Use(PlayerController player)
   {
-    // spawn spell
-    Debug.Log("Casting Spell");
+    StartCoroutine(LaserRoutine(player));
+  }
+
+  IEnumerator LaserRoutine(PlayerController player)
+  {
+    yield return new WaitForSeconds(0.98f);
+    laser.SetActive(true);
+    laser.transform.localScale = new(200, 0.6f, 1);
+
+    yield return new WaitForSeconds(0.5f);
+    laser.transform.localScale = Vector3.one;
+    laser.SetActive(false);
+
     timer = cooldown;
   }
 }

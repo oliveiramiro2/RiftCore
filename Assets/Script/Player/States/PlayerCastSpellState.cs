@@ -8,16 +8,15 @@ public class PlayerCastSpellState : State<PlayerController>
   public override void EnterState(PlayerController entity)
   {
     entity.isCastingSpell = true;
-    Debug.Log("entrou");
     entity.AnimatorBridge.TiggerSpell();
     timer = duration;
+    entity.PlayerAbilities.HandleSpell();
   }
 
   public override void UpdateState(PlayerController entity)
   {
     timer -= Time.deltaTime;
 
-    Debug.Log("update");
     if (timer <= 0)
     {
       entity.isCastingSpell = false;
@@ -26,8 +25,6 @@ public class PlayerCastSpellState : State<PlayerController>
 
   public override void ExitState(PlayerController entity)
   {
-
-    Debug.Log("saiu");
     entity.AnimatorBridge.ResetTiggerSpell();
   }
 }

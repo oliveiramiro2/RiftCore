@@ -9,6 +9,8 @@ TagManager:
   - SwordHitbox
   - DestroyBullets
   - Bullet
+  - ContinuousAttack
+  - SlowContact
   layers:
   - Default
   - TransparentFX

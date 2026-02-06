@@ -17,7 +17,6 @@ public class AbilityManager : MonoBehaviour
 
   void Update()
   {
-    HandleSpell();
     HandleBuff();
   }
 
@@ -26,11 +25,14 @@ public class AbilityManager : MonoBehaviour
     this.controller = entity;
   }
 
-  void HandleSpell()
+  public void HandleSpell()
   {
-    if (!controller.InputReader.CastSpell) return;
-    if (spell.CanUse())
-      spell.Use(controller);
+    spell.Use(controller);
+  }
+
+  public bool CheckSpellCooldown()
+  {
+    return spell.CanUse();
   }
 
   void HandleBuff()
