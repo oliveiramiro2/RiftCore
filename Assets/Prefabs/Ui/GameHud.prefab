@@ -202,7 +202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85427845}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.15991211, y: 2.3475037}
+  m_AnchoredPosition: {x: 0.15991211, y: 2.3475342}
   m_SizeDelta: {x: -0.32007, y: -5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3652322951710568617
@@ -1202,8 +1202,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 5.040039}
-  m_SizeDelta: {x: 0, y: -10.090027}
+  m_AnchoredPosition: {x: 0, y: -0.0024719238}
+  m_SizeDelta: {x: 0, y: -0.0050049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6943464572878944216
 CanvasRenderer:
@@ -2872,12 +2872,14 @@ MonoBehaviour:
 
     Fesliyan Studios
 
-    Chill Gaming - music
+    Chill Gaming - Music
 
     Ready to
-    Fight - music
+    Fight - Music
 
-    I Waited For You - music
+    I Waited For You - Music
+
+    Action Fight - Music
 
 '
   m_isRightToLeft: 0
