@@ -12,7 +12,7 @@ public class ToxicSlimeGameFlow : MonoBehaviour
   private IEnumerator PlayPhase2Effects()
   {
     Time.timeScale = 0f;
-    yield return new WaitForSecondsRealtime(1f);
+    yield return new WaitForSecondsRealtime(0.1f);
     Time.timeScale = 1f;
   }
 }

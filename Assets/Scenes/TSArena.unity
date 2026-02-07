@@ -5824,7 +5824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8465333144962509520, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: damage
-      value: 500
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8772061299861539594, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12658,7 +12658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimePhysics
   mainCamera: {fileID: 207530522}
-  groundY: -3.8
+  groundY: -3.88
   spacing: 1.2
   pointsToSpawn: 6
   drawGizmos: 1
@@ -12724,10 +12724,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeAttackModule
   isAttacking: 0
   attackCooldown: 3
-  minDecisionTime: 2
-  maxDecisionTime: 4
-  minDecisionTimePhase2: 1
-  maxDecisionTimePhase2: 3
   rainDropPrefab: {fileID: 258629381}
   projectilePrefab: {fileID: 44639775}
   PuddlePrefab: {fileID: 518386263}
@@ -37574,6 +37570,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153315574}
+    - target: {fileID: 1001281376175279845, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.3475342
+      objectReference: {fileID: 0}
     - target: {fileID: 1411546517212298428, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -37594,6 +37594,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153315574}
+    - target: {fileID: 1873627901173798842, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2322414044806529118, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -37633,6 +37637,24 @@ PrefabInstance:
     - target: {fileID: 2322414044806529118, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495585323214315123, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+      propertyPath: m_text
+      value: 'Thanks:
+
+        Fesliyan Studios
+
+        Chill Gaming - Music
+
+        Ready
+        to Fight - Music
+
+        I Waited For You - Music
+
+        Action Fight
+        - Music
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6179229441627296601, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y
@@ -37674,6 +37696,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153315574}
+    - target: {fileID: 7771947491909334257, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -0.0050049
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771947491909334257, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0024719238
+      objectReference: {fileID: 0}
     - target: {fileID: 7833601473309044650, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: bossController
       value: 

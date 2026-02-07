@@ -12,10 +12,10 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
 
   [Header("Decision Timers")]
-  [SerializeField] private float minDecisionTime = 2f;
-  [SerializeField] private float maxDecisionTime = 4f;
-  [SerializeField] private float minDecisionTimePhase2 = 1f;
-  [SerializeField] private float maxDecisionTimePhase2 = 3f;
+  private readonly float minDecisionTime = 3f;
+  private readonly float maxDecisionTime = 4f;
+  private readonly float minDecisionTimePhase2 = 1f;
+  private readonly float maxDecisionTimePhase2 = 2f;
 
   [Header("Prefabs")]
   public GameObject rainDropPrefab;
@@ -74,13 +74,14 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     List<System.Action> validAttacks = new()
     {
-      () => JumpAttack(entity), // rolling jump towards player
-      () => SpalshAttack(entity), // rolling attack and jump at the end
+      () => JumpAttack(entity),
+      () => SpalshAttack(entity),
     };
 
-    if (dist < 3f)
+    if (dist < 2f)
     {
-      validAttacks.Add(() => SlapAttack(entity)); // slap attack
+      validAttacks.Add(() => SlapAttack(entity));
+      validAttacks.Add(() => SlapAttack(entity));
     }
 
     if (entity.Phase2())
@@ -145,13 +146,13 @@ public class ToxicSlimeAttackModule : MonoBehaviour
 
     yield return new WaitForSeconds(0.5f);
 
+    RumbleManager.Instance.Play(RumbleType.Danger);
     entity.Locomotion.Rolling(entity);
     entity.Locomotion.Roll(rollDuration, rotations, false);
     entity.tsEvents.OnToxicRoll.Raise();
 
     yield return new WaitForSeconds(rollDuration);
 
-    RumbleManager.Instance.Play(RumbleType.Danger);
     StartCoroutine(RollJumpRoutine(entity, jumpRollDuration, jumpRotation, jumpHeight, jumpDuration));
   }
 

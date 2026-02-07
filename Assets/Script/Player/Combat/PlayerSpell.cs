@@ -26,10 +26,10 @@ public class PlayerSpell : MonoBehaviour, IAbility
 
   IEnumerator LaserRoutine(PlayerController player)
   {
-    yield return new WaitForSeconds(0.9f);
+    yield return new WaitForSeconds(0.8f);
     player.events.OnLaserSpell.Raise();
 
-    yield return new WaitForSeconds(0.5f);
+    yield return new WaitForSeconds(0.3f);
 
     laser.SetActive(true);
     laser.transform.localScale = new(200, 0.6f, 1);
