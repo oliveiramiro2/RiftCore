@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &36185996 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2280584563097024620, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+  m_PrefabInstance: {fileID: 404140497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &43781226
 GameObject:
   m_ObjectHideFlags: 0
@@ -5822,6 +5827,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6644245095659085004, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8772061299861539594, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.67
@@ -5862,6 +5871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9168378448794676165, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: laserOutAnimation
+      value: 
+      objectReference: {fileID: 36185996}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37666,6 +37679,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153315574}
+    - target: {fileID: 7771947491909334257, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0025024414
+      objectReference: {fileID: 0}
     - target: {fileID: 7833601473309044650, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: bossController
       value: 

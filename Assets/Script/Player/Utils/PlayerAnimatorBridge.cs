@@ -8,6 +8,8 @@ public class PlayerAnimatorBridge : MonoBehaviour
   private Animator animator;
   private PlayerAttackModule attackModule;
 
+  public Animator laserOutAnimation;
+
 
   private static readonly int MoveSpeedHash = Animator.StringToHash("MoveSpeed");
   private static readonly int IsJumpingHash = Animator.StringToHash("IsJumping");
@@ -122,6 +124,7 @@ public class PlayerAnimatorBridge : MonoBehaviour
   public void TiggerSpell()
   {
     animator.SetTrigger(SpellTriggerHash);
+    laserOutAnimation.Play("laser");
   }
 
   public void ResetTiggerSpell()

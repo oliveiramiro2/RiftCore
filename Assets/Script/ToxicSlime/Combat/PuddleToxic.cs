@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PuddleToxic : MonoBehaviour
 {
-  private float fallSpeed = 1f, timer = 0, duration = 3f;
+  private float fallSpeed = 1f, timer = 0, duration = 5f;
   private ParticleSystem explosion;
   private ToxicSlimeController owner;
 
