@@ -19,8 +19,6 @@ public class ToxicSlimeController : BaseEntity
   public ToxicSlimeAttackModule Attack { get; private set; }
   public ToxicSlimeCollidersContact CollidersContact { get; private set; }
 
-  public bool CanMove = true;
-
   public bool canRoll = false;
 
   public bool isAttacking = false;
@@ -33,7 +31,7 @@ public class ToxicSlimeController : BaseEntity
 
   void Update()
   {
-    if (ToxicSlimeSM == null || !CanMove || IsDead)
+    if (ToxicSlimeSM == null || !canMove || IsDead)
     {
       return;
     }
