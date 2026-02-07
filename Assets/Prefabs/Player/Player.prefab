@@ -10143,7 +10143,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1100103620, guid: 699154eceedf7484c82021261e43af3a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -15737,7 +15737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b324f2b2b0436b64ea843cf5c6e4150c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserOutAnimation: {fileID: 0}
+  laserOutAnimation: {fileID: 2280584563097024620}
 --- !u!114 &4103293485641533845
 MonoBehaviour:
   m_ObjectHideFlags: 0
