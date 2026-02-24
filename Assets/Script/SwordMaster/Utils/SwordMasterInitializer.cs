@@ -12,23 +12,17 @@ public class SwordMasterInitializer : MonoBehaviour
     var sm = GetComponent<SwordMasterStateMachine>();
     var factory = GetComponent<SwordMasterStateFactory>();
     var animator = GetComponent<SwordMasterAnimationBridge>();
-    //var physics = GetComponent<SwordMasterPhysics>();
-    //var locomotion = GetComponent<SwordMasterLocomotionModule>();
-    //var attack = GetComponent<SwordMasterAttackModule>();
-    //var colliders = GetComponent<SwordMasterCollidersContact>();
 
     controller.SetupModules(sm, factory, animator);
 
 
     sm.Setup(controller);
-    //locomotion.Setup(controller);
 
-    //factory.bossSM = sm;
+    factory.bossSM = sm;
     factory.owner = controller;
 
     factory.InitializeTransitions();
 
-    //sm.Initialize(factory.ToxicSlimeIdle);
-    //attack.Initialize(controller);
+    sm.Initialize(factory.SwordMasterIdle);
   }
 }

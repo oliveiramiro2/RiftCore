@@ -7,6 +7,15 @@ public class SwordMasterAnimationBridge : MonoBehaviour
 
   private readonly string idleParam = "idle";
 
+  private readonly string runParam = "run";
+
+  //private readonly string tripleParam = "3attacks";
+  //private readonly string explosionParam = "explosion";
+  //private readonly string stormParam = "storm";
+  //private readonly string parryParam = "parry";
+  //private readonly string windSlashParam = "windSlash";
+
+
   void Awake()
   {
     animator = GetComponent<Animator>();
@@ -17,7 +26,12 @@ public class SwordMasterAnimationBridge : MonoBehaviour
     animator.Play(idleParam);
   }
 
-  
+  public void SwordMasterRun()
+  {
+    animator.Play(runParam);
+  }
+
+
   public bool SMIsCurrentAnimationFinished()
   {
     return animator.SMIsCurrentAnimationFinished();

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SwordMasterIdle : State<SwordMasterController>
@@ -9,6 +10,7 @@ public class SwordMasterIdle : State<SwordMasterController>
   {
     entity.AnimatorBridge.SwordMasterIdle();
     timer = 0f;
+    Debug.Log("Entered Idle State");
   }
 
   public override void UpdateState(SwordMasterController entity)

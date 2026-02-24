@@ -228,6 +228,12 @@ GameObject:
   - component: {fileID: 39758856}
   - component: {fileID: 39758858}
   - component: {fileID: 39758859}
+  - component: {fileID: 39758865}
+  - component: {fileID: 39758864}
+  - component: {fileID: 39758863}
+  - component: {fileID: 39758862}
+  - component: {fileID: 39758861}
+  - component: {fileID: 39758860}
   m_Layer: 0
   m_Name: SwordMaster
   m_TagString: Untagged
@@ -343,7 +349,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.5532098, y: -0.49698126}
+  m_Offset: {x: -0.5532098, y: -0.49082732}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -353,7 +359,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.42291164, y: 2.0060375}
+  m_Size: {x: 0.42291164, y: 1.9937296}
   m_EdgeRadius: 0
 --- !u!95 &39758859
 Animator:
@@ -377,6 +383,108 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &39758860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39758855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0cfd2dc683661478537da3dec2b113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SwordMasterStateFactory
+  bossSM: {fileID: 0}
+  owner: {fileID: 0}
+  isIdle: 1
+--- !u!114 &39758861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39758855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b7dcc41b12f8784083f2f8fbad106bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SwordMasterStateMachine
+--- !u!114 &39758862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39758855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b31ca81d2e63d84da4b719de192045c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SwordMasterInitializer
+--- !u!114 &39758863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39758855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c81a536490b53540b7f5b47c0ee942c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SwordMasterController
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  canMove: 1
+  maxHealth: 100
+  currentHealth: 100
+  knockbackDuration: 0.05
+  knockbackTimer: 0
+  slowVelocity: 1
+  durationSlow: 0
+  MoveSpeed: 6
+  isAttacking: 0
+--- !u!114 &39758864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39758855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca67c1d8a1dfc740a043d6af2732bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SwordMasterAnimationBridge
+--- !u!50 &39758865
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39758855}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &190929549 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6767371128271720153, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
