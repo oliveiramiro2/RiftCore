@@ -38322,10 +38322,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3298564035204342661, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -2.0012512
-      objectReference: {fileID: 0}
     - target: {fileID: 6179229441627296601, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -38366,10 +38362,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1153315574}
-    - target: {fileID: 7771947491909334257, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.0025024414
-      objectReference: {fileID: 0}
     - target: {fileID: 7833601473309044650, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: bossController
       value: 
