@@ -12,8 +12,10 @@ public class SwordMasterController : BaseEntity
   public SwordMasterStateMachine SwordMasterSM { get; private set; }
   public SwordMasterStateFactory SwordMasterStateFactory { get; private set; }
   public SwordMasterAnimationBridge AnimatorBridge { get; private set; }
+  public SwordMasterLocomotionModule LocomotionModule { get; private set; }
 
   public bool isAttacking = false;
+  public bool canFollowPlayer = false;
 
   protected override void Awake()
   {
@@ -30,11 +32,12 @@ public class SwordMasterController : BaseEntity
     SwordMasterSM.UpdateStateMachine();
   }
 
-  public void SetupModules(SwordMasterStateMachine sm, SwordMasterStateFactory factory, SwordMasterAnimationBridge animator)
+  public void SetupModules(SwordMasterStateMachine sm, SwordMasterStateFactory factory, SwordMasterAnimationBridge animator, SwordMasterLocomotionModule locomotion)
   {
     SwordMasterSM = sm;
     SwordMasterStateFactory = factory;
     AnimatorBridge = animator;
+    LocomotionModule = locomotion;
   }
 
   public void FlipX(bool faceRight)

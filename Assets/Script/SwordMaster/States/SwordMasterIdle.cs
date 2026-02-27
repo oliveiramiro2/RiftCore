@@ -10,7 +10,8 @@ public class SwordMasterIdle : State<SwordMasterController>
   {
     entity.AnimatorBridge.SwordMasterIdle();
     timer = 0f;
-    Debug.Log("Entered Idle State");
+
+    entity.canFollowPlayer = true;
   }
 
   public override void UpdateState(SwordMasterController entity)
@@ -24,5 +25,7 @@ public class SwordMasterIdle : State<SwordMasterController>
 
   public override void ExitState(SwordMasterController entity)
   {
+    entity.AnimatorBridge.SwordMasterIdle();
+    entity.canFollowPlayer = false;
   }
 }

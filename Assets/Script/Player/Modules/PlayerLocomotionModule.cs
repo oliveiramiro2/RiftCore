@@ -63,24 +63,6 @@ public class PlayerLocomotion : MonoBehaviour
     }
   }
 
-  public void MoveGrounded(float inputX)
-  {
-    float targetSpeed = inputX * (stats.moveSpeed / player.slowVelocity);
-
-    Debug.Log("velocidade: " + targetSpeed);
-
-    float newSpeed = Mathf.Lerp(
-        rb.linearVelocityX,
-        targetSpeed,
-        stats.moveSpeed * Time.deltaTime
-    );
-
-    physics.MoveHorizontal(newSpeed);
-
-    if (!player.IsDead && inputX != 0)
-      player.FlipX(inputX > 0);
-  }
-
   public void MoveAirborne(float inputX)
   {
     float targetSpeed = inputX * stats.moveSpeed;

@@ -9,7 +9,6 @@ public class SwordMasterAttack : State<SwordMasterController>
   public override void EnterState(SwordMasterController entity)
   {
     timer = 0f;
-    entity.AnimatorBridge.SwordMasterRun();
     Debug.Log("Entered Attack State");
   }
 
@@ -24,6 +23,5 @@ public class SwordMasterAttack : State<SwordMasterController>
 
   public override void ExitState(SwordMasterController entity)
   {
-
   }
 }
