@@ -15,6 +15,7 @@ public class SwordMasterAnimationBridge : MonoBehaviour
   private readonly string explosionParam = "explosion";
   private readonly string stormParam = "storm";
   private readonly string parryParam = "parry";
+  private readonly string counterAttackParam = "counterAttack";
   private readonly string windSlashParam = "windSlash";
 
 
@@ -61,6 +62,11 @@ public class SwordMasterAnimationBridge : MonoBehaviour
   public void SwordMasterParry()
   {
     animator.Play(parryParam);
+  }
+
+  public void SwordMasterCounterAttack()
+  {
+    animator.Play(counterAttackParam);
   }
 
   public void SwordMasterWindSlash()

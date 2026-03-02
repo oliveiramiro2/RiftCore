@@ -39,6 +39,11 @@ public class Hitbox : MonoBehaviour
             other.GetComponentInParent<BaseEntity>().ApplySlow(1f);
         }
 
+        if (other.CompareTag("Parry") && gameObject.CompareTag("SwordHitbox"))
+        {
+            GameObject.FindAnyObjectByType<SwordMasterController>().AnimatorBridge.SwordMasterCounterAttack();
+        }
+
         if (other.TryGetComponent(out Hurtbox hurtbox))
         {
             int finalDamage = damage;
