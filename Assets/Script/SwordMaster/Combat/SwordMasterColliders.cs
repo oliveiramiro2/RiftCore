@@ -7,6 +7,7 @@ public class SwordMasterColliders : MonoBehaviour
   public BoxCollider2D thirdAttackCollider;
   public BoxCollider2D parryCollider;
   public BoxCollider2D counterAttackCollider;
+  public BoxCollider2D explosionCollider;
 
   public void EnableFirstAttackCollider()
   {
@@ -57,5 +58,15 @@ public class SwordMasterColliders : MonoBehaviour
   public void DisableCounterAttackCollider()
   {
     counterAttackCollider.enabled = false;
+  }
+
+  public void EnableExplosionCollider()
+  {
+    explosionCollider.enabled = true;
+  }
+
+  public void DisableExplosionCollider()
+  {
+    explosionCollider.enabled = false;
   }
 }

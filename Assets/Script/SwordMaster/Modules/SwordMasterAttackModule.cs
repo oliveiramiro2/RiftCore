@@ -76,7 +76,7 @@ public class SwordMasterAttackModule : MonoBehaviour
     int index = Random.Range(0, validAttacks.Count);
 
     if (owner.IsDead) return;
-
+    owner.LocomotionModule.StopMovement();
     validAttacks[index].Invoke();
   }
 
