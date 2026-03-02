@@ -31,15 +31,25 @@ public class SwordMasterLocomotionModule : MonoBehaviour
     float dist = Vector2.Distance(transform.position, target.transform.position);
     if (owner == null || target == null || !owner.canFollowPlayer || dist < 1f)
     {
+      StopMovement();
       owner.AnimatorBridge.SwordMasterIdle();
       return;
     }
 
     owner.AnimatorBridge.SwordMasterRun();
     Vector2 direction = (target.transform.position - owner.transform.position).normalized;
-    owner.transform.Translate(owner.MoveSpeed * Time.deltaTime * direction);
+
+    owner.rb.linearVelocityX = direction.x * owner.moveSpeed;
 
     bool shouldFaceRight = direction.x > 0;
     owner.FlipX(shouldFaceRight);
+  }
+
+  public void StopMovement()
+  {
+    if (owner != null)
+    {
+      owner.rb.linearVelocityX = 0;
+    }
   }
 }

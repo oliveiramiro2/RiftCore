@@ -3,7 +3,7 @@ using UnityEngine;
 public class SwordMasterController : BaseEntity
 {
   [Header("Boss runtime")]
-  public float MoveSpeed = 6f;
+  public float moveSpeed = 12f;
   public bool IsFacingRight() => transform.localScale.x > 0;
   public bool Phase2() => currentHealth <= (maxHealth * 0.5f);
 
