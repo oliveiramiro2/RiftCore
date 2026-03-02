@@ -37,7 +37,7 @@ public class PlayerController : BaseEntity
     public PlayerEvents events;
 
     [Header("hurtbox reference")]
-    public Collider2D hurtboxCollider;
+    public BoxCollider2D hurtboxCollider;
     public Hitbox dashHitbox;
     public int buffSwordDamage = 1;
 
