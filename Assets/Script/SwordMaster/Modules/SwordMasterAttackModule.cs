@@ -117,7 +117,7 @@ public class SwordMasterAttackModule : MonoBehaviour
 
   private IEnumerator WaitAnimationFinish(SwordMasterController entity)
   {
-    yield return new WaitForSeconds(5f);
+    yield return new WaitForSeconds(1.5f);
     entity.isAttacking = false;
   }
 
