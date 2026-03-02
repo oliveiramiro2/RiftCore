@@ -9,7 +9,9 @@ public class SwordMasterAnimationBridge : MonoBehaviour
 
   private readonly string runParam = "run";
 
-  private readonly string tripleParam = "3attacks";
+  private readonly string thirdAttackParam = "3attack";
+  private readonly string secondAttackParam = "2attack";
+  private readonly string firstAttackParam = "1attack";
   private readonly string explosionParam = "explosion";
   private readonly string stormParam = "storm";
   private readonly string parryParam = "parry";
@@ -33,7 +35,17 @@ public class SwordMasterAnimationBridge : MonoBehaviour
 
   public void SwordMasterTripleAttack()
   {
-    animator.Play(tripleParam);
+    animator.Play(thirdAttackParam, 0, 0);
+  }
+
+  public void SwordMasterSecondAttack()
+  {
+    animator.Play(secondAttackParam, 0, 0);
+  }
+
+  public void SwordMasterFirstAttack()
+  {
+    animator.Play(firstAttackParam, 0, 0);
   }
 
   public void SwordMasterExplosion()

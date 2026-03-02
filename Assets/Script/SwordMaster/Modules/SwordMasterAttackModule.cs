@@ -68,11 +68,6 @@ public class SwordMasterAttackModule : MonoBehaviour
       () => WindSlash(entity)
     };
 
-    // if (dist < 2f)
-    // {
-
-    // }
-
     // if (entity.Phase2())
     // {
 
@@ -87,7 +82,7 @@ public class SwordMasterAttackModule : MonoBehaviour
 
   private void TreeSlashAttack(SwordMasterController entity)
   {
-    entity.AnimatorBridge.SwordMasterTripleAttack();
+    entity.AnimatorBridge.SwordMasterFirstAttack();
     StartCoroutine(WaitAnimationFinish(entity));
   }
 
@@ -117,10 +112,7 @@ public class SwordMasterAttackModule : MonoBehaviour
 
   private IEnumerator WaitAnimationFinish(SwordMasterController entity)
   {
-    while (!entity.AnimatorBridge.SMIsCurrentAnimationFinished())
-    {
-      yield return null;
-    }
+    yield return new WaitForSeconds(5f);
     entity.isAttacking = false;
   }
 }
