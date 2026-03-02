@@ -2715,10 +2715,6 @@ PrefabInstance:
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2053891229}
-    - target: {fileID: 881705266971621265, guid: 36815c8b03fb457468248e24e089d327, type: 3}
-      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ActivateCooldown
-      objectReference: {fileID: 0}
     - target: {fileID: 1140113907692887757, guid: 36815c8b03fb457468248e24e089d327, type: 3}
       propertyPath: BossFader
       value: 
@@ -2735,6 +2731,10 @@ PrefabInstance:
       propertyPath: musicSource
       value: 
       objectReference: {fileID: 1589491820}
+    - target: {fileID: 1140113907692887757, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+      propertyPath: bossController
+      value: 
+      objectReference: {fileID: 39758855}
     - target: {fileID: 1140113907692887757, guid: 36815c8b03fb457468248e24e089d327, type: 3}
       propertyPath: BossDeathEffect
       value: 
@@ -2784,18 +2784,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 877158262}
     - target: {fileID: 6636672199682076288, guid: 36815c8b03fb457468248e24e089d327, type: 3}
-      propertyPath: musicClip
-      value: 
-      objectReference: {fileID: 8300000, guid: d9ba2e1e4976e614cae656927ef6e449, type: 3}
-    - target: {fileID: 6636672199682076288, guid: 36815c8b03fb457468248e24e089d327, type: 3}
-      propertyPath: sfxSource
-      value: 
-      objectReference: {fileID: 5099167719992728614}
-    - target: {fileID: 6636672199682076288, guid: 36815c8b03fb457468248e24e089d327, type: 3}
-      propertyPath: ambientClip
-      value: 
-      objectReference: {fileID: 8300000, guid: ae018bafeebfe464a8e39739109540a4, type: 3}
-    - target: {fileID: 6636672199682076288, guid: 36815c8b03fb457468248e24e089d327, type: 3}
       propertyPath: musicSource
       value: 
       objectReference: {fileID: 1589491820}
@@ -2811,10 +2799,6 @@ PrefabInstance:
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2053891228}
-    - target: {fileID: 7843510281864054417, guid: 36815c8b03fb457468248e24e089d327, type: 3}
-      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ActivateCooldown
-      objectReference: {fileID: 0}
     - target: {fileID: 8834055577367837765, guid: 36815c8b03fb457468248e24e089d327, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.92128
@@ -2855,18 +2839,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3883234559488942081, guid: 36815c8b03fb457468248e24e089d327, type: 3}
-    - {fileID: 4094396451255052285, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36815c8b03fb457468248e24e089d327, type: 3}
---- !u!82 &5099167719992728614 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 917286172406421911, guid: 36815c8b03fb457468248e24e089d327, type: 3}
-  m_PrefabInstance: {fileID: 3569635643734290897}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

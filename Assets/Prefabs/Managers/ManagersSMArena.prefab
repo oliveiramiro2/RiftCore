@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 1140113907692887757}
   - component: {fileID: 6171482550452103284}
   - component: {fileID: 1840311241137807000}
-  - component: {fileID: 3883234559488942081}
-  - component: {fileID: 4094396451255052285}
   m_Layer: 0
   m_Name: GameFlowManager
   m_TagString: Untagged
@@ -129,98 +127,6 @@ MonoBehaviour:
       - m_Target: {fileID: 5480267025209226627}
         m_TargetAssemblyTypeName: PlayerGameFlowManager, Assembly-CSharp
         m_MethodName: ResetPlayerHitSparksEffect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &3883234559488942081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99210393021848401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: af2111606b9734447a1cd008e0e244f8, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7761789593688421943}
-        m_TargetAssemblyTypeName: ToxicSlimeGameFlow, Assembly-CSharp
-        m_MethodName: OnBossPhase2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
-        m_MethodName: StartDistortionAtBoss
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1140113907692887757}
-        m_TargetAssemblyTypeName: GameFlowManager, Assembly-CSharp
-        m_MethodName: BossDied
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &4094396451255052285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99210393021848401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 61021e7761de6ef4abe7bc1646a14e06, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7761789593688421943}
-        m_TargetAssemblyTypeName: ToxicSlimeGameFlow, Assembly-CSharp
-        m_MethodName: OnBossPhase2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
-        m_MethodName: StartDistortionAtBoss
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -605,9 +511,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 0}
   ambientSource: {fileID: 0}
-  sfxSource: {fileID: 0}
-  musicClip: {fileID: 8300000, guid: 2ef089deaa58a7645a96d83c39b5de90, type: 3}
-  ambientClip: {fileID: 8300000, guid: 33d31e946ab5e904eb4236721da550eb, type: 3}
+  sfxSource: {fileID: 917286172406421911}
+  musicClip: {fileID: 8300000, guid: d9ba2e1e4976e614cae656927ef6e449, type: 3}
+  ambientClip: {fileID: 8300000, guid: ae018bafeebfe464a8e39739109540a4, type: 3}
 --- !u!82 &917286172406421911
 AudioSource:
   m_ObjectHideFlags: 0

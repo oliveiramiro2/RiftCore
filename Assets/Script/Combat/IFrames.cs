@@ -3,13 +3,13 @@ using UnityEngine;
 public class IFrames : MonoBehaviour
 {
 
-    public void EnableIFrames(Collider2D owen)
+    public void EnableIFrames(Collider2D owner)
     {
-        owen.enabled = false;
+        owner.enabled = false;
     }
 
-    public void DisableIFrames(Collider2D owen)
+    public void DisableIFrames(Collider2D owner)
     {
-        owen.enabled = true;
+        owner.enabled = true;
     }
 }

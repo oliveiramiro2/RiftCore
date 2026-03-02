@@ -91,7 +91,7 @@ public class SwordMasterAttackModule : MonoBehaviour
   {
     entity.LocomotionModule.FlipTowardsTarget(player);
     entity.AnimatorBridge.SwordMasterExplosion();
-    StartCoroutine(WaitAnimationFinish(entity));
+    StartCoroutine(ExplosionRoutine(entity));
   }
 
   private void StormAttack(SwordMasterController entity)
@@ -121,6 +121,12 @@ public class SwordMasterAttackModule : MonoBehaviour
     entity.isAttacking = false;
   }
 
+  private IEnumerator ExplosionRoutine(SwordMasterController entity)
+  {
+    yield return new WaitForSeconds(2.5f);
+    entity.isAttacking = false;
+  }
+
   private IEnumerator TeleportRoutine(SwordMasterController entity)
   {
     while (!entity.canTeleport)
@@ -143,11 +149,12 @@ public class SwordMasterAttackModule : MonoBehaviour
     );
     entity.rb.position = newPosition;
     entity.LocomotionModule.FlipTowardsTarget(player);
-
+    RumbleManager.Instance.Play(RumbleType.Charge);
     yield return new WaitForSeconds(0.05f);
 
     entity.spriteRenderer.enabled = true;
 
+    RumbleManager.Instance.Play(RumbleType.Danger);
     entity.AnimatorBridge.SwordMasterTripleAttack();
     yield return new WaitForSeconds(1.5f);
     entity.isAttacking = false;
