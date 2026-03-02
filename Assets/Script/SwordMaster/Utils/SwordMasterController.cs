@@ -17,6 +17,7 @@ public class SwordMasterController : BaseEntity
 
   public bool isAttacking = false;
   public bool canFollowPlayer = false;
+  public bool canTeleport = false;
 
   protected override void Awake()
   {

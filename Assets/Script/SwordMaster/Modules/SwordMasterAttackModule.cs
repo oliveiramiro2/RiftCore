@@ -82,30 +82,35 @@ public class SwordMasterAttackModule : MonoBehaviour
 
   private void TreeSlashAttack(SwordMasterController entity)
   {
+    entity.LocomotionModule.FlipTowardsTarget(player);
     entity.AnimatorBridge.SwordMasterFirstAttack();
-    StartCoroutine(WaitAnimationFinish(entity));
+    StartCoroutine(TeleportRoutine(entity));
   }
 
   private void ExplosionAttack(SwordMasterController entity)
   {
+    entity.LocomotionModule.FlipTowardsTarget(player);
     entity.AnimatorBridge.SwordMasterExplosion();
     StartCoroutine(WaitAnimationFinish(entity));
   }
 
   private void StormAttack(SwordMasterController entity)
   {
+    entity.LocomotionModule.FlipTowardsTarget(player);
     entity.AnimatorBridge.SwordMasterStorm();
     StartCoroutine(WaitAnimationFinish(entity));
   }
 
   private void Parry(SwordMasterController entity)
   {
+    entity.LocomotionModule.FlipTowardsTarget(player);
     entity.AnimatorBridge.SwordMasterParry();
     StartCoroutine(WaitAnimationFinish(entity));
   }
 
   private void WindSlash(SwordMasterController entity)
   {
+    entity.LocomotionModule.FlipTowardsTarget(player);
     entity.AnimatorBridge.SwordMasterWindSlash();
     StartCoroutine(WaitAnimationFinish(entity));
   }
@@ -113,6 +118,38 @@ public class SwordMasterAttackModule : MonoBehaviour
   private IEnumerator WaitAnimationFinish(SwordMasterController entity)
   {
     yield return new WaitForSeconds(5f);
+    entity.isAttacking = false;
+  }
+
+  private IEnumerator TeleportRoutine(SwordMasterController entity)
+  {
+    while (!entity.canTeleport)
+    {
+      yield return null;
+    }
+    entity.canTeleport = false;
+
+    entity.spriteRenderer.enabled = false;
+    entity.rb.linearVelocity = Vector2.zero;
+
+    yield return new WaitForSeconds(0.15f);
+    float direction = player.position.x > entity.rb.position.x ? 1f : -1f;
+
+    float distanceBehind = 1.5f;
+
+    Vector2 newPosition = new Vector2(
+        player.position.x - direction * distanceBehind,
+        entity.rb.position.y
+    );
+    entity.rb.position = newPosition;
+    entity.LocomotionModule.FlipTowardsTarget(player);
+
+    yield return new WaitForSeconds(0.05f);
+
+    entity.spriteRenderer.enabled = true;
+
+    entity.AnimatorBridge.SwordMasterTripleAttack();
+    yield return new WaitForSeconds(1.5f);
     entity.isAttacking = false;
   }
 }

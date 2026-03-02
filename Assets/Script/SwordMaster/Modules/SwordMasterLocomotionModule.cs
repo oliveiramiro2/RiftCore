@@ -45,6 +45,24 @@ public class SwordMasterLocomotionModule : MonoBehaviour
     owner.FlipX(shouldFaceRight);
   }
 
+  public void FlipTowardsTarget(Transform target)
+  {
+    if (target.position.x > owner.rb.position.x)
+    {
+      transform.localScale = new Vector3(
+          Mathf.Abs(transform.localScale.x),
+          transform.localScale.y,
+          transform.localScale.z);
+    }
+    else
+    {
+      transform.localScale = new Vector3(
+          -Mathf.Abs(transform.localScale.x),
+          transform.localScale.y,
+          transform.localScale.z);
+    }
+  }
+
   public void StopMovement()
   {
     if (owner != null)

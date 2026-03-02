@@ -34,6 +34,11 @@ public class SwordMasterAnimationBridge : MonoBehaviour
     animator.Play(runParam);
   }
 
+  public void SwordMasterCanTeleport()
+  {
+    gameObject.GetComponent<SwordMasterController>().canTeleport = true;
+  }
+
   public void SwordMasterTripleAttack()
   {
     animator.Play(thirdAttackParam, 0, 0);
