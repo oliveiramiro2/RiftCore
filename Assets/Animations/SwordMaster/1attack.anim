@@ -46,11 +46,11 @@ AnimationClip:
       value: {fileID: -2855982089527408371, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
     - time: 0.85
       value: {fileID: -4483707390741349070, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
-    - time: 1.1166667
+    - time: 1
       value: {fileID: 4206289291252074886, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
-    - time: 1.2166667
+    - time: 1.1
       value: {fileID: 397144623903407236, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
-    - time: 1.3333334
+    - time: 1.2166667
       value: {fileID: 397144623903407236, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
     attribute: m_Sprite
     path: 
@@ -95,7 +95,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.35
+    m_StopTime: 1.2333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -115,21 +115,21 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 1.1166667
+  - time: 1
     functionName: EnableFirstAttackCollider
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.2166667
+  - time: 1.1
     functionName: DisableFirstAttackCollider
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.2333333
+  - time: 1.1166667
     functionName: SwordMasterSecondAttack
     data: 
     objectReferenceParameter: {fileID: 0}

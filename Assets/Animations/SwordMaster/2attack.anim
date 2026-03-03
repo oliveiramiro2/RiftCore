@@ -22,17 +22,17 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 397144623903407236, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
-    - time: 0.083333336
+    - time: 0.033333335
       value: {fileID: -2223842187855571833, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
-    - time: 0.16666667
+    - time: 0.083333336
       value: {fileID: -8194145747077130791, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
-    - time: 0.5
+    - time: 0.25
       value: {fileID: 2328286905252727372, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
-    - time: 0.5833333
+    - time: 0.33333334
       value: {fileID: -1105667145134137662, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
-    - time: 0.6666667
+    - time: 0.4
       value: {fileID: -7817336335460210467, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
-    - time: 0.75
+    - time: 0.46666667
       value: {fileID: -7817336335460210467, guid: cce2856a0e7d45d40bfcb26d5a815061, type: 3}
     attribute: m_Sprite
     path: 
@@ -68,7 +68,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.76666665
+    m_StopTime: 0.48333335
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -88,21 +88,21 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.5
+  - time: 0.25
     functionName: EnableSecondAttackCollider
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.6666667
+  - time: 0.33333334
     functionName: DisableSecondAttackCollider
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.68333334
+  - time: 0.35
     functionName: SwordMasterCanTeleport
     data: 
     objectReferenceParameter: {fileID: 0}
