@@ -12,6 +12,12 @@ public class SwordMasterAttackModule : MonoBehaviour
   public bool canAttackTimer = true;
   private float attackTimer = 0f;
 
+  [Header("Attack Prefabs")]
+  [SerializeField] private GameObject stormPrefab;
+  [SerializeField] private GameObject[] airSlashPrefab;
+  [SerializeField] private Transform stormRespawnPoint;
+  [SerializeField] private Transform[] airSlashsRespawnPoint;
+
   [Header("Decision Timers")]
   private readonly float minDecisionTime = 3f;
   private readonly float maxDecisionTime = 4f;
@@ -98,7 +104,7 @@ public class SwordMasterAttackModule : MonoBehaviour
   {
     entity.LocomotionModule.FlipTowardsTarget(player);
     entity.AnimatorBridge.SwordMasterStorm();
-    StartCoroutine(WaitAnimationFinish(entity));
+    StartCoroutine(StormRoutine(entity));
   }
 
   private void Parry(SwordMasterController entity)
@@ -112,7 +118,7 @@ public class SwordMasterAttackModule : MonoBehaviour
   {
     entity.LocomotionModule.FlipTowardsTarget(player);
     entity.AnimatorBridge.SwordMasterWindSlash();
-    StartCoroutine(WaitAnimationFinish(entity));
+    StartCoroutine(AirSlashRoutine(entity));
   }
 
   private IEnumerator WaitAnimationFinish(SwordMasterController entity)
@@ -157,6 +163,39 @@ public class SwordMasterAttackModule : MonoBehaviour
     RumbleManager.Instance.Play(RumbleType.Danger);
     entity.AnimatorBridge.SwordMasterTripleAttack();
     yield return new WaitForSeconds(1.5f);
+    entity.isAttacking = false;
+  }
+
+  private IEnumerator AirSlashRoutine(SwordMasterController entity)
+  {
+    yield return new WaitForSeconds(0.9f);
+
+    int aux = Random.Range(0, airSlashPrefab.Length);
+    airSlashPrefab[aux].transform.position = airSlashsRespawnPoint[aux].position;
+    airSlashPrefab[aux].SetActive(true);
+    yield return new WaitForSeconds(0.3f);
+
+    int aux2 = Random.Range(0, airSlashPrefab.Length);
+    if (aux2 == aux)
+    {
+      aux2 = (aux2 + 1) % airSlashPrefab.Length;
+    }
+
+    airSlashPrefab[aux2].transform.position = airSlashsRespawnPoint[aux2].position;
+    airSlashPrefab[aux2].SetActive(true);
+
+    yield return new WaitForSeconds(0.5f);
+    entity.isAttacking = false;
+  }
+
+  private IEnumerator StormRoutine(SwordMasterController entity)
+  {
+    yield return new WaitForSeconds(1f);
+
+    stormPrefab.transform.position = stormRespawnPoint.position;
+    stormPrefab.SetActive(true);
+
+    yield return new WaitForSeconds(0.5f);
     entity.isAttacking = false;
   }
 }

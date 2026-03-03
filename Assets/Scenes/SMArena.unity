@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 20072087}
   - component: {fileID: 20072086}
   - component: {fileID: 20072085}
+  - component: {fileID: 20072090}
   m_Layer: 0
   m_Name: AirSlash (2)
   m_TagString: Untagged
@@ -244,8 +245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   damage: 3
-  knockbackForce: 0.1
-  direction: {x: 1, y: 0}
+  knockbackForce: 2
+  direction: {x: 1, y: -2}
   startHitboxDeactivate: 0
   owner: {fileID: 39758855}
 --- !u!61 &20072086
@@ -342,7 +343,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 84259cb785c699b48a43941c081da351, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -384,12 +385,24 @@ Transform:
   m_GameObject: {fileID: 20072084}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.53, y: 7.28, z: 0}
+  m_LocalPosition: {x: 5.53, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &20072090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20072084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf0d8959bb757c4fa76ea28e42ab8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AirSlashSM
 --- !u!198 &36027900 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2690700906497934999, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
@@ -707,6 +720,16 @@ MonoBehaviour:
   isAttacking: 0
   attackCooldown: 3
   canAttackTimer: 1
+  stormPrefab: {fileID: 351342548}
+  airSlashPrefab:
+  - {fileID: 1205953512}
+  - {fileID: 709836381}
+  - {fileID: 20072084}
+  stormRespawnPoint: {fileID: 2106514118}
+  airSlashsRespawnPoint:
+  - {fileID: 1796522665}
+  - {fileID: 359270910}
+  - {fileID: 678808315}
 --- !u!114 &39758868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,6 +794,7 @@ GameObject:
   - component: {fileID: 351342549}
   - component: {fileID: 351342553}
   - component: {fileID: 351342552}
+  - component: {fileID: 351342554}
   m_Layer: 8
   m_Name: Storm
   m_TagString: ContinuousAttack
@@ -826,7 +850,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: f9dd82aadbb83e949834c3c892fe7d2d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -887,8 +911,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   damage: 1
-  knockbackForce: 0
-  direction: {x: 0, y: 0}
+  knockbackForce: 2
+  direction: {x: 0, y: -2}
   startHitboxDeactivate: 0
   owner: {fileID: 39758855}
 --- !u!61 &351342553
@@ -937,6 +961,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.4218742, y: 1.8088493}
   m_EdgeRadius: 0
+--- !u!114 &351342554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351342548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0965b5ceed1e66744aab446b3e33dc79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StormPull
+  pullForce: 25
+  radius: 25
+  duration: 3
 --- !u!1 &359270909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,7 +1054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   damage: 3
   knockbackForce: 2
-  direction: {x: 4, y: 1}
+  direction: {x: 4, y: -1}
   startHitboxDeactivate: 1
   owner: {fileID: 39758855}
 --- !u!61 &493870111
@@ -1162,7 +1201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   damage: 4
   knockbackForce: 5
-  direction: {x: 5, y: 2}
+  direction: {x: 5, y: -2}
   startHitboxDeactivate: 1
   owner: {fileID: 39758855}
 --- !u!1 &667467954
@@ -1396,6 +1435,7 @@ GameObject:
   - component: {fileID: 709836384}
   - component: {fileID: 709836383}
   - component: {fileID: 709836382}
+  - component: {fileID: 709836387}
   m_Layer: 0
   m_Name: AirSlash (1)
   m_TagString: Untagged
@@ -1416,8 +1456,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   damage: 3
-  knockbackForce: 0.1
-  direction: {x: 1, y: 0}
+  knockbackForce: 2
+  direction: {x: 1, y: -2}
   startHitboxDeactivate: 0
   owner: {fileID: 39758855}
 --- !u!61 &709836383
@@ -1514,7 +1554,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 84259cb785c699b48a43941c081da351, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1556,12 +1596,24 @@ Transform:
   m_GameObject: {fileID: 709836381}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 7.28, z: 0}
+  m_LocalPosition: {x: 0.04, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &709836387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709836381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf0d8959bb757c4fa76ea28e42ab8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AirSlashSM
 --- !u!1 &748341784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,7 +1946,7 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1
+  m_PointLightInnerRadius: 0.44
   m_PointLightOuterRadius: 1.31
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
@@ -2057,6 +2109,7 @@ GameObject:
   - component: {fileID: 1205953513}
   - component: {fileID: 1205953516}
   - component: {fileID: 1205953517}
+  - component: {fileID: 1205953518}
   m_Layer: 0
   m_Name: AirSlash
   m_TagString: Untagged
@@ -2112,7 +2165,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 84259cb785c699b48a43941c081da351, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2154,7 +2207,7 @@ Transform:
   m_GameObject: {fileID: 1205953512}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.48, y: 7.28, z: 0}
+  m_LocalPosition: {x: -5.48, y: 9.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2219,10 +2272,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   damage: 3
-  knockbackForce: 0.1
-  direction: {x: 1, y: 0}
+  knockbackForce: 2
+  direction: {x: 1, y: -2}
   startHitboxDeactivate: 0
   owner: {fileID: 39758855}
+--- !u!114 &1205953518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205953512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf0d8959bb757c4fa76ea28e42ab8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AirSlashSM
 --- !u!1 &1225580232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2413,7 +2478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   damage: 2
   knockbackForce: 2
-  direction: {x: 2, y: 1}
+  direction: {x: 2, y: -1}
   startHitboxDeactivate: 1
   owner: {fileID: 39758855}
 --- !u!61 &1257293218
@@ -2714,7 +2779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   damage: 3
   knockbackForce: 6
-  direction: {x: 6, y: 6}
+  direction: {x: 6, y: -6}
   startHitboxDeactivate: 1
   owner: {fileID: 39758855}
 --- !u!1 &1555602460
@@ -2873,7 +2938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   damage: 2
   knockbackForce: 2
-  direction: {x: 2, y: 1}
+  direction: {x: 2, y: -1}
   startHitboxDeactivate: 1
   owner: {fileID: 39758855}
 --- !u!61 &1663578929
@@ -2943,6 +3008,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 2484172201378763899, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0.42
+      objectReference: {fileID: 0}
     - target: {fileID: 4103293485641533845, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: pauseMenu
       value: 
@@ -2955,6 +3024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6453785486498980380, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: b2eceff9154302f4c9667fc637b27e87, type: 2}
     - target: {fileID: 6453785486498980380, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
