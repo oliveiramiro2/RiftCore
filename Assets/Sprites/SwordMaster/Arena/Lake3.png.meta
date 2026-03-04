@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: c299173fb574b004eb924560b8090529
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6417090418772358784
+    second: Lake3_0
+  - first:
+      213: -959139603346163224
+    second: Lake3_1
+  - first:
+      213: -1713486664439032708
+    second: Lake3_2
+  - first:
+      213: -3969051826862579063
+    second: Lake3_3
+  - first:
+      213: 9114033806372374741
+    second: Lake3_4
+  - first:
+      213: -8617746327363873071
+    second: Lake3_5
+  - first:
+      213: -3149499970535960778
+    second: Lake3_6
+  - first:
+      213: 1208490868702915983
+    second: Lake3_7
+  - first:
+      213: 7142571116044633349
+    second: Lake3_8
+  - first:
+      213: 8244356691796911879
+    second: Lake3_9
+  - first:
+      213: 6187947951350800022
+    second: Lake3_10
+  - first:
+      213: -6037834403974805493
+    second: Lake3_11
+  - first:
+      213: 843416651459757582
+    second: Lake3_12
+  - first:
+      213: -7079826497501414203
+    second: Lake3_13
+  - first:
+      213: 6824915805137186234
+    second: Lake3_14
+  - first:
+      213: 1351667552888270326
+    second: Lake3_15
+  - first:
+      213: -2587468669163137587
+    second: Lake3_16
+  - first:
+      213: -7767885852833841905
+    second: Lake3_17
+  - first:
+      213: -4335623574838333981
+    second: Lake3_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lake3_0
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 310
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089c289634ae1f6a0800000000000000
+      internalID: -6417090418772358784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_1
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 297
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9fa8ccc9370b2f0800000000000000
+      internalID: -959139603346163224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_2
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 297
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c741eb605f87838e0800000000000000
+      internalID: -1713486664439032708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_3
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 303
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982adb474681be8c0800000000000000
+      internalID: -3969051826862579063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_4
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 238
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d80abb657d8b7e70800000000000000
+      internalID: 9114033806372374741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_5
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 242
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d69c01cf5d976880800000000000000
+      internalID: -8617746327363873071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_6
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 265
+        width: 69
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63fc91ca67aba44d0800000000000000
+      internalID: -3149499970535960778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_7
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 240
+        width: 69
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d275fca0c65c010800000000000000
+      internalID: 1208490868702915983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_8
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 212
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5054eca46928f1360800000000000000
+      internalID: 7142571116044633349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_9
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 220
+        width: 69
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7076b201bb6d96270800000000000000
+      internalID: 8244356691796911879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_10
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 217
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69eded860e100e550800000000000000
+      internalID: 6187947951350800022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_11
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 190
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b080372799d453ca0800000000000000
+      internalID: -6037834403974805493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_12
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 193
+        width: 69
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0688e3d9fa64bb00800000000000000
+      internalID: 843416651459757582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_13
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 220
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ccb701af476fbd90800000000000000
+      internalID: -7079826497501414203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_14
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 152
+        width: 103
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abda62bc3c8f6be50800000000000000
+      internalID: 6824915805137186234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_15
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 160
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fda3585a7612c210800000000000000
+      internalID: 1351667552888270326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_16
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 157
+        width: 112
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5141354f6771cd0800000000000000
+      internalID: -2587468669163137587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_17
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 179
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d7e0e09fce23490800000000000000
+      internalID: -7767885852833841905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lake3_18
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 173
+        width: 69
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eda3fd6455c4d3c0800000000000000
+      internalID: -4335623574838333981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lake3_0: -6417090418772358784
+      Lake3_1: -959139603346163224
+      Lake3_10: 6187947951350800022
+      Lake3_11: -6037834403974805493
+      Lake3_12: 843416651459757582
+      Lake3_13: -7079826497501414203
+      Lake3_14: 6824915805137186234
+      Lake3_15: 1351667552888270326
+      Lake3_16: -2587468669163137587
+      Lake3_17: -7767885852833841905
+      Lake3_18: -4335623574838333981
+      Lake3_2: -1713486664439032708
+      Lake3_3: -3969051826862579063
+      Lake3_4: 9114033806372374741
+      Lake3_5: -8617746327363873071
+      Lake3_6: -3149499970535960778
+      Lake3_7: 1208490868702915983
+      Lake3_8: 7142571116044633349
+      Lake3_9: 8244356691796911879
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
