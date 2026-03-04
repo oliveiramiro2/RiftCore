@@ -15640,7 +15640,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: b2eceff9154302f4c9667fc637b27e87, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -15941,6 +15941,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundCheckRadius: 0.1
+  physics2D: {fileID: 6200000, guid: b2eceff9154302f4c9667fc637b27e87, type: 2}
   isGrounded: 0
   lastGroundedTime: 0
   rb: {fileID: 0}

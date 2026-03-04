@@ -8049,14 +8049,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5119790095232823312, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
-      propertyPath: physics2D
-      value: 
-      objectReference: {fileID: 6200000, guid: b2eceff9154302f4c9667fc637b27e87, type: 2}
-    - target: {fileID: 6453785486498980380, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8772061299861539594, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.86
