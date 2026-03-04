@@ -19,8 +19,8 @@ public class SwordMasterAttackModule : MonoBehaviour
   [SerializeField] private Transform[] airSlashsRespawnPoint;
 
   [Header("Decision Timers")]
-  private readonly float minDecisionTime = 3f;
-  private readonly float maxDecisionTime = 4f;
+  private readonly float minDecisionTime = 2f;
+  private readonly float maxDecisionTime = 3f;
   private readonly float minDecisionTimePhase2 = 1f;
   private readonly float maxDecisionTimePhase2 = 2f;
 
@@ -69,15 +69,14 @@ public class SwordMasterAttackModule : MonoBehaviour
     {
       () => TreeSlashAttack(entity),
       () => ExplosionAttack(entity),
-      () => StormAttack(entity),
-      () => Parry(entity),
       () => WindSlash(entity)
     };
 
-    // if (entity.Phase2())
-    // {
-
-    // }
+    if (entity.Phase2())
+    {
+      validAttacks.Add(() => StormAttack(entity));
+      validAttacks.Add(() => Parry(entity));
+    }
 
     int index = Random.Range(0, validAttacks.Count);
 
