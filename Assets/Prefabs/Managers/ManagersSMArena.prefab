@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 835638725893378578}
-  - component: {fileID: 7761789593688421943}
+  - component: {fileID: 7704844755479644225}
   - component: {fileID: 5480267025209226627}
   - component: {fileID: 1140113907692887757}
   - component: {fileID: 6171482550452103284}
@@ -36,7 +36,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8834055577367837765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7761789593688421943
+--- !u!114 &7704844755479644225
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,9 +45,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 99210393021848401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3390ba056976385409f468b8795a6243, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cfd05f08c4122247b687950c30a2c5b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToxicSlimeGameFlow
+  m_EditorClassIdentifier: Assembly-CSharp::WindController
+  windStrength: 1
+  windSpeed: 1
 --- !u!114 &5480267025209226627
 MonoBehaviour:
   m_ObjectHideFlags: 0
