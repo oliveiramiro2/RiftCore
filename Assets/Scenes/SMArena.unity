@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.7
 --- !u!1 &171333515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,7 +1291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 2
+  maxAngle: 4
   swaySpeedMultiplier: 1
 --- !u!1 &190929549 stripped
 GameObject:
@@ -1498,8 +1498,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 10
-  swaySpeedMultiplier: 1
+  maxAngle: 15
+  swaySpeedMultiplier: 0.7
 --- !u!1 &227905013
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,8 +1735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 10
-  swaySpeedMultiplier: 1
+  maxAngle: 20
+  swaySpeedMultiplier: 0.4
 --- !u!1 &263242109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1
 --- !u!198 &309444147 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 4607312216349469106, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
@@ -1952,8 +1952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 10
-  swaySpeedMultiplier: 1
+  maxAngle: 19
+  swaySpeedMultiplier: 0.5
 --- !u!1 &351342548
 GameObject:
   m_ObjectHideFlags: 0
@@ -2284,8 +2284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 10
-  swaySpeedMultiplier: 1
+  maxAngle: 18
+  swaySpeedMultiplier: 0.6
 --- !u!1 &417355265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2391,7 +2391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.5
 --- !u!1 &444193146
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,7 +2497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 2.2
 --- !u!1 &470894873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2636,8 +2636,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 10
-  swaySpeedMultiplier: 1
+  maxAngle: 16
+  swaySpeedMultiplier: 0.55
 --- !u!1 &493870108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,7 +2844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.3
 --- !u!1 &524173226
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,8 +2949,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 10
-  swaySpeedMultiplier: 1
+  maxAngle: 12
+  swaySpeedMultiplier: 0.8
 --- !u!1 &537736644
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,7 +3056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.6
 --- !u!1 &541861956
 GameObject:
   m_ObjectHideFlags: 0
@@ -3162,7 +3162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.7
 --- !u!1 &551589671
 GameObject:
   m_ObjectHideFlags: 0
@@ -3301,8 +3301,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 10
-  swaySpeedMultiplier: 1
+  maxAngle: 14
+  swaySpeedMultiplier: 0.65
 --- !u!1 &596805583
 GameObject:
   m_ObjectHideFlags: 0
@@ -3408,7 +3408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 2.3
 --- !u!1 &617773131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,7 +3610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 2.1
 --- !u!1 &632860994
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,7 +3716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.7
 --- !u!1 &639324150
 GameObject:
   m_ObjectHideFlags: 0
@@ -3821,8 +3821,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 10
-  swaySpeedMultiplier: 1
+  maxAngle: 11
+  swaySpeedMultiplier: 0.9
 --- !u!1 &641195115
 GameObject:
   m_ObjectHideFlags: 0
@@ -3928,7 +3928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.5
 --- !u!1 &645503698
 GameObject:
   m_ObjectHideFlags: 0
@@ -4034,7 +4034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.6
 --- !u!1 &649259187
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,7 +4140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.7
 --- !u!1 &655333588
 GameObject:
   m_ObjectHideFlags: 0
@@ -4246,7 +4246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.8
 --- !u!1 &667467954
 GameObject:
   m_ObjectHideFlags: 0
@@ -4944,7 +4944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 2.1
 --- !u!1 &810344602
 GameObject:
   m_ObjectHideFlags: 0
@@ -5080,8 +5080,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 10
-  swaySpeedMultiplier: 1
+  maxAngle: 19
+  swaySpeedMultiplier: 0.5
 --- !u!1 &856162061
 GameObject:
   m_ObjectHideFlags: 0
@@ -5278,7 +5278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.9
 --- !u!198 &877158262 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 7225398186284049477, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
@@ -5389,7 +5389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1
 --- !u!1 &889444366
 GameObject:
   m_ObjectHideFlags: 0
@@ -5627,8 +5627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 10
-  swaySpeedMultiplier: 1
+  maxAngle: 17
+  swaySpeedMultiplier: 0.6
 --- !u!1 &959693608
 GameObject:
   m_ObjectHideFlags: 0
@@ -6236,7 +6236,7 @@ Transform:
   m_GameObject: {fileID: 1205953512}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.48, y: 9.46, z: 0}
+  m_LocalPosition: {x: -5.16, y: 7.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6745,7 +6745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.5
 --- !u!1 &1277014316
 GameObject:
   m_ObjectHideFlags: 0
@@ -6941,8 +6941,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 2
-  swaySpeedMultiplier: 1
+  maxAngle: 1
+  swaySpeedMultiplier: 1.1
 --- !u!1 &1355846959
 GameObject:
   m_ObjectHideFlags: 0
@@ -7047,8 +7047,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 2
-  swaySpeedMultiplier: 1
+  maxAngle: 3
+  swaySpeedMultiplier: 1.5
 --- !u!198 &1398317086 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1892585107840762496, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
@@ -7308,7 +7308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.7
 --- !u!198 &1529322004 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 3380708578858481053, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
@@ -7699,7 +7699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 10
-  swaySpeedMultiplier: 1
+  swaySpeedMultiplier: 0.9
 --- !u!82 &1589491820 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1979881018217751690, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
@@ -7820,8 +7820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 10
-  swaySpeedMultiplier: 1
+  maxAngle: 11
+  swaySpeedMultiplier: 0.7
 --- !u!1 &1663578926
 GameObject:
   m_ObjectHideFlags: 0
@@ -8199,7 +8199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 10
-  swaySpeedMultiplier: 1
+  swaySpeedMultiplier: 1.2
 --- !u!1 &1726537880
 GameObject:
   m_ObjectHideFlags: 0
@@ -8305,7 +8305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 2
-  swaySpeedMultiplier: 1
+  swaySpeedMultiplier: 1.2
 --- !u!1 &1743811336
 GameObject:
   m_ObjectHideFlags: 0
@@ -8760,7 +8760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.2
 --- !u!1 &1979138035
 GameObject:
   m_ObjectHideFlags: 0
@@ -8866,7 +8866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.6
 --- !u!1 &1984686100
 GameObject:
   m_ObjectHideFlags: 0
@@ -8972,7 +8972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 2.4
 --- !u!1 &1989048484
 GameObject:
   m_ObjectHideFlags: 0
@@ -9078,7 +9078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
   maxAngle: 3
-  swaySpeedMultiplier: 2
+  swaySpeedMultiplier: 1.7
 --- !u!1 &2013131284 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2974541174004536430, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
