@@ -190,12 +190,12 @@ public class SwordMasterAttackModule : MonoBehaviour
 
   private IEnumerator StormRoutine(SwordMasterController entity)
   {
-    yield return new WaitForSeconds(1f);
+    yield return new WaitForSeconds(1.5f);
 
     stormPrefab.transform.position = stormRespawnPoint.position;
     stormPrefab.SetActive(true);
 
-    yield return new WaitForSeconds(0.5f);
+    yield return new WaitForSeconds(0.1f);
     entity.isAttacking = false;
   }
 }
