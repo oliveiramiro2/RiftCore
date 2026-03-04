@@ -7,6 +7,7 @@ public class PlayerPhysics : MonoBehaviour
   public Transform groundCheck;
   public LayerMask groundLayer;
   public float groundCheckRadius = 0.1f;
+  public PhysicsMaterial2D physics2D;
 
   private PlayerController player;
 
@@ -15,6 +16,18 @@ public class PlayerPhysics : MonoBehaviour
   public bool isGrounded;
   public float lastGroundedTime;
 
+
+  void Update()
+  {
+    if (!isGrounded)
+    {
+      rb.sharedMaterial = physics2D;
+    }
+    else
+    {
+      rb.sharedMaterial = null;
+    }
+  }
 
   public Rigidbody2D rb;
 
