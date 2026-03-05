@@ -21,4 +21,7 @@ public class SwordMasterEventsManager : ScriptableObject
   
   public GameEvent Breathing;
   public GameEvent BreathIn;
+
+  public GameEvent Death;
+  public GameEvent Phase2;
 }

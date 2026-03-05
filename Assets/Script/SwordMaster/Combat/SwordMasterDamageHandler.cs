@@ -18,12 +18,14 @@ public class SwordMasterDamageHandler : DamageHandlerBase<SwordMasterController>
     if (controller.Phase2() && phase1)
     {
       phase1 = false;
+      controller.Events.Phase2.Raise();
     }
   }
 
   protected override void Die()
   {
     base.Die();
+    controller.Events.Death.Raise();
     isDead = true;
     controller.MarkAsDead();
     Destroy(gameObject, 3f);

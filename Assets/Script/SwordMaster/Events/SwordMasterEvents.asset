@@ -25,3 +25,5 @@ MonoBehaviour:
   CounterAttack: {fileID: 11400000, guid: 3628b66b285ca6245887281c0f8dedfa, type: 2}
   Breathing: {fileID: 11400000, guid: 6b01627f03ea3ad4fa2d502f2aede6de, type: 2}
   BreathIn: {fileID: 11400000, guid: cca594c04809d784d97172cb5407571b, type: 2}
+  Death: {fileID: 11400000, guid: 532b9324d01c39c408c9e115c0f02b91, type: 2}
+  Phase2: {fileID: 11400000, guid: 6ec29745f014ae2469cf5755b6a50de5, type: 2}
