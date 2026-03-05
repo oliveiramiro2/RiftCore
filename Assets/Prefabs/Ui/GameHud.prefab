@@ -2870,18 +2870,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Thanks:
 
-    Fesliyan Studios
+    Fesliyan Studios - Music
 
-    Chill Gaming - Music
+    Chill Gaming, Ready to Fight,
+    I Waited For You, Action Fight, Vibes
 
-    Ready to
-    Fight - Music
 
-    I Waited For You - Music
-
-    Action Fight - Music
-
-'
+    All Sound Effect by Pixabay guys'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52cddc4d93878874b9350742ccd5cac6, type: 2}
   m_sharedMaterial: {fileID: 6066026616850789092, guid: 52cddc4d93878874b9350742ccd5cac6, type: 2}

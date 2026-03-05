@@ -861,6 +861,7 @@ GameObject:
   - component: {fileID: 2764575322434989336}
   - component: {fileID: 4351690595742675666}
   - component: {fileID: 2901639066665876966}
+  - component: {fileID: 3074784822322274217}
   m_Layer: 0
   m_Name: SMMaterialManager
   m_TagString: Untagged
@@ -895,8 +896,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2813f9fb6b5b84543b8bb5ec37b07fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SWMaterialManager
-  regularMaterial: {fileID: 2100000, guid: 1163fcb01bd6a8b4e8cbb51636ca175b, type: 2}
+  regularMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   hitMaterial: {fileID: 2100000, guid: 8bc4405ed6c29e4499d1e33ae08790d9, type: 2}
+  teleportMaterial: {fileID: 2100000, guid: 1163fcb01bd6a8b4e8cbb51636ca175b, type: 2}
 --- !u!114 &2901639066665876966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,6 +918,34 @@ MonoBehaviour:
       - m_Target: {fileID: 4351690595742675666}
         m_TargetAssemblyTypeName: SWMaterialManager, Assembly-CSharp
         m_MethodName: SetHitMaterial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3074784822322274217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955383982305718243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 052d1a2b4157c6a4ea4c77b010084377, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4351690595742675666}
+        m_TargetAssemblyTypeName: SWMaterialManager, Assembly-CSharp
+        m_MethodName: StartTeleportEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
