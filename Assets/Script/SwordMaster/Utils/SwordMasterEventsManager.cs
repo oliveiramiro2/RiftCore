@@ -24,4 +24,5 @@ public class SwordMasterEventsManager : ScriptableObject
 
   public GameEvent Death;
   public GameEvent Phase2;
+  public GameEvent Hurt;
 }
