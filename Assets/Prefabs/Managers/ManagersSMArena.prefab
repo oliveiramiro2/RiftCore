@@ -964,6 +964,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4745383440120631387}
+  - component: {fileID: 6996371936308430910}
   - component: {fileID: 402176602256167970}
   - component: {fileID: 4348188373740534288}
   m_Layer: 0
@@ -988,6 +989,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 835638725893378578}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6996371936308430910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7407156512740990384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87bd71b26a9c6da45ae9ee4563c0cfb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SMGameFlowManager
 --- !u!114 &402176602256167970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,6 +1045,18 @@ MonoBehaviour:
   response:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 6996371936308430910}
+        m_TargetAssemblyTypeName: SMGameFlowManager, Assembly-CSharp
+        m_MethodName: OnBossEffectTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
         m_MethodName: StartDistortionAtBoss
@@ -1078,6 +1103,8 @@ GameObject:
   - component: {fileID: 5844793586197525071}
   - component: {fileID: 7848752588790819177}
   - component: {fileID: 1612701242831582517}
+  - component: {fileID: 5635088330300723167}
+  - component: {fileID: 5070828124957897696}
   m_Layer: 0
   m_Name: SFXSMManager
   m_TagString: Untagged
@@ -1124,6 +1151,8 @@ MonoBehaviour:
   parry: {fileID: 11400000, guid: 2ad1663356123314fbedb828c4874719, type: 2}
   counterAttack: {fileID: 11400000, guid: fc9ace167935c4d41a3e258b0e5fc7bc, type: 2}
   breathing: {fileID: 11400000, guid: bd4b5b96de94de9458cb787f8351b34f, type: 2}
+  death: {fileID: 11400000, guid: e45d0382d03139646af148c55fc31df7, type: 2}
+  phase2: {fileID: 11400000, guid: 7d00c54407ac75149bce6a44f83a9c8b, type: 2}
 --- !u!114 &8388583500670014370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,6 +1480,62 @@ MonoBehaviour:
       - m_Target: {fileID: 7765341996887254520}
         m_TargetAssemblyTypeName: SFXSMManager, Assembly-CSharp
         m_MethodName: PlayTeleport
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5635088330300723167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7847226697352865353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 532b9324d01c39c408c9e115c0f02b91, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7765341996887254520}
+        m_TargetAssemblyTypeName: SFXSMManager, Assembly-CSharp
+        m_MethodName: PlayDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5070828124957897696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7847226697352865353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 6ec29745f014ae2469cf5755b6a50de5, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7765341996887254520}
+        m_TargetAssemblyTypeName: SFXSMManager, Assembly-CSharp
+        m_MethodName: PlayPhase2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

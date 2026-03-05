@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TSArena.unity
     guid: bbba33f1ef9cc2f49a5d24db27b90068
+  - enabled: 1
+    path: Assets/Scenes/SMArena.unity
+    guid: 6a558273efd83af40b464458b11be522
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 23150759f2b9cc84ea7b355dbf28406d, type: 2}
