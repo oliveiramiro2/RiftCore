@@ -102,6 +102,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.31666666
+    functionName: TeleportEvent
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.33333334
     functionName: DisableSecondAttackCollider
     data: 
@@ -109,15 +116,8 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.35
+  - time: 0.46666667
     functionName: SwordMasterCanTeleport
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.4
-    functionName: TeleportEvent
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
