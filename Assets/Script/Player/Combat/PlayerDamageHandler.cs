@@ -20,6 +20,7 @@ public class PlayerDamageHandler : DamageHandlerBase<PlayerController>
     {
         if (base.invincibilityTimer > 0f) return;
         base.TakeDamage(damage, hitDirection, knockbackForce);
+        RumbleManager.Instance.Play(RumbleType.Danger);
 
         StartCoroutine(HeartFeedbackCoroutine());
         if (isDead) return;
@@ -40,6 +41,7 @@ public class PlayerDamageHandler : DamageHandlerBase<PlayerController>
         base.Die();
         isDead = true;
         controller.canMove = false;
+        RumbleManager.Instance.Play(RumbleType.Danger);
         controller.AnimatorBridge.TriggerDeath();
         controller.events.OnDeath.Raise();
         StartCoroutine(DeathCoroutine());

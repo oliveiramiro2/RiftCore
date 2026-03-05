@@ -128,6 +128,7 @@ public class SwordMasterAttackModule : MonoBehaviour
 
   private IEnumerator ExplosionRoutine(SwordMasterController entity)
   {
+    RumbleManager.Instance.Play(RumbleType.HeavyHit);
     yield return new WaitForSeconds(2.5f);
     entity.isAttacking = false;
   }
@@ -193,6 +194,7 @@ public class SwordMasterAttackModule : MonoBehaviour
   {
     yield return new WaitForSeconds(1.5f);
 
+    RumbleManager.Instance.Play(RumbleType.Charge);
     stormPrefab.transform.position = stormRespawnPoint.position;
     entity.Events.Storm.Raise();
     stormPrefab.SetActive(true);

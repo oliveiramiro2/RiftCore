@@ -64,7 +64,7 @@ public class RumbleManager : MonoBehaviour
                 break;
 
             case RumbleType.Danger:
-                yield return PulseRumble(2f, 7);
+                yield return PulseRumble(2f, 10);
                 break;
         }
 
