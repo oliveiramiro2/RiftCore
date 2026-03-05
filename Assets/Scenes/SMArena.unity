@@ -12828,7 +12828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63017e776f19f8347ad5a08ee3fec6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindReactive
-  maxAngle: 3
+  maxAngle: 1
   swaySpeedMultiplier: 1.5
 --- !u!198 &1398317086 stripped
 ParticleSystem:
