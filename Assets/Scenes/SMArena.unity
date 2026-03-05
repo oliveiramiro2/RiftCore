@@ -6157,6 +6157,78 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1084241403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7847226697352865353, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+  m_PrefabInstance: {fileID: 3569635643734290897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1084241417 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7765341996887254520, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+  m_PrefabInstance: {fileID: 3569635643734290897}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084241403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3154c4791bfe9c43bf3b33604d3776e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXSMManager
+--- !u!114 &1084241418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084241403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 6ec29745f014ae2469cf5755b6a50de5, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1084241417}
+        m_TargetAssemblyTypeName: SFXSMManager, Assembly-CSharp
+        m_MethodName: PlayPhase2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1084241419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084241403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 532b9324d01c39c408c9e115c0f02b91, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1084241417}
+        m_TargetAssemblyTypeName: SFXSMManager, Assembly-CSharp
+        m_MethodName: PlayDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1090816187
 GameObject:
   m_ObjectHideFlags: 0
@@ -10044,6 +10116,14 @@ PrefabInstance:
       propertyPath: heartContainer
       value: 
       objectReference: {fileID: 1243089074}
+    - target: {fileID: 7765341996887254520, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 11400000, guid: e45d0382d03139646af148c55fc31df7, type: 2}
+    - target: {fileID: 7765341996887254520, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+      propertyPath: phase2
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d00c54407ac75149bce6a44f83a9c8b, type: 2}
     - target: {fileID: 7843510281864054417, guid: 36815c8b03fb457468248e24e089d327, type: 3}
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -10092,6 +10172,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7847226697352865353, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1084241419}
+    - targetCorrespondingSourceObject: {fileID: 7847226697352865353, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1084241418}
     - targetCorrespondingSourceObject: {fileID: 7407156512740990384, guid: 36815c8b03fb457468248e24e089d327, type: 3}
       insertIndex: 1
       addedObject: {fileID: 3569635643734290905}

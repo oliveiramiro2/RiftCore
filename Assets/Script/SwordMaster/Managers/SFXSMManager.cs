@@ -14,6 +14,8 @@ public class SFXSMManager : MonoBehaviour
     public SoundData parry;
     public SoundData counterAttack;
     public SoundData breathing;
+    public SoundData death;
+    public SoundData phase2;
 
     public void PlaySlash1()
     {
@@ -72,5 +74,15 @@ public class SFXSMManager : MonoBehaviour
     public void PlayBreathing()
     {
         breathing.Play();
+    }
+
+    public void PlayDeath()
+    {
+        death.Play();
+    }
+
+    public void PlayPhase2()
+    {
+        phase2.Play();
     }
 }
