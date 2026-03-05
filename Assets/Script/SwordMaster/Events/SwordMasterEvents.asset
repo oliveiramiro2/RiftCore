@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1e322c745227d14ebb8ac8176d3a4cf, type: 3}
+  m_Name: SwordMasterEvents
+  m_EditorClassIdentifier: Assembly-CSharp::SwordMasterEventsManager
+  Slash1: {fileID: 11400000, guid: 546b9c881b2bce2418dcf718772f8908, type: 2}
+  Slash2: {fileID: 11400000, guid: 57a99e8581df2054f83dc51292772ad4, type: 2}
+  Slash3: {fileID: 11400000, guid: 7391688c3a7b87c4a89850d62005fc7e, type: 2}

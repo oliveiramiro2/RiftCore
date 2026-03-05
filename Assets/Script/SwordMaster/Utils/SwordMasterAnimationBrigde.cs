@@ -84,6 +84,22 @@ public class SwordMasterAnimationBridge : MonoBehaviour
   {
     return animator.SMIsCurrentAnimationFinished();
   }
+
+  /********* Animation Events *********/
+  public void Slash1Event()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.Slash1.Raise();
+  }
+
+  public void Slash2Event()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.Slash2.Raise();
+  }
+
+  public void Slash3Event()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.Slash3.Raise();
+  }
 }
 
 public static class SwordMasterAnimatorExtensions
