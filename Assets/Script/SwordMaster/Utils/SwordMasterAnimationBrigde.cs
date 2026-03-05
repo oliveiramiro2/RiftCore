@@ -100,6 +100,47 @@ public class SwordMasterAnimationBridge : MonoBehaviour
   {
     gameObject.GetComponent<SwordMasterController>().Events.Slash3.Raise();
   }
+
+  public void ExplosionEvent()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.Explosion.Raise();
+  }
+  public void FootstepEvent()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.Footstep.Raise();
+  }
+  public void LaughterEvent()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.Laughter.Raise();
+  }
+  public void AirSlashEvent()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.AirSlash.Raise();
+  }
+  public void StormEvent()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.Storm.Raise();
+  }
+  public void TeleportEvent()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.Teleport.Raise();
+  }
+  public void ParryEvent()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.Parry.Raise();
+  }
+  public void CounterAttackEvent()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.CounterAttack.Raise();
+  }
+  public void BreathingEvent()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.Breathing.Raise();
+  }
+  public void BreathInEvent()
+  {
+    gameObject.GetComponent<SwordMasterController>().Events.BreathIn.Raise();
+  }
 }
 
 public static class SwordMasterAnimatorExtensions

@@ -192,6 +192,7 @@ public class SwordMasterAttackModule : MonoBehaviour
     yield return new WaitForSeconds(1.5f);
 
     stormPrefab.transform.position = stormRespawnPoint.position;
+    entity.Events.Storm.Raise();
     stormPrefab.SetActive(true);
 
     yield return new WaitForSeconds(0.1f);

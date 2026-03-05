@@ -5,6 +5,15 @@ public class SFXSMManager : MonoBehaviour
     public SoundData slash1;
     public SoundData slash2;
     public SoundData slash3;
+    public SoundData explosion;
+    public SoundData footstep;
+    public SoundData laughter;
+    public SoundData airSlash;
+    public SoundData Storm;
+    public SoundData teleport;
+    public SoundData parry;
+    public SoundData counterAttack;
+    public SoundData breathing;
 
     public void PlaySlash1()
     {
@@ -19,5 +28,49 @@ public class SFXSMManager : MonoBehaviour
     public void PlaySlash3()
     {
         slash3.Play();
+    }
+
+    public void PlayExplosion()
+    {
+        explosion.Play();
+    }
+
+    public void PlayFootstep()
+    {
+        footstep.Play();
+    }
+    public void PlayLaughter()
+    {
+        laughter.Play();
+    }
+
+    public void PlayAirSlash()
+    {
+        airSlash.Play();
+    }
+
+    public void PlayStorm()
+    {
+        Storm.Play();
+    }
+
+    public void PlayTeleport()
+    {
+        teleport.Play();
+    }
+
+    public void PlayParry()
+    {
+        parry.Play();
+    }
+
+    public void PlayCounterAttack()
+    {
+        counterAttack.Play();
+    }
+
+    public void PlayBreathing()
+    {
+        breathing.Play();
     }
 }

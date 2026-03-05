@@ -15,3 +15,13 @@ MonoBehaviour:
   Slash1: {fileID: 11400000, guid: 546b9c881b2bce2418dcf718772f8908, type: 2}
   Slash2: {fileID: 11400000, guid: 57a99e8581df2054f83dc51292772ad4, type: 2}
   Slash3: {fileID: 11400000, guid: 7391688c3a7b87c4a89850d62005fc7e, type: 2}
+  Storm: {fileID: 11400000, guid: e0c379a5d1a0d5b4d81fe977ab642474, type: 2}
+  AirSlash: {fileID: 11400000, guid: 16bffe7a7a25fc54b95c90f8d8a32877, type: 2}
+  Teleport: {fileID: 11400000, guid: 052d1a2b4157c6a4ea4c77b010084377, type: 2}
+  Footstep: {fileID: 11400000, guid: 1851fefa201d5444eaf4a0f606cc40b5, type: 2}
+  Laughter: {fileID: 11400000, guid: 07657855fc2203f4ca574567f841a5dd, type: 2}
+  Explosion: {fileID: 11400000, guid: f078e0abd55627142be6657f2e93902b, type: 2}
+  Parry: {fileID: 11400000, guid: e6346f1e1c19d71488ae029b68aa6ca7, type: 2}
+  CounterAttack: {fileID: 11400000, guid: 3628b66b285ca6245887281c0f8dedfa, type: 2}
+  Breathing: {fileID: 11400000, guid: 6b01627f03ea3ad4fa2d502f2aede6de, type: 2}
+  BreathIn: {fileID: 11400000, guid: cca594c04809d784d97172cb5407571b, type: 2}
