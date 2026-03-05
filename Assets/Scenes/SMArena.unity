@@ -606,7 +606,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1163fcb01bd6a8b4e8cbb51636ca175b, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -649,7 +649,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.43, y: -2.84, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 959693609}
@@ -13018,6 +13018,50 @@ MonoBehaviour:
   direction: {x: 6, y: -6}
   startHitboxDeactivate: 1
   owner: {fileID: 39758855}
+--- !u!1 &1540482758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5955383982305718243, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+  m_PrefabInstance: {fileID: 3569635643734290897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1540482760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4351690595742675666, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+  m_PrefabInstance: {fileID: 3569635643734290897}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540482758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2813f9fb6b5b84543b8bb5ec37b07fef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SWMaterialManager
+--- !u!114 &1540482762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540482758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 052d1a2b4157c6a4ea4c77b010084377, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1540482760}
+        m_TargetAssemblyTypeName: SWMaterialManager, Assembly-CSharp
+        m_MethodName: StartTeleportEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1555602460
 GameObject:
   m_ObjectHideFlags: 0
@@ -20140,6 +20184,14 @@ PrefabInstance:
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 134084091}
+    - target: {fileID: 4351690595742675666, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+      propertyPath: regularMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 4351690595742675666, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+      propertyPath: teleportMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 1163fcb01bd6a8b4e8cbb51636ca175b, type: 2}
     - target: {fileID: 4828589858982583112, guid: 36815c8b03fb457468248e24e089d327, type: 3}
       propertyPath: buffFX
       value: 
@@ -20239,7 +20291,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5955383982305718243, guid: 36815c8b03fb457468248e24e089d327, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1540482762}
   m_SourcePrefab: {fileID: 100100000, guid: 36815c8b03fb457468248e24e089d327, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

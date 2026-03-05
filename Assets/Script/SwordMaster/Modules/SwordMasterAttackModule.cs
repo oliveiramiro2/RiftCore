@@ -140,6 +140,8 @@ public class SwordMasterAttackModule : MonoBehaviour
     }
     entity.canTeleport = false;
 
+    yield return new WaitForSeconds(0.35f);
+
     entity.spriteRenderer.enabled = false;
     entity.rb.linearVelocity = Vector2.zero;
 
