@@ -28,6 +28,11 @@ public class MenuMain : MonoBehaviour
         SceneManager.LoadScene("TSArena");
     }
 
+    public void StartGameSM()
+    {
+        SceneManager.LoadScene("SMArena");
+    }
+
     public void ChooseEnemy()
     {
         chooseEnemyImage.gameObject.SetActive(true);
