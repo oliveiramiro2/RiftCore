@@ -15,7 +15,6 @@ public class SwordMasterDamageHandler : DamageHandlerBase<SwordMasterController>
     base.TakeDamage(damage, hitDirection, knockbackForce);
 
     if (isDead) return;
-
     if (controller.Phase2() && phase1)
     {
       phase1 = false;
@@ -25,10 +24,10 @@ public class SwordMasterDamageHandler : DamageHandlerBase<SwordMasterController>
 
   protected override void Die()
   {
+    controller.MarkAsDead();
     base.Die();
     controller.Events.Death.Raise();
     isDead = true;
-    controller.MarkAsDead();
     Destroy(gameObject, 3f);
   }
 }

@@ -10,11 +10,13 @@ public class SwordMasterStateFactory : MonoBehaviour
 
   public SwordMasterIdle SwordMasterIdle { get; private set; }
   public SwordMasterAttack SwordMasterAttack { get; private set; }
+  public SwordMasterDeath SwordMasterDeath { get; private set; }
 
   void Awake()
   {
     SwordMasterIdle = new SwordMasterIdle();
     SwordMasterAttack = new SwordMasterAttack();
+    SwordMasterDeath = new SwordMasterDeath();
   }
 
   public void InitializeTransitions()
@@ -22,6 +24,7 @@ public class SwordMasterStateFactory : MonoBehaviour
 
     bossSM.AddTransition(SwordMasterIdle, SwordMasterAttack, () => owner.isAttacking);
     bossSM.AddTransition(SwordMasterAttack, SwordMasterIdle, () => !owner.isAttacking);
+    bossSM.AddAnyTransition(SwordMasterDeath, () => owner.IsDead);
 
   }
 }

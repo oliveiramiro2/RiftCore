@@ -17,6 +17,7 @@ public class SwordMasterAnimationBridge : MonoBehaviour
   private readonly string parryParam = "parry";
   private readonly string counterAttackParam = "counterAttack";
   private readonly string windSlashParam = "windSlash";
+  private readonly string deathParam = "Death";
 
 
   void Awake()
@@ -77,6 +78,11 @@ public class SwordMasterAnimationBridge : MonoBehaviour
   public void SwordMasterWindSlash()
   {
     animator.Play(windSlashParam);
+  }
+
+  public void SwordMasterDeath()
+  {
+    animator.Play(deathParam);
   }
 
 

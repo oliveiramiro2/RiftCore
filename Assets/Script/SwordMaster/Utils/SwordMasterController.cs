@@ -29,8 +29,9 @@ public class SwordMasterController : BaseEntity
 
   void Update()
   {
-    if (SwordMasterSM == null || !canMove || IsDead)
+    if (SwordMasterSM == null || !canMove)
     {
+
       return;
     }
     SwordMasterSM.UpdateStateMachine();
