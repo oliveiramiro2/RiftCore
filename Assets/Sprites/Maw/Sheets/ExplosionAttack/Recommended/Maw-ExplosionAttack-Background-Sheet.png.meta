@@ -112,7 +112,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,7 +126,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,10 +147,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -178,12 +178,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 0
-        width: 69
-        height: 118
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_1
       rect:
         serializedVersion: 2
-        x: 146
+        x: 128
         y: 0
-        width: 77
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -222,12 +222,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_2
       rect:
         serializedVersion: 2
-        x: 281
+        x: 256
         y: 0
-        width: 70
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_3
       rect:
         serializedVersion: 2
-        x: 390
+        x: 384
         y: 0
-        width: 98
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_4
       rect:
         serializedVersion: 2
-        x: 518
+        x: 512
         y: 0
-        width: 103
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -288,12 +288,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_5
       rect:
         serializedVersion: 2
-        x: 646
+        x: 640
         y: 0
-        width: 95
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -310,12 +310,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_6
       rect:
         serializedVersion: 2
-        x: 774
+        x: 768
         y: 0
-        width: 95
-        height: 120
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -332,12 +332,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_7
       rect:
         serializedVersion: 2
-        x: 902
+        x: 896
         y: 0
-        width: 91
-        height: 120
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -354,12 +354,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_8
       rect:
         serializedVersion: 2
-        x: 1030
+        x: 1024
         y: 0
-        width: 90
-        height: 120
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -376,12 +376,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_9
       rect:
         serializedVersion: 2
-        x: 1158
+        x: 1152
         y: 0
-        width: 90
-        height: 120
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -398,12 +398,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_10
       rect:
         serializedVersion: 2
-        x: 1286
+        x: 1280
         y: 0
-        width: 90
-        height: 120
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -420,12 +420,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_11
       rect:
         serializedVersion: 2
-        x: 1414
+        x: 1408
         y: 0
-        width: 90
-        height: 120
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -442,12 +442,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_12
       rect:
         serializedVersion: 2
-        x: 1542
+        x: 1536
         y: 0
-        width: 90
-        height: 120
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -464,12 +464,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_13
       rect:
         serializedVersion: 2
-        x: 1670
+        x: 1664
         y: 0
-        width: 90
-        height: 120
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -486,12 +486,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_14
       rect:
         serializedVersion: 2
-        x: 1798
+        x: 1792
         y: 0
-        width: 90
-        height: 120
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -508,12 +508,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_15
       rect:
         serializedVersion: 2
-        x: 1926
+        x: 1920
         y: 0
-        width: 90
-        height: 120
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -530,12 +530,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_16
       rect:
         serializedVersion: 2
-        x: 2054
+        x: 2048
         y: 0
-        width: 90
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -552,12 +552,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_17
       rect:
         serializedVersion: 2
-        x: 2182
+        x: 2176
         y: 0
-        width: 90
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -574,12 +574,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_18
       rect:
         serializedVersion: 2
-        x: 2310
+        x: 2304
         y: 0
-        width: 90
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -596,12 +596,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_19
       rect:
         serializedVersion: 2
-        x: 2438
+        x: 2432
         y: 0
-        width: 90
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -618,12 +618,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_20
       rect:
         serializedVersion: 2
-        x: 2566
+        x: 2560
         y: 0
-        width: 90
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -640,12 +640,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_21
       rect:
         serializedVersion: 2
-        x: 2694
+        x: 2688
         y: 0
-        width: 90
-        height: 121
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -662,12 +662,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_22
       rect:
         serializedVersion: 2
-        x: 2822
+        x: 2816
         y: 0
-        width: 90
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -684,12 +684,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_23
       rect:
         serializedVersion: 2
-        x: 2962
+        x: 2944
         y: 0
-        width: 77
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -706,12 +706,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_24
       rect:
         serializedVersion: 2
-        x: 3095
+        x: 3072
         y: 0
-        width: 69
-        height: 119
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -728,12 +728,12 @@ TextureImporter:
       name: Maw-ExplosionAttack-Background-Sheet_25
       rect:
         serializedVersion: 2
-        x: 3223
+        x: 3200
         y: 0
-        width: 69
-        height: 118
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -750,7 +750,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5f10aa2f26c1c4145aa84c7e9d41f0bc
     internalID: 0
     vertices: []
     indices: 
@@ -758,7 +758,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Maw-ExplosionAttack-Background-Sheet_0: -3584061228759022829
       Maw-ExplosionAttack-Background-Sheet_1: -2589884919135212167
