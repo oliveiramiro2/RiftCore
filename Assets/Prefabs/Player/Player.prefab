@@ -31243,7 +31243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7203720840432896909, guid: 7a47c77edec6f72438502b975dd4b4d3, type: 3}
       propertyPath: moveWithTransform
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7203720840432896909, guid: 7a47c77edec6f72438502b975dd4b4d3, type: 3}
       propertyPath: ColorModule.enabled
