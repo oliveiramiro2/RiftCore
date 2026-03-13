@@ -86,10 +86,10 @@ public class SwordMasterAnimationBridge : MonoBehaviour
   }
 
 
-  public bool SMIsCurrentAnimationFinished()
-  {
-    return animator.SMIsCurrentAnimationFinished();
-  }
+  // public bool SMIsCurrentAnimationFinished()
+  // {
+  //   return animator.SMIsCurrentAnimationFinished();
+  // }
 
   /********* Animation Events *********/
   public void Slash1Event()
