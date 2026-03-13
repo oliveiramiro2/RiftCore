@@ -8,6 +8,7 @@ public class MawAttack : State<MawController>
   {
     timer = 0f;
     Debug.Log("Entering Attack State");
+    entity.Locomotion.FlipTowardsTarget(entity.PlayerTransform);
   }
 
   public override void UpdateState(MawController entity)

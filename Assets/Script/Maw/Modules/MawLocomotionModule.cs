@@ -5,6 +5,7 @@ public class MawLocomotionModule : MonoBehaviour
   private MawController owner;
   private PlayerController target;
   private float timer = 0f, floatOutDuration = 0.5f;
+  public bool hasTeleported = false;
 
   void Start()
   {
@@ -13,15 +14,21 @@ public class MawLocomotionModule : MonoBehaviour
 
   void Update()
   {
+    if (owner.canTeleport && owner.canFollowPlayer && !hasTeleported)
+    {
+      hasTeleported = true;
+      StartCoroutine(TeleportRoutine());
+      return;
+    }
 
-    if (owner == null || target == null || !owner.canFollowPlayer)
+    if (owner == null || target == null || !owner.canFollowPlayer || owner.canTeleport)
     {
       timer = 0f;
       return;
     }
 
     timer += Time.deltaTime;
-    if (timer >= floatOutDuration)
+    if (timer >= floatOutDuration && !owner.canTeleport)
     {
       MoveTowardsPlayer();
     }
@@ -35,7 +42,7 @@ public class MawLocomotionModule : MonoBehaviour
   public void MoveTowardsPlayer()
   {
     float dist = Vector2.Distance(transform.position, target.transform.position);
-    if (owner == null || target == null || !owner.canFollowPlayer || dist < 1f)
+    if (owner == null || target == null || !owner.canFollowPlayer || dist < 0.1f)
     {
       StopMovement();
       return;
@@ -73,5 +80,30 @@ public class MawLocomotionModule : MonoBehaviour
     {
       owner.rb.linearVelocityX = 0;
     }
+  }
+
+  private System.Collections.IEnumerator TeleportRoutine()
+  {
+    owner.AnimatorBridge.MawSummonStaff();
+    yield return new WaitForSeconds(1.5f);
+    FlipTowardsTarget(target.transform);
+    owner.AnimatorBridge.MawTeleportIn();
+    yield return new WaitForSeconds(2.5f);
+    FlipTowardsTarget(target.transform);
+    if (owner != null && target != null)
+    {
+      owner.transform.position = target.transform.position + new Vector3(
+          Random.Range(-2f, 2f),
+          0,
+          0);
+    }
+    owner.AnimatorBridge.MawTeleportOut();
+    yield return new WaitForSeconds(1.6f);
+    FlipTowardsTarget(target.transform);
+    owner.AnimatorBridge.MawHideStaff();
+    yield return new WaitForSeconds(1.5f);
+    FlipTowardsTarget(target.transform);
+    owner.canTeleport = false;
+    owner.canFollowPlayer = false;
   }
 }

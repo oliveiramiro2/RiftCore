@@ -9,6 +9,10 @@ public class MawAnimationBridge : MonoBehaviour
   private readonly string deathParam = "Death";
   private readonly string floatInParam = "FloatingIn";
   private readonly string floatOutParam = "FloatingOut";
+  private readonly string teleportInParam = "TeleportIn";
+  private readonly string teleportOutParam = "TeleportOut";
+  private readonly string summonStaffParam = "SummonStaff";
+  private readonly string HideStaffParam = "HideStaff";
 
 
   void Awake()
@@ -34,6 +38,26 @@ public class MawAnimationBridge : MonoBehaviour
   public void MawFloatOut()
   {
     animator.Play(floatOutParam);
+  }
+
+  public void MawTeleportIn()
+  {
+    animator.Play(teleportInParam);
+  }
+
+  public void MawTeleportOut()
+  {
+    animator.Play(teleportOutParam);
+  }
+
+  public void MawSummonStaff()
+  {
+    animator.Play(summonStaffParam);
+  }
+
+  public void MawHideStaff()
+  {
+    animator.Play(HideStaffParam);
   }
 }
 
