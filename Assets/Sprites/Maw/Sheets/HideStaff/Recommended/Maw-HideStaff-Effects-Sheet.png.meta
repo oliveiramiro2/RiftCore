@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,12 +121,12 @@ TextureImporter:
       name: Maw-HideStaff-Effects-Sheet_0
       rect:
         serializedVersion: 2
-        x: 670
+        x: 640
         y: 0
-        width: 23
-        height: 86
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,12 +143,12 @@ TextureImporter:
       name: Maw-HideStaff-Effects-Sheet_1
       rect:
         serializedVersion: 2
-        x: 797
-        y: 70
-        width: 28
-        height: 16
+        x: 768
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Maw-HideStaff-Effects-Sheet_2
       rect:
         serializedVersion: 2
-        x: 802
+        x: 896
         y: 0
-        width: 19
-        height: 10
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: Maw-HideStaff-Effects-Sheet_3
       rect:
         serializedVersion: 2
-        x: 925
-        y: 50
-        width: 28
-        height: 27
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: Maw-HideStaff-Effects-Sheet_4
       rect:
         serializedVersion: 2
-        x: 930
-        y: 5
-        width: 19
-        height: 25
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,42 +231,20 @@ TextureImporter:
       name: Maw-HideStaff-Effects-Sheet_5
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 17
-        width: 28
-        height: 46
+        x: 1282
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 199f8ae569b865b80800000000000000
-      internalID: -8406378176490964591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Maw-HideStaff-Effects-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 1181
-        y: 21
-        width: 28
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a8635c27ad2e8f40800000000000000
-      internalID: 5732569571715672230
+      spriteID: e23bb776598524047b84219aff27769e
+      internalID: 1644369007
       vertices: []
       indices: 
       edges: []
@@ -275,7 +253,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ea90d1605d5806343995240f11a918ac
     internalID: 0
     vertices: []
     indices: 
@@ -283,15 +261,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Maw-HideStaff-Effects-Sheet_0: 5921731347697511021
       Maw-HideStaff-Effects-Sheet_1: -8520634916899984709
       Maw-HideStaff-Effects-Sheet_2: -6501759019263274845
       Maw-HideStaff-Effects-Sheet_3: -6200938477618446975
       Maw-HideStaff-Effects-Sheet_4: 4671566223998098124
-      Maw-HideStaff-Effects-Sheet_5: -8406378176490964591
-      Maw-HideStaff-Effects-Sheet_6: 5732569571715672230
+      Maw-HideStaff-Effects-Sheet_5: 1644369007
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
