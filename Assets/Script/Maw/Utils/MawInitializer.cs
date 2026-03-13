@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(MawStateFactory))]
 [RequireComponent(typeof(MawAnimationBridge))]
 [RequireComponent(typeof(MawLocomotionModule))]
+[RequireComponent(typeof(MawAttackModule))]
 public class MawInitializer : MonoBehaviour
 {
   void Awake()
@@ -14,9 +15,12 @@ public class MawInitializer : MonoBehaviour
     var factory = GetComponent<MawStateFactory>();
     var animator = GetComponent<MawAnimationBridge>();
     var locomotionModule = GetComponent<MawLocomotionModule>();
+    var attackModule = GetComponent<MawAttackModule>();
 
-    controller.SetupModules(sm, factory, animator, locomotionModule);
+    controller.SetupModules(sm, factory, animator, locomotionModule, attackModule);
     locomotionModule.Setup(controller);
+    attackModule.Initialize(controller);
+
 
     sm.Setup(controller);
 

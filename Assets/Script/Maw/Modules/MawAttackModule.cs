@@ -1,0 +1,170 @@
+using UnityEngine;
+using System.Collections.Generic;
+using System.Collections;
+
+public class MawAttackModule : MonoBehaviour
+{
+  private MawController owner;
+  private Transform player;
+
+  public bool isAttacking = false;
+  [SerializeField] private float attackCooldown = 3f;
+  public bool canAttackTimer = true;
+  private float attackTimer = 0f;
+
+  [Header("Attack Prefabs")]
+  [SerializeField] private GameObject stormPrefab;
+  [SerializeField] private GameObject[] airSlashPrefab;
+  [SerializeField] private Transform stormRespawnPoint;
+  [SerializeField] private Transform[] airSlashsRespawnPoint;
+
+  [Header("Decision Timers")]
+  private readonly float minDecisionTime = 2f;
+  private readonly float maxDecisionTime = 3f;
+  private readonly float minDecisionTimePhase2 = 1f;
+  private readonly float maxDecisionTimePhase2 = 2f;
+
+  void Start()
+  {
+    player = GameObject.FindAnyObjectByType<PlayerController>().transform;
+  }
+
+  public void Initialize(MawController controller)
+  {
+    owner = controller;
+  }
+
+  void Update()
+  {
+    if (owner.IsDead) return;
+
+    if (!canAttackTimer) return;
+    isAttacking = false;
+    attackTimer += Time.deltaTime;
+    if (attackTimer >= attackCooldown)
+    {
+      isAttacking = true;
+      attackTimer = 0f;
+      ResetTimer();
+    }
+  }
+
+  public void ResetTimer()
+  {
+    if (owner.Phase2())
+    {
+      attackCooldown = Random.Range(minDecisionTimePhase2, maxDecisionTimePhase2);
+    }
+    else
+    {
+      attackCooldown = Random.Range(minDecisionTime, maxDecisionTime);
+    }
+  }
+
+  public void DecideNextAttack(MawController entity)
+  {
+    float dist = Vector2.Distance(transform.position, player.position);
+
+    List<System.Action> validAttacks = new()
+    {
+      () => SummonAttack(entity),
+      () => BoneAttack(entity),
+      () => ExplosionAttack(entity),
+      () => HandAttack(entity)
+    };
+
+    int index = Random.Range(0, validAttacks.Count);
+
+    if (owner.IsDead) return;
+
+    owner.Locomotion.StopMovement();
+    validAttacks[index].Invoke();
+  }
+
+  private void SummonAttack(MawController entity)
+  {
+    StartCoroutine(SummonAttackRoutine(entity));
+  }
+
+  private IEnumerator SummonAttackRoutine(MawController entity)
+  {
+    entity.AnimatorBridge.MawSummonStaff();
+    yield return new WaitForSeconds(1.5f);
+
+    entity.AnimatorBridge.MawSummonAttack();
+    yield return new WaitForSeconds(3.1f);
+
+    entity.AnimatorBridge.MawHideStaff();
+    yield return new WaitForSeconds(2f);
+
+    float range = Random.Range(0f, 1f);
+    if (range < 0.5f)
+      entity.canFollowPlayer = true;
+
+    entity.isAttacking = false;
+  }
+
+  private void BoneAttack(MawController entity)
+  {
+    StartCoroutine(BoneAttackRoutine(entity));
+  }
+
+  private IEnumerator BoneAttackRoutine(MawController entity)
+  {
+    entity.AnimatorBridge.MawBoneAttack();
+    yield return new WaitForSeconds(2.2f);
+
+    float range = Random.Range(0f, 1f);
+    if (range < 0.5f)
+      entity.canFollowPlayer = true;
+    entity.isAttacking = false;
+  }
+
+  private void ExplosionAttack(MawController entity)
+  {
+    StartCoroutine(ExplosionAttackRoutine(entity));
+  }
+
+  private IEnumerator ExplosionAttackRoutine(MawController entity)
+  {
+
+    entity.AnimatorBridge.MawSummonStaff();
+    yield return new WaitForSeconds(1.5f);
+
+    entity.AnimatorBridge.MawExplosion();
+    yield return new WaitForSeconds(2.6f);
+
+
+    entity.AnimatorBridge.MawHideStaff();
+    yield return new WaitForSeconds(2f);
+
+    float range = Random.Range(0f, 1f);
+    if (range < 0.5f)
+      entity.canFollowPlayer = true;
+    entity.isAttacking = false;
+  }
+
+  private void HandAttack(MawController entity)
+  {
+    StartCoroutine(HandAttackRoutine(entity));
+  }
+
+  private IEnumerator HandAttackRoutine(MawController entity)
+  {
+
+    entity.AnimatorBridge.MawSummonStaff();
+    yield return new WaitForSeconds(1.5f);
+
+    entity.AnimatorBridge.MawHandAttack();
+    yield return new WaitForSeconds(2.5f);
+
+
+    entity.AnimatorBridge.MawHideStaff();
+    yield return new WaitForSeconds(2f);
+
+    float range = Random.Range(0f, 1f);
+    if (range < 0.5f)
+      entity.canFollowPlayer = true;
+    entity.isAttacking = false;
+  }
+}

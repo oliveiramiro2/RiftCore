@@ -15,6 +15,11 @@ public class MawAnimationBridge : MonoBehaviour
   private readonly string HideStaffParam = "HideStaff";
 
 
+
+  private readonly string boneAttackParam = "BoneAttack";
+  private readonly string explosionParam = "Explosion";
+  private readonly string handAttackParam = "HandAttack";
+  private readonly string summonAttackParam = "SummonAttack";
   void Awake()
   {
     animator = GetComponent<Animator>();
@@ -58,6 +63,26 @@ public class MawAnimationBridge : MonoBehaviour
   public void MawHideStaff()
   {
     animator.Play(HideStaffParam);
+  }
+
+  public void MawBoneAttack()
+  {
+    animator.Play(boneAttackParam);
+  }
+
+  public void MawExplosion()
+  {
+    animator.Play(explosionParam);
+  }
+
+  public void MawHandAttack()
+  {
+    animator.Play(handAttackParam);
+  }
+
+  public void MawSummonAttack()
+  {
+    animator.Play(summonAttackParam);
   }
 }
 

@@ -85,10 +85,14 @@ public class MawLocomotionModule : MonoBehaviour
   private System.Collections.IEnumerator TeleportRoutine()
   {
     owner.AnimatorBridge.MawSummonStaff();
+
     yield return new WaitForSeconds(1.5f);
+
     FlipTowardsTarget(target.transform);
     owner.AnimatorBridge.MawTeleportIn();
+
     yield return new WaitForSeconds(2.5f);
+
     FlipTowardsTarget(target.transform);
     if (owner != null && target != null)
     {
@@ -98,10 +102,14 @@ public class MawLocomotionModule : MonoBehaviour
           0);
     }
     owner.AnimatorBridge.MawTeleportOut();
+
     yield return new WaitForSeconds(1.6f);
+
     FlipTowardsTarget(target.transform);
     owner.AnimatorBridge.MawHideStaff();
-    yield return new WaitForSeconds(1.5f);
+
+    yield return new WaitForSeconds(2f);
+
     FlipTowardsTarget(target.transform);
     owner.canTeleport = false;
     owner.canFollowPlayer = false;

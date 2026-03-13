@@ -13,6 +13,7 @@ public class MawController : BaseEntity
   public MawStateFactory MawStateFactory { get; private set; }
   public MawAnimationBridge AnimatorBridge { get; private set; }
   public MawLocomotionModule Locomotion { get; private set; }
+  public MawAttackModule Attack { get; private set; }
 
   public bool isAttacking = false;
   public bool canTeleport = false;
@@ -36,12 +37,13 @@ public class MawController : BaseEntity
   }
 
   public void SetupModules(MawStateMachine sm, MawStateFactory factory, MawAnimationBridge animator,
-      MawLocomotionModule locomotionModule)
+      MawLocomotionModule locomotionModule, MawAttackModule attackModule)
   {
     MawSM = sm;
     MawStateFactory = factory;
     AnimatorBridge = animator;
     Locomotion = locomotionModule;
+    Attack = attackModule;
   }
 
   public void FlipX(bool faceRight)
