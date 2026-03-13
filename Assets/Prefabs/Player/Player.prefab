@@ -10355,7 +10355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5a6ac372e1fa94999f89c5761f9309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 10
   knockbackForce: 0
   direction: {x: 1, y: 0}
   startHitboxDeactivate: 1
@@ -15452,7 +15452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5a6ac372e1fa94999f89c5761f9309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 12
   knockbackForce: 0.1
   direction: {x: 1, y: 0}
   startHitboxDeactivate: 1
@@ -15888,7 +15888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36164ff8624b69b4d8ce4a824a975e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 16
+  maxHealth: 20
   currentHealth: 0
   upgradeLifeBonus: 1
   invincibilityDuration: 1
