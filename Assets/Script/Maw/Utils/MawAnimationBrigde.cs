@@ -14,14 +14,14 @@ public class MawAnimationBridge : MonoBehaviour
   private readonly string teleportInParam = "TeleportIn";
   private readonly string teleportOutParam = "TeleportOut";
   private readonly string summonStaffParam = "SummonStaff";
-  private readonly string HideStaffParam = "HideStaff";
-
+  private readonly string hideStaffParam = "HideStaff";
 
 
   private readonly string boneAttackParam = "BoneAttack";
   private readonly string explosionParam = "Explosion";
   private readonly string handAttackParam = "HandAttack";
-  private readonly string summonAttackParam = "SummonAttack";
+  private readonly string finishHandAttackParam = "HideStaff";
+  private readonly string summonAttackParam = "HandAttackFinish";
   void Awake()
   {
     animator = GetComponent<Animator>();
@@ -71,7 +71,7 @@ public class MawAnimationBridge : MonoBehaviour
 
   public void MawHideStaff()
   {
-    animator.Play(HideStaffParam);
+    animator.Play(hideStaffParam);
     StartCoroutine(WaitTeleportRoutine());
   }
 
@@ -88,6 +88,11 @@ public class MawAnimationBridge : MonoBehaviour
   public void MawHandAttack()
   {
     animator.Play(handAttackParam);
+  }
+
+  public void MawFinishHandAttack()
+  {
+    animator.Play(finishHandAttackParam);
   }
 
   public void MawSummonAttack()
