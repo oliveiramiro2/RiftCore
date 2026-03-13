@@ -133,7 +133,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -147,7 +147,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -168,10 +168,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -199,12 +199,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 0
-        width: 72
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,12 +221,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_1
       rect:
         serializedVersion: 2
-        x: 151
+        x: 128
         y: 0
-        width: 73
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -243,12 +243,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_2
       rect:
         serializedVersion: 2
-        x: 287
+        x: 256
         y: 0
-        width: 77
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_3
       rect:
         serializedVersion: 2
-        x: 413
+        x: 384
         y: 0
-        width: 79
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -287,12 +287,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_4
       rect:
         serializedVersion: 2
-        x: 543
+        x: 512
         y: 0
-        width: 77
-        height: 116
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -309,12 +309,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_5
       rect:
         serializedVersion: 2
-        x: 671
+        x: 640
         y: 0
-        width: 77
-        height: 116
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -331,12 +331,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_6
       rect:
         serializedVersion: 2
-        x: 796
+        x: 768
         y: 0
-        width: 80
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -353,12 +353,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_7
       rect:
         serializedVersion: 2
-        x: 924
+        x: 896
         y: 0
-        width: 80
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -375,12 +375,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_8
       rect:
         serializedVersion: 2
-        x: 1052
+        x: 1024
         y: 0
-        width: 63
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -397,12 +397,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_9
       rect:
         serializedVersion: 2
-        x: 1180
+        x: 1152
         y: 0
-        width: 64
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -419,12 +419,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_10
       rect:
         serializedVersion: 2
-        x: 1308
+        x: 1280
         y: 0
-        width: 66
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -441,12 +441,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_11
       rect:
         serializedVersion: 2
-        x: 1437
+        x: 1408
         y: 0
-        width: 62
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -463,12 +463,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_12
       rect:
         serializedVersion: 2
-        x: 1562
+        x: 1536
         y: 0
-        width: 68
-        height: 119
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -487,10 +487,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1664
         y: 0
-        width: 103
-        height: 121
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -507,12 +507,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_14
       rect:
         serializedVersion: 2
-        x: 1822
+        x: 1792
         y: 0
-        width: 61
-        height: 121
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -529,12 +529,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_15
       rect:
         serializedVersion: 2
-        x: 1949
+        x: 1920
         y: 0
-        width: 62
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -551,12 +551,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_16
       rect:
         serializedVersion: 2
-        x: 2077
+        x: 2048
         y: 0
-        width: 62
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -573,12 +573,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_17
       rect:
         serializedVersion: 2
-        x: 2205
+        x: 2176
         y: 0
-        width: 62
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -595,12 +595,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_18
       rect:
         serializedVersion: 2
-        x: 2333
+        x: 2304
         y: 0
-        width: 62
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -617,12 +617,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_19
       rect:
         serializedVersion: 2
-        x: 2462
+        x: 2432
         y: 0
-        width: 71
-        height: 115
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -639,12 +639,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_20
       rect:
         serializedVersion: 2
-        x: 2621
+        x: 2560
         y: 0
-        width: 52
-        height: 114
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -661,12 +661,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_21
       rect:
         serializedVersion: 2
-        x: 3891
+        x: 3840
         y: 0
-        width: 58
-        height: 112
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -683,12 +683,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_22
       rect:
         serializedVersion: 2
-        x: 3994
+        x: 3968
         y: 0
-        width: 75
-        height: 123
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -705,12 +705,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_23
       rect:
         serializedVersion: 2
-        x: 4128
+        x: 4096
         y: 0
-        width: 62
-        height: 119
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -727,12 +727,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_24
       rect:
         serializedVersion: 2
-        x: 4251
+        x: 4224
         y: 0
-        width: 64
-        height: 116
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -749,12 +749,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_25
       rect:
         serializedVersion: 2
-        x: 4370
+        x: 4352
         y: 0
-        width: 73
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -771,12 +771,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_26
       rect:
         serializedVersion: 2
-        x: 4509
+        x: 4480
         y: 0
-        width: 62
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -793,12 +793,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_27
       rect:
         serializedVersion: 2
-        x: 4639
+        x: 4608
         y: 0
-        width: 60
-        height: 115
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -815,12 +815,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_28
       rect:
         serializedVersion: 2
-        x: 4767
+        x: 4736
         y: 0
-        width: 60
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -837,12 +837,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_29
       rect:
         serializedVersion: 2
-        x: 4892
+        x: 4864
         y: 0
-        width: 85
-        height: 118
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -859,12 +859,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_30
       rect:
         serializedVersion: 2
-        x: 5021
+        x: 4992
         y: 0
-        width: 79
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -881,12 +881,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_31
       rect:
         serializedVersion: 2
-        x: 5143
+        x: 5120
         y: 0
-        width: 73
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -903,12 +903,12 @@ TextureImporter:
       name: Maw-Teleport-Background-Sheet_32
       rect:
         serializedVersion: 2
-        x: 5271
+        x: 5248
         y: 0
-        width: 72
-        height: 117
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -925,7 +925,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 771c275ef69b60946af735e17979d5c0
     internalID: 0
     vertices: []
     indices: 
@@ -933,7 +933,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Maw-Teleport-Background-Sheet_0: -2007412975767111358
       Maw-Teleport-Background-Sheet_1: 3837981424947959755
