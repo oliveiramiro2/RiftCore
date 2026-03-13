@@ -2014,10 +2014,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2960913143004612493, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
-      propertyPath: damage
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 4103293485641533845, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: pauseMenu
       value: 
@@ -2029,14 +2025,6 @@ PrefabInstance:
     - target: {fileID: 4537574936787505961, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4679469754702024250, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
-      propertyPath: maxHealth
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8465333144962509520, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
-      propertyPath: damage
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8772061299861539594, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_LocalPosition.x
