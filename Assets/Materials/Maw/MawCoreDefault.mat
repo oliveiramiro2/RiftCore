@@ -55,17 +55,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _NoiseAmount: 0.001
-    - _NoiseScale: 350
+    - _NoiseAmount: 0.0024
+    - _NoiseScale: 23
     - _NoiseSpeed: 0.05
-    - _PulseAmplitude: 0.496
-    - _PulseBase: 0.626
+    - _PulseAmplitude: 0.9
+    - _PulseBase: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SinePulse: 2.05
+    - _SinePulse: 2
     m_Colors:
     - _CenterPoint: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _Color: {r: 1.4980392, g: 1.4980392, b: 1.4980392, a: 1}
-    - _FakeLightDir: {r: 1.07, g: 1.82, b: 0, a: 0}
+    - _FakeLightDir: {r: 0, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
