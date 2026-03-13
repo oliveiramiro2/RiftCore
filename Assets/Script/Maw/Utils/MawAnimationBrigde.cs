@@ -7,6 +7,8 @@ public class MawAnimationBridge : MonoBehaviour
 
   private readonly string idleParam = "Idle";
   private readonly string deathParam = "Death";
+  private readonly string floatInParam = "FloatingIn";
+  private readonly string floatOutParam = "FloatingOut";
 
 
   void Awake()
@@ -22,6 +24,16 @@ public class MawAnimationBridge : MonoBehaviour
   public void MawDeath()
   {
     animator.Play(deathParam);
+  }
+
+  public void MawFloatIn()
+  {
+    animator.Play(floatInParam);
+  }
+
+  public void MawFloatOut()
+  {
+    animator.Play(floatOutParam);
   }
 }
 

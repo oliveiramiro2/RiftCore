@@ -15,6 +15,10 @@ public class MawAttack : State<MawController>
     timer += Time.deltaTime;
     if (timer >= idleDuration)
     {
+      float randomValue = Random.Range(0f, 1f);
+      if (randomValue < 0.5f)
+        entity.canFollowPlayer = true;
+
       entity.isAttacking = false;
     }
   }

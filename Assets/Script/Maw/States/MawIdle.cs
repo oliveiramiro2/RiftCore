@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class MawIdle : State<MawController>
@@ -8,9 +7,10 @@ public class MawIdle : State<MawController>
 
   public override void EnterState(MawController entity)
   {
+    entity.Locomotion.FlipTowardsTarget(entity.PlayerTransform);
     entity.AnimatorBridge.MawIdle();
     timer = 0f;
-    
+
     Debug.Log("Entering Idle State");
   }
 
@@ -19,7 +19,15 @@ public class MawIdle : State<MawController>
     timer += Time.deltaTime;
     if (timer >= idleDuration)
     {
-      entity.isAttacking = true;
+      float randomValue = Random.Range(0f, 1f);
+      if (randomValue < 0.5f)
+      {
+        entity.isAttacking = true;
+      }
+      else
+      {
+        entity.canFollowPlayer = false;
+      }
     }
   }
 

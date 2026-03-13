@@ -12,9 +12,12 @@ public class MawController : BaseEntity
   public MawStateMachine MawSM { get; private set; }
   public MawStateFactory MawStateFactory { get; private set; }
   public MawAnimationBridge AnimatorBridge { get; private set; }
+  public MawLocomotionModule Locomotion { get; private set; }
 
   public bool isAttacking = false;
   public bool canTeleport = false;
+  public bool canFollowPlayer = false;
+  public bool isMoving = false;
 
   protected override void Awake()
   {
@@ -32,11 +35,13 @@ public class MawController : BaseEntity
     MawSM.UpdateStateMachine();
   }
 
-  public void SetupModules(MawStateMachine sm, MawStateFactory factory, MawAnimationBridge animator)
+  public void SetupModules(MawStateMachine sm, MawStateFactory factory, MawAnimationBridge animator,
+      MawLocomotionModule locomotionModule)
   {
     MawSM = sm;
     MawStateFactory = factory;
     AnimatorBridge = animator;
+    Locomotion = locomotionModule;
   }
 
   public void FlipX(bool faceRight)
