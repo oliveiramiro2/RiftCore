@@ -29,7 +29,7 @@ public class MawAttackModule : MonoBehaviour
     player = GameObject.FindAnyObjectByType<PlayerController>().transform;
   }
 
-  public void Initialize(MawController controller)
+  public void Setup(MawController controller)
   {
     owner = controller;
   }
@@ -88,18 +88,25 @@ public class MawAttackModule : MonoBehaviour
 
   private IEnumerator SummonAttackRoutine(MawController entity)
   {
-    entity.AnimatorBridge.MawSummonStaff();
-    yield return new WaitForSeconds(1.5f);
+    if (!entity.hasStaffSummoned)
+    {
+      entity.AnimatorBridge.MawSummonStaff();
+      yield return new WaitForSeconds(1.5f);
+    }
 
     entity.AnimatorBridge.MawSummonAttack();
     yield return new WaitForSeconds(3.1f);
 
-    entity.AnimatorBridge.MawHideStaff();
-    yield return new WaitForSeconds(2f);
-
     float range = Random.Range(0f, 1f);
     if (range < 0.5f)
       entity.canFollowPlayer = true;
+    else
+    {
+      entity.AnimatorBridge.MawHideStaff();
+      yield return new WaitForSeconds(2f);
+    }
+
+
 
     entity.isAttacking = false;
   }
@@ -127,20 +134,25 @@ public class MawAttackModule : MonoBehaviour
 
   private IEnumerator ExplosionAttackRoutine(MawController entity)
   {
-
-    entity.AnimatorBridge.MawSummonStaff();
-    yield return new WaitForSeconds(1.5f);
+    if (!entity.hasStaffSummoned)
+    {
+      entity.AnimatorBridge.MawSummonStaff();
+      yield return new WaitForSeconds(1.5f);
+    }
 
     entity.AnimatorBridge.MawExplosion();
     yield return new WaitForSeconds(2.6f);
 
-
-    entity.AnimatorBridge.MawHideStaff();
-    yield return new WaitForSeconds(2f);
-
     float range = Random.Range(0f, 1f);
     if (range < 0.5f)
       entity.canFollowPlayer = true;
+    else
+    {
+      entity.AnimatorBridge.MawHideStaff();
+      yield return new WaitForSeconds(2f);
+    }
+
+
     entity.isAttacking = false;
   }
 
@@ -151,20 +163,26 @@ public class MawAttackModule : MonoBehaviour
 
   private IEnumerator HandAttackRoutine(MawController entity)
   {
-
-    entity.AnimatorBridge.MawSummonStaff();
-    yield return new WaitForSeconds(1.5f);
+    if (!entity.hasStaffSummoned)
+    {
+      entity.AnimatorBridge.MawSummonStaff();
+      yield return new WaitForSeconds(1.5f);
+    }
 
     entity.AnimatorBridge.MawHandAttack();
     yield return new WaitForSeconds(2.5f);
 
 
-    entity.AnimatorBridge.MawHideStaff();
-    yield return new WaitForSeconds(2f);
-
     float range = Random.Range(0f, 1f);
     if (range < 0.5f)
       entity.canFollowPlayer = true;
+    else
+    {
+      entity.AnimatorBridge.MawHideStaff();
+      yield return new WaitForSeconds(2f);
+    }
+
+
     entity.isAttacking = false;
   }
 }

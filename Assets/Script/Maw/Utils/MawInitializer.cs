@@ -19,7 +19,8 @@ public class MawInitializer : MonoBehaviour
 
     controller.SetupModules(sm, factory, animator, locomotionModule, attackModule);
     locomotionModule.Setup(controller);
-    attackModule.Initialize(controller);
+    attackModule.Setup(controller);
+    animator.Setup(controller);
 
 
     sm.Setup(controller);

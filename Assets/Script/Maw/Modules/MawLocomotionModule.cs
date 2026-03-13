@@ -4,8 +4,9 @@ public class MawLocomotionModule : MonoBehaviour
 {
   private MawController owner;
   private PlayerController target;
-  private float timer = 0f, floatOutDuration = 0.5f;
+  private float timer = 0f, floatOutDuration = 0.5f, hideStaffDuration = 2.1f;
   public bool hasTeleported = false;
+  public bool canFloat = true;
 
   void Start()
   {
@@ -28,6 +29,22 @@ public class MawLocomotionModule : MonoBehaviour
     }
 
     timer += Time.deltaTime;
+    if (timer >= hideStaffDuration && owner.hasStaffSummoned)
+    {
+      owner.AnimatorBridge.MawHideStaff();
+      timer = 0f;
+    }
+
+    if (owner.hasStaffSummoned) return;
+
+    if (canFloat)
+    {
+      owner.AnimatorBridge.MawFloatIn();
+      canFloat = false;
+      timer = 0f;
+      return;
+    }
+
     if (timer >= floatOutDuration && !owner.canTeleport)
     {
       MoveTowardsPlayer();
@@ -84,9 +101,12 @@ public class MawLocomotionModule : MonoBehaviour
 
   private System.Collections.IEnumerator TeleportRoutine()
   {
-    owner.AnimatorBridge.MawSummonStaff();
+    if (!owner.hasStaffSummoned)
+    {
+      owner.AnimatorBridge.MawSummonStaff();
 
-    yield return new WaitForSeconds(1.5f);
+      yield return new WaitForSeconds(1.5f);
+    }
 
     FlipTowardsTarget(target.transform);
     owner.AnimatorBridge.MawTeleportIn();

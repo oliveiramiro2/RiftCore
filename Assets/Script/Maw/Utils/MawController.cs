@@ -19,6 +19,7 @@ public class MawController : BaseEntity
   public bool canTeleport = false;
   public bool canFollowPlayer = false;
   public bool isMoving = false;
+  public bool hasStaffSummoned = false;
 
   protected override void Awake()
   {

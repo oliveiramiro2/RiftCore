@@ -1,9 +1,11 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(Animator))]
 public class MawAnimationBridge : MonoBehaviour
 {
   private Animator animator;
+  private MawController owner;
 
   private readonly string idleParam = "Idle";
   private readonly string deathParam = "Death";
@@ -24,6 +26,12 @@ public class MawAnimationBridge : MonoBehaviour
   {
     animator = GetComponent<Animator>();
   }
+
+  public void Setup(MawController controller)
+  {
+    owner = controller;
+  }
+
 
   public void MawIdle()
   {
@@ -57,12 +65,14 @@ public class MawAnimationBridge : MonoBehaviour
 
   public void MawSummonStaff()
   {
+    owner.hasStaffSummoned = true;
     animator.Play(summonStaffParam);
   }
 
   public void MawHideStaff()
   {
     animator.Play(HideStaffParam);
+    StartCoroutine(WaitTeleportRoutine());
   }
 
   public void MawBoneAttack()
@@ -84,6 +94,14 @@ public class MawAnimationBridge : MonoBehaviour
   {
     animator.Play(summonAttackParam);
   }
+
+  // timers for animation transitions can be handled here if needed
+  private IEnumerator WaitTeleportRoutine()
+  {
+    yield return new WaitForSeconds(1.5f);
+    owner.hasStaffSummoned = false;
+  }
+
 }
 
 public static class MawAnimatorExtensions

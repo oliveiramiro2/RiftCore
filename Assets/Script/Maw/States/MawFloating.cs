@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class MawFloating : State<MawController>
 {
-  private readonly float floatDuration = 4f, floatOutDuration = 0.5f;
-  private float timer = 0f;
+  private readonly float floatOutDuration = 0.5f, hideStaffDuration = 2f;
+  private float timer = 0f, floatDuration = 4f;
   private bool pauseTimer = false;
 
 
   public override void EnterState(MawController entity)
   {
     Debug.Log("Entering Floating State");
-    entity.AnimatorBridge.MawFloatIn();
     timer = 0f;
     entity.Locomotion.FlipTowardsTarget(entity.PlayerTransform);
 
@@ -18,11 +17,15 @@ public class MawFloating : State<MawController>
     if (randomValue < 0.5f)
     {
       entity.canFollowPlayer = true;
+      entity.Locomotion.canFloat = true;
+      if (entity.hasStaffSummoned)
+        floatDuration += hideStaffDuration;
     }
     else
     {
       entity.Locomotion.hasTeleported = false;
       entity.canTeleport = true;
+      entity.Locomotion.canFloat = false;
     }
 
   }
