@@ -71,8 +71,8 @@ public class MawAttackModule : MonoBehaviour
     {
       // () => SummonAttack(entity),
       () => BoneAttack(entity),
-      // () => ExplosionAttack(entity),
-      // () => HandAttack(entity)
+      () => ExplosionAttack(entity),
+      () => HandAttack(entity)
     };
 
     int index = Random.Range(0, validAttacks.Count);

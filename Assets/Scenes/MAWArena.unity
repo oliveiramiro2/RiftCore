@@ -3051,6 +3051,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1979227347}
     - target: {fileID: 1273233119221279128, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
+      propertyPath: bossController
+      value: 
+      objectReference: {fileID: 1592438192}
+    - target: {fileID: 1273233119221279128, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
       propertyPath: BossDeathEffect
       value: 
       objectReference: {fileID: 1115907200}
