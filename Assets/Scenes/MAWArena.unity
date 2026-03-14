@@ -2329,6 +2329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MawColliders
   explosionCollider: {fileID: 2063495689}
+  contactCollider: {fileID: 1855499885}
 --- !u!1 &1854136693
 GameObject:
   m_ObjectHideFlags: 0

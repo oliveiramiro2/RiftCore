@@ -35,6 +35,7 @@ public class MawAnimationBridge : MonoBehaviour
 
   public void MawIdle()
   {
+    if (owner.IsDead) return;
     animator.Play(idleParam);
   }
 
@@ -45,58 +46,72 @@ public class MawAnimationBridge : MonoBehaviour
 
   public void MawFloatIn()
   {
+    if (owner.IsDead) return;
+
     animator.Play(floatInParam);
   }
 
   public void MawFloatOut()
   {
+    if (owner.IsDead) return;
+
     animator.Play(floatOutParam);
   }
 
   public void MawTeleportIn()
   {
+    if (owner.IsDead) return;
+
     animator.Play(teleportInParam);
   }
 
   public void MawTeleportOut()
   {
+    if (owner.IsDead) return;
     animator.Play(teleportOutParam);
   }
 
   public void MawSummonStaff()
   {
+    if (owner.IsDead) return;
     owner.hasStaffSummoned = true;
     animator.Play(summonStaffParam);
   }
 
   public void MawHideStaff()
   {
+    if (owner.IsDead) return;
     animator.Play(hideStaffParam);
     StartCoroutine(WaitTeleportRoutine());
   }
 
   public void MawBoneAttack()
   {
+    if (owner.IsDead) return;
     animator.Play(boneAttackParam);
   }
 
   public void MawExplosion()
   {
+    if (owner.IsDead) return;
     animator.Play(explosionParam);
   }
 
   public void MawHandAttack()
   {
+    if (owner.IsDead) return;
     animator.Play(handAttackParam);
   }
 
   public void MawFinishHandAttack()
   {
+    if (owner.IsDead) return;
     animator.Play(finishHandAttackParam);
   }
 
   public void MawSummonAttack()
   {
+    if (owner.IsDead) return;
     animator.Play(summonAttackParam);
   }
 

@@ -24,14 +24,14 @@ public class MawStateFactory : MonoBehaviour
   public void InitializeTransitions()
   {
 
-    bossSM.AddTransition(MawIdle, MawAttack, () => owner.isAttacking && !owner.canFollowPlayer);
-    bossSM.AddTransition(MawIdle, MawFloating, () => owner.canFollowPlayer && !owner.isAttacking);
+    bossSM.AddTransition(MawIdle, MawAttack, () => !owner.IsDead && owner.isAttacking && !owner.canFollowPlayer);
+    bossSM.AddTransition(MawIdle, MawFloating, () => !owner.IsDead && owner.canFollowPlayer && !owner.isAttacking);
 
-    bossSM.AddTransition(MawAttack, MawIdle, () => !owner.isAttacking && !owner.canFollowPlayer);
-    bossSM.AddTransition(MawAttack, MawFloating, () => owner.canFollowPlayer && !owner.isAttacking);
+    bossSM.AddTransition(MawAttack, MawIdle, () => !owner.IsDead && !owner.isAttacking && !owner.canFollowPlayer);
+    bossSM.AddTransition(MawAttack, MawFloating, () => !owner.IsDead && owner.canFollowPlayer && !owner.isAttacking);
 
-    bossSM.AddTransition(MawFloating, MawIdle, () => !owner.canFollowPlayer && !owner.isAttacking);
-    bossSM.AddTransition(MawFloating, MawAttack, () => !owner.canFollowPlayer && owner.isAttacking);
+    bossSM.AddTransition(MawFloating, MawIdle, () => !owner.IsDead && !owner.canFollowPlayer && !owner.isAttacking);
+    bossSM.AddTransition(MawFloating, MawAttack, () => !owner.IsDead && !owner.canFollowPlayer && owner.isAttacking);
 
     bossSM.AddAnyTransition(MawDeath, () => owner.IsDead);
 

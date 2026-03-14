@@ -6,6 +6,8 @@ public class MawDeath : State<MawController>
   public override void EnterState(MawController entity)
   {
     Debug.Log("Entering Death State");
+    entity.AnimatorBridge.MawDeath();
+    GameObject.FindAnyObjectByType<MawColliders>().DisableContactCollider();
   }
 
   public override void UpdateState(MawController entity)

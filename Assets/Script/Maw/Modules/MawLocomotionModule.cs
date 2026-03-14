@@ -15,6 +15,7 @@ public class MawLocomotionModule : MonoBehaviour
 
   void Update()
   {
+    if (owner.IsDead) return;
     if (owner.canTeleport && owner.canFollowPlayer && !hasTeleported)
     {
       hasTeleported = true;
