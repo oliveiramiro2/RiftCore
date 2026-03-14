@@ -13,10 +13,10 @@ public class MawAttackModule : MonoBehaviour
   private float attackTimer = 0f;
 
   [Header("Attack Prefabs")]
-  [SerializeField] private GameObject stormPrefab;
-  [SerializeField] private GameObject[] airSlashPrefab;
-  [SerializeField] private Transform stormRespawnPoint;
-  [SerializeField] private Transform[] airSlashsRespawnPoint;
+  [SerializeField] private GameObject shadowHandPrefab;
+  [SerializeField] private GameObject handAttackPrefab;
+  [SerializeField] private GameObject bonePrefab;
+  [SerializeField] private Transform shadowHandSpawnPoint;
 
   [Header("Decision Timers")]
   private readonly float minDecisionTime = 2f;
@@ -67,9 +67,9 @@ public class MawAttackModule : MonoBehaviour
 
     List<System.Action> validAttacks = new()
     {
-      () => SummonAttack(entity),
-      () => BoneAttack(entity),
-      () => ExplosionAttack(entity),
+      // () => SummonAttack(entity),
+      // () => BoneAttack(entity),
+      // () => ExplosionAttack(entity),
       () => HandAttack(entity)
     };
 
@@ -170,8 +170,30 @@ public class MawAttackModule : MonoBehaviour
     }
 
     entity.AnimatorBridge.MawHandAttack();
-    yield return new WaitForSeconds(2.5f);
+    yield return new WaitForSeconds(2f);
 
+    shadowHandPrefab.transform.position = shadowHandSpawnPoint.position;
+    shadowHandPrefab.SetActive(true);
+
+    yield return new WaitForSeconds(1f);
+    handAttackPrefab.transform.position = shadowHandPrefab.transform.position;
+    handAttackPrefab.SetActive(true);
+
+    yield return new WaitForSeconds(1.6f);
+    handAttackPrefab.SetActive(false);
+
+    yield return new WaitForSeconds(0.5f);
+    handAttackPrefab.transform.position = shadowHandPrefab.transform.position;
+    handAttackPrefab.SetActive(true);
+    shadowHandPrefab.SetActive(false);
+
+    yield return new WaitForSeconds(1.6f);
+    handAttackPrefab.SetActive(false);
+
+    yield return new WaitForSeconds(0.5f);
+
+    entity.AnimatorBridge.MawFinishHandAttack();
+    yield return new WaitForSeconds(0.5f);
 
     float range = Random.Range(0f, 1f);
     if (range < 0.5f)

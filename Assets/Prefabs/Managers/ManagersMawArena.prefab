@@ -466,7 +466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HeartHUD
   heartPrefab: {fileID: 9171422094743511500, guid: 28dafa6dce9914742a303f3be2707bab, type: 3}
   heartContainer: {fileID: 0}
-  healthPerHeart: 5
+  healthPerHeart: 4
 --- !u!114 &50391679818434174
 MonoBehaviour:
   m_ObjectHideFlags: 0
