@@ -15,8 +15,10 @@ public class MawAttackModule : MonoBehaviour
   [Header("Attack Prefabs")]
   [SerializeField] private GameObject shadowHandPrefab;
   [SerializeField] private GameObject handAttackPrefab;
-  [SerializeField] private GameObject bonePrefab;
   [SerializeField] private Transform shadowHandSpawnPoint;
+  [SerializeField] private GameObject[] bonesPrefab;
+  [SerializeField] private Transform[] boneSpawnPoint;
+
 
   [Header("Decision Timers")]
   private readonly float minDecisionTime = 2f;
@@ -68,9 +70,9 @@ public class MawAttackModule : MonoBehaviour
     List<System.Action> validAttacks = new()
     {
       // () => SummonAttack(entity),
-      // () => BoneAttack(entity),
+      () => BoneAttack(entity),
       // () => ExplosionAttack(entity),
-      () => HandAttack(entity)
+      // () => HandAttack(entity)
     };
 
     int index = Random.Range(0, validAttacks.Count);
@@ -119,7 +121,15 @@ public class MawAttackModule : MonoBehaviour
   private IEnumerator BoneAttackRoutine(MawController entity)
   {
     entity.AnimatorBridge.MawBoneAttack();
-    yield return new WaitForSeconds(2.2f);
+    yield return new WaitForSeconds(1.5f);
+
+    bonesPrefab[0].transform.position = boneSpawnPoint[0].position;
+    bonesPrefab[1].transform.position = boneSpawnPoint[1].position;
+
+    bonesPrefab[0].SetActive(true);
+    bonesPrefab[1].SetActive(true);
+
+    yield return new WaitForSeconds(1f);
 
     float range = Random.Range(0f, 1f);
     if (range < 0.5f)
@@ -193,7 +203,7 @@ public class MawAttackModule : MonoBehaviour
     yield return new WaitForSeconds(0.5f);
 
     entity.AnimatorBridge.MawFinishHandAttack();
-    yield return new WaitForSeconds(0.5f);
+    yield return new WaitForSeconds(1f);
 
     float range = Random.Range(0f, 1f);
     if (range < 0.5f)

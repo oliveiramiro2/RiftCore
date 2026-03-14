@@ -60,23 +60,23 @@ AnimationClip:
       value: {fileID: -5859105814417683048, guid: 37f4699f337b5c44e825253ff452d588, type: 3}
     - time: 1.45
       value: {fileID: 6380009440075032447, guid: 37f4699f337b5c44e825253ff452d588, type: 3}
-    - time: 1.5166667
+    - time: 1.5
       value: {fileID: 4256570183909415740, guid: 37f4699f337b5c44e825253ff452d588, type: 3}
-    - time: 1.6
+    - time: 1.5833334
       value: {fileID: 1809746967090363296, guid: 37f4699f337b5c44e825253ff452d588, type: 3}
-    - time: 1.6666666
+    - time: 1.65
       value: {fileID: -4675765016094552909, guid: 37f4699f337b5c44e825253ff452d588, type: 3}
-    - time: 1.7333333
+    - time: 1.7166667
       value: {fileID: -3656702108170595665, guid: 37f4699f337b5c44e825253ff452d588, type: 3}
-    - time: 1.8333334
+    - time: 1.8166667
       value: {fileID: 6926314560362167635, guid: 37f4699f337b5c44e825253ff452d588, type: 3}
-    - time: 1.9
+    - time: 1.8833333
       value: {fileID: -1747645856142797621, guid: 37f4699f337b5c44e825253ff452d588, type: 3}
-    - time: 1.9833333
+    - time: 1.9666667
       value: {fileID: -557055710366167045, guid: 37f4699f337b5c44e825253ff452d588, type: 3}
-    - time: 2.05
+    - time: 2.0333333
       value: {fileID: -7803390535839177701, guid: 37f4699f337b5c44e825253ff452d588, type: 3}
-    - time: 2.1333334
+    - time: 2.1166666
       value: {fileID: -7803390535839177701, guid: 37f4699f337b5c44e825253ff452d588, type: 3}
     attribute: m_Sprite
     path: MawBackGround
@@ -125,23 +125,23 @@ AnimationClip:
       value: {fileID: -1095671980044890615, guid: 23050327293345f4398130746a8240d9, type: 3}
     - time: 1.45
       value: {fileID: 1877117029042637256, guid: 23050327293345f4398130746a8240d9, type: 3}
-    - time: 1.5166667
+    - time: 1.5
       value: {fileID: -1096959580442136324, guid: 23050327293345f4398130746a8240d9, type: 3}
-    - time: 1.6
+    - time: 1.5833334
       value: {fileID: -8421935545506914635, guid: 23050327293345f4398130746a8240d9, type: 3}
-    - time: 1.6666666
+    - time: 1.65
       value: {fileID: -1010112202908416660, guid: 23050327293345f4398130746a8240d9, type: 3}
-    - time: 1.7333333
+    - time: 1.7166667
       value: {fileID: 8135871621425247553, guid: 23050327293345f4398130746a8240d9, type: 3}
-    - time: 1.8333334
+    - time: 1.8166667
       value: {fileID: -4062216026796798630, guid: 23050327293345f4398130746a8240d9, type: 3}
-    - time: 1.9
+    - time: 1.8833333
       value: {fileID: -896052940708827558, guid: 23050327293345f4398130746a8240d9, type: 3}
-    - time: 1.9833333
+    - time: 1.9666667
       value: {fileID: 3186606881400377269, guid: 23050327293345f4398130746a8240d9, type: 3}
-    - time: 2.05
+    - time: 2.0333333
       value: {fileID: 1819368368557583693, guid: 23050327293345f4398130746a8240d9, type: 3}
-    - time: 2.1333334
+    - time: 2.1166666
       value: {fileID: 1819368368557583693, guid: 23050327293345f4398130746a8240d9, type: 3}
     attribute: m_Sprite
     path: MawMidGround
@@ -190,23 +190,23 @@ AnimationClip:
       value: {fileID: -1273667905, guid: 58ef2b6a8d267cd4084d232672682883, type: 3}
     - time: 1.45
       value: {fileID: 32918918, guid: 58ef2b6a8d267cd4084d232672682883, type: 3}
-    - time: 1.5166667
+    - time: 1.5
       value: {fileID: -1364278201, guid: 58ef2b6a8d267cd4084d232672682883, type: 3}
-    - time: 1.6
+    - time: 1.5833334
       value: {fileID: -1583517542, guid: 58ef2b6a8d267cd4084d232672682883, type: 3}
-    - time: 1.6666666
+    - time: 1.65
       value: {fileID: 446159209, guid: 58ef2b6a8d267cd4084d232672682883, type: 3}
-    - time: 1.7333333
+    - time: 1.7166667
       value: {fileID: 438772439, guid: 58ef2b6a8d267cd4084d232672682883, type: 3}
-    - time: 1.8333334
+    - time: 1.8166667
       value: {fileID: -48453156, guid: 58ef2b6a8d267cd4084d232672682883, type: 3}
-    - time: 1.9
+    - time: 1.8833333
       value: {fileID: 452181690, guid: 58ef2b6a8d267cd4084d232672682883, type: 3}
-    - time: 1.9833333
+    - time: 1.9666667
       value: {fileID: 931134013, guid: 58ef2b6a8d267cd4084d232672682883, type: 3}
-    - time: 2.05
+    - time: 2.0333333
       value: {fileID: -382203278, guid: 58ef2b6a8d267cd4084d232672682883, type: 3}
-    - time: 2.1333334
+    - time: 2.1166666
       value: {fileID: -382203278, guid: 58ef2b6a8d267cd4084d232672682883, type: 3}
     attribute: m_Sprite
     path: MawForeGround
@@ -231,9 +231,9 @@ AnimationClip:
       value: {fileID: 3710020254033033966, guid: 09a1b5d4ff9bab24589562ef0d29d032, type: 3}
     - time: 1.45
       value: {fileID: -171084755522574027, guid: 09a1b5d4ff9bab24589562ef0d29d032, type: 3}
-    - time: 1.5166667
+    - time: 1.5
       value: {fileID: -5281784819706691117, guid: 09a1b5d4ff9bab24589562ef0d29d032, type: 3}
-    - time: 1.6
+    - time: 1.5833334
       value: {fileID: -1616908340, guid: 09a1b5d4ff9bab24589562ef0d29d032, type: 3}
     attribute: m_Sprite
     path: MawEffect
@@ -386,7 +386,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.15
+    m_StopTime: 2.1333332
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
