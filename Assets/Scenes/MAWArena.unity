@@ -1571,7 +1571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ddd19fa36d1cb459e3ff0e141791e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoomerangBone
-  speed: 50
+  speed: 20
   rotationSpeed: 3600
   lifeTime: 4
 --- !u!1 &1181239673
