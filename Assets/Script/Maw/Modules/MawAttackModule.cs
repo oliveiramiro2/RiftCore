@@ -121,7 +121,11 @@ public class MawAttackModule : MonoBehaviour
   private IEnumerator BoneAttackRoutine(MawController entity)
   {
     entity.AnimatorBridge.MawBoneAttack();
-    yield return new WaitForSeconds(1.5f);
+    yield return new WaitForSeconds(1.3f);
+
+    entity.Locomotion.FlipTowardsTarget(player);
+
+    yield return new WaitForSeconds(0.2f);
 
     bonesPrefab[0].transform.position = boneSpawnPoint[0].position;
     bonesPrefab[1].transform.position = boneSpawnPoint[1].position;
