@@ -117,10 +117,20 @@ public class MawLocomotionModule : MonoBehaviour
     FlipTowardsTarget(target.transform);
     if (owner != null && target != null)
     {
-      owner.transform.position = target.transform.position + new Vector3(
-          Random.Range(-2f, 2f),
-          0,
+      if (target.transform.position.x > 0)
+      {
+        owner.transform.position = new Vector3(
+          -7.5f,
+          -3.8f,
           0);
+      }
+      else
+      {
+        owner.transform.position = new Vector3(
+          7.5f,
+          -3.8f,
+          0);
+      }
     }
     owner.AnimatorBridge.MawTeleportOut();
 

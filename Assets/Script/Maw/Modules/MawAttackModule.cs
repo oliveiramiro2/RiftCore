@@ -189,12 +189,15 @@ public class MawAttackModule : MonoBehaviour
     handAttackPrefab.transform.position = shadowHandPrefab.transform.position;
     handAttackPrefab.SetActive(true);
 
-    yield return new WaitForSeconds(1.6f);
-    handAttackPrefab.SetActive(false);
+    if (owner.Phase2())
+    {
+      yield return new WaitForSeconds(1.6f);
+      handAttackPrefab.SetActive(false);
 
-    yield return new WaitForSeconds(0.5f);
-    handAttackPrefab.transform.position = shadowHandPrefab.transform.position;
-    handAttackPrefab.SetActive(true);
+      yield return new WaitForSeconds(0.5f);
+      handAttackPrefab.transform.position = shadowHandPrefab.transform.position;
+      handAttackPrefab.SetActive(true);
+    }
     shadowHandPrefab.SetActive(false);
 
     yield return new WaitForSeconds(1.6f);

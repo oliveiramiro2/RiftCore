@@ -7,12 +7,28 @@ public class BoomerangBone : MonoBehaviour
 
   public float lifeTime = 6f;
 
+  private Transform target, initPos;
+
   float timer;
   int direction = 1;
+
+  void Awake()
+  {
+    target = GameObject.FindAnyObjectByType<PlayerController>().transform;
+    initPos = GameObject.FindAnyObjectByType<MawController>().transform;
+  }
 
   void OnEnable()
   {
     timer = 0f;
+    if (target.position.x > initPos.position.x)
+    {
+      direction = -1;
+    }
+    else
+    {
+      direction = 1;
+    }
   }
 
   void Update()
@@ -36,15 +52,13 @@ public class BoomerangBone : MonoBehaviour
   void MoveBone()
   {
     float halfTime = lifeTime * 0.5f;
-
     if (timer < halfTime)
     {
-      transform.Translate(Vector2.left * speed * Time.deltaTime, Space.World);
+      transform.Translate(direction * speed * Time.deltaTime * Vector2.left, Space.World);
     }
     else
     {
-
-      transform.Translate(Vector2.right * speed * Time.deltaTime, Space.World);
+      transform.Translate(direction * speed * Time.deltaTime * Vector2.right, Space.World);
     }
   }
 }
