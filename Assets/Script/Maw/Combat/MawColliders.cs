@@ -18,4 +18,9 @@ public class MawColliders : MonoBehaviour
   {
     contactCollider.enabled = false;
   }
+
+  public void EnableContactCollider()
+  {
+    contactCollider.enabled = true;
+  }
 }

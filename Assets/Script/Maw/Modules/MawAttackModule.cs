@@ -18,6 +18,8 @@ public class MawAttackModule : MonoBehaviour
   [SerializeField] private Transform shadowHandSpawnPoint;
   [SerializeField] private GameObject[] bonesPrefab;
   [SerializeField] private Transform[] boneSpawnPoint;
+  [SerializeField] private GameObject zombie1, zombie2;
+  [SerializeField] private Transform zombie1Pos, zombie2Pos;
 
 
   [Header("Decision Timers")]
@@ -69,7 +71,7 @@ public class MawAttackModule : MonoBehaviour
 
     List<System.Action> validAttacks = new()
     {
-      // () => SummonAttack(entity),
+      () => SummonAttack(entity),
       () => BoneAttack(entity),
       () => ExplosionAttack(entity),
       () => HandAttack(entity)
@@ -97,7 +99,15 @@ public class MawAttackModule : MonoBehaviour
     }
 
     entity.AnimatorBridge.MawSummonAttack();
-    yield return new WaitForSeconds(3.1f);
+    yield return new WaitForSeconds(3f);
+
+    zombie1.transform.position = new Vector3(zombie1Pos.transform.position.x, zombie1.transform.position.y, zombie1.transform.position.z);
+    zombie2.transform.position = new Vector3(zombie2Pos.transform.position.x, zombie2.transform.position.y, zombie2.transform.position.z);
+
+    zombie1.SetActive(true);
+    zombie2.SetActive(true);
+
+    yield return new WaitForSeconds(0.5f);
 
     float range = Random.Range(0f, 1f);
     if (range < 0.5f)

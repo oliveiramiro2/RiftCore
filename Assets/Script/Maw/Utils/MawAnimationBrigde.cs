@@ -20,8 +20,8 @@ public class MawAnimationBridge : MonoBehaviour
   private readonly string boneAttackParam = "BoneAttack";
   private readonly string explosionParam = "Explosion";
   private readonly string handAttackParam = "HandAttack";
-  private readonly string finishHandAttackParam = "HideStaff";
-  private readonly string summonAttackParam = "HandAttackFinish";
+  private readonly string finishHandAttackParam = "HandAttackFinish";
+  private readonly string summonAttackParam = "SummonAttack";
   void Awake()
   {
     animator = GetComponent<Animator>();

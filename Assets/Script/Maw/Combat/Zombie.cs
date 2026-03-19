@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 
@@ -8,12 +9,11 @@ enum State
     Attack
 }
 
-public class Zombie : MonoBehaviour
+public class Zombie : BaseEntity
 {
     public Transform player;
     public float speed = 2f;
     public float attackDistance = 1.5f;
-    private Animator animator;
     private Transform zombiePos;
 
     enum State { Chase, Attack }
@@ -23,6 +23,11 @@ public class Zombie : MonoBehaviour
     {
         animator = gameObject.GetComponent<Animator>();
         zombiePos = gameObject.GetComponent<Transform>();
+    }
+
+    void OnEnable()
+    {
+        transform.localRotation = quaternion.identity;
     }
 
     void Update()
