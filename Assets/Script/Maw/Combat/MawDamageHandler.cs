@@ -18,7 +18,7 @@ public class MawDamageHandler : DamageHandlerBase<MawController>
     if (controller.Phase2() && phase1)
     {
       phase1 = false;
-      //controller.Events.Phase2.Raise();
+      controller.events.Phase2.Raise();
     }
   }
 
@@ -26,8 +26,8 @@ public class MawDamageHandler : DamageHandlerBase<MawController>
   {
     controller.MarkAsDead();
     base.Die();
-    //controller.Events.Death.Raise();
+    controller.events.Death.Raise();
     isDead = true;
-    Destroy(gameObject, 3f);
+    Destroy(gameObject, 5f);
   }
 }

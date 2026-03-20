@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: _MawEvents
   m_EditorClassIdentifier: Assembly-CSharp::MawEventsManager
   Hurt: {fileID: 11400000, guid: 220ca94984d56ea4db4506a019878676, type: 2}
+  Phase2: {fileID: 11400000, guid: d8aa98c5f5cd8234a879de44bc0e1ca8, type: 2}
+  Death: {fileID: 11400000, guid: 3a51655bf5d9b4e43b1073b56581abca, type: 2}

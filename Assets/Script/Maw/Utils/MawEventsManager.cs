@@ -4,4 +4,8 @@ using UnityEngine;
 public class MawEventsManager : ScriptableObject
 {
     public GameEvent Hurt;
+    public GameEvent Phase2;
+    public GameEvent Death;
+
+
 }
