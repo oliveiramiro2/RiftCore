@@ -121,7 +121,6 @@ public class MawAnimationBridge : MonoBehaviour
     yield return new WaitForSeconds(1.5f);
     owner.hasStaffSummoned = false;
   }
-
 }
 
 public static class MawAnimatorExtensions
