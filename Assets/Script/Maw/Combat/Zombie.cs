@@ -1,7 +1,6 @@
 using Unity.Mathematics;
 using UnityEngine;
-
-
+using System.Collections;
 
 enum State
 {
@@ -42,7 +41,6 @@ public class Zombie : BaseEntity
         switch (currentState)
         {
             case State.Chase:
-                animator.Play("ZombieWalk");
                 Chase();
                 break;
 
@@ -56,6 +54,10 @@ public class Zombie : BaseEntity
     {
         float dirX = Mathf.Sign(player.position.x - transform.position.x);
 
+
+        animator.Play("ZombieWalk");
+
+
         if (dirX >= 0)
             zombiePos.localScale = new Vector3(1, 1, 1);
         else
@@ -66,6 +68,12 @@ public class Zombie : BaseEntity
 
     void Attack()
     {
+        StartCoroutine(AttackRoutine());
+    }
+
+    private IEnumerator AttackRoutine()
+    {
+        yield return new WaitForSeconds(0.2f);
         animator.Play("ZombieAttack");
     }
 }
