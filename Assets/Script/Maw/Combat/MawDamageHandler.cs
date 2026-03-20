@@ -11,7 +11,7 @@ public class MawDamageHandler : DamageHandlerBase<MawController>
 
   public override void TakeDamage(int damage, Vector2 hitDirection, float knockbackForce)
   {
-    //controller.Events.Hurt.Raise();
+    controller.events.Hurt.Raise();
     base.TakeDamage(damage, hitDirection, knockbackForce);
 
     if (isDead) return;

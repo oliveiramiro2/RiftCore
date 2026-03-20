@@ -3200,6 +3200,7 @@ MonoBehaviour:
   slowVelocity: 1
   durationSlow: 0
   moveSpeed: 4
+  events: {fileID: 11400000, guid: 1ba22b2a957fff243a915409076d28be, type: 2}
   isAttacking: 0
   canTeleport: 0
   canFollowPlayer: 0
@@ -4375,6 +4376,10 @@ PrefabInstance:
       propertyPath: backgroundFocusBuffFX
       value: 
       objectReference: {fileID: 1979227352}
+    - target: {fileID: 6208549330080150209, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1007323201}
     - target: {fileID: 7005741133637379209, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

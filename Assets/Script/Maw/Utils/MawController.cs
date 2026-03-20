@@ -7,6 +7,8 @@ public class MawController : BaseEntity
   public bool IsFacingRight() => transform.localScale.x > 0;
   public bool Phase2() => currentHealth <= (maxHealth * 0.5f);
 
+  public MawEventsManager events;
+
   public Transform PlayerTransform { get; private set; }
 
   public MawStateMachine MawSM { get; private set; }
