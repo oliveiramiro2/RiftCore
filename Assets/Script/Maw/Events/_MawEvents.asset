@@ -16,3 +16,10 @@ MonoBehaviour:
   Phase2: {fileID: 11400000, guid: d8aa98c5f5cd8234a879de44bc0e1ca8, type: 2}
   Death: {fileID: 11400000, guid: 3a51655bf5d9b4e43b1073b56581abca, type: 2}
   Explosion: {fileID: 11400000, guid: 09c5d1ab22b6e784db242ffc20de43f9, type: 2}
+  SummonStaff: {fileID: 11400000, guid: 0926bfbdfc9b350418f8a098e05c7362, type: 2}
+  StaffHitFloor: {fileID: 11400000, guid: c373fd14d544671488c339bb0bc99fa9, type: 2}
+  Floating: {fileID: 11400000, guid: 72cf0469a1a030040b10eae4b1f51b3f, type: 2}
+  Teleport: {fileID: 11400000, guid: d991bb48650c25d46aaa9c5bbf669223, type: 2}
+  Teleport2: {fileID: 11400000, guid: 6677e646f536b654eb69fddcb2598a8f, type: 2}
+  StartSummon: {fileID: 11400000, guid: 0cae4866b9dcc2247b476571df6fa8eb, type: 2}
+  ZombieStart: {fileID: 11400000, guid: f68913a5200145149b86c81be89b93f0, type: 2}

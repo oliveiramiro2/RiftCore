@@ -73,7 +73,7 @@ public class Zombie : BaseEntity
 
     private IEnumerator AttackRoutine()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         animator.Play("ZombieAttack");
     }
 }

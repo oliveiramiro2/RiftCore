@@ -1007,8 +1007,8 @@ MonoBehaviour:
   musicSource: {fileID: 0}
   ambientSource: {fileID: 0}
   sfxSource: {fileID: 3650399901624391863}
-  musicClip: {fileID: 8300000, guid: d9ba2e1e4976e614cae656927ef6e449, type: 3}
-  ambientClip: {fileID: 8300000, guid: ae018bafeebfe464a8e39739109540a4, type: 3}
+  musicClip: {fileID: 8300000, guid: f0e810064f9b4b747b6a630a3d014a2b, type: 3}
+  ambientClip: {fileID: 8300000, guid: ead552205f7150c4b8e4658d6827a27e, type: 3}
 --- !u!82 &3650399901624391863
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1020,15 +1020,15 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 33d31e946ab5e904eb4236721da550eb, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1fa5ff8532333914a987f23b41dcd0ad, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 168
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

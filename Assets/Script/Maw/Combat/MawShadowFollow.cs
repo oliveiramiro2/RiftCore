@@ -8,7 +8,7 @@ public class MawShadowFollow : MonoBehaviour
   public float followTime = 1f;
   public float predictTime = 0.1f;
 
-  public float followSpeed = 3f;
+  private float followSpeed = 4.5f;
 
   float timer;
 
@@ -19,7 +19,7 @@ public class MawShadowFollow : MonoBehaviour
 
   void Update()
   {
-    if (timer < followTime)
+    if (timer < followTime && playerRb.linearVelocityX > 0.1f)
     {
       Vector2 predictedPos =
           (Vector2)player.position +
@@ -32,6 +32,14 @@ public class MawShadowFollow : MonoBehaviour
       );
 
       timer += Time.deltaTime;
+    }
+    else
+    {
+      transform.position = Vector2.Lerp(
+         transform.position,
+         new Vector2(player.position.x, transform.position.y),
+         followSpeed * Time.deltaTime
+     );
     }
   }
 }
