@@ -1466,246 +1466,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &635817868 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 889492024935713683, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-  m_PrefabInstance: {fileID: 3607045111966877339}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &635817871 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2613171215762310376, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-  m_PrefabInstance: {fileID: 3607045111966877339}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635817868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 128b8b556a1754c48a8831e6483db9c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MawSFXManager
---- !u!114 &635817872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635817868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 0926bfbdfc9b350418f8a098e05c7362, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 635817871}
-        m_TargetAssemblyTypeName: MawSFXManager, Assembly-CSharp
-        m_MethodName: PlayStaffEffect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &635817873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635817868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 72cf0469a1a030040b10eae4b1f51b3f, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 635817871}
-        m_TargetAssemblyTypeName: MawSFXManager, Assembly-CSharp
-        m_MethodName: PlayFloating
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &635817874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635817868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: c373fd14d544671488c339bb0bc99fa9, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 635817871}
-        m_TargetAssemblyTypeName: MawSFXManager, Assembly-CSharp
-        m_MethodName: PlayStaffHitFloor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &635817875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635817868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: d991bb48650c25d46aaa9c5bbf669223, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 635817871}
-        m_TargetAssemblyTypeName: MawSFXManager, Assembly-CSharp
-        m_MethodName: PlayTeleport
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &635817876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635817868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 0cae4866b9dcc2247b476571df6fa8eb, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 635817871}
-        m_TargetAssemblyTypeName: MawSFXManager, Assembly-CSharp
-        m_MethodName: PlayStartSummon
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &635817877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635817868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 6677e646f536b654eb69fddcb2598a8f, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 635817871}
-        m_TargetAssemblyTypeName: MawSFXManager, Assembly-CSharp
-        m_MethodName: PlayTeleport2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &635817878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635817868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 3a51655bf5d9b4e43b1073b56581abca, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 635817871}
-        m_TargetAssemblyTypeName: MawSFXManager, Assembly-CSharp
-        m_MethodName: PlayDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &635817879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635817868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: f68913a5200145149b86c81be89b93f0, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 635817871}
-        m_TargetAssemblyTypeName: MawSFXManager, Assembly-CSharp
-        m_MethodName: PlayZombieStart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &643849065
 GameObject:
   m_ObjectHideFlags: 0
@@ -3950,7 +3710,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
   canMove: 1
-  maxHealth: 100
+  maxHealth: 4500
   currentHealth: 100
   knockbackDuration: 0.05
   knockbackTimer: 0
@@ -4076,7 +3836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66781a67069f77a43b4f814ea83b98c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MawDamageHandler
-  maxHealth: 3000
+  maxHealth: 4500
   currentHealth: 0
   upgradeLifeBonus: 1
   invincibilityDuration: 0
@@ -4475,10 +4235,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1979881018217751690, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4103293485641533845, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: pauseMenu
       value: 
@@ -5222,42 +4978,6 @@ PrefabInstance:
       propertyPath: BossDeathEffect
       value: 
       objectReference: {fileID: 1115907200}
-    - target: {fileID: 2613171215762310376, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      propertyPath: death
-      value: 
-      objectReference: {fileID: 11400000, guid: 51f4ad915cee2b240996c62d8fd0f1d6, type: 2}
-    - target: {fileID: 2613171215762310376, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      propertyPath: staff
-      value: 
-      objectReference: {fileID: 11400000, guid: 91c38ef17665c4348989e775c20a2388, type: 2}
-    - target: {fileID: 2613171215762310376, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      propertyPath: floating
-      value: 
-      objectReference: {fileID: 11400000, guid: 336228c70aa4c004d9324e3a36857062, type: 2}
-    - target: {fileID: 2613171215762310376, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      propertyPath: teleport
-      value: 
-      objectReference: {fileID: 11400000, guid: dd85215f3941b8f46a15423ea90ae9d7, type: 2}
-    - target: {fileID: 2613171215762310376, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      propertyPath: teleport2
-      value: 
-      objectReference: {fileID: 11400000, guid: 9b7908154930f13419cf797e25de455f, type: 2}
-    - target: {fileID: 2613171215762310376, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      propertyPath: startSummon
-      value: 
-      objectReference: {fileID: 11400000, guid: e7b7c0ae2308c6b448112280df87139e, type: 2}
-    - target: {fileID: 2613171215762310376, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      propertyPath: zombieStart
-      value: 
-      objectReference: {fileID: 11400000, guid: 7f3c14e53d54092469fc213afd718e1b, type: 2}
-    - target: {fileID: 2613171215762310376, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      propertyPath: staffHitFloot
-      value: 
-      objectReference: {fileID: 11400000, guid: 2d63dfc943da9634294d2796d7733e95, type: 2}
-    - target: {fileID: 3650399901624391863, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      propertyPath: m_Volume
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 4950401971911629357, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
       propertyPath: heartContainer
       value: 
@@ -5353,31 +5073,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 889492024935713683, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 635817872}
-    - targetCorrespondingSourceObject: {fileID: 889492024935713683, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 635817874}
-    - targetCorrespondingSourceObject: {fileID: 889492024935713683, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 635817873}
-    - targetCorrespondingSourceObject: {fileID: 889492024935713683, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 635817876}
-    - targetCorrespondingSourceObject: {fileID: 889492024935713683, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 635817875}
-    - targetCorrespondingSourceObject: {fileID: 889492024935713683, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 635817877}
-    - targetCorrespondingSourceObject: {fileID: 889492024935713683, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 635817879}
-    - targetCorrespondingSourceObject: {fileID: 889492024935713683, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 635817878}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52352252fd60eb347b2de1df4fb1b778, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
