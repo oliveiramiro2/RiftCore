@@ -72,10 +72,18 @@ public class MawAttackModule : MonoBehaviour
     List<System.Action> validAttacks = new()
     {
       () => SummonAttack(entity),
-      () => BoneAttack(entity),
-      () => ExplosionAttack(entity),
       () => HandAttack(entity)
     };
+
+    if (entity.Phase2())
+    {
+      validAttacks.Add(() => BoneAttack(entity));
+      if (dist <= 1f)
+      {
+        validAttacks.Add(() => ExplosionAttack(entity));
+        validAttacks.Add(() => ExplosionAttack(entity));
+      }
+    }
 
     int index = Random.Range(0, validAttacks.Count);
 
