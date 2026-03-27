@@ -5787,6 +5787,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &305167540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6767371128271720153, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+  m_PrefabInstance: {fileID: 1115907197}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &316043934 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7833601473309044650, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
@@ -16885,7 +16890,7 @@ Transform:
   m_GameObject: {fileID: 848278941}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.52, y: 3.13, z: 0}
+  m_LocalPosition: {x: -9.52, y: 0.91, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22891,11 +22896,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
---- !u!1 &1115907198 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4430419238147130296, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-  m_PrefabInstance: {fileID: 1115907197}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1115907199 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 509385971159516728, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
@@ -30396,7 +30396,7 @@ PrefabInstance:
     - target: {fileID: 4103293485641533845, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: pauseMenu
       value: 
-      objectReference: {fileID: 1115907198}
+      objectReference: {fileID: 305167540}
     - target: {fileID: 4103293485641533845, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: firstButton
       value: 

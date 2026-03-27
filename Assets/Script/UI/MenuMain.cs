@@ -33,6 +33,12 @@ public class MenuMain : MonoBehaviour
         SceneManager.LoadScene("SMArena");
     }
 
+    public void StartGameMaw()
+    {
+        SceneManager.LoadScene("MAWArena");
+    }
+
+
     public void ChooseEnemy()
     {
         chooseEnemyImage.gameObject.SetActive(true);
