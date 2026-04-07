@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: d919f532aa2ef8e468aeb02336c5fb6b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -248180270996152419
+    second: Sheet-GreatBall-Body_0
+  - first:
+      213: 4072690244743298888
+    second: Sheet-GreatBall-Body_1
+  - first:
+      213: 7693498023233222043
+    second: Sheet-GreatBall-Body_2
+  - first:
+      213: 1331252584303399883
+    second: Sheet-GreatBall-Body_3
+  - first:
+      213: -2737897258061325073
+    second: Sheet-GreatBall-Body_4
+  - first:
+      213: 4080061100902859391
+    second: Sheet-GreatBall-Body_5
+  - first:
+      213: -4206799181741790653
+    second: Sheet-GreatBall-Body_6
+  - first:
+      213: 1062154150220100198
+    second: Sheet-GreatBall-Body_7
+  - first:
+      213: -5185695479425968425
+    second: Sheet-GreatBall-Body_8
+  - first:
+      213: -4909426859720460065
+    second: Sheet-GreatBall-Body_9
+  - first:
+      213: 7891089171475236138
+    second: Sheet-GreatBall-Body_10
+  - first:
+      213: -7985748205207858507
+    second: Sheet-GreatBall-Body_11
+  - first:
+      213: 6419994681910795002
+    second: Sheet-GreatBall-Body_12
+  - first:
+      213: 8175349590938631387
+    second: Sheet-GreatBall-Body_13
+  - first:
+      213: -2034915625489181235
+    second: Sheet-GreatBall-Body_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 4
+        width: 188
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f9303cb594e8cf0800000000000000
+      internalID: -248180270996152419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_1
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 4
+        width: 155
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f7f16133a158830800000000000000
+      internalID: 4072690244743298888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_2
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 4
+        width: 123
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b957cf2b0bbc4ca60800000000000000
+      internalID: 7693498023233222043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_3
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 4
+        width: 155
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc399b11c2f897210800000000000000
+      internalID: 1331252584303399883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 4
+        width: 123
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec1db523f8010ad0800000000000000
+      internalID: -2737897258061325073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_5
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 4
+        width: 155
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72443544f94f9830800000000000000
+      internalID: 4080061100902859391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_6
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 4
+        width: 123
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a60eace627e95c0800000000000000
+      internalID: -4206799181741790653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_7
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 4
+        width: 155
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662739472978dbe00800000000000000
+      internalID: 1062154150220100198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_8
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 4
+        width: 123
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6577bbf65b808b0800000000000000
+      internalID: -5185695479425968425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_9
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 4
+        width: 155
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8b99748463edbb0800000000000000
+      internalID: -4909426859720460065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_10
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 21
+        width: 141
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2586bceac7c28d60800000000000000
+      internalID: 7891089171475236138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_11
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 21
+        width: 141
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b25fd2515cec2190800000000000000
+      internalID: -7985748205207858507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_12
+      rect:
+        serializedVersion: 2
+        x: 3131
+        y: 21
+        width: 141
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa903b0627681950800000000000000
+      internalID: 6419994681910795002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_13
+      rect:
+        serializedVersion: 2
+        x: 3387
+        y: 21
+        width: 141
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc388a532da47170800000000000000
+      internalID: 8175349590938631387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-GreatBall-Body_14
+      rect:
+        serializedVersion: 2
+        x: 3652
+        y: 4
+        width: 134
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc553d2250782c3e0800000000000000
+      internalID: -2034915625489181235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sheet-GreatBall-Body_0: -248180270996152419
+      Sheet-GreatBall-Body_1: 4072690244743298888
+      Sheet-GreatBall-Body_10: 7891089171475236138
+      Sheet-GreatBall-Body_11: -7985748205207858507
+      Sheet-GreatBall-Body_12: 6419994681910795002
+      Sheet-GreatBall-Body_13: 8175349590938631387
+      Sheet-GreatBall-Body_14: -2034915625489181235
+      Sheet-GreatBall-Body_2: 7693498023233222043
+      Sheet-GreatBall-Body_3: 1331252584303399883
+      Sheet-GreatBall-Body_4: -2737897258061325073
+      Sheet-GreatBall-Body_5: 4080061100902859391
+      Sheet-GreatBall-Body_6: -4206799181741790653
+      Sheet-GreatBall-Body_7: 1062154150220100198
+      Sheet-GreatBall-Body_8: -5185695479425968425
+      Sheet-GreatBall-Body_9: -4909426859720460065
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

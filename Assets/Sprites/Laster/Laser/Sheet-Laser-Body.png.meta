@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: 3146a43e37e5ab540b784ea76fa0a32f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6468105428699870458
+    second: Sheet-Laser-Body_0
+  - first:
+      213: -6388483208574117423
+    second: Sheet-Laser-Body_1
+  - first:
+      213: 8017064184458668074
+    second: Sheet-Laser-Body_2
+  - first:
+      213: 8888495870445042061
+    second: Sheet-Laser-Body_3
+  - first:
+      213: -2398797254427627140
+    second: Sheet-Laser-Body_4
+  - first:
+      213: 8163222244816335776
+    second: Sheet-Laser-Body_5
+  - first:
+      213: 4140974218278277931
+    second: Sheet-Laser-Body_6
+  - first:
+      213: -161051722635740652
+    second: Sheet-Laser-Body_7
+  - first:
+      213: -3423579954041789300
+    second: Sheet-Laser-Body_8
+  - first:
+      213: -5548208722693518056
+    second: Sheet-Laser-Body_9
+  - first:
+      213: 3819186202081486061
+    second: Sheet-Laser-Body_10
+  - first:
+      213: -8396358260820684800
+    second: Sheet-Laser-Body_11
+  - first:
+      213: -3885913750474803521
+    second: Sheet-Laser-Body_12
+  - first:
+      213: 2218345086206723334
+    second: Sheet-Laser-Body_13
+  - first:
+      213: 6854563788611559041
+    second: Sheet-Laser-Body_14
+  - first:
+      213: 4708569875433894427
+    second: Sheet-Laser-Body_15
+  - first:
+      213: -6707414157290040109
+    second: Sheet-Laser-Body_16
+  - first:
+      213: -8168889172454966854
+    second: Sheet-Laser-Body_17
+  - first:
+      213: -1983665704773476028
+    second: Sheet-Laser-Body_18
+  - first:
+      213: 8188469224156127912
+    second: Sheet-Laser-Body_19
+  - first:
+      213: 4739019886435740676
+    second: Sheet-Laser-Body_20
+  - first:
+      213: 5595987761411139893
+    second: Sheet-Laser-Body_21
+  - first:
+      213: -2113992562446177877
+    second: Sheet-Laser-Body_22
+  - first:
+      213: -6973477580691383190
+    second: Sheet-Laser-Body_23
+  - first:
+      213: 3871168702428670005
+    second: Sheet-Laser-Body_24
+  - first:
+      213: -6284037109567039080
+    second: Sheet-Laser-Body_25
+  - first:
+      213: -7582458184855560226
+    second: Sheet-Laser-Body_26
+  - first:
+      213: 8554074489757298356
+    second: Sheet-Laser-Body_27
+  - first:
+      213: -2680560649744553917
+    second: Sheet-Laser-Body_28
+  - first:
+      213: 8455034820062266977
+    second: Sheet-Laser-Body_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 4
+        width: 188
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af47e6f2e9353c950800000000000000
+      internalID: 6468105428699870458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_1
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 6
+        width: 183
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d954639e5c8757a0800000000000000
+      internalID: -6388483208574117423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_2
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 4
+        width: 164
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a286a284665524f60800000000000000
+      internalID: 8017064184458668074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_3
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 0
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d893761a6e74a5b70800000000000000
+      internalID: 8888495870445042061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 99
+        width: 169
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71b8a14b92c5bed0800000000000000
+      internalID: -2398797254427627140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_5
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 97
+        width: 174
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a338dc8167994170800000000000000
+      internalID: 8163222244816335776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_6
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 96
+        width: 188
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2317889c12b77930800000000000000
+      internalID: 4140974218278277931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_7
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 98
+        width: 174
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41af4d1cf44d3cdf0800000000000000
+      internalID: -161051722635740652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_8
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 99
+        width: 169
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84e033bb200d70d0800000000000000
+      internalID: -3423579954041789300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_9
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 101
+        width: 174
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d0128ff8dc003b0800000000000000
+      internalID: -5548208722693518056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_10
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 90
+        width: 159
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4e32aad99700530800000000000000
+      internalID: 3819186202081486061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_11
+      rect:
+        serializedVersion: 2
+        x: 2855
+        y: 86
+        width: 162
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000ddd8c5a42a7b80800000000000000
+      internalID: -8396358260820684800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_12
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 86
+        width: 164
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb6b42b4806721ac0800000000000000
+      internalID: -3885913750474803521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_13
+      rect:
+        serializedVersion: 2
+        x: 3373
+        y: 86
+        width: 162
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605c5944a1529ce10800000000000000
+      internalID: 2218345086206723334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_14
+      rect:
+        serializedVersion: 2
+        x: 3642
+        y: 86
+        width: 116
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e927ed27d402f50800000000000000
+      internalID: 6854563788611559041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_15
+      rect:
+        serializedVersion: 2
+        x: 3885
+        y: 86
+        width: 162
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12b759ca53385140800000000000000
+      internalID: 4708569875433894427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_16
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 86
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d41d418c5a7ae2a0800000000000000
+      internalID: -6707414157290040109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_17
+      rect:
+        serializedVersion: 2
+        x: 4397
+        y: 86
+        width: 162
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9794a049642ae80800000000000000
+      internalID: -8168889172454966854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_18
+      rect:
+        serializedVersion: 2
+        x: 4666
+        y: 86
+        width: 116
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4412ad92d8a9874e0800000000000000
+      internalID: -1983665704773476028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_19
+      rect:
+        serializedVersion: 2
+        x: 4909
+        y: 86
+        width: 162
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a26b00006943a170800000000000000
+      internalID: 8188469224156127912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_20
+      rect:
+        serializedVersion: 2
+        x: 5160
+        y: 86
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ca3827a7164c140800000000000000
+      internalID: 4739019886435740676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_21
+      rect:
+        serializedVersion: 2
+        x: 5425
+        y: 86
+        width: 162
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539285e5831f8ad40800000000000000
+      internalID: 5595987761411139893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_22
+      rect:
+        serializedVersion: 2
+        x: 5714
+        y: 86
+        width: 116
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9e39107f699a2e0800000000000000
+      internalID: -2113992562446177877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_23
+      rect:
+        serializedVersion: 2
+        x: 5937
+        y: 84
+        width: 162
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c5db1661b393f90800000000000000
+      internalID: -6973477580691383190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_24
+      rect:
+        serializedVersion: 2
+        x: 6199
+        y: 84
+        width: 161
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 538eeddac6729b530800000000000000
+      internalID: 3871168702428670005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_25
+      rect:
+        serializedVersion: 2
+        x: 6449
+        y: 84
+        width: 162
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89952e80b8d9ac8a0800000000000000
+      internalID: -6284037109567039080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_26
+      rect:
+        serializedVersion: 2
+        x: 6738
+        y: 84
+        width: 116
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf5e675472b5c690800000000000000
+      internalID: -7582458184855560226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_27
+      rect:
+        serializedVersion: 2
+        x: 6958
+        y: 85
+        width: 159
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bee6305d6d26b670800000000000000
+      internalID: 8554074489757298356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_28
+      rect:
+        serializedVersion: 2
+        x: 7215
+        y: 80
+        width: 174
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348e5119a4cbccad0800000000000000
+      internalID: -2680560649744553917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-Body_29
+      rect:
+        serializedVersion: 2
+        x: 7461
+        y: 37
+        width: 188
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166ce554f51565570800000000000000
+      internalID: 8455034820062266977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sheet-Laser-Body_0: 6468105428699870458
+      Sheet-Laser-Body_1: -6388483208574117423
+      Sheet-Laser-Body_10: 3819186202081486061
+      Sheet-Laser-Body_11: -8396358260820684800
+      Sheet-Laser-Body_12: -3885913750474803521
+      Sheet-Laser-Body_13: 2218345086206723334
+      Sheet-Laser-Body_14: 6854563788611559041
+      Sheet-Laser-Body_15: 4708569875433894427
+      Sheet-Laser-Body_16: -6707414157290040109
+      Sheet-Laser-Body_17: -8168889172454966854
+      Sheet-Laser-Body_18: -1983665704773476028
+      Sheet-Laser-Body_19: 8188469224156127912
+      Sheet-Laser-Body_2: 8017064184458668074
+      Sheet-Laser-Body_20: 4739019886435740676
+      Sheet-Laser-Body_21: 5595987761411139893
+      Sheet-Laser-Body_22: -2113992562446177877
+      Sheet-Laser-Body_23: -6973477580691383190
+      Sheet-Laser-Body_24: 3871168702428670005
+      Sheet-Laser-Body_25: -6284037109567039080
+      Sheet-Laser-Body_26: -7582458184855560226
+      Sheet-Laser-Body_27: 8554074489757298356
+      Sheet-Laser-Body_28: -2680560649744553917
+      Sheet-Laser-Body_29: 8455034820062266977
+      Sheet-Laser-Body_3: 8888495870445042061
+      Sheet-Laser-Body_4: -2398797254427627140
+      Sheet-Laser-Body_5: 8163222244816335776
+      Sheet-Laser-Body_6: 4140974218278277931
+      Sheet-Laser-Body_7: -161051722635740652
+      Sheet-Laser-Body_8: -3423579954041789300
+      Sheet-Laser-Body_9: -5548208722693518056
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

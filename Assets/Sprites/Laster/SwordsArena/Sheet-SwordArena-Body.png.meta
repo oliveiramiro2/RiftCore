@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: efd664dcde1845f418a2318e1e7f1d36
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 201770282531479541
+    second: Sheet-SwordArena-Body_0
+  - first:
+      213: 976240005246249569
+    second: Sheet-SwordArena-Body_1
+  - first:
+      213: -2112351000384317236
+    second: Sheet-SwordArena-Body_2
+  - first:
+      213: -44956466272295501
+    second: Sheet-SwordArena-Body_3
+  - first:
+      213: -1749923193136734459
+    second: Sheet-SwordArena-Body_4
+  - first:
+      213: -5270112838663564980
+    second: Sheet-SwordArena-Body_5
+  - first:
+      213: -8479132297400822857
+    second: Sheet-SwordArena-Body_6
+  - first:
+      213: -2055841335411890956
+    second: Sheet-SwordArena-Body_7
+  - first:
+      213: 2096790404005330514
+    second: Sheet-SwordArena-Body_8
+  - first:
+      213: -6210349677252127307
+    second: Sheet-SwordArena-Body_9
+  - first:
+      213: 1315845139607703543
+    second: Sheet-SwordArena-Body_10
+  - first:
+      213: -7788868267609361996
+    second: Sheet-SwordArena-Body_11
+  - first:
+      213: -1372751622634485858
+    second: Sheet-SwordArena-Body_12
+  - first:
+      213: 6488255524622477323
+    second: Sheet-SwordArena-Body_13
+  - first:
+      213: -3940105346344896578
+    second: Sheet-SwordArena-Body_14
+  - first:
+      213: -698977037998136654
+    second: Sheet-SwordArena-Body_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 4
+        width: 188
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ffd480c005dcc200800000000000000
+      internalID: 201770282531479541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_1
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 4
+        width: 197
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a6a38cc1d4c8d00800000000000000
+      internalID: 976240005246249569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_2
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 4
+        width: 178
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8d625f4fb6fa2e0800000000000000
+      internalID: -2112351000384317236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_3
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 4
+        width: 207
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5ab750558406ff0800000000000000
+      internalID: -44956466272295501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_4
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 4
+        width: 197
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f1ed8902607b7e0800000000000000
+      internalID: -1749923193136734459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_5
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 4
+        width: 178
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c419b35ab4cccd6b0800000000000000
+      internalID: -5270112838663564980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_6
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 4
+        width: 207
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3d1e19912145a80800000000000000
+      internalID: -8479132297400822857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_7
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 4
+        width: 197
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4a530a23f2873e0800000000000000
+      internalID: -2055841335411890956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_8
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 4
+        width: 178
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e7f2f53cb491d10800000000000000
+      internalID: 2096790404005330514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_9
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 4
+        width: 207
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b5dc645fd760d9a0800000000000000
+      internalID: -6210349677252127307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_10
+      rect:
+        serializedVersion: 2
+        x: 2601
+        y: 4
+        width: 197
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffcdbdce22d24210800000000000000
+      internalID: 1315845139607703543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_11
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 19
+        width: 159
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1f4dae39168e390800000000000000
+      internalID: -7788868267609361996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_12
+      rect:
+        serializedVersion: 2
+        x: 3103
+        y: 25
+        width: 225
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97c7002ca103fce0800000000000000
+      internalID: -1372751622634485858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_13
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 25
+        width: 225
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08a61df50aea0a50800000000000000
+      internalID: 6488255524622477323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_14
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 7
+        width: 197
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7be75201fe159c0800000000000000
+      internalID: -3940105346344896578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-Body_15
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 4
+        width: 178
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b267f7561cbc46f0800000000000000
+      internalID: -698977037998136654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sheet-SwordArena-Body_0: 201770282531479541
+      Sheet-SwordArena-Body_1: 976240005246249569
+      Sheet-SwordArena-Body_10: 1315845139607703543
+      Sheet-SwordArena-Body_11: -7788868267609361996
+      Sheet-SwordArena-Body_12: -1372751622634485858
+      Sheet-SwordArena-Body_13: 6488255524622477323
+      Sheet-SwordArena-Body_14: -3940105346344896578
+      Sheet-SwordArena-Body_15: -698977037998136654
+      Sheet-SwordArena-Body_2: -2112351000384317236
+      Sheet-SwordArena-Body_3: -44956466272295501
+      Sheet-SwordArena-Body_4: -1749923193136734459
+      Sheet-SwordArena-Body_5: -5270112838663564980
+      Sheet-SwordArena-Body_6: -8479132297400822857
+      Sheet-SwordArena-Body_7: -2055841335411890956
+      Sheet-SwordArena-Body_8: 2096790404005330514
+      Sheet-SwordArena-Body_9: -6210349677252127307
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

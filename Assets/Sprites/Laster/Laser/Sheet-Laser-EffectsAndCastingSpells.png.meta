@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 0f510fdc6512eb14ca6c24766da7fd78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2591018077146313161
+    second: Sheet-Laser-EffectsAndCastingSpells_0
+  - first:
+      213: 1555957286473634714
+    second: Sheet-Laser-EffectsAndCastingSpells_1
+  - first:
+      213: -7070171491423780985
+    second: Sheet-Laser-EffectsAndCastingSpells_2
+  - first:
+      213: 588418807760327364
+    second: Sheet-Laser-EffectsAndCastingSpells_3
+  - first:
+      213: 3425227915379554775
+    second: Sheet-Laser-EffectsAndCastingSpells_4
+  - first:
+      213: 1543825966420217068
+    second: Sheet-Laser-EffectsAndCastingSpells_5
+  - first:
+      213: -1244285285650848982
+    second: Sheet-Laser-EffectsAndCastingSpells_6
+  - first:
+      213: 7286121288960549791
+    second: Sheet-Laser-EffectsAndCastingSpells_7
+  - first:
+      213: -8302684362545787668
+    second: Sheet-Laser-EffectsAndCastingSpells_8
+  - first:
+      213: -6124065721757150040
+    second: Sheet-Laser-EffectsAndCastingSpells_9
+  - first:
+      213: 7332424200456553469
+    second: Sheet-Laser-EffectsAndCastingSpells_10
+  - first:
+      213: 2036438188007508210
+    second: Sheet-Laser-EffectsAndCastingSpells_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_0
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 193
+        width: 526
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e041169cada0cd0800000000000000
+      internalID: -2591018077146313161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_1
+      rect:
+        serializedVersion: 2
+        x: 3962
+        y: 193
+        width: 115
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9311f188eed79510800000000000000
+      internalID: 1555957286473634714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_2
+      rect:
+        serializedVersion: 2
+        x: 4218
+        y: 184
+        width: 135
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f7798ec74b1ed90800000000000000
+      internalID: -7070171491423780985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_3
+      rect:
+        serializedVersion: 2
+        x: 4474
+        y: 183
+        width: 135
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c296bfb9cb7a2800800000000000000
+      internalID: 588418807760327364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_4
+      rect:
+        serializedVersion: 2
+        x: 4731
+        y: 124
+        width: 134
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d933f234aad88f20800000000000000
+      internalID: 3425227915379554775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_5
+      rect:
+        serializedVersion: 2
+        x: 4985
+        y: 0
+        width: 110
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec40837985cc6510800000000000000
+      internalID: 1543825966420217068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_6
+      rect:
+        serializedVersion: 2
+        x: 5231
+        y: 0
+        width: 25
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23298d00296bbee0800000000000000
+      internalID: -1244285285650848982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_7
+      rect:
+        serializedVersion: 2
+        x: 5401
+        y: 0
+        width: 110
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93a7e275b08d1560800000000000000
+      internalID: 7286121288960549791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_8
+      rect:
+        serializedVersion: 2
+        x: 5631
+        y: 124
+        width: 134
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec8440df80f6cc80800000000000000
+      internalID: -8302684362545787668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_9
+      rect:
+        serializedVersion: 2
+        x: 5887
+        y: 183
+        width: 135
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4d4893ca2f20ba0800000000000000
+      internalID: -6124065721757150040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_10
+      rect:
+        serializedVersion: 2
+        x: 6143
+        y: 184
+        width: 135
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3c0b226f002c560800000000000000
+      internalID: 7332424200456553469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_11
+      rect:
+        serializedVersion: 2
+        x: 6405
+        y: 193
+        width: 383
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f84a331eb1e24c10800000000000000
+      internalID: 2036438188007508210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sheet-Laser-EffectsAndCastingSpells_0: -2591018077146313161
+      Sheet-Laser-EffectsAndCastingSpells_1: 1555957286473634714
+      Sheet-Laser-EffectsAndCastingSpells_10: 7332424200456553469
+      Sheet-Laser-EffectsAndCastingSpells_11: 2036438188007508210
+      Sheet-Laser-EffectsAndCastingSpells_2: -7070171491423780985
+      Sheet-Laser-EffectsAndCastingSpells_3: 588418807760327364
+      Sheet-Laser-EffectsAndCastingSpells_4: 3425227915379554775
+      Sheet-Laser-EffectsAndCastingSpells_5: 1543825966420217068
+      Sheet-Laser-EffectsAndCastingSpells_6: -1244285285650848982
+      Sheet-Laser-EffectsAndCastingSpells_7: 7286121288960549791
+      Sheet-Laser-EffectsAndCastingSpells_8: -8302684362545787668
+      Sheet-Laser-EffectsAndCastingSpells_9: -6124065721757150040
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
