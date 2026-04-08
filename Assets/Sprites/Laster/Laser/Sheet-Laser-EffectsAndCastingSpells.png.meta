@@ -43,7 +43,7 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -70,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 42
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,10 +105,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,12 +136,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_0
       rect:
         serializedVersion: 2
-        x: 3188
-        y: 193
-        width: 526
-        height: 62
+        x: 3072
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -158,12 +158,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_1
       rect:
         serializedVersion: 2
-        x: 3962
-        y: 193
-        width: 115
-        height: 8
+        x: 3328
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -180,12 +180,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_2
       rect:
         serializedVersion: 2
-        x: 4218
-        y: 184
-        width: 135
-        height: 23
+        x: 3584
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_3
       rect:
         serializedVersion: 2
-        x: 4474
-        y: 183
-        width: 135
-        height: 25
+        x: 3840
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_4
       rect:
         serializedVersion: 2
-        x: 4731
-        y: 124
-        width: 134
-        height: 74
+        x: 4096
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -246,12 +246,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_5
       rect:
         serializedVersion: 2
-        x: 4985
+        x: 4352
         y: 0
-        width: 110
-        height: 198
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_6
       rect:
         serializedVersion: 2
-        x: 5231
+        x: 4608
         y: 0
-        width: 25
-        height: 196
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -290,12 +290,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_7
       rect:
         serializedVersion: 2
-        x: 5401
+        x: 4864
         y: 0
-        width: 110
-        height: 198
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_8
       rect:
         serializedVersion: 2
-        x: 5631
-        y: 124
-        width: 134
-        height: 74
+        x: 5120
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,12 +334,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_9
       rect:
         serializedVersion: 2
-        x: 5887
-        y: 183
-        width: 135
-        height: 25
+        x: 5376
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -356,12 +356,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_10
       rect:
         serializedVersion: 2
-        x: 6143
-        y: 184
-        width: 135
-        height: 23
+        x: 5632
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -378,12 +378,12 @@ TextureImporter:
       name: Sheet-Laser-EffectsAndCastingSpells_11
       rect:
         serializedVersion: 2
-        x: 6405
-        y: 193
-        width: 383
-        height: 8
+        x: 5888
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -396,11 +396,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_12
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1658f6606f4c646acc4a1959322c53
+      internalID: 623876319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_13
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f528e230416d234393567f3775b4747
+      internalID: 981570924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-Laser-EffectsAndCastingSpells_14
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce3d5afe48b53e4ebbdb636b5f2e2f2
+      internalID: 2009576026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 08bfe7143de22f2409ba9fbbfbe54fbd
     internalID: 0
     vertices: []
     indices: 
@@ -408,12 +474,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Sheet-Laser-EffectsAndCastingSpells_0: -2591018077146313161
       Sheet-Laser-EffectsAndCastingSpells_1: 1555957286473634714
       Sheet-Laser-EffectsAndCastingSpells_10: 7332424200456553469
       Sheet-Laser-EffectsAndCastingSpells_11: 2036438188007508210
+      Sheet-Laser-EffectsAndCastingSpells_12: 623876319
+      Sheet-Laser-EffectsAndCastingSpells_13: 981570924
+      Sheet-Laser-EffectsAndCastingSpells_14: 2009576026
+      Sheet-Laser-EffectsAndCastingSpells_15: -1037017328
       Sheet-Laser-EffectsAndCastingSpells_2: -7070171491423780985
       Sheet-Laser-EffectsAndCastingSpells_3: 588418807760327364
       Sheet-Laser-EffectsAndCastingSpells_4: 3425227915379554775
