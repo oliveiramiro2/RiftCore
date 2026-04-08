@@ -187,6 +187,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Sheet-Teleport-Eyes_4
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 66
+        width: 49
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e00e574e4969e14fa7d456498986045
+      internalID: -157148615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -207,6 +229,7 @@ TextureImporter:
       Sheet-Teleport-Eyes_1: -1063202943
       Sheet-Teleport-Eyes_2: 1364694876
       Sheet-Teleport-Eyes_3: 2134219333
+      Sheet-Teleport-Eyes_4: -157148615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

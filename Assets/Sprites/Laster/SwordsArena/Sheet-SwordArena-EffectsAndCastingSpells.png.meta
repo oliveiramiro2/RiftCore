@@ -130,12 +130,12 @@ TextureImporter:
       name: Sheet-SwordArena-EffectsAndCastingSpells_0
       rect:
         serializedVersion: 2
-        x: 618
-        y: 138
-        width: 280
-        height: 53
+        x: 512
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -152,12 +152,12 @@ TextureImporter:
       name: Sheet-SwordArena-EffectsAndCastingSpells_1
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 135
-        width: 34
-        height: 76
+        x: 768
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -174,12 +174,12 @@ TextureImporter:
       name: Sheet-SwordArena-EffectsAndCastingSpells_2
       rect:
         serializedVersion: 2
-        x: 1382
-        y: 137
-        width: 34
-        height: 40
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -196,12 +196,12 @@ TextureImporter:
       name: Sheet-SwordArena-EffectsAndCastingSpells_3
       rect:
         serializedVersion: 2
-        x: 1644
-        y: 134
-        width: 18
-        height: 18
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: Sheet-SwordArena-EffectsAndCastingSpells_4
       rect:
         serializedVersion: 2
-        x: 1892
-        y: 127
-        width: 39
-        height: 41
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -240,12 +240,12 @@ TextureImporter:
       name: Sheet-SwordArena-EffectsAndCastingSpells_5
       rect:
         serializedVersion: 2
-        x: 2158
-        y: 76
-        width: 72
-        height: 70
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -262,12 +262,12 @@ TextureImporter:
       name: Sheet-SwordArena-EffectsAndCastingSpells_6
       rect:
         serializedVersion: 2
-        x: 3244
-        y: 17
-        width: 84
-        height: 140
+        x: 2048
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -284,12 +284,12 @@ TextureImporter:
       name: Sheet-SwordArena-EffectsAndCastingSpells_7
       rect:
         serializedVersion: 2
-        x: 2443
-        y: 65
-        width: 99
-        height: 54
+        x: 2304
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -306,12 +306,12 @@ TextureImporter:
       name: Sheet-SwordArena-EffectsAndCastingSpells_8
       rect:
         serializedVersion: 2
-        x: 2718
-        y: 72
-        width: 80
-        height: 24
+        x: 2560
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -328,12 +328,12 @@ TextureImporter:
       name: Sheet-SwordArena-EffectsAndCastingSpells_9
       rect:
         serializedVersion: 2
-        x: 2895
-        y: 95
-        width: 80
-        height: 24
+        x: 2816
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,11 +346,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-EffectsAndCastingSpells_10
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25e5b5ea914eb042b8a0069af7f9446
+      internalID: 192864748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet-SwordArena-EffectsAndCastingSpells_11
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 44
+        width: 99
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf413f11487fef4f88e410c91999b9f
+      internalID: -2041832806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 74ef88024b165884a99d31f48e18717e
     internalID: 0
     vertices: []
     indices: 
@@ -358,10 +402,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Sheet-SwordArena-EffectsAndCastingSpells_0: 7545357047252439569
       Sheet-SwordArena-EffectsAndCastingSpells_1: 1481940249432324574
+      Sheet-SwordArena-EffectsAndCastingSpells_10: 192864748
+      Sheet-SwordArena-EffectsAndCastingSpells_11: -2041832806
       Sheet-SwordArena-EffectsAndCastingSpells_2: -5324093780816026750
       Sheet-SwordArena-EffectsAndCastingSpells_3: -5437936414788141131
       Sheet-SwordArena-EffectsAndCastingSpells_4: -6665445386464743371
