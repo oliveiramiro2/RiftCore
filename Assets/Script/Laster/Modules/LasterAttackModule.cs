@@ -32,6 +32,7 @@ public class LasterAttackModule : MonoBehaviour
 
   public GameObject ground;
   public GameObject[] wall;
+  public GameObject[] Laser;
 
   void Start()
   {
@@ -114,6 +115,8 @@ public class LasterAttackModule : MonoBehaviour
   // attack laser logic can be implemented here, including raycasting and visual effects
   void Fire(Vector2 direction)
   {
+    Debug.DrawRay(origin.position, direction * maxDistance, Color.red);
+    Debug.Log("Firing laser in direction: " + direction);
     RaycastHit2D hit = Physics2D.Raycast(origin.position, direction, maxDistance, hitMask);
 
     float distance = maxDistance;
@@ -121,6 +124,7 @@ public class LasterAttackModule : MonoBehaviour
 
     if (hit.collider != null)
     {
+      Debug.Log("Laser hit: " + hit.collider.name);
       distance = hit.distance;
       hitPoint = hit.point;
 
@@ -129,11 +133,15 @@ public class LasterAttackModule : MonoBehaviour
       // Detecta o tipo
       if ((groundMask & (1 << hitLayer)) != 0)
       {
-
+        Debug.Log("Hit the ground");
+        Laser[1].SetActive(false);
+        Laser[0].SetActive(true);
       }
       else if ((wallMask & (1 << hitLayer)) != 0)
       {
-
+        Debug.Log("Hit a wall");
+        Laser[1].SetActive(false);
+        Laser[0].SetActive(true);
       }
     }
 
@@ -172,6 +180,7 @@ public class LasterAttackModule : MonoBehaviour
   {
     entity.Locomotion.FlipTowardsTarget(player);
     yield return new WaitForSeconds(1.2f);
+
     laserActive = true;
     yield return new WaitForSeconds(0.35f);
     laserActive = false;
