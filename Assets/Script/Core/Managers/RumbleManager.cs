@@ -17,7 +17,6 @@ public class RumbleManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     public void Play(RumbleType type)

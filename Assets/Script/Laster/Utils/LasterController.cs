@@ -14,8 +14,8 @@ public class LasterController : BaseEntity
   public LasterStateMachine LasterSM { get; private set; }
   public LasterStateFactory LasterStateFactory { get; private set; }
   public LasterAnimationBridge AnimatorBridge { get; private set; }
-  public LasterLocomotionModule Locomotion { get; private set; }
-  //public LasterAttackModule Attack { get; private set; }
+  public LasterLocomotionModule Locomotion { get; private set; }  
+  public LasterAttackModule Attack { get; private set; }
 
   public bool isAttacking = false;
   public bool canTeleport = false;
@@ -38,12 +38,13 @@ public class LasterController : BaseEntity
   }
 
   public void SetupModules(LasterStateMachine sm, LasterStateFactory factory, LasterAnimationBridge animator,
-      LasterLocomotionModule locomotionModule)
+      LasterLocomotionModule locomotionModule, LasterAttackModule attackModule)
   {
     LasterSM = sm;
     LasterStateFactory = factory;
     AnimatorBridge = animator;
     Locomotion = locomotionModule;
+    Attack = attackModule;
   }
 
   public void FlipX(bool faceRight)

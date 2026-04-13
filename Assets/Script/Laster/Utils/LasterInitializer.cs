@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(LasterStateFactory))]
 [RequireComponent(typeof(LasterAnimationBridge))]
 [RequireComponent(typeof(LasterLocomotionModule))]
+[RequireComponent(typeof(LasterAttackModule))]
 public class LasterInitializer : MonoBehaviour
 {
   void Awake()
@@ -14,11 +15,12 @@ public class LasterInitializer : MonoBehaviour
     var factory = GetComponent<LasterStateFactory>();
     var animator = GetComponent<LasterAnimationBridge>();
     var locomotionModule = GetComponent<LasterLocomotionModule>();
+    var attackModule = GetComponent<LasterAttackModule>();
 
-    controller.SetupModules(sm, factory, animator, locomotionModule);
+    controller.SetupModules(sm, factory, animator, locomotionModule, attackModule);
     locomotionModule.Setup(controller);
     animator.Setup(controller);
-
+    attackModule.Setup(controller);
 
     sm.Setup(controller);
 

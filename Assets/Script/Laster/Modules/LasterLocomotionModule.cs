@@ -4,7 +4,6 @@ public class LasterLocomotionModule : MonoBehaviour
 {
   private LasterController owner;
   private PlayerController target;
-  private float timer = 0f, floatOutDuration = 0.5f, hideStaffDuration = 2.1f;
   public bool hasTeleported = false;
   public bool canFloat = true;
 

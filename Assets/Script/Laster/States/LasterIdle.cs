@@ -3,7 +3,6 @@ using UnityEngine;
 public class LasterIdle : State<LasterController>
 {
   private float timer = 0f;
-  private readonly float idleDuration = 2f;
 
   public override void EnterState(LasterController entity)
   {
@@ -17,9 +16,8 @@ public class LasterIdle : State<LasterController>
   public override void UpdateState(LasterController entity)
   {
     timer += Time.deltaTime;
-    if (timer >= idleDuration)
+    if (timer >= entity.Attack.attackCooldown)
     {
-
       entity.isAttacking = true;
     }
   }

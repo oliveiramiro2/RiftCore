@@ -10,6 +10,11 @@ public class LasterAnimationBridge : MonoBehaviour
   private readonly string idleParam = "Idle";
   private readonly string deathParam = "Death";
 
+  private readonly string LaserAttackParam = "Laser";
+  private readonly string SwordArenaAttackParam = "SwordArena";
+  private readonly string SlashAttackParam = "Slash";
+  private readonly string GreatBallAttackParam = "GreatBall";
+
   void Awake()
   {
     animator = GetComponent<Animator>();
@@ -30,6 +35,26 @@ public class LasterAnimationBridge : MonoBehaviour
   public void LasterDeath()
   {
     animator.Play(deathParam);
+  }
+
+  public void PlayLaserAttack()
+  {
+    animator.Play(LaserAttackParam);
+  }
+
+  public void PlaySwordArenaAttack()
+  {
+    animator.Play(SwordArenaAttackParam);
+  }
+
+  public void PlaySlashAttack()
+  {
+    animator.Play(SlashAttackParam);
+  }
+
+  public void PlayGreatBallAttack()
+  {
+    animator.Play(GreatBallAttackParam);
   }
 
   // timers for animation transitions can be handled here if needed
