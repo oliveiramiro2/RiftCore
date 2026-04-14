@@ -140,14 +140,14 @@ public class LasterAttackModule : MonoBehaviour
   {
     entity.Locomotion.FlipToLaserPoint();
     yield return new WaitForSeconds(1.4f);
+    laser.gameObject.SetActive(true);
     laserActive = true;
 
-    laser.gameObject.SetActive(true);
     yield return new WaitForSeconds(0.5f);
     laserActive = false;
 
     laser.gameObject.SetActive(false);
-    yield return new WaitForSeconds(0.8f);
+    yield return new WaitForSeconds(0.6f);
     entity.Locomotion.FlipTowardsTarget(player);
     entity.isAttacking = false;
   }

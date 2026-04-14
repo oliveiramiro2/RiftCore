@@ -13,6 +13,7 @@ public class LasterLaser : MonoBehaviour
   public float rotationSpeed = 90f;
   private bool invertAngle = true;
   private bool wasInverted = false;
+  private float damageTimer = 0f;
 
   private float angle;
 
@@ -64,8 +65,21 @@ public class LasterLaser : MonoBehaviour
 
     if (hit.collider != null)
     {
-      end = hit.point;
+        end = hit.point;
+
+        if (damageTimer <= 0f)
+        {
+            var damageable = hit.collider.GetComponent<Hurtbox>();
+
+            if (damageable != null)
+            {
+                damageable.ApplyDamage(4, direction, 10f);
+                damageTimer = 0.2f;
+            }
+        }
     }
+
+    damageTimer -= Time.deltaTime;
 
     lr.SetPosition(0, start);
     lr.SetPosition(1, end);
