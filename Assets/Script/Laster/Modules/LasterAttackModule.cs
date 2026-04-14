@@ -138,7 +138,7 @@ public class LasterAttackModule : MonoBehaviour
 
   private IEnumerator LaserAttackRoutine(LasterController entity)
   {
-    entity.Locomotion.FlipTowardsTarget(player);
+    entity.Locomotion.FlipToLaserPoint();
     yield return new WaitForSeconds(1.4f);
     laserActive = true;
 

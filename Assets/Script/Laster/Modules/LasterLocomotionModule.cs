@@ -22,7 +22,7 @@ public class LasterLocomotionModule : MonoBehaviour
       return;
     }
 
-    
+
   }
 
   public void Setup(LasterController entity)
@@ -63,6 +63,14 @@ public class LasterLocomotionModule : MonoBehaviour
           transform.localScale.y,
           transform.localScale.z);
     }
+  }
+
+  public void FlipToLaserPoint()
+  {
+    transform.localScale = new Vector3(
+          Mathf.Abs(transform.localScale.x),
+          transform.localScale.y,
+          transform.localScale.z);
   }
 
   public void StopMovement()
