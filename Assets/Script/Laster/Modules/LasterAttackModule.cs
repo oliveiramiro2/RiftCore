@@ -19,20 +19,23 @@ public class LasterAttackModule : MonoBehaviour
   private readonly float minDecisionTimePhase2 = 1f;
   private readonly float maxDecisionTimePhase2 = 2f;
 
-  [Header("Laser Attack")]
-  private bool laserActive = false;
-  public float maxDistance = 200f;
-  public LayerMask hitMask;
+  // [Header("Laser Attack")]
+  // private bool laserActive = false;
+  // public float maxDistance = 200f;
+  // public LayerMask hitMask;
 
-  public LayerMask groundMask;
-  public LayerMask wallMask;
+  // public LayerMask groundMask;
+  // public LayerMask wallMask;
 
-  public Transform origin;
-  public Transform laserVisual;
+  // public Transform origin;
+  // public Transform laserVisual;
 
-  public GameObject ground;
-  public GameObject[] wall;
-  public GameObject[] Laser;
+  // public GameObject ground;
+  // public GameObject[] wall;
+  // public GameObject[] Laser;
+
+  public LasterLaser laser;
+  private bool laserActive;
 
   void Start()
   {
@@ -46,24 +49,24 @@ public class LasterAttackModule : MonoBehaviour
 
   void Update()
   {
-    // if (owner.IsDead) return;
-
-    // if (!canAttackTimer && isAttacking) return;
-    // if (laserActive)
-    // {
-    //   Fire(Vector2.right);
-    // }
-  }
-
-  void FixedUpdate()
-  {
     if (owner.IsDead) return;
 
     if (!canAttackTimer && isAttacking) return;
     if (laserActive)
     {
-      Fire(Vector2.right);
+      laser.Fire(Vector2.right);
     }
+  }
+
+  void FixedUpdate()
+  {
+    // if (owner.IsDead) return;
+
+    // if (!canAttackTimer && isAttacking) return;
+    // if (laserActive)
+    // {
+    //   laser.Fire(Vector2.right);
+    // }
   }
 
   public void ResetTimer()
@@ -112,49 +115,6 @@ public class LasterAttackModule : MonoBehaviour
     StartCoroutine(LaserAttackRoutine(owner));
   }
 
-  // attack laser logic can be implemented here, including raycasting and visual effects
-  void Fire(Vector2 direction)
-  {
-    Debug.DrawRay(origin.position, direction * maxDistance, Color.red);
-    Debug.Log("Firing laser in direction: " + direction);
-    RaycastHit2D hit = Physics2D.Raycast(origin.position, direction, maxDistance, hitMask);
-
-    float distance = maxDistance;
-    Vector2 hitPoint = (Vector2)origin.position + direction * maxDistance;
-
-    if (hit.collider != null)
-    {
-      Debug.Log("Laser hit: " + hit.collider.name);
-      distance = hit.distance;
-      hitPoint = hit.point;
-
-      int hitLayer = hit.collider.gameObject.layer;
-
-      // Detecta o tipo
-      if ((groundMask & (1 << hitLayer)) != 0)
-      {
-        Debug.Log("Hit the ground");
-        Laser[1].SetActive(false);
-        Laser[0].SetActive(true);
-      }
-      else if ((wallMask & (1 << hitLayer)) != 0)
-      {
-        Debug.Log("Hit a wall");
-        Laser[1].SetActive(false);
-        Laser[0].SetActive(true);
-      }
-    }
-
-    UpdateLaserVisual(distance, direction);
-  }
-
-  void UpdateLaserVisual(float length, Vector2 direction)
-  {
-    laserVisual.localScale = new Vector3(length, 1f, 1f);
-    laserVisual.position = origin.position;
-    laserVisual.right = direction;
-  }
-
   private void SwordArenaAttack()
   {
 
@@ -179,12 +139,14 @@ public class LasterAttackModule : MonoBehaviour
   private IEnumerator LaserAttackRoutine(LasterController entity)
   {
     entity.Locomotion.FlipTowardsTarget(player);
-    yield return new WaitForSeconds(1.2f);
-
+    yield return new WaitForSeconds(1.4f);
     laserActive = true;
-    yield return new WaitForSeconds(0.35f);
+
+    laser.gameObject.SetActive(true);
+    yield return new WaitForSeconds(0.5f);
     laserActive = false;
-    laserVisual.localScale = new Vector3(1f, 1f, 1f);
+
+    laser.gameObject.SetActive(false);
     yield return new WaitForSeconds(0.8f);
     entity.Locomotion.FlipTowardsTarget(player);
     entity.isAttacking = false;
