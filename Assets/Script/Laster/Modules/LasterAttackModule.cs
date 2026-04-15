@@ -6,6 +6,7 @@ public class LasterAttackModule : MonoBehaviour
 {
   private LasterController owner;
   private Transform player;
+  public AttackSpawner attackSpawner;
 
   public bool isAttacking = false;
   public float attackCooldown = 3f;
@@ -19,23 +20,13 @@ public class LasterAttackModule : MonoBehaviour
   private readonly float minDecisionTimePhase2 = 1f;
   private readonly float maxDecisionTimePhase2 = 2f;
 
-  // [Header("Laser Attack")]
-  // private bool laserActive = false;
-  // public float maxDistance = 200f;
-  // public LayerMask hitMask;
-
-  // public LayerMask groundMask;
-  // public LayerMask wallMask;
-
-  // public Transform origin;
-  // public Transform laserVisual;
-
-  // public GameObject ground;
-  // public GameObject[] wall;
-  // public GameObject[] Laser;
-
+  [Header("Laser Attack")]
   public LasterLaser laser;
   private bool laserActive;
+
+
+  [Header("Sword Arena Attack")]
+  public Transform[] spawnerPoints;
 
   void Start()
   {
@@ -87,8 +78,8 @@ public class LasterAttackModule : MonoBehaviour
 
     List<System.Action> validAttacks = new()
     {
-      LaserAttack,
-      // SwordArenaAttack,
+      // LaserAttack,
+      SwordArenaAttack,
       // SlashAttack,
       // GreatBallAttack
     };
@@ -149,6 +140,21 @@ public class LasterAttackModule : MonoBehaviour
     laser.gameObject.SetActive(false);
     yield return new WaitForSeconds(0.6f);
     entity.Locomotion.FlipTowardsTarget(player);
+
+    if (entity.Phase2())
+    {
+      entity.Locomotion.FlipToLaserPoint();
+      yield return new WaitForSeconds(1.4f);
+      laser.gameObject.SetActive(true);
+      laserActive = true;
+
+      yield return new WaitForSeconds(0.5f);
+      laserActive = false;
+
+      laser.gameObject.SetActive(false);
+      yield return new WaitForSeconds(0.6f);
+    }
+
     entity.isAttacking = false;
   }
 
@@ -158,6 +164,28 @@ public class LasterAttackModule : MonoBehaviour
   {
     yield return new WaitForSeconds(1.2f);
     entity.Locomotion.FlipTowardsTarget(player);
+
+    int index = Random.Range(0, spawnerPoints.Length);
+    attackSpawner.SpawnAttack(spawnerPoints[index].position, Quaternion.identity);
+
+    int index2 = Random.Range(0, spawnerPoints.Length);
+    while (index2 == index)
+    {
+      index2 = Random.Range(0, spawnerPoints.Length);
+    }
+    attackSpawner.SpawnAttack(spawnerPoints[index2].position, Quaternion.identity);
+
+    if (entity.Phase2())
+    {
+      int index3 = Random.Range(0, spawnerPoints.Length);
+      while (index3 == index || index3 == index2)
+      {
+        index3 = Random.Range(0, spawnerPoints.Length);
+      }
+      attackSpawner.SpawnAttack(spawnerPoints[index3].position, Quaternion.identity);
+    }
+
+    yield return new WaitForSeconds(0.5f);
     entity.isAttacking = false;
   }
 
