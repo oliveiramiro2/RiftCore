@@ -14,6 +14,7 @@ public class LasterLaser : MonoBehaviour
   private bool invertAngle = true;
   private bool wasInverted = false;
   private float damageTimer = 0f;
+  private int damage = 2;
 
   private float angle;
 
@@ -65,18 +66,18 @@ public class LasterLaser : MonoBehaviour
 
     if (hit.collider != null)
     {
-        end = hit.point;
+      end = hit.point;
 
-        if (damageTimer <= 0f)
+      if (damageTimer <= 0f)
+      {
+        var damageable = hit.collider.GetComponent<Hurtbox>();
+
+        if (damageable != null)
         {
-            var damageable = hit.collider.GetComponent<Hurtbox>();
-
-            if (damageable != null)
-            {
-                damageable.ApplyDamage(4, direction, 10f);
-                damageTimer = 0.2f;
-            }
+          damageable.ApplyDamage(damage, direction, 10f);
+          damageTimer = 0.2f;
         }
+      }
     }
 
     damageTimer -= Time.deltaTime;
