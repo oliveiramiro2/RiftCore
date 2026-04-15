@@ -222,10 +222,10 @@ public class LasterAttackModule : MonoBehaviour
 
     attackSpawner.ChangePrefab(prefabs[2]);
     attackSpawner.SpawnAttack(greatBallPoints[1].position, Quaternion.identity);
-    yield return new WaitForSeconds(1.0f);
+    yield return new WaitForSeconds(0.5f);
     entity.AnimatorBridge.LasterIdle();
 
-    yield return new WaitForSeconds(2.0f);
+    yield return new WaitForSeconds(2.5f);
     entity.Locomotion.FlipTowardsTarget(player);
     entity.isAttacking = false;
   }
