@@ -27,6 +27,7 @@ public class LasterDamageHandler : DamageHandlerBase<LasterController>
     controller.MarkAsDead();
     base.Die();
     controller.events.Death.Raise();
+    controller.AnimatorBridge.LasterDeath();
     isDead = true;
     Destroy(gameObject, 5f);
   }

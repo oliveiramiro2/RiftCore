@@ -78,7 +78,7 @@ public class LasterAttackModule : MonoBehaviour
 
     List<System.Action> validAttacks = new()
     {
-      // LaserAttack,
+      LaserAttack,
       SwordArenaAttack,
       // SlashAttack,
       // GreatBallAttack
@@ -138,11 +138,15 @@ public class LasterAttackModule : MonoBehaviour
     laserActive = false;
 
     laser.gameObject.SetActive(false);
-    yield return new WaitForSeconds(0.6f);
+    float postAttackDelay = !entity.Phase2() ? 0.6f : 0f;
+    yield return new WaitForSeconds(postAttackDelay);
     entity.Locomotion.FlipTowardsTarget(player);
 
     if (entity.Phase2())
     {
+      owner.AnimatorBridge.LasterIdle();
+      yield return new WaitForSeconds(0.1f);
+      owner.AnimatorBridge.PlayLaserAttack();
       entity.Locomotion.FlipToLaserPoint();
       yield return new WaitForSeconds(1.4f);
       laser.gameObject.SetActive(true);
