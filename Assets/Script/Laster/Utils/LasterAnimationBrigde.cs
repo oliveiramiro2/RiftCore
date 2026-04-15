@@ -15,6 +15,9 @@ public class LasterAnimationBridge : MonoBehaviour
   private readonly string SlashAttackParam = "Slash";
   private readonly string GreatBallAttackParam = "GreatBall";
 
+  private readonly string TeleportOutParam = "Teleport";
+  private readonly string TeleportInParam = "TeleportIn";
+
   void Awake()
   {
     animator = GetComponent<Animator>();
@@ -55,6 +58,16 @@ public class LasterAnimationBridge : MonoBehaviour
   public void PlayGreatBallAttack()
   {
     animator.Play(GreatBallAttackParam);
+  }
+
+  public void PlayTeleportOut()
+  {
+    animator.Play(TeleportOutParam);
+  }
+
+  public void PlayTeleportIn()
+  {
+    animator.Play(TeleportInParam);
   }
 
   // timers for animation transitions can be handled here if needed

@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-using UnityEngine.UIElements;
 
 public class LasterAttackModule : MonoBehaviour
 {
@@ -13,7 +12,6 @@ public class LasterAttackModule : MonoBehaviour
   public bool isAttacking = false;
   public float attackCooldown = 3f;
   public bool canAttackTimer = true;
-  private float attackTimer = 0f;
 
 
   [Header("Decision Timers")]
@@ -85,8 +83,8 @@ public class LasterAttackModule : MonoBehaviour
     {
       //LaserAttack,
       //SwordArenaAttack,
-      // SlashAttack,
-      GreatBallAttack
+      SlashAttack,
+      //GreatBallAttack
     };
 
     if (entity.Phase2())
@@ -120,8 +118,8 @@ public class LasterAttackModule : MonoBehaviour
 
   private void SlashAttack()
   {
-    owner.AnimatorBridge.PlaySlashAttack();
-    StartCoroutine(SlashAttackRoutine(owner));
+    owner.AnimatorBridge.PlayTeleportOut();
+    StartCoroutine(TeleportRoutine(owner));
   }
 
   private void GreatBallAttack()
@@ -201,11 +199,25 @@ public class LasterAttackModule : MonoBehaviour
 
 
 
-  private IEnumerator SlashAttackRoutine(LasterController entity)
+  private IEnumerator TeleportRoutine(LasterController entity)
   {
-    yield return new WaitForSeconds(0.5f);
+    yield return new WaitForSeconds(Random.Range(2.5f, 4f));
+
+    entity.transform.position = player.position + (Vector3)(Vector2.left * 1.5f);
+    entity.AnimatorBridge.PlayTeleportIn();
+    yield return new WaitForSeconds(1f);
     entity.Locomotion.FlipTowardsTarget(player);
+    entity.AnimatorBridge.PlaySlashAttack();
+    yield return new WaitForSeconds(1f);
+    entity.AnimatorBridge.PlayTeleportOut();
+
+    yield return new WaitForSeconds(1f);
+    entity.transform.position = Vector3.zero;
+    entity.AnimatorBridge.PlayTeleportIn();
+    yield return new WaitForSeconds(1.5f);
+
     entity.isAttacking = false;
+
   }
 
 
@@ -226,13 +238,12 @@ public class LasterAttackModule : MonoBehaviour
 
     yield return new WaitForSeconds(0.4f);
 
-    Vector3 position = new Vector3(greatBallPoints[1].position.x, greatBallPoints[1].position.y + 1f, 0f);
+    Vector3 position = new Vector3(greatBallPoints[1].position.x, greatBallPoints[1].position.y + 0.8f, 0f);
 
     attackSpawner.ChangePrefab(prefabs[3]);
     attackSpawner.SpawnAttack(position, Quaternion.identity);
 
-    position = new Vector3(greatBallPoints[1].position.x - 1, greatBallPoints[1].position.y + 1f, 0f);
-    yield return new WaitForSeconds(0.1f);
+    position = new Vector3(greatBallPoints[1].position.x - 1, greatBallPoints[1].position.y + 0.8f, 0f);
     attackSpawner.ChangePrefab(prefabs[4]);
     attackSpawner.SpawnAttack(position, Quaternion.identity);
 
