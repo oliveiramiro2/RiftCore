@@ -119,6 +119,68 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1587111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1587112}
+  m_Layer: 7
+  m_Name: GreatBallPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1587112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587111}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.93, y: -2.37, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1348619191}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &13106502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 13106503}
+  m_Layer: 7
+  m_Name: ExplosionPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &13106503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13106502}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.93, y: -5.59, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1348619191}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &201968254
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +973,7 @@ Transform:
   m_GameObject: {fileID: 951816714}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.77609, y: 2.4491801, z: 0}
+  m_LocalPosition: {x: -4.77609, y: 2.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1216,7 +1278,7 @@ Transform:
   m_GameObject: {fileID: 1323475441}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.77609, y: 1.02918, z: 0}
+  m_LocalPosition: {x: -4.77609, y: 1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1272,6 +1334,8 @@ Transform:
   - {fileID: 806199109}
   - {fileID: 1025195254}
   - {fileID: 556737289}
+  - {fileID: 1587112}
+  - {fileID: 13106503}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1348619192
@@ -1551,6 +1615,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LasterAttackModule
   attackSpawner: {fileID: 1348619205}
+  prefabs:
+  - {fileID: 5261946366410208479, guid: 3f3369f5a1f701f4f9d6e8dd2c92a914, type: 3}
+  - {fileID: 3350867476925393793, guid: bbda07e19995c0047b28c04b2ec3324e, type: 3}
+  - {fileID: 6814102690916342342, guid: e4bcc5ba7ee46ed4ab2ef700bb352071, type: 3}
+  - {fileID: 4369579801162026214, guid: 400c426328f38dc44b1691689d1b58d9, type: 3}
   isAttacking: 0
   attackCooldown: 3
   canAttackTimer: 1
@@ -1560,6 +1629,9 @@ MonoBehaviour:
   - {fileID: 239227100}
   - {fileID: 1323475442}
   - {fileID: 951816715}
+  greatBallPoints:
+  - {fileID: 1587112}
+  - {fileID: 13106503}
 --- !u!114 &1348619204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1585,7 +1657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fbf97c128d1a9e40a6a44b1bb47eb44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackSpawner
-  hitboxPrefab: {fileID: 5261946366410208479, guid: 3f3369f5a1f701f4f9d6e8dd2c92a914, type: 3}
 --- !u!1 &1356086623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,7 +1682,7 @@ Transform:
   m_GameObject: {fileID: 1356086623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.77609, y: -2.18082, z: 0}
+  m_LocalPosition: {x: -4.77609, y: -2.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2080,7 +2151,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.0952381, y: 1.6666666}
+  m_Size: {x: 6.095238, y: 6.095238}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -2138,8 +2209,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0952381, y: 1.6666666}
-    newSize: {x: 1.0952381, y: 1.6666666}
+    oldSize: {x: 6.095238, y: 6.095238}
+    newSize: {x: 6.095238, y: 6.095238}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

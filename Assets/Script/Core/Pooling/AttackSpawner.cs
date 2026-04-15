@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class AttackSpawner : MonoBehaviour
 {
-  public GameObject hitboxPrefab;
+  private GameObject hitboxPrefab;
+
+  public void ChangePrefab(GameObject owner)
+  {
+    hitboxPrefab = owner;
+  }
 
   public void SpawnAttack(Vector2 position, Quaternion rotation)
   {

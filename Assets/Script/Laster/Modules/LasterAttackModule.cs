@@ -7,6 +7,7 @@ public class LasterAttackModule : MonoBehaviour
   private LasterController owner;
   private Transform player;
   public AttackSpawner attackSpawner;
+  public GameObject[] prefabs;
 
   public bool isAttacking = false;
   public float attackCooldown = 3f;
@@ -27,6 +28,9 @@ public class LasterAttackModule : MonoBehaviour
 
   [Header("Sword Arena Attack")]
   public Transform[] spawnerPoints;
+
+  [Header("Great Ball Attack")]
+  public Transform[] greatBallPoints;
 
   void Start()
   {
@@ -78,10 +82,10 @@ public class LasterAttackModule : MonoBehaviour
 
     List<System.Action> validAttacks = new()
     {
-      LaserAttack,
-      SwordArenaAttack,
+      //LaserAttack,
+      //SwordArenaAttack,
       // SlashAttack,
-      // GreatBallAttack
+      GreatBallAttack
     };
 
     if (entity.Phase2())
@@ -166,6 +170,7 @@ public class LasterAttackModule : MonoBehaviour
 
   private IEnumerator SwordArenaAttackRoutine(LasterController entity)
   {
+    attackSpawner.ChangePrefab(prefabs[0]);
     yield return new WaitForSeconds(1.2f);
     entity.Locomotion.FlipTowardsTarget(player);
 
@@ -206,7 +211,21 @@ public class LasterAttackModule : MonoBehaviour
 
   private IEnumerator GreatBallAttackRoutine(LasterController entity)
   {
-    yield return new WaitForSeconds(1.2f);
+
+    yield return new WaitForSeconds(1f);
+    entity.Locomotion.FlipTowardsTarget(player);
+
+    attackSpawner.ChangePrefab(prefabs[1]);
+    attackSpawner.SpawnAttack(greatBallPoints[0].position, Quaternion.identity);
+
+    yield return new WaitForSeconds(0.5f);
+
+    attackSpawner.ChangePrefab(prefabs[2]);
+    attackSpawner.SpawnAttack(greatBallPoints[1].position, Quaternion.identity);
+    yield return new WaitForSeconds(1.0f);
+    entity.AnimatorBridge.LasterIdle();
+
+    yield return new WaitForSeconds(2.0f);
     entity.Locomotion.FlipTowardsTarget(player);
     entity.isAttacking = false;
   }
