@@ -1635,6 +1635,7 @@ MonoBehaviour:
   greatBallPoints:
   - {fileID: 1587112}
   - {fileID: 13106503}
+  groundY: -5.59
 --- !u!114 &1348619204
 MonoBehaviour:
   m_ObjectHideFlags: 0

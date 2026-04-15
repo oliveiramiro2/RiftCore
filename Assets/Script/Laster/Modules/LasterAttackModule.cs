@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.UIElements;
 
 public class LasterAttackModule : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class LasterAttackModule : MonoBehaviour
 
   [Header("Great Ball Attack")]
   public Transform[] greatBallPoints;
+  public float groundY = -5.59f;
 
   void Start()
   {
@@ -184,7 +186,8 @@ public class LasterAttackModule : MonoBehaviour
   {
     yield return new WaitForSeconds(Random.Range(2.5f, 4f));
 
-    entity.transform.position = player.position + (Vector3)(Vector2.left * 1.5f);
+    Vector3 auxPos = player.position + (Vector3)(Vector2.up * 1.5f);
+    entity.transform.position = auxPos + (Vector3)(Vector2.left * 1.5f);
     entity.AnimatorBridge.PlayTeleportIn();
     yield return new WaitForSeconds(1f);
     entity.Locomotion.FlipTowardsTarget(player);
@@ -193,7 +196,7 @@ public class LasterAttackModule : MonoBehaviour
     entity.AnimatorBridge.PlayTeleportOut();
 
     yield return new WaitForSeconds(1f);
-    entity.transform.position = Vector3.zero;
+    entity.transform.position = Vector3.one;
     entity.AnimatorBridge.PlayTeleportIn();
     yield return new WaitForSeconds(1.5f);
 
@@ -209,24 +212,26 @@ public class LasterAttackModule : MonoBehaviour
     yield return new WaitForSeconds(1f);
     entity.Locomotion.FlipTowardsTarget(player);
 
+    Vector3 aux = new Vector3(greatBallPoints[1].position.x, groundY, 0f);
     attackSpawner.ChangePrefab(prefabs[1]);
-    attackSpawner.SpawnAttack(greatBallPoints[0].position, Quaternion.identity);
+    attackSpawner.SpawnAttack(aux, Quaternion.identity);
 
     yield return new WaitForSeconds(0.5f);
 
     attackSpawner.ChangePrefab(prefabs[2]);
-    attackSpawner.SpawnAttack(greatBallPoints[1].position, Quaternion.identity);
+    aux = new Vector3(greatBallPoints[1].position.x, groundY, 0f);
+    attackSpawner.SpawnAttack(aux, Quaternion.identity);
 
     yield return new WaitForSeconds(0.4f);
 
     if (entity.Phase2())
     {
-      Vector3 position = new Vector3(greatBallPoints[1].position.x, greatBallPoints[1].position.y + 0.8f, 0f);
+      Vector3 position = new Vector3(greatBallPoints[1].position.x, groundY + 0.8f, 0f);
 
       attackSpawner.ChangePrefab(prefabs[3]);
       attackSpawner.SpawnAttack(position, Quaternion.identity);
 
-      position = new Vector3(greatBallPoints[1].position.x - 1, greatBallPoints[1].position.y + 0.8f, 0f);
+      position = new Vector3(greatBallPoints[1].position.x - 1, groundY + 0.8f, 0f);
       attackSpawner.ChangePrefab(prefabs[4]);
       attackSpawner.SpawnAttack(position, Quaternion.identity);
     }
