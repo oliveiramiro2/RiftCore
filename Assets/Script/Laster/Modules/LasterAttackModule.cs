@@ -52,17 +52,6 @@ public class LasterAttackModule : MonoBehaviour
     }
   }
 
-  void FixedUpdate()
-  {
-    // if (owner.IsDead) return;
-
-    // if (!canAttackTimer && isAttacking) return;
-    // if (laserActive)
-    // {
-    //   laser.Fire(Vector2.right);
-    // }
-  }
-
   public void ResetTimer()
   {
     if (owner.Phase2())
@@ -81,19 +70,11 @@ public class LasterAttackModule : MonoBehaviour
 
     List<System.Action> validAttacks = new()
     {
-      //LaserAttack,
-      //SwordArenaAttack,
+      LaserAttack,
+      SwordArenaAttack,
       SlashAttack,
-      //GreatBallAttack
+      GreatBallAttack
     };
-
-    if (entity.Phase2())
-    {
-      if (dist <= 1f)
-      {
-
-      }
-    }
 
     int index = Random.Range(0, validAttacks.Count);
 
@@ -238,15 +219,17 @@ public class LasterAttackModule : MonoBehaviour
 
     yield return new WaitForSeconds(0.4f);
 
-    Vector3 position = new Vector3(greatBallPoints[1].position.x, greatBallPoints[1].position.y + 0.8f, 0f);
+    if (entity.Phase2())
+    {
+      Vector3 position = new Vector3(greatBallPoints[1].position.x, greatBallPoints[1].position.y + 0.8f, 0f);
 
-    attackSpawner.ChangePrefab(prefabs[3]);
-    attackSpawner.SpawnAttack(position, Quaternion.identity);
+      attackSpawner.ChangePrefab(prefabs[3]);
+      attackSpawner.SpawnAttack(position, Quaternion.identity);
 
-    position = new Vector3(greatBallPoints[1].position.x - 1, greatBallPoints[1].position.y + 0.8f, 0f);
-    attackSpawner.ChangePrefab(prefabs[4]);
-    attackSpawner.SpawnAttack(position, Quaternion.identity);
-
+      position = new Vector3(greatBallPoints[1].position.x - 1, greatBallPoints[1].position.y + 0.8f, 0f);
+      attackSpawner.ChangePrefab(prefabs[4]);
+      attackSpawner.SpawnAttack(position, Quaternion.identity);
+    }
     yield return new WaitForSeconds(0.1f);
     entity.AnimatorBridge.LasterIdle();
 
