@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.UIElements;
 
 public class LasterAttackModule : MonoBehaviour
 {
@@ -222,7 +223,20 @@ public class LasterAttackModule : MonoBehaviour
 
     attackSpawner.ChangePrefab(prefabs[2]);
     attackSpawner.SpawnAttack(greatBallPoints[1].position, Quaternion.identity);
-    yield return new WaitForSeconds(0.5f);
+
+    yield return new WaitForSeconds(0.4f);
+
+    Vector3 position = new Vector3(greatBallPoints[1].position.x, greatBallPoints[1].position.y + 1f, 0f);
+
+    attackSpawner.ChangePrefab(prefabs[3]);
+    attackSpawner.SpawnAttack(position, Quaternion.identity);
+
+    position = new Vector3(greatBallPoints[1].position.x - 1, greatBallPoints[1].position.y + 1f, 0f);
+    yield return new WaitForSeconds(0.1f);
+    attackSpawner.ChangePrefab(prefabs[4]);
+    attackSpawner.SpawnAttack(position, Quaternion.identity);
+
+    yield return new WaitForSeconds(0.1f);
     entity.AnimatorBridge.LasterIdle();
 
     yield return new WaitForSeconds(2.5f);

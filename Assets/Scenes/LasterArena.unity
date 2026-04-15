@@ -1620,6 +1620,7 @@ MonoBehaviour:
   - {fileID: 3350867476925393793, guid: bbda07e19995c0047b28c04b2ec3324e, type: 3}
   - {fileID: 6814102690916342342, guid: e4bcc5ba7ee46ed4ab2ef700bb352071, type: 3}
   - {fileID: 4369579801162026214, guid: 400c426328f38dc44b1691689d1b58d9, type: 3}
+  - {fileID: 4369579801162026214, guid: 06cbf3b626f9e084a85bfacb544d4d19, type: 3}
   isAttacking: 0
   attackCooldown: 3
   canAttackTimer: 1
