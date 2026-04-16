@@ -212,26 +212,26 @@ public class LasterAttackModule : MonoBehaviour
     yield return new WaitForSeconds(1f);
     entity.Locomotion.FlipTowardsTarget(player);
 
-    Vector3 aux = new Vector3(greatBallPoints[1].position.x, groundY, 0f);
+    Vector3 aux = new Vector3(greatBallPoints[0].position.x, greatBallPoints[0].position.y, 0f);
     attackSpawner.ChangePrefab(prefabs[1]);
     attackSpawner.SpawnAttack(aux, Quaternion.identity);
 
     yield return new WaitForSeconds(0.5f);
 
     attackSpawner.ChangePrefab(prefabs[2]);
-    aux = new Vector3(greatBallPoints[1].position.x, groundY, 0f);
+    aux = new Vector3(greatBallPoints[0].position.x, greatBallPoints[1].position.y, 0f);
     attackSpawner.SpawnAttack(aux, Quaternion.identity);
 
     yield return new WaitForSeconds(0.4f);
 
     if (entity.Phase2())
     {
-      Vector3 position = new Vector3(greatBallPoints[1].position.x, groundY + 0.8f, 0f);
+      Vector3 position = new Vector3(greatBallPoints[0].position.x, greatBallPoints[1].position.y + 0.8f, 0f);
 
       attackSpawner.ChangePrefab(prefabs[3]);
       attackSpawner.SpawnAttack(position, Quaternion.identity);
 
-      position = new Vector3(greatBallPoints[1].position.x - 1, groundY + 0.8f, 0f);
+      position = new Vector3(greatBallPoints[0].position.x - 1, greatBallPoints[1].position.y + 0.8f, 0f);
       attackSpawner.ChangePrefab(prefabs[4]);
       attackSpawner.SpawnAttack(position, Quaternion.identity);
     }
