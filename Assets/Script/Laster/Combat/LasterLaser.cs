@@ -74,6 +74,7 @@ public class LasterLaser : MonoBehaviour
 
         if (damageable != null)
         {
+          GameObject.FindAnyObjectByType<LasterController>().events.LaserHit.Raise();
           damageable.ApplyDamage(damage, direction, 10f);
           damageTimer = 0.2f;
         }

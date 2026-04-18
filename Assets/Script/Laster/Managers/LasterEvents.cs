@@ -10,18 +10,33 @@ public class LasterEvents : MonoBehaviour
   }
 
 
-  public void MawTeleportOut()
+  public void LasterTeleportOut()
   {
     controller.events.TeleportOut.Raise();
   }
 
-  public void MawTeleportIn()
+  public void LasterTeleportIn()
   {
     controller.events.TeleportIn.Raise();
   }
 
-  public void MawSlashAttack()
+  public void LasterSlashAttack()
   {
     controller.events.SlashAttack.Raise();
+  }
+
+  public void LasterLaserStart()
+  {
+    controller.events.LaserStart.Raise();
+  }
+
+  public void LasterLaserFinish()
+  {
+    controller.events.LaserFinish.Raise();
+  }
+
+  public void LasterCastGreatBall()
+  {
+    controller.events.CastGreatBall.Raise();
   }
 }

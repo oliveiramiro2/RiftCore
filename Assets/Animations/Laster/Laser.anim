@@ -98,7 +98,7 @@ AnimationClip:
       value: {fileID: -2113992562446177877, guid: 3146a43e37e5ab540b784ea76fa0a32f, type: 3}
     - time: 1.8666667
       value: {fileID: -6973477580691383190, guid: 3146a43e37e5ab540b784ea76fa0a32f, type: 3}
-    - time: 1.9833333
+    - time: 1.9166666
       value: {fileID: 3871168702428670005, guid: 3146a43e37e5ab540b784ea76fa0a32f, type: 3}
     - time: 2.1
       value: {fileID: -6284037109567039080, guid: 3146a43e37e5ab540b784ea76fa0a32f, type: 3}
@@ -131,7 +131,7 @@ AnimationClip:
       value: {fileID: 588418807760327364, guid: 0f510fdc6512eb14ca6c24766da7fd78, type: 3}
     - time: 1.3166667
       value: {fileID: -1037017328, guid: 0f510fdc6512eb14ca6c24766da7fd78, type: 3}
-    - time: 1.9833333
+    - time: 1.9166666
       value: {fileID: 623876319, guid: 0f510fdc6512eb14ca6c24766da7fd78, type: 3}
     - time: 2.1
       value: {fileID: 981570924, guid: 0f510fdc6512eb14ca6c24766da7fd78, type: 3}
@@ -194,7 +194,7 @@ AnimationClip:
       value: {fileID: -1715641862, guid: 18b8ea5b84b053144afd7f7c158faf5c, type: 3}
     - time: 1.8666667
       value: {fileID: -1555359073, guid: 18b8ea5b84b053144afd7f7c158faf5c, type: 3}
-    - time: 1.9833333
+    - time: 1.9166666
       value: {fileID: 370458239, guid: 18b8ea5b84b053144afd7f7c158faf5c, type: 3}
     - time: 2.1
       value: {fileID: -1972116562, guid: 18b8ea5b84b053144afd7f7c158faf5c, type: 3}
@@ -383,4 +383,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1.2333333
+    functionName: LasterLaserStart
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.9166666
+    functionName: LasterLaserFinish
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

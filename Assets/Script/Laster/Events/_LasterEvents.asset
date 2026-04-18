@@ -18,3 +18,8 @@ MonoBehaviour:
   TeleportIn: {fileID: 11400000, guid: b8ad266ea705e5140865ba51f89c3f00, type: 2}
   TeleportOut: {fileID: 11400000, guid: bd7ceeeea4c248548a01e2643efbe160, type: 2}
   SlashAttack: {fileID: 11400000, guid: 1fee7b0046251474d9768d93cd5ef4dc, type: 2}
+  LaserHit: {fileID: 11400000, guid: de5afbf81536c1141820831df3c0c3f3, type: 2}
+  LaserStart: {fileID: 11400000, guid: 390da58d0fd855746aca8c80ac7109c1, type: 2}
+  LaserFinish: {fileID: 11400000, guid: 3cc5ab1fcdfd2514999cb7309116ee5a, type: 2}
+  CastGreatBall: {fileID: 11400000, guid: d1b8216007e223249976c9c9b5f16315, type: 2}
+  SwordArenaHit: {fileID: 11400000, guid: 6a19401baa2921b4185ea2fc6bb5a7fd, type: 2}

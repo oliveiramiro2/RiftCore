@@ -196,10 +196,11 @@ public class LasterAttackModule : MonoBehaviour
     entity.AnimatorBridge.PlaySlashAttack();
     yield return new WaitForSeconds(1f);
     entity.AnimatorBridge.PlayTeleportOut();
-
+    entity.events.TeleportOut.Raise();
     yield return new WaitForSeconds(1f);
     entity.transform.position = Vector3.one;
     entity.AnimatorBridge.PlayTeleportIn();
+    entity.events.TeleportIn.Raise();
     yield return new WaitForSeconds(1.5f);
 
     entity.isAttacking = false;

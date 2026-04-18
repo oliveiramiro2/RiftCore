@@ -9,4 +9,9 @@ public class LasterEventsManager : ScriptableObject
     public GameEvent TeleportIn;
     public GameEvent TeleportOut;
     public GameEvent SlashAttack;
+    public GameEvent LaserHit;
+    public GameEvent LaserStart;
+    public GameEvent LaserFinish;
+    public GameEvent CastGreatBall;
+    public GameEvent SwordArenaHit;
 }
