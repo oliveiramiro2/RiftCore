@@ -17,3 +17,4 @@ MonoBehaviour:
   Death: {fileID: 11400000, guid: e0e8bbe1ccd0cf4478c844207b780200, type: 2}
   TeleportIn: {fileID: 11400000, guid: b8ad266ea705e5140865ba51f89c3f00, type: 2}
   TeleportOut: {fileID: 11400000, guid: bd7ceeeea4c248548a01e2643efbe160, type: 2}
+  SlashAttack: {fileID: 11400000, guid: 1fee7b0046251474d9768d93cd5ef4dc, type: 2}

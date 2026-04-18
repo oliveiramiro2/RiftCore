@@ -8,4 +8,5 @@ public class LasterEventsManager : ScriptableObject
     public GameEvent Death;
     public GameEvent TeleportIn;
     public GameEvent TeleportOut;
+    public GameEvent SlashAttack;
 }

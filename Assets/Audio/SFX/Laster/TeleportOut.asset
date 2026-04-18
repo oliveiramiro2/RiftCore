@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b52a60532d6840148b67afa0d9a50cce, type: 3}
   m_Name: TeleportOut
   m_EditorClassIdentifier: Assembly-CSharp::SoundData
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: 77ccf5d6adab29249a98e718270c3959, type: 3}
   volume: 1
   pitch: 1

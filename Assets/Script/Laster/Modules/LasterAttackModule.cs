@@ -102,6 +102,7 @@ public class LasterAttackModule : MonoBehaviour
   private void SlashAttack()
   {
     owner.AnimatorBridge.PlayTeleportOut();
+    owner.events.TeleportOut.Raise();
     StartCoroutine(TeleportRoutine(owner));
   }
 
@@ -189,6 +190,7 @@ public class LasterAttackModule : MonoBehaviour
     Vector3 auxPos = player.position + (Vector3)(Vector2.up * 1.5f);
     entity.transform.position = auxPos + (Vector3)(Vector2.left * 1.5f);
     entity.AnimatorBridge.PlayTeleportIn();
+    entity.events.TeleportIn.Raise();
     yield return new WaitForSeconds(1f);
     entity.Locomotion.FlipTowardsTarget(player);
     entity.AnimatorBridge.PlaySlashAttack();
