@@ -1303,6 +1303,16 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &315562334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6767371128271720153, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+  m_PrefabInstance: {fileID: 957229054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &315562335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2974541174004536430, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+  m_PrefabInstance: {fileID: 957229054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &374811276
 GameObject:
   m_ObjectHideFlags: 0
@@ -14307,10 +14317,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1468893885}
-    - target: {fileID: 448445967081729230, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToMainMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 1411546517212298428, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -14331,10 +14337,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1468893885}
-    - target: {fileID: 1634954942760273949, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitPauseMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 2322414044806529118, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.22
@@ -14375,10 +14377,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2401027042713186525, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -16.938477
-      objectReference: {fileID: 0}
     - target: {fileID: 6179229441627296601, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -14414,10 +14412,6 @@ PrefabInstance:
     - target: {fileID: 7102582992274425546, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8353955445193419692, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -11.439697
       objectReference: {fileID: 0}
     - target: {fileID: 8467794127327636146, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y
@@ -17291,6 +17285,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4103293485641533845, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 315562334}
+    - target: {fileID: 4103293485641533845, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: firstButton
+      value: 
+      objectReference: {fileID: 315562335}
     - target: {fileID: 4537574936787505961, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_Name
       value: Player
@@ -30153,14 +30155,14 @@ PrefabInstance:
       propertyPath: BossDeathEffect
       value: 
       objectReference: {fileID: 1362060870}
+    - target: {fileID: 2295511467993683031, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      propertyPath: gameEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 4285a5b891e671645b6612477bb0e744, type: 2}
     - target: {fileID: 3119792868504420440, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 957229056}
-    - target: {fileID: 3119792868504420440, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
-      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ActivateCooldown
-      objectReference: {fileID: 0}
     - target: {fileID: 3517330407358793987, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
       propertyPath: buffFX
       value: 
@@ -30193,18 +30195,6 @@ PrefabInstance:
       propertyPath: backgroundFocusBuffFX
       value: 
       objectReference: {fileID: 1468893888}
-    - target: {fileID: 3992190639586145119, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 539e4081f37066142879617c2db7a2fc, type: 3}
-    - target: {fileID: 4295114502386803075, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
-      propertyPath: musicClip
-      value: 
-      objectReference: {fileID: 8300000, guid: b5e0ef89e04d9e44caf4f02265c1303c, type: 3}
-    - target: {fileID: 4295114502386803075, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
-      propertyPath: ambientClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 33b2403d6013dd94e8a719c3dfbf7cfb, type: 3}
     - target: {fileID: 4295114502386803075, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
       propertyPath: musicSource
       value: 
@@ -30217,10 +30207,6 @@ PrefabInstance:
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 957229057}
-    - target: {fileID: 6746680527311555892, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
-      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ActivateCooldown
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

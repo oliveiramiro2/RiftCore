@@ -11,6 +11,7 @@ public class SFXPlayer : MonoBehaviour
     public SoundData hitSound;
     public SoundData deathSound;
     public SoundData LaserAttack;
+    public SoundData PlayerHitingEnemy;
 
 
     public void PlaySlashSound()
@@ -48,5 +49,10 @@ public class SFXPlayer : MonoBehaviour
     public void PlayLaserSound()
     {
         LaserAttack.Play();
+    }
+
+    public void PlayPlayerHitEnemySound()
+    {
+        PlayerHitingEnemy.Play();
     }
 }

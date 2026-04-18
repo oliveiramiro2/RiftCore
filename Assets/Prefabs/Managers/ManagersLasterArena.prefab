@@ -679,6 +679,7 @@ GameObject:
   - component: {fileID: 8946573608909818877}
   - component: {fileID: 6266180277341294636}
   - component: {fileID: 109934178200754403}
+  - component: {fileID: 2295511467993683031}
   m_Layer: 0
   m_Name: SFXManager
   m_TagString: Untagged
@@ -721,6 +722,7 @@ MonoBehaviour:
   hitSound: {fileID: 11400000, guid: 85c7a8bf57831f747aa350759540963e, type: 2}
   deathSound: {fileID: 11400000, guid: 71c4ae2de219723409b01229f25d2335, type: 2}
   LaserAttack: {fileID: 11400000, guid: fb31df9cbf912434f9576e25955d1116, type: 2}
+  PlayerHitingEnemy: {fileID: 11400000, guid: 3c6701eefadbf7a4e94a892c225310da, type: 2}
 --- !u!114 &783726167194404838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,6 +947,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2295511467993683031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8430013861889369593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 520a8e16d878f2948921618e0fc7e875, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 191704588514003151}
+        m_TargetAssemblyTypeName: SFXPlayer, Assembly-CSharp
+        m_MethodName: PlayPlayerHitEnemySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8512715517323574615
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,8 +1023,8 @@ MonoBehaviour:
   musicSource: {fileID: 0}
   ambientSource: {fileID: 0}
   sfxSource: {fileID: 3992190639586145119}
-  musicClip: {fileID: 8300000, guid: f0e810064f9b4b747b6a630a3d014a2b, type: 3}
-  ambientClip: {fileID: 8300000, guid: ead552205f7150c4b8e4658d6827a27e, type: 3}
+  musicClip: {fileID: 8300000, guid: b5e0ef89e04d9e44caf4f02265c1303c, type: 3}
+  ambientClip: {fileID: 8300000, guid: 33b2403d6013dd94e8a719c3dfbf7cfb, type: 3}
 --- !u!82 &3992190639586145119
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1006,7 +1036,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 1fa5ff8532333914a987f23b41dcd0ad, type: 3}
+  m_Resource: {fileID: 8300000, guid: 539e4081f37066142879617c2db7a2fc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
