@@ -10,6 +10,9 @@ public class LasterSFXManager : MonoBehaviour
   public SoundData laserHit;
   public SoundData castGreatBall;
   public SoundData swordArenaHit;
+  public SoundData wing;
+  public SoundData phase2;
+  public SoundData death;
 
 
   public void PlayTeleportOut()
@@ -50,5 +53,19 @@ public class LasterSFXManager : MonoBehaviour
   public void PlaySwordArenaHit()
   {
     swordArenaHit.Play();
+  }
+
+  public void PlayWing()
+  {
+    wing.Play();
+  }
+
+  public void PlayPhase2()
+  {
+    phase2.Play();
+  }
+  public void PlayDeath()
+  {
+    death.Play();
   }
 }

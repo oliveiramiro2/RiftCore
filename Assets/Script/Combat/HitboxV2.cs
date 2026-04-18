@@ -37,6 +37,7 @@ public class HitboxV2 : MonoBehaviour
       Vector2 dir = (other.transform.position - transform.position).normalized;
 
       hurtbox.ApplyDamage(finalDamage, dir, data.knockbackForce);
+      
     }
   }
 }

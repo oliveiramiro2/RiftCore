@@ -14,4 +14,5 @@ public class LasterEventsManager : ScriptableObject
     public GameEvent LaserFinish;
     public GameEvent CastGreatBall;
     public GameEvent SwordArenaHit;
+    public GameEvent Wing;
 }

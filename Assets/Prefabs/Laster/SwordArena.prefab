@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8184920384199682693}
   - component: {fileID: 265139818437451283}
   - component: {fileID: 4383396273711540919}
+  - component: {fileID: -3139380487241561531}
   m_Layer: 8
   m_Name: SwordArena
   m_TagString: Enemy
@@ -287,3 +288,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-3139380487241561531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5261946366410208479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26eb1682cbbdaad49b409590db9bd7d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HitboxSwordArena

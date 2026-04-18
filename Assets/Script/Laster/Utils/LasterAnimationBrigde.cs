@@ -71,6 +71,10 @@ public class LasterAnimationBridge : MonoBehaviour
   }
 
   // timers for animation transitions can be handled here if needed
+  public void StartTeleportTime(float duration)
+  {
+    animator.SetFloat("TeleportSpeed", duration);
+  }
 }
 
 public static class LasterAnimatorExtensions

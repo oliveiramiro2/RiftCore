@@ -24,8 +24,6 @@ AnimationClip:
       value: {fileID: -2165448918092167109, guid: 8cba6557b16491d4da44170db0da3e26, type: 3}
     - time: 0.083333336
       value: {fileID: 226114331, guid: 8cba6557b16491d4da44170db0da3e26, type: 3}
-    - time: 0.16666667
-      value: {fileID: -1482278963, guid: 8cba6557b16491d4da44170db0da3e26, type: 3}
     attribute: m_Sprite
     path: Eyes
     classID: 212
@@ -122,7 +120,6 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: -2165448918092167109, guid: 8cba6557b16491d4da44170db0da3e26, type: 3}
     - {fileID: 226114331, guid: 8cba6557b16491d4da44170db0da3e26, type: 3}
-    - {fileID: -1482278963, guid: 8cba6557b16491d4da44170db0da3e26, type: 3}
     - {fileID: 5810600556310494337, guid: a435d55606c2ed64a860a39365c35e73, type: 3}
     - {fileID: 1612821406529593928, guid: a435d55606c2ed64a860a39365c35e73, type: 3}
     - {fileID: 2073848510574954072, guid: a435d55606c2ed64a860a39365c35e73, type: 3}

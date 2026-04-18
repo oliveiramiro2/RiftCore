@@ -39,4 +39,14 @@ public class LasterEvents : MonoBehaviour
   {
     controller.events.CastGreatBall.Raise();
   }
+
+  public void SwordArenaHitEvent()
+  {
+    controller.events.SwordArenaHit.Raise();
+  }
+
+  public void WingEvent()
+  {
+    controller.events.Wing.Raise();
+  }
 }

@@ -13,6 +13,7 @@ public class PlayerEvents : ScriptableObject
   public GameEvent OnTakeDamage;
   public GameEvent OnDeath;
   public GameEvent OnPlayerHitEnemy;
+  public GameEvent OnPlayerHitSound;
   public GameEvent OnFocusBuff;
   public GameEvent OnBuff;
   public GameEvent OnEndBuff;

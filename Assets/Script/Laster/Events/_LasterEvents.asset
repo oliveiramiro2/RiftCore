@@ -23,3 +23,4 @@ MonoBehaviour:
   LaserFinish: {fileID: 11400000, guid: 3cc5ab1fcdfd2514999cb7309116ee5a, type: 2}
   CastGreatBall: {fileID: 11400000, guid: d1b8216007e223249976c9c9b5f16315, type: 2}
   SwordArenaHit: {fileID: 11400000, guid: 6a19401baa2921b4185ea2fc6bb5a7fd, type: 2}
+  Wing: {fileID: 11400000, guid: 21542676a5b325d4d9c8ca641c3d0ff0, type: 2}

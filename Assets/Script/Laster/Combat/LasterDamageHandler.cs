@@ -19,6 +19,7 @@ public class LasterDamageHandler : DamageHandlerBase<LasterController>
     {
       phase1 = false;
       controller.events.Phase2.Raise();
+      controller.AnimatorBridge.StartTeleportTime(2f);
     }
   }
 

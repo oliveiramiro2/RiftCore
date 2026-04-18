@@ -51,7 +51,12 @@ public class Hitbox : MonoBehaviour
             {
                 int player = owner.GetComponent<PlayerController>().buffSwordDamage;
                 finalDamage *= player;
+                if (hurtbox.name == "LasterHurtbox")
+                {
+                    GameObject.FindAnyObjectByType<SFXPlayer>().PlayPlayerHitEnemySound();
+                }
                 owner.GetComponent<PlayerController>().events.OnPlayerHitEnemy.Raise();
+
             }
 
             Vector2 hitDir = (other.transform.position - owner.transform.position).normalized;

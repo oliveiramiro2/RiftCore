@@ -16,4 +16,12 @@ public class SwordArena : MonoBehaviour
     {
         transform.Translate(direction * speed * Time.deltaTime * Vector2.right);
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && other.TryGetComponent(out Hurtbox hurtbox))
+        {
+            GameObject.FindAnyObjectByType<LasterEvents>().SwordArenaHitEvent();
+        }
+    }
 }
