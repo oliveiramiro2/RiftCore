@@ -1037,6 +1037,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &170073423 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2119136182795098912, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+  m_PrefabInstance: {fileID: 4921432823878550498}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75997192f7f1c8408daf984c967f203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameFlowManager
 --- !u!1001 &176658120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19553,6 +19564,19 @@ PrefabInstance:
     - target: {fileID: 2322414044806529118, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495585323214315123, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+      propertyPath: m_text
+      value: 'Thanks:
+
+        Fesliyan Studios - Music
+
+        All Sound Effect
+        by Pixabay guys'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3193303410889365281, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
+      propertyPath: m_text
+      value: That's All
       objectReference: {fileID: 0}
     - target: {fileID: 6179229441627296601, guid: 793d68d91bfd1064b8ef718baf71da9b, type: 3}
       propertyPath: m_AnchorMax.y
@@ -40618,9 +40642,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1362060870}
     - target: {fileID: 2259573448773738509, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259573448773738509, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259573448773738509, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1222693930}
+    - target: {fileID: 2259573448773738509, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 170073423}
+    - target: {fileID: 2259573448773738509, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259573448773738509, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: BossDied
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259573448773738509, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: GameFlowManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259573448773738509, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3119792868504420440, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

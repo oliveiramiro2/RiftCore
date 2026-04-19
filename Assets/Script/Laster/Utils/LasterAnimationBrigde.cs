@@ -42,31 +42,43 @@ public class LasterAnimationBridge : MonoBehaviour
 
   public void PlayLaserAttack()
   {
+    if (owner.IsDead) return;
+
     animator.Play(LaserAttackParam);
   }
 
   public void PlaySwordArenaAttack()
   {
+    if (owner.IsDead) return;
+
     animator.Play(SwordArenaAttackParam);
   }
 
   public void PlaySlashAttack()
   {
+    if (owner.IsDead) return;
+
     animator.Play(SlashAttackParam);
   }
 
   public void PlayGreatBallAttack()
   {
+    if (owner.IsDead) return;
+
     animator.Play(GreatBallAttackParam);
   }
 
   public void PlayTeleportOut()
   {
+    if (owner.IsDead) return;
+
     animator.Play(TeleportOutParam);
   }
 
   public void PlayTeleportIn()
   {
+    if (owner.IsDead) return;
+
     animator.Play(TeleportInParam);
   }
 
