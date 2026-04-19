@@ -2388,7 +2388,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Coming soon new bosses, spells and upgrades !!!
+  m_text: That's All
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52cddc4d93878874b9350742ccd5cac6, type: 2}
   m_sharedMaterial: {fileID: 6066026616850789092, guid: 52cddc4d93878874b9350742ccd5cac6, type: 2}
@@ -2872,11 +2872,8 @@ MonoBehaviour:
 
     Fesliyan Studios - Music
 
-    Chill Gaming, Ready to Fight,
-    I Waited For You, Action Fight, Vibes
-
-
-    All Sound Effect by Pixabay guys'
+    All Sound Effect by Pixabay
+    guys'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52cddc4d93878874b9350742ccd5cac6, type: 2}
   m_sharedMaterial: {fileID: 6066026616850789092, guid: 52cddc4d93878874b9350742ccd5cac6, type: 2}

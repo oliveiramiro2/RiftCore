@@ -31,7 +31,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7753236528190126874}
   m_Father: {fileID: 1721690270426208416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &308220573041562471
@@ -183,6 +184,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e809d7dae76eb92448a1b74f628c5895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RumbleManager
+--- !u!1 &888871150430840323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7753236528190126874}
+  - component: {fileID: 6994281520670108195}
+  - component: {fileID: 8761783468059241894}
+  m_Layer: 0
+  m_Name: LasterMaterialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7753236528190126874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888871150430840323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7620629118506170261}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6994281520670108195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888871150430840323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae8eef925bbe474dba20c129ee8a9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LasterMaterialManager
+  controller: {fileID: 0}
+  hitMaterial: {fileID: 2100000, guid: bddc93ac08535744884350660901ced3, type: 2}
+  regularMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+--- !u!114 &8761783468059241894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888871150430840323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: a30da6c1da064a641accd2089dd39c5a, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6994281520670108195}
+        m_TargetAssemblyTypeName: LasterMaterialManager, Assembly-CSharp
+        m_MethodName: SetHitMaterial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1681726264828211192
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +741,18 @@ MonoBehaviour:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
         m_MethodName: StartDistortionAtBoss
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2119136182795098912}
+        m_TargetAssemblyTypeName: GameFlowManager, Assembly-CSharp
+        m_MethodName: BossDied
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1491,7 +1580,7 @@ MonoBehaviour:
   musicSource: {fileID: 0}
   ambientSource: {fileID: 0}
   sfxSource: {fileID: 3992190639586145119}
-  musicClip: {fileID: 8300000, guid: 45721690a83ff2942bd4c80206887f05, type: 3}
+  musicClip: {fileID: 8300000, guid: b5e0ef89e04d9e44caf4f02265c1303c, type: 3}
   ambientClip: {fileID: 8300000, guid: 33b2403d6013dd94e8a719c3dfbf7cfb, type: 3}
 --- !u!82 &3992190639586145119
 AudioSource:
