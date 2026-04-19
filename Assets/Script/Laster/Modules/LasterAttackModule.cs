@@ -73,9 +73,9 @@ public class LasterAttackModule : MonoBehaviour
     List<System.Action> validAttacks = new()
     {
       LaserAttack,
-      // SwordArenaAttack,
-      // SlashAttack,
-      // GreatBallAttack
+      SwordArenaAttack,
+      SlashAttack,
+      GreatBallAttack
     };
 
     int index = Random.Range(0, validAttacks.Count);
