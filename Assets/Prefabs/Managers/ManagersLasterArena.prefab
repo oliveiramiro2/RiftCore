@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 7753236528190126874}
   - component: {fileID: 6994281520670108195}
   - component: {fileID: 8761783468059241894}
+  - component: {fileID: 5364268471885808739}
   m_Layer: 0
   m_Name: LasterMaterialManager
   m_TagString: Untagged
@@ -230,6 +231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LasterMaterialManager
   controller: {fileID: 0}
+  eyes: {fileID: 0}
+  eyesMaterial: {fileID: 2100000, guid: 8efa0a8479990e247af9e57bcbf4d49d, type: 2}
   hitMaterial: {fileID: 2100000, guid: bddc93ac08535744884350660901ced3, type: 2}
   regularMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
 --- !u!114 &8761783468059241894
@@ -251,6 +254,34 @@ MonoBehaviour:
       - m_Target: {fileID: 6994281520670108195}
         m_TargetAssemblyTypeName: LasterMaterialManager, Assembly-CSharp
         m_MethodName: SetHitMaterial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5364268471885808739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888871150430840323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 1904b05b8e8116f4597c0731c8453731, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6994281520670108195}
+        m_TargetAssemblyTypeName: LasterMaterialManager, Assembly-CSharp
+        m_MethodName: OnPhase2ChangeEyes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -646,6 +677,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2128d3fc7137c14493a4759d9684fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LasterGameFlowManager
+  bossEffect: {fileID: 0}
+  bossEffect2: {fileID: 0}
 --- !u!114 &7926147997308462124
 MonoBehaviour:
   m_ObjectHideFlags: 0

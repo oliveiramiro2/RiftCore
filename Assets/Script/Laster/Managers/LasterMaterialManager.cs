@@ -4,6 +4,8 @@ using System.Collections;
 public class LasterMaterialManager : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer controller;
+    [SerializeField] private SpriteRenderer eyes;
+    public Material eyesMaterial;
     public Material hitMaterial;
     public Material regularMaterial;
 
@@ -23,5 +25,16 @@ public class LasterMaterialManager : MonoBehaviour
     private void SetRegularMaterial()
     {
         controller.material = regularMaterial;
+    }
+
+    public void OnPhase2ChangeEyes()
+    {
+        StartCoroutine(ChangeEyesMaterialAfterDelay(2f));
+    }
+
+    private IEnumerator ChangeEyesMaterialAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        eyes.material = eyesMaterial;
     }
 }

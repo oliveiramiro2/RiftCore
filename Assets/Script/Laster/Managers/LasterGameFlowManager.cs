@@ -4,6 +4,8 @@ using System.Collections;
 public class LasterGameFlowManager : MonoBehaviour
 {
   private LasterController controller;
+  public ParticleSystem bossEffect;
+  public ParticleSystem bossEffect2;
 
   void Start()
   {
@@ -22,5 +24,7 @@ public class LasterGameFlowManager : MonoBehaviour
     yield return new WaitForSecondsRealtime(1f);
     Time.timeScale = 1f;
     controller.canMove = true;
+    bossEffect.Play();
+    bossEffect2.Play();
   }
 }
