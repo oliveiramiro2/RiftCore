@@ -42975,62 +42975,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1601763653 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7101569430621989827, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
-  m_PrefabInstance: {fileID: 4921432823878550498}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1601763657 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 341822333937117181, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
-  m_PrefabInstance: {fileID: 4921432823878550498}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601763653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2128d3fc7137c14493a4759d9684fcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LasterGameFlowManager
---- !u!114 &1601763658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601763653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: 09ef0f7c7639f804ca1ec84873248076, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1601763657}
-        m_TargetAssemblyTypeName: LasterGameFlowManager, Assembly-CSharp
-        m_MethodName: OnBossStuned
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1222693930}
-        m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
-        m_MethodName: StartDistortionAtBoss
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1609171919
 GameObject:
   m_ObjectHideFlags: 0
@@ -50697,6 +50641,10 @@ PrefabInstance:
       propertyPath: heartContainer
       value: 
       objectReference: {fileID: 957229058}
+    - target: {fileID: 1960893061186453297, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 1468893895}
     - target: {fileID: 2119136182795098912, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
       propertyPath: BossFader
       value: 
@@ -50723,6 +50671,10 @@ PrefabInstance:
       objectReference: {fileID: 1362060870}
     - target: {fileID: 2259573448773738509, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1222693930}
+    - target: {fileID: 3042022432224866120, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1222693930}
     - target: {fileID: 3119792868504420440, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
@@ -50788,10 +50740,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7101569430621989827, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1601763658}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

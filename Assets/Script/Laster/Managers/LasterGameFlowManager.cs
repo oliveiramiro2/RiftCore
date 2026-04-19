@@ -21,8 +21,9 @@ public class LasterGameFlowManager : MonoBehaviour
   {
     controller.canMove = false;
     Time.timeScale = 0f;
-    yield return new WaitForSecondsRealtime(1f);
+    yield return new WaitForSecondsRealtime(0.05f);
     Time.timeScale = 1f;
+    yield return new WaitForSecondsRealtime(2f);
     controller.canMove = true;
     bossEffect.Play();
     bossEffect2.Play();
@@ -37,8 +38,9 @@ public class LasterGameFlowManager : MonoBehaviour
   {
     controller.canMove = false;
     Time.timeScale = 0f;
-    yield return new WaitForSecondsRealtime(5f);
+    yield return new WaitForSecondsRealtime(0.05f);
     Time.timeScale = 1f;
+    yield return new WaitForSecondsRealtime(5f);
     controller.canMove = true;
   }
 }

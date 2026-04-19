@@ -119,6 +119,7 @@ public class LasterAttackModule : MonoBehaviour
     entity.Locomotion.FlipToLaserPoint();
     yield return new WaitForSeconds(1.4f);
     RumbleManager.Instance.Play(RumbleType.Danger);
+    if (!entity.isAttacking) yield break;
     laser.gameObject.SetActive(true);
     laserActive = true;
 
@@ -130,7 +131,7 @@ public class LasterAttackModule : MonoBehaviour
     yield return new WaitForSeconds(postAttackDelay);
     entity.Locomotion.FlipTowardsTarget(player);
 
-    if (entity.Phase2())
+    if (entity.Phase2() && entity.isAttacking)
     {
       owner.AnimatorBridge.LasterIdle();
       yield return new WaitForSeconds(0.1f);
@@ -138,6 +139,7 @@ public class LasterAttackModule : MonoBehaviour
       entity.Locomotion.FlipToLaserPoint();
       yield return new WaitForSeconds(1.4f);
       RumbleManager.Instance.Play(RumbleType.Danger);
+      if (!entity.isAttacking) yield break;
       laser.gameObject.SetActive(true);
       laserActive = true;
 
@@ -161,6 +163,7 @@ public class LasterAttackModule : MonoBehaviour
     RumbleManager.Instance.Play(RumbleType.Danger);
 
     int index = Random.Range(0, spawnerPoints.Length);
+    if (!entity.isAttacking) yield break;
     attackSpawner.SpawnAttack(spawnerPoints[index].position, Quaternion.identity);
 
     int index2 = Random.Range(0, spawnerPoints.Length);
@@ -168,16 +171,17 @@ public class LasterAttackModule : MonoBehaviour
     {
       index2 = Random.Range(0, spawnerPoints.Length);
     }
-
+    if (!entity.isAttacking) yield break;
     attackSpawner.SpawnAttack(spawnerPoints[index2].position, Quaternion.identity);
 
-    if (entity.Phase2())
+    if (entity.Phase2() && entity.isAttacking)
     {
       int index3 = Random.Range(0, spawnerPoints.Length);
       while (index3 == index || index3 == index2)
       {
         index3 = Random.Range(0, spawnerPoints.Length);
       }
+      if (!entity.isAttacking) yield break;
       attackSpawner.SpawnAttack(spawnerPoints[index3].position, Quaternion.identity);
     }
 
@@ -195,9 +199,10 @@ public class LasterAttackModule : MonoBehaviour
     entity.transform.position = auxPos + (Vector3)(Vector2.left * 1.5f);
     entity.AnimatorBridge.PlayTeleportIn();
     entity.events.TeleportIn.Raise();
-    yield return new WaitForSeconds(1f);
+    yield return new WaitForSeconds(0.5f);
     entity.Locomotion.FlipTowardsTarget(player);
     RumbleManager.Instance.Play(RumbleType.Danger);
+    if (!entity.isAttacking) yield break;
     entity.AnimatorBridge.PlaySlashAttack();
     yield return new WaitForSeconds(1f);
     entity.AnimatorBridge.PlayTeleportOut();
@@ -224,25 +229,28 @@ public class LasterAttackModule : MonoBehaviour
 
     Vector3 aux = new Vector3(greatBallPoints[0].position.x, greatBallPoints[0].position.y, 0f);
     attackSpawner.ChangePrefab(prefabs[1]);
+    if (!entity.isAttacking) yield break;
     attackSpawner.SpawnAttack(aux, Quaternion.identity);
 
     yield return new WaitForSeconds(0.5f);
-
     attackSpawner.ChangePrefab(prefabs[2]);
     aux = new Vector3(greatBallPoints[0].position.x, greatBallPoints[1].position.y, 0f);
+    if (!entity.isAttacking) yield break;
     attackSpawner.SpawnAttack(aux, Quaternion.identity);
 
     yield return new WaitForSeconds(0.4f);
 
-    if (entity.Phase2())
+    if (entity.Phase2() && entity.isAttacking)
     {
       Vector3 position = new Vector3(greatBallPoints[0].position.x, greatBallPoints[1].position.y + 0.8f, 0f);
       RumbleManager.Instance.Play(RumbleType.Danger);
       attackSpawner.ChangePrefab(prefabs[3]);
+      if (!entity.isAttacking) yield break;
       attackSpawner.SpawnAttack(position, Quaternion.identity);
 
       position = new Vector3(greatBallPoints[0].position.x - 1, greatBallPoints[1].position.y + 0.8f, 0f);
       attackSpawner.ChangePrefab(prefabs[4]);
+      if (!entity.isAttacking) yield break;
       attackSpawner.SpawnAttack(position, Quaternion.identity);
     }
     yield return new WaitForSeconds(0.1f);

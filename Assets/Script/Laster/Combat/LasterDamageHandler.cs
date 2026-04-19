@@ -19,17 +19,20 @@ public class LasterDamageHandler : DamageHandlerBase<LasterController>
     if (!was25 && controller.currentHealth <= controller.maxHealth * 0.25f)
     {
       was25 = true;
+      controller.isAttacking = false;
       controller.events.Stuned.Raise();
     }
     else if (!was75 && controller.currentHealth <= controller.maxHealth * 0.75f)
     {
       was75 = true;
+      controller.isAttacking = false;
       controller.events.Stuned.Raise();
     }
     if (controller.Phase2() && phase1)
     {
       phase1 = false;
       controller.events.Phase2.Raise();
+      controller.isAttacking = false;
       controller.AnimatorBridge.StartTeleportTime(2f);
     }
   }
