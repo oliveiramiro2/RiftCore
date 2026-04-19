@@ -1037,6 +1037,82 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &156279826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 156279827}
+  - component: {fileID: 156279829}
+  - component: {fileID: 156279828}
+  m_Layer: 0
+  m_Name: LasterMaterialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &156279827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156279826}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4921432823878550499}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &156279828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156279826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: a30da6c1da064a641accd2089dd39c5a, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 156279829}
+        m_TargetAssemblyTypeName: LasterMaterialManager, Assembly-CSharp
+        m_MethodName: SetHitMaterial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &156279829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156279826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae8eef925bbe474dba20c129ee8a9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LasterMaterialManager
+  controller: {fileID: 1641499766}
+  hitMaterial: {fileID: 2100000, guid: bddc93ac08535744884350660901ced3, type: 2}
+  regularMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
 --- !u!114 &170073423 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2119136182795098912, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
@@ -18876,15 +18952,15 @@ MonoBehaviour:
   m_ComponentVersion: 2
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
+  m_FalloffIntensity: 0
   m_Color: {r: 0.5416937, g: 0, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 3
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 0b5ae9a6573a6553895796db00000000bd6ace644de37aea
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: -12
+  m_LightOrder: 6
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
@@ -18901,7 +18977,7 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1.180993
+  m_PointLightInnerRadius: 0.62
   m_PointLightOuterRadius: 1.7193757
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
@@ -40735,9 +40811,17 @@ PrefabInstance:
       objectReference: {fileID: 1222693930}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7620629118506170261, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 156279827}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+--- !u!4 &4921432823878550499 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7620629118506170261, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+  m_PrefabInstance: {fileID: 4921432823878550498}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
