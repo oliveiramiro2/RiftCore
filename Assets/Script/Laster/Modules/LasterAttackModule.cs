@@ -117,7 +117,9 @@ public class LasterAttackModule : MonoBehaviour
   private IEnumerator LaserAttackRoutine(LasterController entity)
   {
     entity.Locomotion.FlipToLaserPoint();
-    yield return new WaitForSeconds(1.4f);
+    yield return new WaitForSeconds(1.3f);
+    yield return new WaitForSeconds(0.2f);
+
     RumbleManager.Instance.Play(RumbleType.Danger);
     if (!entity.isAttacking) yield break;
     laser.gameObject.SetActive(true);
@@ -137,7 +139,8 @@ public class LasterAttackModule : MonoBehaviour
       yield return new WaitForSeconds(0.1f);
       owner.AnimatorBridge.PlayLaserAttack();
       entity.Locomotion.FlipToLaserPoint();
-      yield return new WaitForSeconds(1.4f);
+      yield return new WaitForSeconds(1.3f);
+      yield return new WaitForSeconds(0.2f);
       RumbleManager.Instance.Play(RumbleType.Danger);
       if (!entity.isAttacking) yield break;
       laser.gameObject.SetActive(true);
@@ -158,9 +161,11 @@ public class LasterAttackModule : MonoBehaviour
   private IEnumerator SwordArenaAttackRoutine(LasterController entity)
   {
     attackSpawner.ChangePrefab(prefabs[0]);
-    yield return new WaitForSeconds(1.2f);
+    yield return new WaitForSeconds(1f);
     entity.Locomotion.FlipTowardsTarget(player);
     RumbleManager.Instance.Play(RumbleType.Danger);
+    CameraShake.Instance.Shake(0.3f, 0.3f);
+    yield return new WaitForSeconds(0.2f);
 
     int index = Random.Range(0, spawnerPoints.Length);
     if (!entity.isAttacking) yield break;
@@ -199,9 +204,10 @@ public class LasterAttackModule : MonoBehaviour
     entity.transform.position = auxPos + (Vector3)(Vector2.left * 1.5f);
     entity.AnimatorBridge.PlayTeleportIn();
     entity.events.TeleportIn.Raise();
-    yield return new WaitForSeconds(0.5f);
+    yield return new WaitForSeconds(0.4f);
     entity.Locomotion.FlipTowardsTarget(player);
     RumbleManager.Instance.Play(RumbleType.Danger);
+    yield return new WaitForSeconds(0.1f);
     if (!entity.isAttacking) yield break;
     entity.AnimatorBridge.PlaySlashAttack();
     yield return new WaitForSeconds(1f);
@@ -232,9 +238,12 @@ public class LasterAttackModule : MonoBehaviour
     if (!entity.isAttacking) yield break;
     attackSpawner.SpawnAttack(aux, Quaternion.identity);
 
-    yield return new WaitForSeconds(0.5f);
+    yield return new WaitForSeconds(0.4f);
     attackSpawner.ChangePrefab(prefabs[2]);
     aux = new Vector3(greatBallPoints[0].position.x, greatBallPoints[1].position.y, 0f);
+
+    CameraShake.Instance.Shake(0.5f, 0.1f);
+    yield return new WaitForSeconds(0.1f);
     if (!entity.isAttacking) yield break;
     attackSpawner.SpawnAttack(aux, Quaternion.identity);
 
