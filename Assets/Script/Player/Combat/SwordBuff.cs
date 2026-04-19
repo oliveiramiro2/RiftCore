@@ -5,11 +5,12 @@ public class SwordBuff : MonoBehaviour, IAbility
 {
   public float duration = 5f, cooldown = 12f;
 
-  bool active;
+  private bool active;
+  public bool isActive;
 
   public bool CanUse()
   {
-    return !active;
+    return !active && !GameObject.FindAnyObjectByType<PlayerSpell>().active;
   }
 
   public void Use(PlayerController player)
@@ -21,9 +22,11 @@ public class SwordBuff : MonoBehaviour, IAbility
 
   IEnumerator BuffRoutine(PlayerController player)
   {
+    isActive = true;
     active = true;
     player.events.OnFocusBuff.Raise();
     yield return new WaitForSeconds(1.5f);
+    isActive = false;
     player.PlayerSM.ChangeState(player.StateFactory.Idle);
     player.canMove = true;
     player.AnimatorBridge.ResetTiggerSwordBuff();

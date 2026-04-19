@@ -5,6 +5,7 @@ public class PlayerSpell : MonoBehaviour, IAbility
 {
   private readonly float cooldown = 8f;
   float timer;
+  public bool active;
 
   public GameObject laser;
 
@@ -16,11 +17,12 @@ public class PlayerSpell : MonoBehaviour, IAbility
 
   public bool CanUse()
   {
-    return timer <= 0;
+    return timer <= 0 && !GameObject.FindAnyObjectByType<SwordBuff>().isActive;
   }
 
   public void Use(PlayerController player)
   {
+    active = true;
     StartCoroutine(LaserRoutine(player));
   }
 
@@ -39,5 +41,6 @@ public class PlayerSpell : MonoBehaviour, IAbility
     laser.SetActive(false);
 
     timer = cooldown;
+    active = false;
   }
 }
