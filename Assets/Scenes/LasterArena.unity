@@ -22831,6 +22831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8465333144962509520, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8772061299861539594, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.26
@@ -40709,6 +40713,10 @@ PrefabInstance:
       propertyPath: backgroundFocusBuffFX
       value: 
       objectReference: {fileID: 1468893888}
+    - target: {fileID: 4295114502386803075, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      propertyPath: musicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b5e0ef89e04d9e44caf4f02265c1303c, type: 3}
     - target: {fileID: 4295114502386803075, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
       propertyPath: musicSource
       value: 

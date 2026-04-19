@@ -38,6 +38,11 @@ public class MenuMain : MonoBehaviour
         SceneManager.LoadScene("MAWArena");
     }
 
+    public void StartGameLaster()
+    {
+        SceneManager.LoadScene("LasterArena");
+    }
+
 
     public void ChooseEnemy()
     {
