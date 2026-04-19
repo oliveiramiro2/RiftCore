@@ -118,6 +118,7 @@ public class LasterAttackModule : MonoBehaviour
   {
     entity.Locomotion.FlipToLaserPoint();
     yield return new WaitForSeconds(1.4f);
+    RumbleManager.Instance.Play(RumbleType.Danger);
     laser.gameObject.SetActive(true);
     laserActive = true;
 
@@ -136,6 +137,7 @@ public class LasterAttackModule : MonoBehaviour
       owner.AnimatorBridge.PlayLaserAttack();
       entity.Locomotion.FlipToLaserPoint();
       yield return new WaitForSeconds(1.4f);
+      RumbleManager.Instance.Play(RumbleType.Danger);
       laser.gameObject.SetActive(true);
       laserActive = true;
 
@@ -156,6 +158,7 @@ public class LasterAttackModule : MonoBehaviour
     attackSpawner.ChangePrefab(prefabs[0]);
     yield return new WaitForSeconds(1.2f);
     entity.Locomotion.FlipTowardsTarget(player);
+    RumbleManager.Instance.Play(RumbleType.Danger);
 
     int index = Random.Range(0, spawnerPoints.Length);
     attackSpawner.SpawnAttack(spawnerPoints[index].position, Quaternion.identity);
@@ -165,6 +168,7 @@ public class LasterAttackModule : MonoBehaviour
     {
       index2 = Random.Range(0, spawnerPoints.Length);
     }
+
     attackSpawner.SpawnAttack(spawnerPoints[index2].position, Quaternion.identity);
 
     if (entity.Phase2())
@@ -193,6 +197,7 @@ public class LasterAttackModule : MonoBehaviour
     entity.events.TeleportIn.Raise();
     yield return new WaitForSeconds(1f);
     entity.Locomotion.FlipTowardsTarget(player);
+    RumbleManager.Instance.Play(RumbleType.Danger);
     entity.AnimatorBridge.PlaySlashAttack();
     yield return new WaitForSeconds(1f);
     entity.AnimatorBridge.PlayTeleportOut();
@@ -213,6 +218,8 @@ public class LasterAttackModule : MonoBehaviour
   {
 
     yield return new WaitForSeconds(1f);
+
+    RumbleManager.Instance.Play(RumbleType.Danger);
     entity.Locomotion.FlipTowardsTarget(player);
 
     Vector3 aux = new Vector3(greatBallPoints[0].position.x, greatBallPoints[0].position.y, 0f);
@@ -230,7 +237,7 @@ public class LasterAttackModule : MonoBehaviour
     if (entity.Phase2())
     {
       Vector3 position = new Vector3(greatBallPoints[0].position.x, greatBallPoints[1].position.y + 0.8f, 0f);
-
+      RumbleManager.Instance.Play(RumbleType.Danger);
       attackSpawner.ChangePrefab(prefabs[3]);
       attackSpawner.SpawnAttack(position, Quaternion.identity);
 
