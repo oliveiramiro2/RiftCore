@@ -43,7 +43,6 @@ public class CircleWaveDistortion : MonoBehaviour
 
     private IEnumerator DistortionRoutine(Vector3 screenPos)
     {
-        playerController.canMove = false;
         bossController.GetComponent<BaseEntity>().canMove = false;
         material.SetFloat(shaderAlphaProperty, 0.8f);
         material.SetVector(shaderStartPointProperty, new Vector4(screenPos.x, screenPos.y, 0, 0));
@@ -52,8 +51,6 @@ public class CircleWaveDistortion : MonoBehaviour
         followBoss = false;
         material.SetFloat(shaderTimeProperty, 0f);
         material.SetFloat(shaderAlphaProperty, 0f);
-        playerController.canMove = true;
         if (bossController == null) yield break;
-        bossController.GetComponent<BaseEntity>().canMove = true;
     }
 }

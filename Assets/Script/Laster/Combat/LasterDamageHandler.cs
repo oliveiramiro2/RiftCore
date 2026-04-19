@@ -3,6 +3,7 @@ using UnityEngine;
 public class LasterDamageHandler : DamageHandlerBase<LasterController>
 {
   private bool phase1 = true;
+  private bool was25 = false, was75 = false;
 
   protected override void Awake()
   {
@@ -15,6 +16,16 @@ public class LasterDamageHandler : DamageHandlerBase<LasterController>
     base.TakeDamage(damage, hitDirection, knockbackForce);
 
     if (isDead) return;
+    if (!was25 && controller.currentHealth <= controller.maxHealth * 0.25f)
+    {
+      was25 = true;
+      controller.events.Stuned.Raise();
+    }
+    else if (!was75 && controller.currentHealth <= controller.maxHealth * 0.75f)
+    {
+      was75 = true;
+      controller.events.Stuned.Raise();
+    }
     if (controller.Phase2() && phase1)
     {
       phase1 = false;

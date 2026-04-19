@@ -16190,6 +16190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31bbc7e716ba9d0409b527e6badeb8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSpell
+  active: 0
   laser: {fileID: 965062008568668088}
 --- !u!114 &7505320706148956907
 MonoBehaviour:
@@ -16205,6 +16206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwordBuff
   duration: 5
   cooldown: 12
+  isActive: 0
 --- !u!114 &5317949826519925948
 MonoBehaviour:
   m_ObjectHideFlags: 0

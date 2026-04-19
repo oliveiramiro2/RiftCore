@@ -27,4 +27,18 @@ public class LasterGameFlowManager : MonoBehaviour
     bossEffect.Play();
     bossEffect2.Play();
   }
+
+  public void OnBossStuned()
+  {
+    StartCoroutine(StunedEffect());
+  }
+
+  private IEnumerator StunedEffect()
+  {
+    controller.canMove = false;
+    Time.timeScale = 0f;
+    yield return new WaitForSecondsRealtime(5f);
+    Time.timeScale = 1f;
+    controller.canMove = true;
+  }
 }

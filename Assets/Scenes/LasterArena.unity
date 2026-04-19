@@ -24496,7 +24496,7 @@ Transform:
   m_GameObject: {fileID: 951816714}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.77609, y: 2.55, z: 0}
+  m_LocalPosition: {x: -4.77609, y: 1.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31246,7 +31246,7 @@ Transform:
   m_GameObject: {fileID: 1323475441}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.77609, y: 1.2, z: 0}
+  m_LocalPosition: {x: -4.77609, y: 2.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32755,6 +32755,10 @@ PrefabInstance:
     - target: {fileID: 4537574936787505961, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465333144962509520, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
+      propertyPath: damage
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8772061299861539594, guid: 3204fd0993ac78745b809c3f71e3d556, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42975,6 +42979,62 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1601763653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7101569430621989827, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+  m_PrefabInstance: {fileID: 4921432823878550498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1601763657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 341822333937117181, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+  m_PrefabInstance: {fileID: 4921432823878550498}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601763653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2128d3fc7137c14493a4759d9684fcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LasterGameFlowManager
+--- !u!114 &1601763658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601763653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e5b0146f489547be57fe8c0564de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 09ef0f7c7639f804ca1ec84873248076, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1601763657}
+        m_TargetAssemblyTypeName: LasterGameFlowManager, Assembly-CSharp
+        m_MethodName: OnBossStuned
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1222693930}
+        m_TargetAssemblyTypeName: CircleWaveDistortion, Assembly-CSharp
+        m_MethodName: StartDistortionAtBoss
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1609171919
 GameObject:
   m_ObjectHideFlags: 0
@@ -50732,7 +50792,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7101569430621989827, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1601763658}
   m_SourcePrefab: {fileID: 100100000, guid: 3e69d9a51b459aa459de946692033e1c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
